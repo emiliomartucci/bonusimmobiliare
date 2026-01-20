@@ -357,8 +357,6 @@
 
         .cloud {
             position: absolute;
-            opacity: 0;
-            animation: fadeInCloud 2s ease forwards;
         }
 
         .cloud svg {
@@ -372,10 +370,7 @@
             right: 8%;
             width: 200px;
             opacity: 0.08;
-            animation:
-                fadeInCloud 2s ease forwards,
-                driftLarge 35s ease-in-out infinite;
-            animation-delay: 0.5s, 0s;
+            animation: driftLarge 35s ease-in-out infinite;
         }
 
         /* Medium cloud - middle, gentle bob */
@@ -384,10 +379,8 @@
             right: 22%;
             width: 140px;
             opacity: 0.06;
-            animation:
-                fadeInCloud 2s ease forwards,
-                driftMedium 28s ease-in-out infinite;
-            animation-delay: 1s, -8s;
+            animation: driftMedium 28s ease-in-out infinite;
+            animation-delay: -8s;
         }
 
         /* Small cloud - lower, subtle movement */
@@ -396,10 +389,8 @@
             right: 12%;
             width: 110px;
             opacity: 0.05;
-            animation:
-                fadeInCloud 2s ease forwards,
-                driftSmall 32s ease-in-out infinite;
-            animation-delay: 1.5s, -15s;
+            animation: driftSmall 32s ease-in-out infinite;
+            animation-delay: -15s;
         }
 
         /* Tiny accent cloud */
@@ -408,15 +399,8 @@
             right: 35%;
             width: 70px;
             opacity: 0.04;
-            animation:
-                fadeInCloud 2s ease forwards,
-                driftTiny 40s ease-in-out infinite;
-            animation-delay: 2s, -20s;
-        }
-
-        @keyframes fadeInCloud {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: var(--cloud-opacity, 0.08); transform: translateY(0); }
+            animation: driftTiny 40s ease-in-out infinite;
+            animation-delay: -20s;
         }
 
         @keyframes driftLarge {
