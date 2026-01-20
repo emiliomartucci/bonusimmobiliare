@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trova il Servizio Giusto | Bonus Immobiliare</title>
+    <meta name="description" content="Rispondi a poche domande e ti indirizziamo al servizio più adatto alle tue esigenze immobiliari. In collaborazione con Dokicasa.">
+    <link rel="canonical" href="https://bonusimmobiliare.it/servizi/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --olive: #5C6B4A;
+            --olive-deep: #3D4832;
+            --olive-dark: #2A3223;
+            --olive-light: #7A8A68;
+            --sage-pale: #D4DEC9;
+            --sage-mist: #E8EEE0;
+            --cream: #FAF7F2;
+            --cream-dark: #F2EDE4;
+            --parchment: #EDE7DB;
+            --stone: #C9C2B5;
+            --earth: #8B8178;
+            --bark: #4A3F35;
+            --terracotta: #C4724C;
+            --terracotta-light: #D4917A;
+            --gold: #BFA67A;
+            --gold-light: #D4C4A0;
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'Source Serif 4', Georgia, serif;
+            --radius-sm: 0.5rem;
+            --radius-md: 1rem;
+            --radius-lg: 1.5rem;
+            --radius-xl: 2rem;
+            --radius-full: 9999px;
+            --shadow-soft: 0 2px 20px rgba(74, 63, 53, 0.06);
+            --shadow-medium: 0 4px 30px rgba(74, 63, 53, 0.1);
+            --shadow-lifted: 0 12px 40px rgba(74, 63, 53, 0.15);
+            --transition-base: 0.3s ease;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background: linear-gradient(165deg, var(--olive-deep) 0%, var(--olive) 50%, var(--olive-light) 100%);
+            color: var(--bark);
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 10000;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        a { color: inherit; text-decoration: none; }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition-base);
+        }
+
+        .header.scrolled {
+            background: rgba(250, 247, 242, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--cream);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition-base);
+        }
+
+        .header.scrolled .logo { color: var(--olive-deep); }
+
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--gold);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: var(--olive-dark);
+        }
+
+        .back-link {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.8);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition-base);
+        }
+
+        .back-link:hover { color: var(--cream); }
+        .header.scrolled .back-link { color: var(--bark); }
+
+        .back-link svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Main Container */
+        .main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 1.5rem 3rem;
+        }
+
+        .slider-container {
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .progress-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            transition: var(--transition-base);
+        }
+
+        .progress-dot.active {
+            background: var(--gold);
+            transform: scale(1.2);
+        }
+
+        .progress-dot.completed {
+            background: var(--sage-pale);
+        }
+
+        /* Slide */
+        .slide {
+            background: var(--cream);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lifted);
+            display: none;
+            animation: slideIn 0.4s ease;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .slide-step {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: 0.75rem;
+        }
+
+        .slide-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--olive-deep);
+            line-height: 1.3;
+        }
+
+        .slide-subtitle {
+            font-size: 0.95rem;
+            color: var(--earth);
+            margin-top: 0.5rem;
+        }
+
+        /* Options Grid */
+        .options-grid {
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .option-btn {
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            background: white;
+            border: 2px solid var(--cream-dark);
+            border-radius: var(--radius-md);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--bark);
+            cursor: pointer;
+            transition: var(--transition-base);
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .option-btn:hover {
+            border-color: var(--olive);
+            background: var(--sage-mist);
+        }
+
+        .option-btn.selected {
+            border-color: var(--olive);
+            background: var(--sage-mist);
+        }
+
+        .option-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--sage-mist);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: var(--transition-base);
+        }
+
+        .option-btn:hover .option-icon,
+        .option-btn.selected .option-icon {
+            background: var(--olive);
+        }
+
+        .option-icon svg {
+            width: 20px;
+            height: 20px;
+            color: var(--olive);
+            transition: var(--transition-base);
+        }
+
+        .option-btn:hover .option-icon svg,
+        .option-btn.selected .option-icon svg {
+            color: var(--cream);
+        }
+
+        .option-text {
+            flex: 1;
+        }
+
+        .option-title {
+            font-weight: 600;
+            color: var(--olive-deep);
+            margin-bottom: 0.25rem;
+        }
+
+        .option-desc {
+            font-size: 0.85rem;
+            color: var(--earth);
+        }
+
+        /* Result Slide */
+        .result-card {
+            text-align: center;
+        }
+
+        .result-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--sage-mist);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .result-icon svg {
+            width: 40px;
+            height: 40px;
+            color: var(--olive);
+        }
+
+        .result-title {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 500;
+            color: var(--olive-deep);
+            margin-bottom: 0.5rem;
+        }
+
+        .result-service {
+            font-size: 1rem;
+            color: var(--terracotta);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .result-desc {
+            font-size: 1rem;
+            color: var(--earth);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .result-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: var(--terracotta);
+            color: var(--cream);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition-base);
+        }
+
+        .result-cta:hover {
+            background: var(--terracotta-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(196, 114, 76, 0.35);
+        }
+
+        .result-cta svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .result-partner {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: var(--stone);
+        }
+
+        .result-partner a {
+            color: var(--olive);
+            text-decoration: underline;
+        }
+
+        /* Back Button */
+        .slide-back {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            padding: 0.5rem 0;
+            background: none;
+            border: none;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            color: var(--earth);
+            cursor: pointer;
+            transition: var(--transition-base);
+        }
+
+        .slide-back:hover {
+            color: var(--olive-deep);
+        }
+
+        .slide-back svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* Restart */
+        .restart-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background: none;
+            border: 2px solid var(--cream-dark);
+            border-radius: var(--radius-full);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            color: var(--earth);
+            cursor: pointer;
+            transition: var(--transition-base);
+            width: 100%;
+        }
+
+        .restart-btn:hover {
+            border-color: var(--olive);
+            color: var(--olive-deep);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.8rem;
+        }
+
+        .footer a {
+            color: var(--gold-light);
+        }
+
+        /* Mobile */
+        @media (max-width: 640px) {
+            .header { padding: 1rem; }
+            .main { padding: 5rem 1rem 2rem; }
+            .slide { padding: 1.5rem; }
+            .slide-title { font-size: 1.25rem; }
+            .option-btn { padding: 1rem; }
+            .option-icon { width: 36px; height: 36px; }
+            .result-title { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="/" class="logo">
+            <span class="logo-icon">B</span>
+            Bonus Immobiliare
+        </a>
+        <a href="/" class="back-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Torna al sito
+        </a>
+    </header>
+
+    <main class="main">
+        <div class="slider-container">
+            <!-- Progress -->
+            <div class="progress-bar" id="progressBar">
+                <div class="progress-dot active" data-step="1"></div>
+                <div class="progress-dot" data-step="2"></div>
+                <div class="progress-dot" data-step="3"></div>
+            </div>
+
+            <!-- Step 1: Cosa vuoi fare? -->
+            <div class="slide active" data-slide="1">
+                <div class="slide-header">
+                    <p class="slide-step">Passo 1 di 3</p>
+                    <h1 class="slide-title">Cosa stai cercando di fare?</h1>
+                    <p class="slide-subtitle">Seleziona l'opzione più vicina alla tua situazione</p>
+                </div>
+                <div class="options-grid">
+                    <button class="option-btn" data-value="affittare" data-next="2">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                        </div>
+                        <div class="option-text">
+                            <div class="option-title">Affittare un immobile</div>
+                            <div class="option-desc">Mettere in affitto o prendere in affitto</div>
+                        </div>
+                    </button>
+                    <button class="option-btn" data-value="vendere" data-next="2">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                                <path d="M9 22V12h6v10"/>
+                            </svg>
+                        </div>
+                        <div class="option-text">
+                            <div class="option-title">Vendere o comprare</div>
+                            <div class="option-desc">Compravendita immobiliare</div>
+                        </div>
+                    </button>
+                    <button class="option-btn" data-value="documenti" data-next="2">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                                <path d="M14 2v6h6"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                            </svg>
+                        </div>
+                        <div class="option-text">
+                            <div class="option-title">Gestire documenti</div>
+                            <div class="option-desc">Certificazioni, visure, pratiche</div>
+                        </div>
+                    </button>
+                    <button class="option-btn" data-value="successione" data-next="result" data-result="successione">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <div class="option-text">
+                            <div class="option-title">Gestire una successione</div>
+                            <div class="option-desc">Immobile ereditato</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 2: Dettaglio -->
+            <div class="slide" data-slide="2">
+                <div class="slide-header">
+                    <p class="slide-step">Passo 2 di 3</p>
+                    <h1 class="slide-title" id="step2Title">Di cosa hai bisogno?</h1>
+                    <p class="slide-subtitle" id="step2Subtitle">Seleziona il servizio che ti interessa</p>
+                </div>
+                <div class="options-grid" id="step2Options">
+                    <!-- Options populated by JS based on step 1 -->
+                </div>
+                <button class="slide-back" data-back="1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Torna indietro
+                </button>
+            </div>
+
+            <!-- Step 3: Conferma (for some paths) -->
+            <div class="slide" data-slide="3">
+                <div class="slide-header">
+                    <p class="slide-step">Passo 3 di 3</p>
+                    <h1 class="slide-title" id="step3Title">Ultimo dettaglio</h1>
+                </div>
+                <div class="options-grid" id="step3Options">
+                    <!-- Options populated by JS -->
+                </div>
+                <button class="slide-back" data-back="2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Torna indietro
+                </button>
+            </div>
+
+            <!-- Result Slide -->
+            <div class="slide" data-slide="result">
+                <div class="result-card">
+                    <div class="result-icon" id="resultIcon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                            <polyline points="22,4 12,14.01 9,11.01"/>
+                        </svg>
+                    </div>
+                    <h2 class="result-title">Abbiamo trovato il servizio giusto!</h2>
+                    <p class="result-service" id="resultService">Canone Concordato</p>
+                    <p class="result-desc" id="resultDesc">Calcola gratuitamente il canone concordato per il tuo immobile e scopri i vantaggi fiscali.</p>
+                    <a href="#" class="result-cta" id="resultCta" target="_blank" rel="noopener">
+                        Vai al servizio
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                            <polyline points="15,3 21,3 21,9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                    <p class="result-partner">Servizio offerto da <a href="https://dokicasa.it" target="_blank" rel="noopener">Dokicasa</a></p>
+                    <button class="restart-btn" id="restartBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <path d="M1 4v6h6"/>
+                            <path d="M3.51 15a9 9 0 102.13-9.36L1 10"/>
+                        </svg>
+                        Ricomincia
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Bonus Immobiliare · <a href="/privacy/">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Service mappings
+        const services = {
+            'canone-concordato': {
+                name: 'Calcolo Canone Concordato',
+                desc: 'Calcola gratuitamente il canone concordato per il tuo immobile e scopri i vantaggi fiscali: cedolare secca al 10% e riduzione IMU.',
+                url: 'https://dokicasa.it/canone-concordato?utm_source=bonusimmobiliare&utm_medium=slider&utm_campaign=servizi'
+            },
+            'contratto-locazione': {
+                name: 'Creazione Contratto di Locazione',
+                desc: 'Crea il tuo contratto di locazione personalizzato in pochi minuti. Completo di tutte le clausole necessarie.',
+                url: 'https://dokicasa.it/servizi?utm_source=bonusimmobiliare&utm_medium=slider&utm_campaign=servizi#contratti'
+            },
+            'registrazione-contratto': {
+                name: 'Registrazione Contratto',
+                desc: 'Registra il tuo contratto di locazione online in modo semplice e veloce. Include rinnovi, proroghe e risoluzioni.',
+                url: 'https://dokicasa.it/servizi?utm_source=bonusimmobiliare&utm_medium=slider&utm_campaign=servizi#registrazione'
+            },
+            'verifica-inquilino': {
+                name: 'Verifica Inquilino',
+                desc: 'Verifica l\'affidabilità del tuo potenziale inquilino con un report creditizio completo. Proteggi il tuo investimento.',
+                url: 'https://dokicasa.it/servizi?utm_source=bonusimmobiliare&utm_medium=slider&utm_campaign=servizi#verifica'
+            },
+            'assicurazione-affitto': {
+                name: 'Assicurazione Affitto',
+                desc: 'Proteggi i tuoi canoni con un\'assicurazione contro il mancato pagamento. Richiedi un preventivo gratuito.',
+                url: 'https://dokicasa.it/servizi?utm_source=bonusimmobiliare&utm_medium=slider&utm_campaign=servizi#assicurazione'
+            },
+            'ape': {
+                name: 'Certificazione Energetica (APE)',
+                desc: 'Ottieni l\'Attestato di Prestazione Energetica per il tuo immobile. Include sopralluogo obbligatorio.',
+                url: 'https://dokicasa.it/servizi?utm_source=bonusimmobiliare&utm_medium=slider&utm_campaign=servizi#ape'
+            },
+            'visure': {
+                name: 'Visure e Documenti Catastali',
+                desc: 'Ottieni visure catastali, planimetrie e certificati in tempo reale. Documenti ufficiali direttamente online.',
+                url: 'https://dokicasa.it/servizi?utm_source=bonusimmobiliare&utm_medium=slider&utm_campaign=servizi#visure'
+            },
+            'firma-digitale': {
+                name: 'Firma Elettronica',
+                desc: 'Firma i tuoi documenti a distanza con piena validità legale. Perfetto per contratti e accordi.',
+                url: 'https://dokicasa.it/servizi?utm_source=bonusimmobiliare&utm_medium=slider&utm_campaign=servizi#firma'
+            },
+            'successione': {
+                name: 'Dichiarazione di Successione',
+                desc: 'Gestisci la successione del tuo immobile ereditato. Preventivo gratuito e assistenza nella raccolta documenti.',
+                url: 'https://dokicasa.it/servizi?utm_source=bonusimmobiliare&utm_medium=slider&utm_campaign=servizi#successione'
+            },
+            'contratto-compravendita': {
+                name: 'Contratto di Compravendita',
+                desc: 'Prepara la documentazione per la compravendita: proposta, preliminare e tutti gli atti necessari.',
+                url: 'https://dokicasa.it/servizi?utm_source=bonusimmobiliare&utm_medium=slider&utm_campaign=servizi#compravendita'
+            }
+        };
+
+        // Step 2 options based on Step 1
+        const step2Options = {
+            'affittare': [
+                { value: 'proprietario', label: 'Sono proprietario', desc: 'Voglio mettere in affitto', next: '3', context: 'proprietario' },
+                { value: 'inquilino', label: 'Sono inquilino', desc: 'Cerco informazioni sul contratto', next: 'result', result: 'contratto-locazione' }
+            ],
+            'vendere': [
+                { value: 'vendere', label: 'Voglio vendere', desc: 'Devo preparare i documenti', next: '3', context: 'vendere' },
+                { value: 'comprare', label: 'Voglio comprare', desc: 'Devo verificare i documenti', next: 'result', result: 'visure' }
+            ],
+            'documenti': [
+                { value: 'ape', label: 'Certificazione energetica (APE)', desc: 'Attestato di prestazione energetica', next: 'result', result: 'ape' },
+                { value: 'visure', label: 'Visure catastali', desc: 'Planimetrie e documenti catastali', next: 'result', result: 'visure' },
+                { value: 'firma', label: 'Firma digitale', desc: 'Firmare documenti a distanza', next: 'result', result: 'firma-digitale' }
+            ]
+        };
+
+        // Step 3 options based on context
+        const step3Options = {
+            'proprietario': {
+                title: 'Cosa ti serve per l\'affitto?',
+                options: [
+                    { value: 'canone', label: 'Calcolare il canone concordato', desc: 'Scopri i vantaggi fiscali', next: 'result', result: 'canone-concordato' },
+                    { value: 'contratto', label: 'Creare il contratto', desc: 'Contratto personalizzato', next: 'result', result: 'contratto-locazione' },
+                    { value: 'verifica', label: 'Verificare l\'inquilino', desc: 'Report creditizio', next: 'result', result: 'verifica-inquilino' },
+                    { value: 'registrazione', label: 'Registrare il contratto', desc: 'Registrazione online', next: 'result', result: 'registrazione-contratto' }
+                ]
+            },
+            'vendere': {
+                title: 'Di quali documenti hai bisogno?',
+                options: [
+                    { value: 'ape', label: 'Certificazione energetica (APE)', desc: 'Obbligatoria per vendere', next: 'result', result: 'ape' },
+                    { value: 'visure', label: 'Visure e planimetrie', desc: 'Documenti catastali', next: 'result', result: 'visure' },
+                    { value: 'contratto', label: 'Preparare il contratto', desc: 'Proposta e preliminare', next: 'result', result: 'contratto-compravendita' }
+                ]
+            }
+        };
+
+        // State
+        let currentSlide = 1;
+        let answers = {};
+
+        // DOM Elements
+        const slides = document.querySelectorAll('.slide');
+        const progressDots = document.querySelectorAll('.progress-dot');
+
+        // Show slide
+        function showSlide(slideId) {
+            slides.forEach(s => s.classList.remove('active'));
+            const target = document.querySelector(`[data-slide="${slideId}"]`);
+            if (target) {
+                target.classList.add('active');
+                currentSlide = slideId;
+                updateProgress(slideId);
+            }
+        }
+
+        // Update progress dots
+        function updateProgress(slideId) {
+            const stepNum = slideId === 'result' ? 3 : parseInt(slideId);
+            progressDots.forEach((dot, i) => {
+                dot.classList.remove('active', 'completed');
+                if (i + 1 < stepNum) dot.classList.add('completed');
+                if (i + 1 === stepNum) dot.classList.add('active');
+            });
+        }
+
+        // Populate step 2 options
+        function populateStep2(choice) {
+            const container = document.getElementById('step2Options');
+            const options = step2Options[choice];
+
+            if (!options) {
+                showSlide('result');
+                return;
+            }
+
+            container.innerHTML = options.map(opt => `
+                <button class="option-btn" data-value="${opt.value}" data-next="${opt.next}" ${opt.result ? `data-result="${opt.result}"` : ''} ${opt.context ? `data-context="${opt.context}"` : ''}>
+                    <div class="option-text">
+                        <div class="option-title">${opt.label}</div>
+                        <div class="option-desc">${opt.desc}</div>
+                    </div>
+                </button>
+            `).join('');
+
+            attachOptionListeners(container);
+        }
+
+        // Populate step 3 options
+        function populateStep3(context) {
+            const config = step3Options[context];
+            if (!config) {
+                showSlide('result');
+                return;
+            }
+
+            document.getElementById('step3Title').textContent = config.title;
+            const container = document.getElementById('step3Options');
+
+            container.innerHTML = config.options.map(opt => `
+                <button class="option-btn" data-value="${opt.value}" data-next="${opt.next}" data-result="${opt.result}">
+                    <div class="option-text">
+                        <div class="option-title">${opt.label}</div>
+                        <div class="option-desc">${opt.desc}</div>
+                    </div>
+                </button>
+            `).join('');
+
+            attachOptionListeners(container);
+        }
+
+        // Show result
+        function showResult(serviceKey) {
+            const service = services[serviceKey];
+            if (!service) return;
+
+            document.getElementById('resultService').textContent = service.name;
+            document.getElementById('resultDesc').textContent = service.desc;
+            document.getElementById('resultCta').href = service.url;
+
+            showSlide('result');
+        }
+
+        // Attach listeners to option buttons
+        function attachOptionListeners(container) {
+            container.querySelectorAll('.option-btn').forEach(btn => {
+                btn.addEventListener('click', handleOptionClick);
+            });
+        }
+
+        // Handle option click
+        function handleOptionClick(e) {
+            const btn = e.currentTarget;
+            const value = btn.dataset.value;
+            const next = btn.dataset.next;
+            const result = btn.dataset.result;
+            const context = btn.dataset.context;
+
+            answers[`step${currentSlide}`] = value;
+
+            if (result) {
+                showResult(result);
+            } else if (next === '2') {
+                populateStep2(value);
+                showSlide('2');
+            } else if (next === '3') {
+                populateStep3(context);
+                showSlide('3');
+            }
+        }
+
+        // Back buttons
+        document.querySelectorAll('.slide-back').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const backTo = btn.dataset.back;
+                showSlide(backTo);
+            });
+        });
+
+        // Restart button
+        document.getElementById('restartBtn').addEventListener('click', () => {
+            answers = {};
+            showSlide('1');
+        });
+
+        // Initial option listeners for step 1
+        document.querySelectorAll('[data-slide="1"] .option-btn').forEach(btn => {
+            btn.addEventListener('click', handleOptionClick);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>

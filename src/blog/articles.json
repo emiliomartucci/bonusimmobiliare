@@ -1,0 +1,92 @@
+{
+  "articles": [
+    {
+      "slug": "proposta-acquisto-vincolante",
+      "title": "La Proposta di Acquisto: Quando Diventa Vincolante?",
+      "excerpt": "Tutto quello che devi sapere prima di firmare una proposta di acquisto immobiliare: tempistiche, clausole essenziali e come tutelarti.",
+      "category": "compravendita",
+      "categoryLabel": "Compravendita",
+      "readTime": "10 min",
+      "featured": true,
+      "date": "2026-01-20",
+      "keywords": "proposta acquisto vincolante tempistiche clausole tutela"
+    },
+    {
+      "slug": "canone-concordato",
+      "title": "Canone Concordato: Guida Completa 2026",
+      "excerpt": "Vantaggi fiscali, cedolare secca al 10% e come calcolare il canone concordato.",
+      "category": "affitto",
+      "categoryLabel": "Affitto",
+      "readTime": "12 min",
+      "featured": false,
+      "date": "2026-01-19",
+      "keywords": "canone concordato cedolare secca 10 vantaggi fiscali calcolo"
+    },
+    {
+      "slug": "caparra-confirmatoria-penitenziale",
+      "title": "Caparra Confirmatoria vs Penitenziale: Le Differenze",
+      "excerpt": "Due tipi di caparra con conseguenze molto diverse. Quale scegliere e perché.",
+      "category": "legale",
+      "categoryLabel": "Legale",
+      "readTime": "8 min",
+      "featured": false,
+      "date": "2026-01-18",
+      "keywords": "caparra confirmatoria penitenziale differenze conseguenze"
+    },
+    {
+      "slug": "clausola-sospensiva-mutuo",
+      "title": "Clausola Sospensiva Mutuo: Come Scriverla",
+      "excerpt": "Come formulare la clausola sospensiva, importo da indicare, tempistiche e modello pronto.",
+      "category": "compravendita",
+      "categoryLabel": "Compravendita",
+      "readTime": "11 min",
+      "featured": false,
+      "date": "2026-01-17",
+      "keywords": "clausola sospensiva mutuo proposta acquisto modello"
+    },
+    {
+      "slug": "mutuo-negato-cosa-fare",
+      "title": "Cosa Succede se la Banca Nega il Mutuo?",
+      "excerpt": "Rischi senza clausola sospensiva, come tutelarsi e verifica pre-approvazione.",
+      "category": "compravendita",
+      "categoryLabel": "Compravendita",
+      "readTime": "9 min",
+      "featured": false,
+      "date": "2026-01-16",
+      "keywords": "mutuo negato banca rifiuto clausola sospensiva tutela"
+    },
+    {
+      "slug": "compromesso-notaio-agenzia",
+      "title": "Compromesso: dal Notaio o in Agenzia?",
+      "excerpt": "Differenze tra trascrizione e registrazione, costi effettivi, quando la trascrizione è indispensabile.",
+      "category": "legale",
+      "categoryLabel": "Legale",
+      "readTime": "10 min",
+      "featured": false,
+      "date": "2026-01-15",
+      "keywords": "compromesso notaio agenzia trascrizione registrazione costi"
+    }
+  ],
+  "categories": [
+    {
+      "id": "compravendita",
+      "label": "Compravendita",
+      "description": "Dalla proposta al rogito: tutto quello che devi sapere per comprare o vendere casa."
+    },
+    {
+      "id": "affitto",
+      "label": "Affitto",
+      "description": "Contratti, diritti, doveri e consigli pratici per locatori e inquilini."
+    },
+    {
+      "id": "legale",
+      "label": "Legale",
+      "description": "Caparre, clausole, contratti e tutto quello che serve per tutelarti."
+    },
+    {
+      "id": "fiscale",
+      "label": "Fiscale",
+      "description": "Tasse, detrazioni, agevolazioni e tutto quello che riguarda il fisco immobiliare."
+    }
+  ]
+}

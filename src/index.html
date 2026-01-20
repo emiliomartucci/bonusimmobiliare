@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Immobiliare | Guide su Affitto e Compravendita in Italia</title>
+    <meta name="description" content="Guide pratiche e consigli esperti su affitto e compravendita immobiliare in Italia. Tutto quello che devi sapere per comprare, vendere o affittare casa.">
+    <link rel="canonical" href="https://bonusimmobiliare.it/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Bonus Immobiliare",
+        "url": "https://bonusimmobiliare.it",
+        "description": "Guide pratiche su affitto e compravendita immobiliare in Italia"
+    }
+    </script>
+
+    <style>
+        /* ══════════════════════════════════════════════════════════════
+           DESIGN SYSTEM - BONUS IMMOBILIARE
+           Warm Editorial Aesthetic
+        ══════════════════════════════════════════════════════════════ */
+
+        :root {
+            /* Primary Palette - Olive Family */
+            --olive: #5C6B4A;
+            --olive-deep: #3D4832;
+            --olive-dark: #2A3223;
+            --olive-light: #7A8A68;
+            --sage: #8A9A78;
+            --sage-pale: #D4DEC9;
+            --sage-mist: #E8EEE0;
+
+            /* Warm Neutrals */
+            --cream: #FAF7F2;
+            --cream-dark: #F2EDE4;
+            --parchment: #EDE7DB;
+            --stone: #C9C2B5;
+            --earth: #8B8178;
+            --bark: #4A3F35;
+
+            /* Accent Colors */
+            --terracotta: #C4724C;
+            --terracotta-light: #D4917A;
+            --terracotta-pale: #F5E6DF;
+            --gold: #BFA67A;
+            --gold-light: #D4C4A0;
+            --gold-pale: #F5F0E5;
+
+            /* Typography */
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'Source Serif 4', Georgia, serif;
+
+            /* Spacing Scale */
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            --space-4xl: 6rem;
+            --space-5xl: 8rem;
+
+            /* Border Radius */
+            --radius-sm: 0.5rem;
+            --radius-md: 1rem;
+            --radius-lg: 1.5rem;
+            --radius-xl: 2rem;
+            --radius-full: 9999px;
+
+            /* Shadows */
+            --shadow-soft: 0 2px 20px rgba(74, 63, 53, 0.06);
+            --shadow-medium: 0 4px 30px rgba(74, 63, 53, 0.1);
+            --shadow-lifted: 0 12px 40px rgba(74, 63, 53, 0.12);
+
+            /* Transitions */
+            --transition-fast: 0.15s ease;
+            --transition-base: 0.3s ease;
+            --transition-slow: 0.5s ease;
+        }
+
+        /* ══════════════════════════════════════════════════════════════
+           BASE RESET & TYPOGRAPHY
+        ══════════════════════════════════════════════════════════════ */
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--cream);
+            color: var(--bark);
+            line-height: 1.7;
+            font-size: 1.125rem;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* Paper texture overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 10000;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            line-height: 1.2;
+            color: var(--olive-deep);
+        }
+
+        p {
+            margin-bottom: var(--space-md);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ══════════════════════════════════════════════════════════════
+           HEADER
+        ══════════════════════════════════════════════════════════════ */
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: var(--space-lg) var(--space-2xl);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition-base);
+        }
+
+        .header.scrolled {
+            background: rgba(250, 247, 242, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-soft);
+            padding: var(--space-md) var(--space-2xl);
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--cream);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            transition: var(--transition-base);
+        }
+
+        .header.scrolled .logo {
+            color: var(--olive-deep);
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--gold);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: var(--olive-dark);
+            transition: var(--transition-base);
+        }
+
+        .logo:hover .logo-icon {
+            transform: rotate(-5deg) scale(1.05);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xl);
+        }
+
+        .nav-link {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+            position: relative;
+            padding: var(--space-xs) 0;
+            transition: var(--transition-base);
+        }
+
+        .header.scrolled .nav-link {
+            color: var(--bark);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--terracotta);
+            border-radius: var(--radius-full);
+            transition: var(--transition-base);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: var(--gold);
+            color: var(--olive-dark);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 0.875rem;
+            letter-spacing: 0.02em;
+            transition: var(--transition-base);
+        }
+
+        .nav-cta:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(191, 166, 122, 0.4);
+        }
+
+        .header.scrolled .nav-cta {
+            background: var(--olive);
+            color: var(--cream);
+        }
+
+        .header.scrolled .nav-cta:hover {
+            background: var(--olive-light);
+        }
+
+        /* Mobile menu toggle */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: var(--space-sm);
+        }
+
+        .menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--cream);
+            border-radius: var(--radius-full);
+            transition: var(--transition-base);
+        }
+
+        .header.scrolled .menu-toggle span {
+            background: var(--bark);
+        }
+
+        /* ══════════════════════════════════════════════════════════════
+           HERO SECTION
+        ══════════════════════════════════════════════════════════════ */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            padding: var(--space-5xl) var(--space-2xl) var(--space-4xl);
+            background: linear-gradient(165deg, var(--olive-deep) 0%, var(--olive) 40%, var(--olive-light) 100%);
+            overflow: hidden;
+        }
+
+        /* Organic background shapes */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 60%;
+            height: 80%;
+            background: radial-gradient(ellipse, rgba(212, 196, 160, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -20%;
+            width: 70%;
+            height: 90%;
+            background: radial-gradient(ellipse, rgba(196, 114, 76, 0.1) 0%, transparent 60%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        /* Decorative architectural silhouette */
+        .hero-decor {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            opacity: 0.08;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' fill='%23FAF7F2'%3E%3Cpath d='M0,200 L0,150 L50,150 L50,100 L80,100 L80,80 L100,60 L120,80 L120,100 L150,100 L150,150 L200,150 L200,120 L230,120 L230,90 L260,70 L290,90 L290,120 L320,120 L320,150 L400,150 L400,130 L420,130 L420,110 L440,90 L460,110 L460,130 L480,130 L480,150 L550,150 L550,80 L580,80 L580,50 L610,30 L640,50 L640,80 L670,80 L670,150 L750,150 L750,140 L780,140 L780,100 L810,80 L840,100 L840,140 L870,140 L870,150 L950,150 L950,110 L980,110 L980,70 L1010,50 L1040,70 L1040,110 L1070,110 L1070,150 L1150,150 L1150,130 L1180,130 L1180,150 L1200,150 L1200,200 Z'/%3E%3C/svg%3E") repeat-x bottom;
+            background-size: auto 100%;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: var(--space-lg);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.2s;
+        }
+
+        .hero-eyebrow::before {
+            content: '';
+            width: 40px;
+            height: 2px;
+            background: var(--gold);
+            border-radius: var(--radius-full);
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 400;
+            color: var(--cream);
+            line-height: 1.1;
+            margin-bottom: var(--space-xl);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        .hero-title em {
+            font-style: italic;
+            color: var(--sage-pale);
+            font-weight: 500;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(250, 247, 242, 0.85);
+            max-width: 580px;
+            line-height: 1.7;
+            margin-bottom: var(--space-2xl);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.6s;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.8s;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-md) var(--space-xl);
+            border-radius: var(--radius-full);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition-base);
+        }
+
+        .btn-primary {
+            background: var(--terracotta);
+            color: var(--cream);
+        }
+
+        .btn-primary:hover {
+            background: var(--terracotta-light);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(196, 114, 76, 0.35);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--cream);
+            border: 2px solid rgba(250, 247, 242, 0.4);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(250, 247, 242, 0.1);
+            border-color: rgba(250, 247, 242, 0.6);
+        }
+
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+            transition: var(--transition-fast);
+        }
+
+        .btn:hover .btn-icon {
+            transform: translateX(3px);
+        }
+
+        /* Scroll indicator */
+        .scroll-hint {
+            position: absolute;
+            bottom: var(--space-2xl);
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-sm);
+            color: rgba(250, 247, 242, 0.5);
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+            animation-delay: 1.2s;
+        }
+
+        .scroll-hint-icon {
+            width: 24px;
+            height: 40px;
+            border: 2px solid rgba(250, 247, 242, 0.3);
+            border-radius: var(--radius-lg);
+            position: relative;
+        }
+
+        .scroll-hint-icon::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 8px;
+            background: var(--gold);
+            border-radius: var(--radius-full);
+            animation: scrollBounce 2s ease-in-out infinite;
+        }
+
+        @keyframes scrollBounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+            50% { transform: translateX(-50%) translateY(10px); opacity: 0.3; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* ══════════════════════════════════════════════════════════════
+           FEATURED ARTICLES - MAGAZINE GRID
+        ══════════════════════════════════════════════════════════════ */
+
+        .featured {
+            padding: var(--space-5xl) var(--space-2xl);
+            background: var(--cream);
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: var(--space-md);
+        }
+
+        .section-label::before,
+        .section-label::after {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background: var(--terracotta);
+            opacity: 0.5;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 400;
+            margin-bottom: var(--space-md);
+        }
+
+        .section-title em {
+            font-style: italic;
+            color: var(--olive);
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--earth);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Magazine-style asymmetric grid */
+        .magazine-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto auto;
+            gap: var(--space-lg);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .article-card {
+            position: relative;
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition-base);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lifted);
+        }
+
+        /* Large featured card */
+        .article-card.featured-large {
+            grid-column: span 7;
+            grid-row: span 2;
+        }
+
+        /* Medium cards */
+        .article-card.featured-medium {
+            grid-column: span 5;
+        }
+
+        .article-card-image {
+            position: relative;
+            aspect-ratio: 16/10;
+            background: var(--sage-mist);
+            overflow: hidden;
+        }
+
+        .article-card.featured-large .article-card-image {
+            aspect-ratio: 16/12;
+        }
+
+        /* Placeholder pattern for images */
+        .article-card-image::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(135deg, var(--sage-pale) 25%, transparent 25%),
+                linear-gradient(-135deg, var(--sage-pale) 25%, transparent 25%),
+                linear-gradient(45deg, var(--sage-pale) 25%, transparent 25%),
+                linear-gradient(-45deg, var(--sage-pale) 25%, transparent 25%);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 0, 20px -20px, 0 20px;
+            opacity: 0.5;
+        }
+
+        .article-card-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 50%, rgba(42, 50, 35, 0.6) 100%);
+        }
+
+        .article-category {
+            position: absolute;
+            top: var(--space-md);
+            left: var(--space-md);
+            z-index: 2;
+            background: var(--gold);
+            color: var(--olive-dark);
+            padding: var(--space-xs) var(--space-md);
+            border-radius: var(--radius-full);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .article-card-body {
+            padding: var(--space-lg);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card.featured-large .article-card-body {
+            padding: var(--space-xl);
+        }
+
+        .article-card-title {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--olive-deep);
+            line-height: 1.3;
+            margin-bottom: var(--space-sm);
+            transition: var(--transition-base);
+        }
+
+        .article-card.featured-large .article-card-title {
+            font-size: 1.75rem;
+        }
+
+        .article-card:hover .article-card-title {
+            color: var(--terracotta);
+        }
+
+        .article-card-excerpt {
+            font-size: 0.95rem;
+            color: var(--earth);
+            line-height: 1.6;
+            margin-bottom: var(--space-md);
+            flex: 1;
+        }
+
+        .article-card-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            font-size: 0.8rem;
+            color: var(--stone);
+        }
+
+        .article-card-meta span {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
+        .article-card-meta svg {
+            width: 14px;
+            height: 14px;
+            opacity: 0.7;
+        }
+
+        /* View all link */
+        .view-all {
+            text-align: center;
+            margin-top: var(--space-3xl);
+        }
+
+        .view-all-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-weight: 600;
+            color: var(--olive);
+            padding: var(--space-md) var(--space-xl);
+            border: 2px solid var(--olive);
+            border-radius: var(--radius-full);
+            transition: var(--transition-base);
+        }
+
+        .view-all-link:hover {
+            background: var(--olive);
+            color: var(--cream);
+        }
+
+        .view-all-link svg {
+            width: 18px;
+            height: 18px;
+            transition: var(--transition-fast);
+        }
+
+        .view-all-link:hover svg {
+            transform: translateX(4px);
+        }
+
+        /* ══════════════════════════════════════════════════════════════
+           CATEGORIES SECTION
+        ══════════════════════════════════════════════════════════════ */
+
+        .categories {
+            padding: var(--space-5xl) var(--space-2xl);
+            background: var(--parchment);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative wave */
+        .categories::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 60' preserveAspectRatio='none'%3E%3Cpath d='M0,60 C200,30 400,0 600,30 C800,60 1000,30 1200,60 L1200,0 L0,0 Z' fill='%23FAF7F2'/%3E%3C/svg%3E");
+            background-size: cover;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-xl);
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            text-align: center;
+            transition: var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--olive);
+            transform: scaleX(0);
+            transition: var(--transition-base);
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lifted);
+        }
+
+        .category-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .category-icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto var(--space-lg);
+            background: var(--sage-mist);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-base);
+        }
+
+        .category-icon svg {
+            width: 36px;
+            height: 36px;
+            color: var(--olive);
+            transition: var(--transition-base);
+        }
+
+        .category-card:hover .category-icon {
+            background: var(--olive);
+        }
+
+        .category-card:hover .category-icon svg {
+            color: var(--cream);
+        }
+
+        .category-name {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--olive-deep);
+            margin-bottom: var(--space-sm);
+        }
+
+        .category-desc {
+            font-size: 0.95rem;
+            color: var(--earth);
+            line-height: 1.6;
+            margin-bottom: var(--space-lg);
+        }
+
+        .category-count {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            padding: var(--space-xs) var(--space-md);
+            background: var(--terracotta-pale);
+            border-radius: var(--radius-full);
+            display: inline-block;
+        }
+
+        /* ══════════════════════════════════════════════════════════════
+           NEWSLETTER SECTION
+        ══════════════════════════════════════════════════════════════ */
+
+        .newsletter {
+            padding: var(--space-5xl) var(--space-2xl);
+            background: linear-gradient(135deg, var(--olive-deep) 0%, var(--olive) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .newsletter::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 150%;
+            background: radial-gradient(ellipse, rgba(191, 166, 122, 0.15) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .newsletter-inner {
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .newsletter-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto var(--space-lg);
+            background: var(--gold);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .newsletter-icon svg {
+            width: 32px;
+            height: 32px;
+            color: var(--olive-dark);
+        }
+
+        .newsletter h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 400;
+            color: var(--cream);
+            margin-bottom: var(--space-md);
+        }
+
+        .newsletter h2 em {
+            font-style: italic;
+            color: var(--gold-light);
+        }
+
+        .newsletter p {
+            font-size: 1.1rem;
+            color: rgba(250, 247, 242, 0.8);
+            margin-bottom: var(--space-xl);
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: var(--space-md);
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: var(--space-md) var(--space-lg);
+            background: rgba(250, 247, 242, 0.1);
+            border: 2px solid rgba(250, 247, 242, 0.2);
+            border-radius: var(--radius-full);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--cream);
+            transition: var(--transition-base);
+        }
+
+        .newsletter-input::placeholder {
+            color: rgba(250, 247, 242, 0.5);
+        }
+
+        .newsletter-input:focus {
+            outline: none;
+            background: rgba(250, 247, 242, 0.15);
+            border-color: var(--gold);
+        }
+
+        .newsletter-btn {
+            padding: var(--space-md) var(--space-xl);
+            background: var(--terracotta);
+            color: var(--cream);
+            border: none;
+            border-radius: var(--radius-full);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-base);
+            white-space: nowrap;
+        }
+
+        .newsletter-btn:hover {
+            background: var(--terracotta-light);
+            transform: translateY(-2px);
+        }
+
+        .newsletter-privacy {
+            font-size: 0.8rem;
+            color: rgba(250, 247, 242, 0.5);
+            margin-top: var(--space-md);
+        }
+
+        .newsletter-privacy a {
+            color: var(--gold-light);
+            text-decoration: underline;
+        }
+
+        /* ══════════════════════════════════════════════════════════════
+           CONTACT SECTION
+        ══════════════════════════════════════════════════════════════ */
+
+        .contact {
+            padding: var(--space-5xl) var(--space-2xl);
+            background: var(--cream);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: var(--space-4xl);
+            max-width: 1100px;
+            margin: 0 auto;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: var(--space-md);
+        }
+
+        .contact-info h2 em {
+            font-style: italic;
+            color: var(--olive);
+        }
+
+        .contact-info > p {
+            font-size: 1.1rem;
+            color: var(--earth);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .contact-details {
+            list-style: none;
+        }
+
+        .contact-details li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+            padding: var(--space-md);
+            background: white;
+            border-radius: var(--radius-md);
+            transition: var(--transition-base);
+        }
+
+        .contact-details li:hover {
+            box-shadow: var(--shadow-soft);
+        }
+
+        .contact-details-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--sage-mist);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-details-icon svg {
+            width: 20px;
+            height: 20px;
+            color: var(--olive);
+        }
+
+        .contact-details-text {
+            font-size: 0.95rem;
+        }
+
+        .contact-details-text strong {
+            display: block;
+            font-weight: 600;
+            color: var(--olive-deep);
+            margin-bottom: var(--space-xs);
+        }
+
+        .contact-form-wrapper {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-md);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+
+        .form-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--olive-deep);
+            letter-spacing: 0.02em;
+        }
+
+        .form-input,
+        .form-textarea {
+            padding: var(--space-md);
+            background: var(--cream);
+            border: 2px solid var(--cream-dark);
+            border-radius: var(--radius-md);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--bark);
+            transition: var(--transition-base);
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--olive);
+            background: white;
+        }
+
+        .form-textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            padding: var(--space-md) var(--space-2xl);
+            background: var(--olive);
+            color: var(--cream);
+            border: none;
+            border-radius: var(--radius-full);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-base);
+            align-self: flex-start;
+        }
+
+        .form-submit:hover {
+            background: var(--olive-light);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(92, 107, 74, 0.3);
+        }
+
+        /* ══════════════════════════════════════════════════════════════
+           FOOTER
+        ══════════════════════════════════════════════════════════════ */
+
+        .footer {
+            background: var(--olive-dark);
+            padding: var(--space-4xl) var(--space-2xl) var(--space-2xl);
+            color: rgba(250, 247, 242, 0.7);
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: var(--space-3xl);
+            padding-bottom: var(--space-3xl);
+            border-bottom: 1px solid rgba(250, 247, 242, 0.1);
+        }
+
+        .footer-brand {
+            max-width: 280px;
+        }
+
+        .footer-logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--cream);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+        }
+
+        .footer-logo-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--gold);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: var(--olive-dark);
+        }
+
+        .footer-brand p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .footer-nav h4 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--cream);
+            margin-bottom: var(--space-lg);
+        }
+
+        .footer-nav ul {
+            list-style: none;
+        }
+
+        .footer-nav li {
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer-nav a {
+            font-size: 0.9rem;
+            transition: var(--transition-base);
+        }
+
+        .footer-nav a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: var(--space-xl);
+            font-size: 0.85rem;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: var(--space-lg);
+        }
+
+        .footer-legal a {
+            transition: var(--transition-base);
+        }
+
+        .footer-legal a:hover {
+            color: var(--cream);
+        }
+
+        /* ══════════════════════════════════════════════════════════════
+           RESPONSIVE
+        ══════════════════════════════════════════════════════════════ */
+
+        @media (max-width: 1024px) {
+            .magazine-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .article-card.featured-large {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .article-card.featured-medium {
+                grid-column: span 1;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--space-2xl);
+            }
+
+            .footer-brand {
+                grid-column: span 2;
+                max-width: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: var(--space-md) var(--space-lg);
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .hero {
+                padding: var(--space-4xl) var(--space-lg) var(--space-3xl);
+                min-height: auto;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .scroll-hint {
+                display: none;
+            }
+
+            .featured,
+            .categories,
+            .newsletter,
+            .contact {
+                padding: var(--space-3xl) var(--space-lg);
+            }
+
+            .magazine-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .article-card.featured-large,
+            .article-card.featured-medium {
+                grid-column: span 1;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-2xl);
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-brand {
+                grid-column: span 1;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: var(--space-md);
+                text-align: center;
+            }
+
+            .footer-legal {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="/" class="logo">
+            <span class="logo-icon">B</span>
+            Bonus Immobiliare
+        </a>
+        <nav class="nav">
+            <a href="/blog/" class="nav-link">Blog</a>
+            <a href="#categorie" class="nav-link">Guide</a>
+            <a href="/servizi/" class="nav-link">Servizi</a>
+            <a href="#contatti" class="nav-link">Contatti</a>
+            <a href="/blog/" class="nav-cta">Esplora le Guide</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-decor"></div>
+            <div class="hero-content">
+                <p class="hero-eyebrow">Guide Immobiliari Italia</p>
+                <h1 class="hero-title">
+                    Tutto quello che devi sapere su <em>affitto e compravendita</em>
+                </h1>
+                <p class="hero-subtitle">
+                    Guide pratiche, consigli di esperti e informazioni sempre aggiornate per navigare il mercato immobiliare italiano con sicurezza.
+                </p>
+                <div class="hero-actions">
+                    <a href="/blog/" class="btn btn-primary">
+                        Esplora le Guide
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#categorie" class="btn btn-secondary">
+                        Scopri le Categorie
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <div class="scroll-hint-icon"></div>
+                <span>Scorri</span>
+            </div>
+        </section>
+
+        <!-- Featured Articles -->
+        <section class="featured">
+            <div class="section-header">
+                <p class="section-label">In evidenza</p>
+                <h2 class="section-title">Gli articoli <em>più letti</em></h2>
+                <p class="section-subtitle">Le guide che stanno aiutando migliaia di lettori</p>
+            </div>
+
+            <div class="magazine-grid">
+                <!-- Large Featured Article -->
+                <article class="article-card featured-large">
+                    <a href="/blog/proposta-acquisto-vincolante/">
+                        <div class="article-card-image">
+                            <span class="article-category">Compravendita</span>
+                        </div>
+                        <div class="article-card-body">
+                            <h3 class="article-card-title">La Proposta di Acquisto: Quando Diventa Vincolante?</h3>
+                            <p class="article-card-excerpt">Tutto quello che devi sapere prima di firmare una proposta di acquisto immobiliare: tempistiche, clausole essenziali e come tutelarti.</p>
+                            <div class="article-card-meta">
+                                <span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                    10 min
+                                </span>
+                                <span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/>
+                                        <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
+                                    </svg>
+                                    Guida completa
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Medium Article 1 -->
+                <article class="article-card featured-medium">
+                    <a href="/blog/canone-concordato/">
+                        <div class="article-card-image">
+                            <span class="article-category">Affitto</span>
+                        </div>
+                        <div class="article-card-body">
+                            <h3 class="article-card-title">Canone Concordato: Guida Completa 2026</h3>
+                            <p class="article-card-excerpt">Vantaggi fiscali, requisiti e come calcolare correttamente il canone.</p>
+                            <div class="article-card-meta">
+                                <span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                    12 min
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Medium Article 2 -->
+                <article class="article-card featured-medium">
+                    <a href="/blog/caparra-confirmatoria-penitenziale/">
+                        <div class="article-card-image">
+                            <span class="article-category">Legale</span>
+                        </div>
+                        <div class="article-card-body">
+                            <h3 class="article-card-title">Caparra Confirmatoria vs Penitenziale</h3>
+                            <p class="article-card-excerpt">Due tipi di caparra con conseguenze molto diverse. Quale scegliere?</p>
+                            <div class="article-card-meta">
+                                <span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                    8 min
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <div class="view-all">
+                <a href="/blog/" class="view-all-link">
+                    Vedi tutti gli articoli
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories" id="categorie">
+            <div class="section-header">
+                <p class="section-label">Le nostre guide</p>
+                <h2 class="section-title">Scegli l'argomento che <em>ti interessa</em></h2>
+            </div>
+
+            <div class="categories-grid">
+                <a href="/blog/?filter=compravendita" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-name">Compravendita</h3>
+                    <p class="category-desc">Dalla proposta al rogito: tutto quello che devi sapere per comprare o vendere casa.</p>
+                    <span class="category-count">12 guide</span>
+                </a>
+
+                <a href="/blog/?filter=affitto" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="4" width="18" height="18" rx="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-name">Affitto</h3>
+                    <p class="category-desc">Contratti, diritti, doveri e consigli pratici per locatori e inquilini.</p>
+                    <span class="category-count">8 guide</span>
+                </a>
+
+                <a href="/blog/?filter=legale" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-name">Aspetti Legali</h3>
+                    <p class="category-desc">Caparre, clausole, contratti e tutto quello che serve per tutelarti.</p>
+                    <span class="category-count">10 guide</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="newsletter-inner">
+                <div class="newsletter-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </div>
+                <h2>Resta sempre <em>aggiornato</em></h2>
+                <p>Ricevi le nuove guide e gli aggiornamenti sul mercato immobiliare direttamente nella tua casella email.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" class="newsletter-input" placeholder="La tua email" required>
+                    <button type="submit" class="newsletter-btn">Iscriviti</button>
+                </form>
+                <p class="newsletter-privacy">Niente spam, solo contenuti utili. <a href="/privacy/">Privacy Policy</a></p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contatti">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Hai una <em>domanda?</em></h2>
+                    <p>Se hai bisogno di chiarimenti o vuoi suggerire un tema per un nuovo articolo, scrivici. Siamo qui per aiutarti.</p>
+
+                    <ul class="contact-details">
+                        <li>
+                            <div class="contact-details-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details-text">
+                                <strong>Email</strong>
+                                info@bonusimmobiliare.it
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-details-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details-text">
+                                <strong>Risposta</strong>
+                                Entro 24-48 ore lavorative
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Nome</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label class="form-label" for="subject">Oggetto</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label class="form-label" for="message">Messaggio</label>
+                            <textarea id="message" name="message" class="form-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="footer-logo-icon">B</span>
+                        Bonus Immobiliare
+                    </div>
+                    <p>Guide pratiche e informazioni aggiornate per navigare il mercato immobiliare italiano con sicurezza e consapevolezza.</p>
+                </div>
+
+                <nav class="footer-nav">
+                    <h4>Guide</h4>
+                    <ul>
+                        <li><a href="/blog/?filter=compravendita">Compravendita</a></li>
+                        <li><a href="/blog/?filter=affitto">Affitto</a></li>
+                        <li><a href="/blog/?filter=legale">Aspetti Legali</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-nav">
+                    <h4>Strumenti</h4>
+                    <ul>
+                        <li><a href="/servizi/">Servizi Partner</a></li>
+                        <li><a href="/calcolatori/">Calcolatori</a></li>
+                        <li><a href="/glossario/">Glossario</a></li>
+                        <li><a href="/checklist/">Checklist</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-nav">
+                    <h4>Info</h4>
+                    <ul>
+                        <li><a href="/chi-siamo/">Chi Siamo</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                        <li><a href="/privacy/">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bonus Immobiliare. Tutti i diritti riservati.</p>
+                <div class="footer-legal">
+                    <a href="/privacy/">Privacy</a>
+                    <a href="/cookie/">Cookie</a>
+                    <a href="/termini/">Termini</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
+
+            if (currentScroll > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Newsletter form
+        const newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // TODO: Implement newsletter signup API
+                alert('Grazie per l\'iscrizione! Ti terremo aggiornato.');
+                newsletterForm.reset();
+            });
+        }
+
+        // Contact form
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // TODO: Implement contact form API
+                alert('Messaggio inviato! Ti risponderemo al più presto.');
+                contactForm.reset();
+            });
+        }
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe article cards for animation
+        document.querySelectorAll('.article-card, .category-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
