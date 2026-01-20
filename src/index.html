@@ -240,8 +240,8 @@
         }
 
         .nav-cta {
-            background: var(--gold);
-            color: var(--olive-dark);
+            background: var(--terracotta);
+            color: var(--cream);
             padding: var(--space-sm) var(--space-lg);
             border-radius: var(--radius-full);
             font-weight: 600;
@@ -251,18 +251,18 @@
         }
 
         .nav-cta:hover {
-            background: var(--gold-light);
+            background: var(--terracotta-light);
             transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(191, 166, 122, 0.4);
+            box-shadow: 0 4px 20px rgba(240, 101, 67, 0.4);
         }
 
         .header.scrolled .nav-cta {
-            background: var(--olive);
+            background: var(--terracotta);
             color: var(--cream);
         }
 
         .header.scrolled .nav-cta:hover {
-            background: var(--olive-light);
+            background: var(--terracotta-light);
         }
 
         /* Mobile menu toggle */
@@ -977,168 +977,6 @@
         }
 
         /* ══════════════════════════════════════════════════════════════
-           CONTACT SECTION
-        ══════════════════════════════════════════════════════════════ */
-
-        .contact {
-            padding: var(--space-5xl) var(--space-2xl);
-            background: var(--cream);
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: var(--space-4xl);
-            max-width: 1100px;
-            margin: 0 auto;
-            align-items: start;
-        }
-
-        .contact-info h2 {
-            font-size: 2.5rem;
-            font-weight: 400;
-            margin-bottom: var(--space-md);
-        }
-
-        .contact-info h2 em {
-            font-style: italic;
-            color: var(--olive);
-        }
-
-        .contact-info > p {
-            font-size: 1.1rem;
-            color: var(--earth);
-            margin-bottom: var(--space-2xl);
-        }
-
-        .contact-details {
-            list-style: none;
-        }
-
-        .contact-details li {
-            display: flex;
-            align-items: flex-start;
-            gap: var(--space-md);
-            margin-bottom: var(--space-lg);
-            padding: var(--space-md);
-            background: white;
-            border-radius: var(--radius-md);
-            transition: var(--transition-base);
-        }
-
-        .contact-details li:hover {
-            box-shadow: var(--shadow-soft);
-        }
-
-        .contact-details-icon {
-            width: 44px;
-            height: 44px;
-            background: var(--sage-mist);
-            border-radius: var(--radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .contact-details-icon svg {
-            width: 20px;
-            height: 20px;
-            color: var(--olive);
-        }
-
-        .contact-details-text {
-            font-size: 0.95rem;
-        }
-
-        .contact-details-text strong {
-            display: block;
-            font-weight: 600;
-            color: var(--olive-deep);
-            margin-bottom: var(--space-xs);
-        }
-
-        .contact-form-wrapper {
-            background: white;
-            border-radius: var(--radius-xl);
-            padding: var(--space-2xl);
-            box-shadow: var(--shadow-medium);
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-lg);
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-md);
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-sm);
-        }
-
-        .form-group.full-width {
-            grid-column: span 2;
-        }
-
-        .form-label {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--olive-deep);
-            letter-spacing: 0.02em;
-        }
-
-        .form-input,
-        .form-textarea {
-            padding: var(--space-md);
-            background: var(--cream);
-            border: 2px solid var(--cream-dark);
-            border-radius: var(--radius-md);
-            font-family: var(--font-body);
-            font-size: 1rem;
-            color: var(--bark);
-            transition: var(--transition-base);
-        }
-
-        .form-input:focus,
-        .form-textarea:focus {
-            outline: none;
-            border-color: var(--olive);
-            background: white;
-        }
-
-        .form-textarea {
-            min-height: 140px;
-            resize: vertical;
-        }
-
-        .form-submit {
-            padding: var(--space-md) var(--space-2xl);
-            background: var(--olive);
-            color: var(--cream);
-            border: none;
-            border-radius: var(--radius-full);
-            font-family: var(--font-body);
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition-base);
-            align-self: flex-start;
-        }
-
-        .form-submit:hover {
-            background: var(--olive-light);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(92, 107, 74, 0.3);
-        }
-
-        /* ══════════════════════════════════════════════════════════════
            FOOTER
         ══════════════════════════════════════════════════════════════ */
 
@@ -1328,19 +1166,6 @@
                 flex-direction: column;
             }
 
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: var(--space-2xl);
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-
-            .form-group.full-width {
-                grid-column: span 1;
-            }
-
             .footer-main {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -1371,9 +1196,7 @@
         </a>
         <nav class="nav">
             <a href="/blog/" class="nav-link">Blog</a>
-            <a href="#categorie" class="nav-link">Guide</a>
             <a href="/servizi/" class="nav-link">Servizi</a>
-            <a href="#contatti" class="nav-link">Contatti</a>
             <a href="/blog/" class="nav-cta">Esplora le Guide</a>
         </nav>
         <button class="menu-toggle" aria-label="Menu">
@@ -1575,66 +1398,6 @@
             </div>
         </section>
 
-        <!-- Contact -->
-        <section class="contact" id="contatti">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h2>Hai una <em>domanda?</em></h2>
-                    <p>Se hai bisogno di chiarimenti o vuoi suggerire un tema per un nuovo articolo, scrivici. Siamo qui per aiutarti.</p>
-
-                    <ul class="contact-details">
-                        <li>
-                            <div class="contact-details-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                            </div>
-                            <div class="contact-details-text">
-                                <strong>Email</strong>
-                                info@bonusimmobiliare.it
-                            </div>
-                        </li>
-                        <li>
-                            <div class="contact-details-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <path d="M12 6v6l4 2"/>
-                                </svg>
-                            </div>
-                            <div class="contact-details-text">
-                                <strong>Risposta</strong>
-                                Entro 24-48 ore lavorative
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label class="form-label" for="name">Nome</label>
-                                <input type="text" id="name" name="name" class="form-input" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label" for="email">Email</label>
-                                <input type="email" id="email" name="email" class="form-input" required>
-                            </div>
-                        </div>
-                        <div class="form-group full-width">
-                            <label class="form-label" for="subject">Oggetto</label>
-                            <input type="text" id="subject" name="subject" class="form-input" required>
-                        </div>
-                        <div class="form-group full-width">
-                            <label class="form-label" for="message">Messaggio</label>
-                            <textarea id="message" name="message" class="form-textarea" required></textarea>
-                        </div>
-                        <button type="submit" class="form-submit">Invia Messaggio</button>
-                    </form>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -1672,7 +1435,6 @@
                     <h4>Info</h4>
                     <ul>
                         <li><a href="/chi-siamo/">Chi Siamo</a></li>
-                        <li><a href="#contatti">Contatti</a></li>
                         <li><a href="/privacy/">Privacy Policy</a></li>
                     </ul>
                 </nav>
@@ -1728,17 +1490,6 @@
                 // TODO: Implement newsletter signup API
                 alert('Grazie per l\'iscrizione! Ti terremo aggiornato.');
                 newsletterForm.reset();
-            });
-        }
-
-        // Contact form
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                // TODO: Implement contact form API
-                alert('Messaggio inviato! Ti risponderemo al più presto.');
-                contactForm.reset();
             });
         }
 
