@@ -49,6 +49,11 @@ bonusimmobiliare/
 │   │   └── articles.json   # Articles manifest
 │   ├── servizi/            # Services slider
 │   │   └── index.html      # Dokicasa partner referral
+│   ├── logo/               # Logo assets
+│   │   ├── logo_dark_bg.svg    # Icona per sfondo scuro
+│   │   ├── logo_light_bg.svg   # Icona per sfondo chiaro
+│   │   ├── logo_text_dark.svg  # Testo per sfondo scuro
+│   │   └── logo_text_light.svg # Testo per sfondo chiaro
 │   └── js/                 # JavaScript
 │       └── blog.js         # Dynamic blog loader
 ├── functions/              # Cloudflare Workers
@@ -65,9 +70,10 @@ bonusimmobiliare/
 - [x] Blog index con dynamic loading da JSON
 - [x] Template articolo blog (TOC, CTA sidebar, FAQ)
 - [x] Slider servizi partner Dokicasa
-- [x] Form contatti (UI only)
 - [x] Newsletter signup (UI only)
 - [x] Middleware noindex per preview domains
+- [x] Logo SVG con switching dark/light su scroll
+- [x] Nuvolette animate fluttuanti nell'hero
 
 ## Todo (v2)
 - [ ] Creare contenuti reali per gli articoli
@@ -79,6 +85,10 @@ bonusimmobiliare/
 - [ ] Calcolatori interattivi
 
 ## Cambiamenti Recenti
+- 2026-01-20: Logo SVG implementati (icona + testo) con switching dark/light
+- 2026-01-20: Nuvolette animate aggiunte all'hero
+- 2026-01-20: Navbar semplificata, rimossa sezione contatti
+- 2026-01-20: Palette aggiornata (terracotta #F06543, stone #DAD7CD)
 - 2026-01-20: Progetto creato, homepage, blog, servizi slider, deploy Cloudflare
 
 ## Blockers
@@ -91,4 +101,4 @@ bonusimmobiliare/
 
 ---
 **Last Update:** 2026-01-20
-**Version:** 1.2.0
+**Version:** 1.3.0
