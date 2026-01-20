@@ -4,14 +4,14 @@
 - Language: HTML/CSS/JS
 - Test: no
 - Env Vars: no (per ora)
-- Billing: no
+- Billing: yes
 
 ## Obiettivo
 Blog immobiliare italiano focalizzato su articoli informativi riguardo affitto e compravendita. Target: utenti che cercano informazioni pratiche sul mercato immobiliare italiano.
 
 ## Status
 - Fase: development
-- Ultimo lavoro: 2026-01-20
+- Ultimo lavoro: 2026-01-21
 
 ## Stack
 - **Frontend:** HTML5 + CSS3 + Vanilla JS
@@ -46,7 +46,8 @@ bonusimmobiliare/
 │   ├── blog/               # Blog section
 │   │   ├── index.html      # Blog listing (dynamic)
 │   │   ├── _template.html  # Article template
-│   │   └── articles.json   # Articles manifest
+│   │   ├── articles.json   # Articles manifest
+│   │   └── canone-concordato-{citta}/ # Articoli per città
 │   ├── servizi/            # Services slider
 │   │   └── index.html      # Dokicasa partner referral
 │   ├── logo/               # Logo assets
@@ -74,9 +75,10 @@ bonusimmobiliare/
 - [x] Middleware noindex per preview domains
 - [x] Logo SVG con switching dark/light su scroll
 - [x] Nuvolette animate fluttuanti nell'hero
+- [x] Serie articoli canone concordato (6 città: Milano, Roma, Napoli, Torino, Firenze, Bologna)
 
 ## Todo (v2)
-- [ ] Creare contenuti reali per gli articoli
+- [ ] Contenuti per articoli placeholder (caparra, mutuo, compromesso)
 - [ ] Setup D1 database per leads
 - [ ] Configurare email marketing (Brevo)
 - [ ] Setup dominio bonusimmobiliare.it
@@ -85,6 +87,8 @@ bonusimmobiliare/
 - [ ] Calcolatori interattivi
 
 ## Cambiamenti Recenti
+- 2026-01-21: Serie articoli canone concordato per città (Milano, Roma, Napoli, Torino, Firenze, Bologna) con CTA Dokicasa
+- 2026-01-21: articles.json aggiornato con 6 nuovi articoli e sezione "series"
 - 2026-01-20: Logo SVG implementati (icona + testo) con switching dark/light
 - 2026-01-20: Nuvolette animate aggiunte all'hero
 - 2026-01-20: Navbar semplificata, rimossa sezione contatti
@@ -100,5 +104,5 @@ bonusimmobiliare/
 - Focus su contenuti informativi per affitto e compravendita
 
 ---
-**Last Update:** 2026-01-20
-**Version:** 1.3.0
+**Last Update:** 2026-01-21
+**Version:** 1.6.0

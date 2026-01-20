@@ -23,6 +23,78 @@
       "keywords": "canone concordato cedolare secca 10 vantaggi fiscali calcolo"
     },
     {
+      "slug": "canone-concordato-milano",
+      "title": "Canone Concordato Milano 2025: Guida Completa",
+      "excerpt": "Come calcolare il canone concordato a Milano, zone omogenee, vantaggi fiscali e procedura step-by-step per la cedolare secca 10%.",
+      "category": "affitto",
+      "categoryLabel": "Affitto",
+      "readTime": "12 min",
+      "featured": true,
+      "date": "2026-01-21",
+      "keywords": "canone concordato milano calcolo cedolare secca zone omogenee accordo territoriale",
+      "series": "canone-concordato-citta"
+    },
+    {
+      "slug": "canone-concordato-roma",
+      "title": "Canone Concordato Roma 2025: Guida Completa",
+      "excerpt": "Come calcolare il canone concordato a Roma, microzone OMI, vantaggi fiscali e procedura step-by-step per la cedolare secca 10%.",
+      "category": "affitto",
+      "categoryLabel": "Affitto",
+      "readTime": "12 min",
+      "featured": true,
+      "date": "2026-01-21",
+      "keywords": "canone concordato roma calcolo cedolare secca zone omi accordo territoriale",
+      "series": "canone-concordato-citta"
+    },
+    {
+      "slug": "canone-concordato-napoli",
+      "title": "Canone Concordato Napoli 2025: Guida Completa",
+      "excerpt": "Come calcolare il canone concordato a Napoli, zone omogenee, vantaggi fiscali e procedura step-by-step per la cedolare secca 10%.",
+      "category": "affitto",
+      "categoryLabel": "Affitto",
+      "readTime": "12 min",
+      "featured": false,
+      "date": "2026-01-21",
+      "keywords": "canone concordato napoli calcolo cedolare secca zone omogenee accordo territoriale",
+      "series": "canone-concordato-citta"
+    },
+    {
+      "slug": "canone-concordato-torino",
+      "title": "Canone Concordato Torino 2025: Guida Completa",
+      "excerpt": "Come calcolare il canone concordato a Torino, zone omogenee, vantaggi fiscali e procedura step-by-step per la cedolare secca 10%.",
+      "category": "affitto",
+      "categoryLabel": "Affitto",
+      "readTime": "12 min",
+      "featured": false,
+      "date": "2026-01-21",
+      "keywords": "canone concordato torino calcolo cedolare secca zone omogenee accordo territoriale",
+      "series": "canone-concordato-citta"
+    },
+    {
+      "slug": "canone-concordato-firenze",
+      "title": "Canone Concordato Firenze 2025: Guida Completa",
+      "excerpt": "Come calcolare il canone concordato a Firenze, zone omogenee, vantaggi fiscali e procedura step-by-step per la cedolare secca 10%.",
+      "category": "affitto",
+      "categoryLabel": "Affitto",
+      "readTime": "12 min",
+      "featured": false,
+      "date": "2026-01-21",
+      "keywords": "canone concordato firenze calcolo cedolare secca zone omogenee accordo territoriale",
+      "series": "canone-concordato-citta"
+    },
+    {
+      "slug": "canone-concordato-bologna",
+      "title": "Canone Concordato Bologna 2025: Guida Completa",
+      "excerpt": "Come calcolare il canone concordato a Bologna, zone omogenee, vantaggi fiscali e procedura step-by-step per la cedolare secca 10%.",
+      "category": "affitto",
+      "categoryLabel": "Affitto",
+      "readTime": "12 min",
+      "featured": false,
+      "date": "2026-01-21",
+      "keywords": "canone concordato bologna calcolo cedolare secca zone omogenee accordo territoriale",
+      "series": "canone-concordato-citta"
+    },
+    {
       "slug": "caparra-confirmatoria-penitenziale",
       "title": "Caparra Confirmatoria vs Penitenziale: Le Differenze",
       "excerpt": "Due tipi di caparra con conseguenze molto diverse. Quale scegliere e perché.",
@@ -87,6 +159,13 @@
       "id": "fiscale",
       "label": "Fiscale",
       "description": "Tasse, detrazioni, agevolazioni e tutto quello che riguarda il fisco immobiliare."
+    }
+  ],
+  "series": [
+    {
+      "id": "canone-concordato-citta",
+      "title": "Canone Concordato per Città",
+      "description": "Guide specifiche per calcolare il canone concordato nelle principali città italiane."
     }
   ]
 }
