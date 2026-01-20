@@ -21,8 +21,9 @@ Blog immobiliare italiano focalizzato su articoli informativi riguardo affitto e
 - **Dominio:** bonusimmobiliare.it (da collegare)
 
 ## Brand Identity
-- **Colori primari:** Verde oliva (#5C6B4A), Cream (#FAF7F2), Terracotta (#C4724C)
-- **Colori secondari:** Gold (#BFA67A), Sage (#D4DEC9), Bark (#4A3F35)
+- **Design System:** [docs/design-system.md](docs/design-system.md)
+- **Colori primari:** Verde oliva (#5C6B4A), Cream (#FAF7F2), Terracotta (#F06543)
+- **Colori secondari:** Gold (#BFA67A), Sage (#D4DEC9), Stone (#DAD7CD), Bark (#4A3F35)
 - **Font display:** Fraunces (serif)
 - **Font body:** Source Serif 4 (serif)
 - **Stile:** Caldo, editoriale, accogliente
@@ -54,6 +55,7 @@ bonusimmobiliare/
 │   ├── _middleware.ts      # Noindex for .pages.dev
 │   └── api/                # API endpoints (future)
 ├── docs/                   # Documentazione
+│   └── design-system.md    # Palette, typography, components
 ├── memory/                 # Handoff sessioni
 └── context.md              # Questo file
 ```
@@ -89,4 +91,4 @@ bonusimmobiliare/
 
 ---
 **Last Update:** 2026-01-20
-**Version:** 1.1.0
+**Version:** 1.2.0
