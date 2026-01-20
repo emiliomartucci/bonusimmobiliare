@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 40">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500&amp;family=Source+Serif+4:ital@1&amp;display=swap');
+      .bonus { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 28px; fill: #3D4832; }
+      .immobiliare { font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 28px; fill: #5C6B4A; }
+    </style>
+  </defs>
+  <text x="0" y="30" class="bonus">Bonus</text>
+  <text x="90" y="30" class="immobiliare">Immobiliare</text>
+</svg>

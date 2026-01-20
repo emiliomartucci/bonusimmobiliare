@@ -171,25 +171,19 @@
         }
 
         .logo {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--olive-deep);
             display: flex;
             align-items: center;
             gap: var(--space-sm);
         }
 
-        .logo-icon {
-            width: 30px;
-            height: 30px;
-            background: var(--gold);
-            border-radius: var(--radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            color: var(--olive-dark);
+        .logo-img {
+            height: 38px;
+            width: auto;
+            transition: var(--transition-base);
+        }
+
+        .logo:hover .logo-img {
+            transform: scale(1.02);
         }
 
         .nav {
@@ -693,26 +687,14 @@
         }
 
         .footer-logo {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--cream);
             display: inline-flex;
             align-items: center;
-            gap: var(--space-sm);
             margin-bottom: var(--space-lg);
         }
 
-        .footer-logo-icon {
-            width: 28px;
-            height: 28px;
-            background: var(--gold);
-            border-radius: var(--radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.9rem;
-            color: var(--olive-dark);
+        .footer-logo-img {
+            height: 36px;
+            width: auto;
         }
 
         .footer-links {
@@ -797,8 +779,7 @@
     <!-- Header -->
     <header class="header">
         <a href="/" class="logo">
-            <span class="logo-icon">B</span>
-            Bonus Immobiliare
+            <img src="/logo/logo_light_bg.svg" alt="Bonus Immobiliare" class="logo-img">
         </a>
         <nav class="nav">
             <a href="/" class="nav-link">Home</a>
@@ -886,8 +867,7 @@
     <!-- Footer -->
     <footer class="footer">
         <a href="/" class="footer-logo">
-            <span class="footer-logo-icon">B</span>
-            Bonus Immobiliare
+            <img src="/logo/logo_dark_bg.svg" alt="Bonus Immobiliare" class="footer-logo-img">
         </a>
         <div class="footer-links">
             <a href="/">Home</a>
