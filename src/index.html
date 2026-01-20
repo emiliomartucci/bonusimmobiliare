@@ -177,25 +177,32 @@
             gap: var(--space-sm);
         }
 
-        .logo-img {
-            height: 44px;
+        .logo-icon {
+            height: 40px;
             width: auto;
-            transition: var(--transition-base);
         }
 
-        .logo-img.logo-light {
+        .logo-text {
+            height: 28px;
+            width: auto;
+        }
+
+        .logo-icon.logo-light,
+        .logo-text.logo-light {
             display: none;
         }
 
-        .header.scrolled .logo-img.logo-dark {
+        .header.scrolled .logo-icon.logo-dark,
+        .header.scrolled .logo-text.logo-dark {
             display: none;
         }
 
-        .header.scrolled .logo-img.logo-light {
+        .header.scrolled .logo-icon.logo-light,
+        .header.scrolled .logo-text.logo-light {
             display: block;
         }
 
-        .logo:hover .logo-img {
+        .logo:hover .logo-icon {
             transform: scale(1.02);
         }
 
@@ -1175,8 +1182,10 @@
     <!-- Header -->
     <header class="header" id="header">
         <a href="/" class="logo">
-            <img src="/logo/logo_dark_bg.svg" alt="Bonus Immobiliare" class="logo-img logo-dark">
-            <img src="/logo/logo_light_bg.svg" alt="Bonus Immobiliare" class="logo-img logo-light">
+            <img src="/logo/logo_dark_bg.svg" alt="" class="logo-icon logo-dark">
+            <img src="/logo/logo_light_bg.svg" alt="" class="logo-icon logo-light">
+            <img src="/logo/logo_text_dark.svg" alt="Bonus Immobiliare" class="logo-text logo-dark">
+            <img src="/logo/logo_text_light.svg" alt="Bonus Immobiliare" class="logo-text logo-light">
         </a>
         <nav class="nav">
             <a href="/blog/" class="nav-link">Blog</a>

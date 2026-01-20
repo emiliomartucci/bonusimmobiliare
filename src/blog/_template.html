@@ -176,13 +176,17 @@
             gap: var(--space-sm);
         }
 
-        .logo-img {
-            height: 38px;
+        .logo-icon {
+            height: 34px;
             width: auto;
-            transition: var(--transition-base);
         }
 
-        .logo:hover .logo-img {
+        .logo-text {
+            height: 22px;
+            width: auto;
+        }
+
+        .logo:hover .logo-icon {
             transform: scale(1.02);
         }
 
@@ -779,7 +783,8 @@
     <!-- Header -->
     <header class="header">
         <a href="/" class="logo">
-            <img src="/logo/logo_light_bg.svg" alt="Bonus Immobiliare" class="logo-img">
+            <img src="/logo/logo_light_bg.svg" alt="" class="logo-icon">
+            <img src="/logo/logo_text_light.svg" alt="Bonus Immobiliare" class="logo-text">
         </a>
         <nav class="nav">
             <a href="/" class="nav-link">Home</a>
