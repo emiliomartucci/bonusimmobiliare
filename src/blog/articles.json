@@ -2,14 +2,15 @@
   "articles": [
     {
       "slug": "proposta-acquisto-vincolante",
-      "title": "La Proposta di Acquisto: Quando Diventa Vincolante?",
-      "excerpt": "Tutto quello che devi sapere prima di firmare una proposta di acquisto immobiliare: tempistiche, clausole essenziali e come tutelarti.",
+      "title": "Proposta di Acquisto: Quando Diventa Vincolante?",
+      "excerpt": "Quando la proposta di acquisto diventa contratto vincolante, la revoca, cosa succede dopo l'accettazione e clausole essenziali da inserire.",
       "category": "compravendita",
       "categoryLabel": "Compravendita",
       "readTime": "10 min",
       "featured": true,
-      "date": "2026-01-20",
-      "keywords": "proposta acquisto vincolante tempistiche clausole tutela"
+      "date": "2026-01-24",
+      "keywords": "proposta acquisto vincolante accettazione revoca clausole assegno",
+      "series": "compravendita-guide"
     },
     {
       "slug": "canone-concordato",
@@ -96,47 +97,51 @@
     },
     {
       "slug": "caparra-confirmatoria-penitenziale",
-      "title": "Caparra Confirmatoria vs Penitenziale: Le Differenze",
-      "excerpt": "Due tipi di caparra con conseguenze molto diverse. Quale scegliere e perché.",
-      "category": "legale",
-      "categoryLabel": "Legale",
-      "readTime": "8 min",
-      "featured": false,
-      "date": "2026-01-18",
-      "keywords": "caparra confirmatoria penitenziale differenze conseguenze"
+      "title": "Caparra Confirmatoria e Penitenziale: Le Differenze",
+      "excerpt": "Guida completa alle differenze tra caparra confirmatoria e penitenziale: conseguenze inadempimento, recesso e come scrivere la clausola.",
+      "category": "compravendita",
+      "categoryLabel": "Compravendita",
+      "readTime": "10 min",
+      "featured": true,
+      "date": "2026-01-24",
+      "keywords": "caparra confirmatoria penitenziale differenze inadempimento recesso clausola",
+      "series": "compravendita-guide"
     },
     {
       "slug": "clausola-sospensiva-mutuo",
-      "title": "Clausola Sospensiva Mutuo: Come Scriverla",
-      "excerpt": "Come formulare la clausola sospensiva, importo da indicare, tempistiche e modello pronto.",
+      "title": "Clausola Sospensiva Mutuo: Guida Completa",
+      "excerpt": "Come scrivere la clausola sospensiva mutuo, dove inserirla (proposta vs preliminare), tempistiche consigliate e modello pronto all'uso.",
       "category": "compravendita",
       "categoryLabel": "Compravendita",
-      "readTime": "11 min",
-      "featured": false,
-      "date": "2026-01-17",
-      "keywords": "clausola sospensiva mutuo proposta acquisto modello"
+      "readTime": "8 min",
+      "featured": true,
+      "date": "2026-01-24",
+      "keywords": "clausola sospensiva mutuo proposta preliminare modello tempistiche",
+      "series": "compravendita-guide"
     },
     {
       "slug": "mutuo-negato-cosa-fare",
-      "title": "Cosa Succede se la Banca Nega il Mutuo?",
-      "excerpt": "Rischi senza clausola sospensiva, come tutelarsi e verifica pre-approvazione.",
+      "title": "Mutuo Negato: Cosa Fare e Come Tutelare la Caparra",
+      "excerpt": "Perché la banca nega il mutuo, cosa succede alla caparra senza clausola sospensiva, come prevenire e alternative al rifiuto.",
       "category": "compravendita",
       "categoryLabel": "Compravendita",
       "readTime": "9 min",
       "featured": false,
-      "date": "2026-01-16",
-      "keywords": "mutuo negato banca rifiuto clausola sospensiva tutela"
+      "date": "2026-01-24",
+      "keywords": "mutuo negato caparra clausola sospensiva banca rifiuto alternative",
+      "series": "compravendita-guide"
     },
     {
       "slug": "compromesso-notaio-agenzia",
-      "title": "Compromesso: dal Notaio o in Agenzia?",
-      "excerpt": "Differenze tra trascrizione e registrazione, costi effettivi, quando la trascrizione è indispensabile.",
-      "category": "legale",
-      "categoryLabel": "Legale",
+      "title": "Compromesso dal Notaio o in Agenzia: Quale Scegliere?",
+      "excerpt": "Differenze tra compromesso dal notaio e in agenzia: costi, trascrizione, registrazione e quando conviene uno o l'altro.",
+      "category": "compravendita",
+      "categoryLabel": "Compravendita",
       "readTime": "10 min",
       "featured": false,
-      "date": "2026-01-15",
-      "keywords": "compromesso notaio agenzia trascrizione registrazione costi"
+      "date": "2026-01-24",
+      "keywords": "compromesso notaio agenzia trascrizione registrazione costi preliminare",
+      "series": "compravendita-guide"
     }
   ],
   "categories": [
@@ -166,6 +171,11 @@
       "id": "canone-concordato-citta",
       "title": "Canone Concordato per Città",
       "description": "Guide specifiche per calcolare il canone concordato nelle principali città italiane."
+    },
+    {
+      "id": "compravendita-guide",
+      "title": "Guide Compravendita",
+      "description": "Dalla proposta al rogito: tutto quello che serve per comprare casa in sicurezza."
     }
   ]
 }

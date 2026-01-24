@@ -1,0 +1,11 @@
+# Bonus Immobiliare - robots.txt
+# https://bonusimmobiliare.it
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://bonusimmobiliare.it/sitemap.xml
+
+# AI/LLM context
+# See llms.txt for AI-readable site description
