@@ -1,0 +1,17 @@
+# Bonus Immobiliare - Cloudflare Pages Configuration
+# v1.0.0 - 2026-01-24
+
+name = "bonusimmobiliare"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "./src"
+
+# D1 Database for lead tracking
+# Create database: wrangler d1 create bonusimmobiliare-leads
+# Then update database_id below
+[[d1_databases]]
+binding = "DB"
+database_name = "bonusimmobiliare-leads"
+database_id = "07147262-e13d-4e55-9495-9f9b5bb76f58"
+
+# After creating D1, run schema:
+# wrangler d1 execute bonusimmobiliare-leads --file=src/scripts/schema.sql

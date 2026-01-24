@@ -24,9 +24,10 @@ Blog immobiliare italiano focalizzato su articoli informativi riguardo affitto e
 ## Stack
 - **Frontend:** HTML5 + CSS3 + Vanilla JS
 - **Hosting:** Cloudflare Pages (git-connected)
-- **Backend:** Cloudflare Workers (middleware noindex)
-- **Email:** Da configurare (v2)
-- **Dominio:** bonusimmobiliare.it (da collegare)
+- **Backend:** Cloudflare Workers (middleware noindex, API tracking)
+- **Database:** Cloudflare D1 (bonusimmobiliare-leads)
+- **Email:** Da configurare (v3)
+- **Dominio:** bonusimmobiliare.it (attivo)
 
 ## Brand Identity
 - **Design System:** [docs/design-system.md](docs/design-system.md)
@@ -68,12 +69,17 @@ bonusimmobiliare/
 │   ├── privacy/            # Privacy policy GDPR
 │   ├── cookie/             # Cookie policy
 │   ├── logo/               # Logo assets (SVG)
-│   └── js/                 # JavaScript
-│       ├── blog.js         # Dynamic blog loader
-│       └── cookie-consent.js # Cookie consent banner
+│   ├── js/                 # JavaScript
+│   │   ├── blog.js         # Dynamic blog loader
+│   │   ├── cookie-consent.js # Cookie consent banner
+│   │   └── dokicasa-tracking.js # Click tracking
+│   └── scripts/            # Database scripts
+│       └── schema.sql      # D1 schema
 ├── functions/              # Cloudflare Workers
 │   ├── _middleware.ts      # Noindex for .pages.dev
-│   └── api/                # API endpoints (future)
+│   └── api/
+│       └── dokicasa-click.js # Click tracking API
+├── wrangler.toml           # Cloudflare config (D1 binding)
 ├── docs/                   # Documentazione
 │   └── design-system.md    # Palette, typography, components
 ├── memory/                 # Handoff sessioni
@@ -94,14 +100,17 @@ bonusimmobiliare/
 - [x] Cookie policy e consent banner (/cookie/, js/cookie-consent.js)
 - [x] SEO files (sitemap.xml, robots.txt, llms.txt)
 - [x] Serie articoli compravendita (5 articoli: caparra, clausola sospensiva, compromesso, proposta acquisto, mutuo negato)
+- [x] Dokicasa click tracking (D1 database + API + frontend tracking)
 
 ## Todo (v2)
-- [ ] Setup D1 database per leads
+- [ ] Creare D1 database e aggiornare wrangler.toml con database_id
+- [ ] Eseguire schema.sql su D1
 
 ## Todo (v3)
 - [ ] Calcolatori interattivi
 
 ## Cambiamenti Recenti
+- 2026-01-24: Dokicasa click tracking (D1 schema, API endpoint, frontend tracking)
 - 2026-01-24: Privacy policy, cookie policy e consent banner GDPR
 - 2026-01-24: SEO files (sitemap.xml, robots.txt, llms.txt)
 - 2026-01-24: 5 articoli compravendita (caparra, clausola sospensiva, compromesso, proposta acquisto, mutuo negato)
@@ -124,4 +133,4 @@ bonusimmobiliare/
 
 ---
 **Last Update:** 2026-01-24
-**Version:** 1.8.0
+**Version:** 1.9.0
