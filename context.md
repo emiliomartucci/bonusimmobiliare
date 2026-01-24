@@ -103,8 +103,7 @@ bonusimmobiliare/
 - [x] Dokicasa click tracking (D1 database + API + frontend tracking)
 
 ## Todo (v2)
-- [ ] Creare D1 database e aggiornare wrangler.toml con database_id
-- [ ] Eseguire schema.sql su D1
+✅ Completato
 
 ## Todo (v3)
 - [ ] Calcolatori interattivi
