@@ -89,7 +89,7 @@
       --gold: #BFA67A;
       --gold-light: #D4C4A0;
       --bark: #4A3F35;
-      --earth: #8B8178;
+      --earth: #6B5F56;
       --white: #ffffff;
       /* Milano accent - steel blue */
       --city-accent: #2B6CB0;
@@ -175,7 +175,7 @@
     .faq-item { background: var(--white); margin-bottom: 1px; overflow: hidden; border-radius: 4px; }
     .faq-item:first-child { border-radius: 8px 8px 0 0; }
     .faq-item:last-child { border-radius: 0 0 8px 8px; }
-    .faq-question { padding: 1.25rem 1.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.3s; }
+    .faq-question { width: 100%; padding: 1.25rem 1.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.3s; background: none; border: none; text-align: left; font: inherit; }
     .faq-question:hover { background: var(--cream); }
     .faq-question h3 { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 500; color: var(--olive-deep); margin: 0; }
     .faq-icon { width: 20px; height: 20px; position: relative; flex-shrink: 0; }
@@ -191,10 +191,18 @@
     .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
     .footer-brand { display: flex; align-items: center; gap: 2rem; }
     .footer-logo { height: 28px; opacity: 0.9; }
-    .footer-link { color: rgba(250, 247, 242, 0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
+    .footer-link { color: rgba(250, 247, 242, 0.85); text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
     .footer-link:hover { color: var(--gold); }
     .footer-disclaimer { font-size: 0.8rem; color: rgba(250, 247, 242, 0.5); }
     .footer-disclaimer a { color: rgba(250, 247, 242, 0.7); }
+
+    a:focus-visible,
+    button:focus-visible,
+    .faq-question:focus-visible {
+      outline: 3px solid var(--terracotta);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
 
     @keyframes fadeDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes floatUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
@@ -343,10 +351,10 @@
         <p class="section-label">FAQ</p>
         <h2 class="section-title">Domande frequenti sul canone concordato a Milano</h2>
       </div>
-      <div class="faq-item"><div class="faq-question"><h3>Cos'e il canone concordato a Milano?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Il canone concordato e un contratto di locazione dove l'affitto viene determinato in base agli accordi territoriali. Milano, come comune ad alta tensione abitativa, offre significativi vantaggi fiscali per chi sceglie questa formula.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><h3>Quanto risparmio con la cedolare secca al 10%?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Con la cedolare secca al 10% su un affitto di 1.000 euro/mese, risparmi circa 1.320 euro all'anno di tasse. A questo si aggiunge la riduzione IMU che a Milano puo arrivare fino al 75%.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><h3>Quali zone di Milano hanno i valori piu alti?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Le zone centrali di Milano (Centro Storico, Brera, Duomo, Quadrilatero) hanno valori massimi piu elevati rispetto alle zone periferiche come Quarto Oggiaro o Corvetto.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><h3>Come funziona l'attestazione a Milano?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Per accedere ai benefici fiscali serve l'attestazione di conformita da un'organizzazione firmataria dell'accordo territoriale di Milano.</p></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-1"><h3>Cos'è il canone concordato a Milano?</h3><span class="faq-icon" aria-hidden="true"></span></button><div class="faq-answer" id="faq-1"><p>Il canone concordato è un contratto di locazione dove l'affitto viene determinato in base agli accordi territoriali. Milano, come comune ad alta tensione abitativa, offre significativi vantaggi fiscali per chi sceglie questa formula.</p></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-2"><h3>Quanto risparmio con la cedolare secca al 10%?</h3><span class="faq-icon" aria-hidden="true"></span></button><div class="faq-answer" id="faq-2"><p>Con la cedolare secca al 10% su un affitto di 1.000 euro/mese, risparmi circa 1.320 euro all'anno di tasse. A questo si aggiunge la riduzione IMU che a Milano può arrivare fino al 75%.</p></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-3"><h3>Quali zone di Milano hanno i valori più alti?</h3><span class="faq-icon" aria-hidden="true"></span></button><div class="faq-answer" id="faq-3"><p>Le zone centrali di Milano (Centro Storico, Brera, Duomo, Quadrilatero) hanno valori massimi più elevati rispetto alle zone periferiche come Quarto Oggiaro o Corvetto.</p></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-4"><h3>Come funziona l'attestazione a Milano?</h3><span class="faq-icon" aria-hidden="true"></span></button><div class="faq-answer" id="faq-4"><p>Per accedere ai benefici fiscali serve l'attestazione di conformità da un'organizzazione firmataria dell'accordo territoriale di Milano.</p></div></div>
     </div>
   </section>
 
@@ -368,8 +376,17 @@
       q.addEventListener('click', () => {
         const item = q.parentElement;
         const wasOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-        if (!wasOpen) item.classList.add('open');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          const btn = i.querySelector('.faq-question');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+        if (!wasOpen) {
+          item.classList.add('open');
+          q.setAttribute('aria-expanded', 'true');
+        } else {
+          q.setAttribute('aria-expanded', 'false');
+        }
       });
     });
   </script>

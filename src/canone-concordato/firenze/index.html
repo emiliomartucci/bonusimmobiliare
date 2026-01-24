@@ -48,7 +48,7 @@
       --cream: #FAF7F2; --cream-dark: #F2EDE4; --parchment: #EDE7DB;
       --terracotta: #F06543; --terracotta-light: #F4846A;
       --gold: #BFA67A; --gold-light: #D4C4A0;
-      --bark: #4A3F35; --earth: #8B8178; --white: #ffffff;
+      --bark: #4A3F35; --earth: #6B5F56; --white: #ffffff;
       /* Firenze - terracotta/olive tones */
       --city-accent: #C45D3E; --city-dark: #8B4513;
     }
@@ -147,10 +147,18 @@
     .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
     .footer-brand { display: flex; align-items: center; gap: 2rem; }
     .footer-logo { height: 28px; opacity: 0.9; }
-    .footer-link { color: rgba(250, 247, 242, 0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
+    .footer-link { color: rgba(250, 247, 242, 0.85); text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
     .footer-link:hover { color: var(--gold); }
     .footer-disclaimer { font-size: 0.8rem; color: rgba(250, 247, 242, 0.5); }
     .footer-disclaimer a { color: rgba(250, 247, 242, 0.7); }
+
+    a:focus-visible,
+    button:focus-visible,
+    .faq-question:focus-visible {
+      outline: 3px solid var(--terracotta);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
 
     @keyframes fadeDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes floatUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
@@ -253,10 +261,10 @@
   <section class="section-faq">
     <div class="faq-container">
       <div class="faq-header"><p class="section-label">FAQ</p><h2 class="section-title">Domande frequenti sul canone concordato a Firenze</h2></div>
-      <div class="faq-item"><div class="faq-question"><h3>Cos'e il canone concordato a Firenze?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Il canone concordato e un contratto di locazione dove l'affitto viene determinato in base agli accordi territoriali. Firenze offre significativi vantaggi fiscali per chi sceglie questa formula.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><h3>Quanto risparmio con la cedolare secca al 10%?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Con la cedolare secca al 10% su un affitto di 900 euro/mese, risparmi circa 1.188 euro all'anno. A questo si aggiunge la riduzione IMU fino al 75%.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><h3>Quali zone di Firenze hanno i valori piu alti?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Le zone centrali come Centro Storico, Santa Croce, San Lorenzo hanno valori massimi piu elevati rispetto alle zone periferiche come Rifredi o Isolotto.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><h3>Serve l'attestazione di un'associazione?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Si, per accedere ai benefici fiscali serve l'attestazione di conformita da un'organizzazione firmataria dell'accordo territoriale di Firenze.</p></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-1"><h3>Cos'e il canone concordato a Firenze?</h3><span class="faq-icon" aria-hidden="true"></span></button><div class="faq-answer" id="faq-1"><p>Il canone concordato e un contratto di locazione dove l'affitto viene determinato in base agli accordi territoriali. Firenze offre significativi vantaggi fiscali per chi sceglie questa formula.</p></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-2"><h3>Quanto risparmio con la cedolare secca al 10%?</h3><span class="faq-icon" aria-hidden="true"></span></button><div class="faq-answer" id="faq-2"><p>Con la cedolare secca al 10% su un affitto di 900 euro/mese, risparmi circa 1.188 euro all'anno. A questo si aggiunge la riduzione IMU fino al 75%.</p></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-3"><h3>Quali zone di Firenze hanno i valori piu alti?</h3><span class="faq-icon" aria-hidden="true"></span></button><div class="faq-answer" id="faq-3"><p>Le zone centrali come Centro Storico, Santa Croce, San Lorenzo hanno valori massimi piu elevati rispetto alle zone periferiche come Rifredi o Isolotto.</p></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-4"><h3>Serve l'attestazione di un'associazione?</h3><span class="faq-icon" aria-hidden="true"></span></button><div class="faq-answer" id="faq-4"><p>Si, per accedere ai benefici fiscali serve l'attestazione di conformita da un'organizzazione firmataria dell'accordo territoriale di Firenze.</p></div></div>
     </div>
   </section>
 
@@ -277,8 +285,16 @@
     document.querySelectorAll('.faq-question').forEach(q => {
       q.addEventListener('click', () => {
         const item = q.parentElement, wasOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-        if (!wasOpen) item.classList.add('open');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!wasOpen) {
+          item.classList.add('open');
+          q.setAttribute('aria-expanded', 'true');
+        } else {
+          q.setAttribute('aria-expanded', 'false');
+        }
       });
     });
   </script>

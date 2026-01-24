@@ -99,7 +99,7 @@
       --gold: #BFA67A;
       --gold-light: #D4C4A0;
       --bark: #4A3F35;
-      --earth: #8B8178;
+      --earth: #6B5F56;
       --white: #ffffff;
     }
 
@@ -604,12 +604,17 @@
     .faq-item:last-child { border-radius: 0 0 8px 8px; }
 
     .faq-question {
+      width: 100%;
+      text-align: left;
       padding: 1.25rem 1.5rem;
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
       transition: background 0.3s;
+      background: none;
+      border: none;
+      font: inherit;
     }
 
     .faq-question:hover {
@@ -704,7 +709,7 @@
     }
 
     .footer-link {
-      color: rgba(250, 247, 242, 0.6);
+      color: rgba(250, 247, 242, 0.85);
       text-decoration: none;
       font-size: 0.85rem;
       transition: color 0.3s;
@@ -721,6 +726,15 @@
 
     .footer-disclaimer a {
       color: rgba(250, 247, 242, 0.7);
+    }
+
+    /* Focus visible */
+    a:focus-visible,
+    button:focus-visible,
+    .faq-question:focus-visible {
+      outline: 3px solid var(--terracotta);
+      outline-offset: 2px;
+      border-radius: 4px;
     }
 
     /* Animations */
@@ -1027,51 +1041,51 @@
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
           <h3>Cos'e il canone concordato a Torino?</h3>
-          <span class="faq-icon"></span>
-        </div>
-        <div class="faq-answer">
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" id="faq-1">
           <p>Il canone concordato e un tipo di contratto di locazione regolamentato dalla Legge 431/98, dove l'importo dell'affitto viene determinato in base agli accordi territoriali tra associazioni di proprietari e inquilini. Torino, come comune ad alta tensione abitativa, offre significativi vantaggi fiscali.</p>
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
           <h3>Quanto risparmio con la cedolare secca al 10%?</h3>
-          <span class="faq-icon"></span>
-        </div>
-        <div class="faq-answer">
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" id="faq-2">
           <p>Con la cedolare secca al 10% (invece del 21% standard) su un affitto di 800 euro/mese, risparmi circa 1.056 euro all'anno di tasse. A questo si aggiunge la riduzione IMU che a Torino puo arrivare fino al 75%.</p>
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
           <h3>Come si calcola il canone concordato a Torino?</h3>
-          <span class="faq-icon"></span>
-        </div>
-        <div class="faq-answer">
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" id="faq-3">
           <p>Il calcolo si basa su: superficie convenzionale dell'immobile, fascia territoriale di Torino (A, B, C, D), caratteristiche dell'immobile (anno costruzione, stato, servizi) e eventuali maggiorazioni. Il calcolatore esegue questo calcolo automaticamente.</p>
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
           <h3>Quali zone di Torino rientrano nel canone concordato?</h3>
-          <span class="faq-icon"></span>
-        </div>
-        <div class="faq-answer">
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" id="faq-4">
           <p>Tutto il territorio comunale di Torino e suddiviso in fasce con valori diversi. Le zone centrali come Centro, Crocetta e San Salvario sono in fascia A, mentre le zone periferiche in fascia C o D.</p>
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
           <h3>Serve l'attestazione di un'associazione?</h3>
-          <span class="faq-icon"></span>
-        </div>
-        <div class="faq-answer">
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" id="faq-5">
           <p>Si, per accedere ai benefici fiscali e necessaria l'attestazione di conformita rilasciata da un'organizzazione firmataria dell'accordo territoriale di Torino. L'attestazione certifica che il contratto rispetta i parametri previsti.</p>
         </div>
       </div>
@@ -1108,9 +1122,16 @@
       question.addEventListener('click', () => {
         const item = question.parentElement;
         const wasOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          const q = i.querySelector('.faq-question');
+          q.setAttribute('aria-expanded', 'false');
+        });
         if (!wasOpen) {
           item.classList.add('open');
+          question.setAttribute('aria-expanded', 'true');
+        } else {
+          question.setAttribute('aria-expanded', 'false');
         }
       });
     });

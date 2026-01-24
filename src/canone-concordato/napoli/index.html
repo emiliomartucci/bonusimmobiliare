@@ -48,7 +48,7 @@
       --cream: #FAF7F2; --cream-dark: #F2EDE4; --parchment: #EDE7DB;
       --terracotta: #F06543; --terracotta-light: #F4846A;
       --gold: #BFA67A; --gold-light: #D4C4A0;
-      --bark: #4A3F35; --earth: #8B8178; --white: #ffffff;
+      --bark: #4A3F35; --earth: #6B5F56; --white: #ffffff;
       /* Napoli - blu mare/arancione */
       --city-accent: #DD6B20; --city-dark: #2B4C7E; --city-blue: #4299E1;
     }
@@ -131,7 +131,7 @@
     .faq-item { background: var(--white); margin-bottom: 1px; overflow: hidden; border-radius: 4px; }
     .faq-item:first-child { border-radius: 8px 8px 0 0; }
     .faq-item:last-child { border-radius: 0 0 8px 8px; }
-    .faq-question { padding: 1.25rem 1.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.3s; }
+    .faq-question { padding: 1.25rem 1.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.3s; background: none; border: none; width: 100%; text-align: left; }
     .faq-question:hover { background: var(--cream); }
     .faq-question h3 { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 500; color: var(--olive-deep); margin: 0; }
     .faq-icon { width: 20px; height: 20px; position: relative; flex-shrink: 0; }
@@ -147,10 +147,18 @@
     .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
     .footer-brand { display: flex; align-items: center; gap: 2rem; }
     .footer-logo { height: 28px; opacity: 0.9; }
-    .footer-link { color: rgba(250, 247, 242, 0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
+    .footer-link { color: rgba(250, 247, 242, 0.85); text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
     .footer-link:hover { color: var(--gold); }
     .footer-disclaimer { font-size: 0.8rem; color: rgba(250, 247, 242, 0.5); }
     .footer-disclaimer a { color: rgba(250, 247, 242, 0.7); }
+
+    a:focus-visible,
+    button:focus-visible,
+    .faq-question:focus-visible {
+      outline: 3px solid var(--terracotta);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
 
     @keyframes fadeDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes floatUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
@@ -252,10 +260,10 @@
   <section class="section-faq">
     <div class="faq-container">
       <div class="faq-header"><p class="section-label">FAQ</p><h2 class="section-title">Domande frequenti sul canone concordato a Napoli</h2></div>
-      <div class="faq-item"><div class="faq-question"><h3>Cos'e il canone concordato a Napoli?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Il canone concordato e un contratto di locazione dove l'affitto viene determinato in base agli accordi territoriali. Napoli offre significativi vantaggi fiscali per chi sceglie questa formula.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><h3>Quanto risparmio con la cedolare secca al 10%?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Con la cedolare secca al 10% su un affitto di 600 euro/mese, risparmi circa 792 euro all'anno. A questo si aggiunge la riduzione IMU fino al 75%.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><h3>Quali sono le zone piu richieste a Napoli?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Le zone di Chiaia, Posillipo, Vomero e Centro Storico hanno valori massimi piu elevati. Le zone vicine alle universita sono ideali per contratti studenteschi.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><h3>Serve l'attestazione di un'associazione?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Si, per accedere ai benefici fiscali serve l'attestazione di conformita da un'organizzazione firmataria dell'accordo territoriale di Napoli.</p></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-1"><h3>Cos'e il canone concordato a Napoli?</h3><span class="faq-icon" aria-hidden="true"></span></button><div class="faq-answer" id="faq-1"><p>Il canone concordato e un contratto di locazione dove l'affitto viene determinato in base agli accordi territoriali. Napoli offre significativi vantaggi fiscali per chi sceglie questa formula.</p></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-2"><h3>Quanto risparmio con la cedolare secca al 10%?</h3><span class="faq-icon" aria-hidden="true"></span></button><div class="faq-answer" id="faq-2"><p>Con la cedolare secca al 10% su un affitto di 600 euro/mese, risparmi circa 792 euro all'anno. A questo si aggiunge la riduzione IMU fino al 75%.</p></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-3"><h3>Quali sono le zone piu richieste a Napoli?</h3><span class="faq-icon" aria-hidden="true"></span></button><div class="faq-answer" id="faq-3"><p>Le zone di Chiaia, Posillipo, Vomero e Centro Storico hanno valori massimi piu elevati. Le zone vicine alle universita sono ideali per contratti studenteschi.</p></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-4"><h3>Serve l'attestazione di un'associazione?</h3><span class="faq-icon" aria-hidden="true"></span></button><div class="faq-answer" id="faq-4"><p>Si, per accedere ai benefici fiscali serve l'attestazione di conformita da un'organizzazione firmataria dell'accordo territoriale di Napoli.</p></div></div>
     </div>
   </section>
 
@@ -276,8 +284,17 @@
     document.querySelectorAll('.faq-question').forEach(q => {
       q.addEventListener('click', () => {
         const item = q.parentElement, wasOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-        if (!wasOpen) item.classList.add('open');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          const btn = i.querySelector('.faq-question');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+        if (!wasOpen) {
+          item.classList.add('open');
+          q.setAttribute('aria-expanded', 'true');
+        } else {
+          q.setAttribute('aria-expanded', 'false');
+        }
       });
     });
   </script>
