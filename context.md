@@ -65,14 +65,23 @@ bonusimmobiliare/
 │   │   ├── compromesso-notaio-agenzia/
 │   │   ├── proposta-acquisto-vincolante/
 │   │   └── mutuo-negato-cosa-fare/
+│   ├── canone-concordato/  # Landing pages calcolatore
+│   │   ├── torino/         # Landing Torino (colline SVG)
+│   │   ├── milano/         # Landing Milano (skyline SVG)
+│   │   ├── firenze/        # Landing Firenze (cupola SVG)
+│   │   ├── bologna/        # Landing Bologna (torri SVG)
+│   │   ├── napoli/         # Landing Napoli (Vesuvio SVG)
+│   │   └── roma/           # Landing Roma (cupole SVG)
 │   ├── servizi/            # Services slider
 │   ├── privacy/            # Privacy policy GDPR
 │   ├── cookie/             # Cookie policy
 │   ├── logo/               # Logo assets (SVG)
+│   ├── favicon/            # Favicon assets (light/dark)
 │   ├── js/                 # JavaScript
 │   │   ├── blog.js         # Dynamic blog loader
 │   │   ├── cookie-consent.js # Cookie consent banner
-│   │   └── dokicasa-tracking.js # Click tracking
+│   │   ├── dokicasa-tracking.js # Click tracking
+│   │   └── head-common.js  # Centralized head injection
 │   └── scripts/            # Database scripts
 │       └── schema.sql      # D1 schema
 ├── functions/              # Cloudflare Workers
@@ -95,12 +104,14 @@ bonusimmobiliare/
 - [x] Middleware noindex per preview domains
 - [x] Logo SVG con switching dark/light su scroll
 - [x] Nuvolette animate fluttuanti nell'hero
-- [x] Serie articoli canone concordato (6 città: Milano, Roma, Napoli, Torino, Firenze, Bologna)
+- [x] Serie articoli canone concordato (6 citta: Milano, Roma, Napoli, Torino, Firenze, Bologna)
 - [x] Privacy policy GDPR-compliant (/privacy/)
 - [x] Cookie policy e consent banner (/cookie/, js/cookie-consent.js)
 - [x] SEO files (sitemap.xml, robots.txt, llms.txt)
 - [x] Serie articoli compravendita (5 articoli: caparra, clausola sospensiva, compromesso, proposta acquisto, mutuo negato)
 - [x] Dokicasa click tracking (D1 database + API + frontend tracking)
+- [x] Favicon con supporto dark mode (head-common.js injection)
+- [x] Landing pages canone concordato (6 citta con SVG custom e CTA Dokicasa)
 
 ## Todo (v2)
 ✅ Completato
@@ -109,6 +120,8 @@ bonusimmobiliare/
 - [ ] Calcolatori interattivi
 
 ## Cambiamenti Recenti
+- 2026-01-24: 6 landing pages canone concordato con SVG custom per ogni citta e CTA Dokicasa
+- 2026-01-24: Favicon con dark mode support e head-common.js injection centralizzata
 - 2026-01-24: Dokicasa click tracking (D1 schema, API endpoint, frontend tracking)
 - 2026-01-24: Privacy policy, cookie policy e consent banner GDPR
 - 2026-01-24: SEO files (sitemap.xml, robots.txt, llms.txt)
@@ -132,4 +145,4 @@ bonusimmobiliare/
 
 ---
 **Last Update:** 2026-01-24
-**Version:** 1.9.0
+**Version:** 2.0.0

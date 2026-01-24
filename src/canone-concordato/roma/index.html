@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script src="/js/head-common.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcola il Canone Concordato a Roma | Bonus Immobiliare</title>
+  <meta name="description" content="Calcola gratuitamente il canone concordato per il tuo immobile a Roma. Cedolare secca al 10%, riduzione IMU fino al 75%. Servizio gratuito e immediato.">
+
+  <meta property="og:title" content="Calcola il Canone Concordato a Roma | Bonus Immobiliare">
+  <meta property="og:description" content="Calcola gratuitamente il canone concordato per il tuo immobile a Roma. Cedolare secca al 10%, riduzione IMU e vantaggi fiscali.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bonusimmobiliare.it/canone-concordato/roma/">
+  <meta property="og:locale" content="it_IT">
+
+  <link rel="canonical" href="https://bonusimmobiliare.it/canone-concordato/roma/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Calcola il Canone Concordato a Roma",
+    "description": "Calcola gratuitamente il canone concordato per il tuo immobile a Roma.",
+    "url": "https://bonusimmobiliare.it/canone-concordato/roma/",
+    "publisher": { "@type": "Organization", "name": "Bonus Immobiliare", "url": "https://bonusimmobiliare.it" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Cos'e il canone concordato a Roma?", "acceptedAnswer": { "@type": "Answer", "text": "Il canone concordato e un contratto di locazione dove l'affitto viene determinato in base agli accordi territoriali. Roma, come capitale e comune ad alta tensione abitativa, offre significativi vantaggi fiscali per proprietari e inquilini." } },
+      { "@type": "Question", "name": "Quanto risparmio con la cedolare secca al 10% a Roma?", "acceptedAnswer": { "@type": "Answer", "text": "Con la cedolare secca al 10% su un affitto di 1.000 euro/mese, risparmi circa 1.320 euro all'anno di tasse. A questo si aggiunge la riduzione IMU che a Roma puo arrivare fino al 75%." } },
+      { "@type": "Question", "name": "Quali zone di Roma hanno i valori piu alti?", "acceptedAnswer": { "@type": "Answer", "text": "Roma e suddivisa in molte fasce territoriali. Le zone centrali (Centro Storico, Prati, Parioli, Trastevere) hanno valori massimi piu elevati. Le zone periferiche hanno valori inferiori ma comunque regolamentati." } }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --olive: #5C6B4A; --olive-deep: #3D4832; --olive-dark: #2A3223; --olive-light: #7A8A68;
+      --cream: #FAF7F2; --cream-dark: #F2EDE4; --parchment: #EDE7DB;
+      --terracotta: #F06543; --terracotta-light: #F4846A;
+      --gold: #BFA67A; --gold-light: #D4C4A0;
+      --bark: #4A3F35; --earth: #8B8178; --white: #ffffff;
+      /* Roma - bordeaux/oro imperiale */
+      --city-accent: #B7791F; --city-dark: #742A2A; --city-bordeaux: #9B2C2C;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: 'Source Serif 4', Georgia, serif; background: var(--cream); color: var(--bark); line-height: 1.7; overflow-x: hidden; }
+
+    .topbar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.25rem 2rem; display: flex; justify-content: space-between; align-items: center; transition: all 0.4s ease; }
+    .topbar.scrolled { background: rgba(250, 247, 242, 0.95); backdrop-filter: blur(20px); box-shadow: 0 1px 0 rgba(0,0,0,0.05); }
+    .logo-link { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: var(--cream); transition: opacity 0.3s; }
+    .topbar.scrolled .logo-link { color: var(--olive-deep); }
+    .logo-link:hover { opacity: 0.8; }
+    .logo-link img { height: 32px; }
+    .logo-link .logo-dark { display: none; }
+    .topbar.scrolled .logo-link .logo-light { display: none; }
+    .topbar.scrolled .logo-link .logo-dark { display: block; }
+    .back-text { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.7; }
+    .topbar-cta { background: var(--terracotta); color: var(--cream); padding: 0.6rem 1.25rem; font-family: 'Source Serif 4', serif; font-size: 0.85rem; font-weight: 600; text-decoration: none; border-radius: 50px; transition: all 0.3s ease; }
+    .topbar-cta:hover { background: var(--terracotta-light); transform: translateY(-1px); }
+
+    .hero { min-height: 100vh; position: relative; overflow: hidden; display: flex; flex-direction: column; }
+    .hero-sky { position: absolute; inset: 0; background: linear-gradient(180deg, #F5E6DF 0%, #E8D4C4 20%, #D4B896 40%, #C9A962 60%, var(--city-dark) 100%); z-index: 0; }
+
+    .skyline { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; pointer-events: none; }
+    .skyline svg { width: 100%; height: auto; display: block; }
+
+    .hero-container { position: relative; z-index: 10; max-width: 1200px; margin: 0 auto; padding: 8rem 2rem 4rem; display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; justify-content: center; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(116, 42, 42, 0.15); color: var(--city-dark); padding: 0.5rem 1.25rem; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1.5rem; border-radius: 2rem; animation: fadeDown 0.8s ease 0.1s both; }
+    .hero-title { font-family: 'Fraunces', Georgia, serif; font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 500; color: var(--city-dark); line-height: 1.1; margin-bottom: 1.25rem; animation: fadeDown 0.8s ease 0.2s both; }
+    .hero-title em { font-style: italic; color: var(--city-accent); display: block; }
+    .hero-subtitle { font-size: 1.2rem; color: var(--bark); max-width: 520px; margin-bottom: 2.5rem; line-height: 1.6; animation: fadeDown 0.8s ease 0.3s both; }
+    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; animation: fadeDown 0.8s ease 0.4s both; }
+    .hero-cta { display: inline-flex; align-items: center; gap: 0.75rem; padding: 1.1rem 2.25rem; text-decoration: none; font-family: 'Source Serif 4', serif; font-size: 1rem; font-weight: 600; border-radius: 50px; border: none; cursor: pointer; transition: all 0.3s ease; }
+    .hero-cta-primary { background: var(--terracotta); color: var(--cream); }
+    .hero-cta-primary:hover { background: var(--terracotta-light); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(240, 101, 67, 0.3); }
+    .hero-cta-secondary { background: transparent; color: var(--city-dark); border: 2px solid var(--city-dark); }
+    .hero-cta-secondary:hover { background: var(--city-dark); color: var(--cream); transform: translateY(-2px); }
+    .hero-cta svg { transition: transform 0.3s; }
+    .hero-cta-primary:hover svg { transform: translateX(3px); }
+    .hero-duration { display: block; margin-top: 0.75rem; font-size: 0.9rem; color: var(--earth); animation: fadeDown 0.8s ease 0.45s both; }
+
+    .hero-stats { position: relative; z-index: 10; display: flex; justify-content: center; gap: 1.5rem; padding: 0 2rem 3rem; flex-wrap: wrap; margin-top: -2rem; }
+    .stat-card { background: var(--white); padding: 1.75rem 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(74, 63, 53, 0.08); text-align: center; min-width: 180px; transition: transform 0.3s ease; animation: floatUp 0.6s ease both; }
+    .stat-card:nth-child(1) { animation-delay: 0.5s; }
+    .stat-card:nth-child(2) { animation-delay: 0.6s; }
+    .stat-card:nth-child(3) { animation-delay: 0.7s; }
+    .stat-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(74, 63, 53, 0.12); }
+    .stat-number { font-family: 'Fraunces', serif; font-size: 2.75rem; font-weight: 600; color: var(--city-accent); line-height: 1; margin-bottom: 0.5rem; }
+    .stat-label { font-size: 0.95rem; color: var(--city-dark); font-weight: 600; margin-bottom: 0.25rem; }
+    .stat-desc { font-size: 0.8rem; color: var(--earth); max-width: 200px; line-height: 1.4; }
+
+    .section-steps { padding: 6rem 2rem; background: var(--parchment); }
+    .section-label { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 0.75rem; font-weight: 600; }
+    .section-title { font-family: 'Fraunces', serif; font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 500; color: var(--olive-deep); margin-bottom: 3.5rem; max-width: 500px; }
+    .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; max-width: 1100px; margin: 0 auto; }
+    .step { position: relative; padding-top: 2.5rem; }
+    .step::before { content: attr(data-step); position: absolute; top: 0; left: 0; font-family: 'Fraunces', serif; font-size: 0.9rem; color: var(--terracotta); font-weight: 600; }
+    .step::after { content: ''; position: absolute; top: 0.4rem; left: 2rem; right: -1rem; height: 1px; background: linear-gradient(90deg, var(--terracotta), transparent); }
+    .step:last-child::after { display: none; }
+    .step h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 500; color: var(--olive-deep); margin-bottom: 0.5rem; }
+    .step p { font-size: 0.95rem; color: var(--earth); line-height: 1.6; }
+
+    .section-benefits { padding: 6rem 2rem; background: var(--white); }
+    .benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1100px; margin: 0 auto; align-items: center; }
+    .benefits-content h2 { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 500; color: var(--olive-deep); margin-bottom: 1.5rem; }
+    .benefit-item { display: flex; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--cream-dark); }
+    .benefit-icon { width: 20px; height: 20px; color: var(--terracotta); flex-shrink: 0; margin-top: 3px; }
+    .benefit-text { font-size: 1rem; color: var(--bark); }
+    .benefits-cta-box { background: var(--city-dark); padding: 2.5rem; border-radius: 16px; position: relative; overflow: hidden; }
+    .benefits-cta-box::before { content: ''; position: absolute; top: -50%; right: -50%; width: 100%; height: 200%; background: radial-gradient(ellipse, rgba(183, 121, 31, 0.2) 0%, transparent 50%); }
+    .benefits-cta-box h3 { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 500; color: var(--cream); margin-bottom: 0.75rem; position: relative; }
+    .benefits-cta-box p { font-size: 0.95rem; color: rgba(250, 247, 242, 0.75); margin-bottom: 1.5rem; position: relative; }
+    .benefits-cta-box .cta-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--city-accent); color: var(--cream); padding: 0.9rem 1.5rem; text-decoration: none; font-size: 0.95rem; font-weight: 600; border-radius: 50px; transition: all 0.3s; position: relative; }
+    .benefits-cta-box .cta-btn:hover { background: #C9892A; transform: translateY(-2px); }
+
+    .section-faq { padding: 6rem 2rem; background: var(--parchment); }
+    .faq-container { max-width: 800px; margin: 0 auto; }
+    .faq-header { text-align: center; margin-bottom: 2.5rem; }
+    .faq-item { background: var(--white); margin-bottom: 1px; overflow: hidden; border-radius: 4px; }
+    .faq-item:first-child { border-radius: 8px 8px 0 0; }
+    .faq-item:last-child { border-radius: 0 0 8px 8px; }
+    .faq-question { padding: 1.25rem 1.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.3s; }
+    .faq-question:hover { background: var(--cream); }
+    .faq-question h3 { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 500; color: var(--olive-deep); margin: 0; }
+    .faq-icon { width: 20px; height: 20px; position: relative; flex-shrink: 0; }
+    .faq-icon::before, .faq-icon::after { content: ''; position: absolute; background: var(--terracotta); transition: transform 0.3s; }
+    .faq-icon::before { width: 10px; height: 2px; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .faq-icon::after { width: 2px; height: 10px; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .faq-item.open .faq-icon::after { transform: translate(-50%, -50%) rotate(90deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .faq-item.open .faq-answer { max-height: 300px; }
+    .faq-answer p { padding: 0 1.5rem 1.25rem; color: var(--earth); font-size: 0.95rem; line-height: 1.7; }
+
+    .footer { background: var(--olive-dark); padding: 2.5rem 2rem; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+    .footer-brand { display: flex; align-items: center; gap: 2rem; }
+    .footer-logo { height: 28px; opacity: 0.9; }
+    .footer-link { color: rgba(250, 247, 242, 0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
+    .footer-link:hover { color: var(--gold); }
+    .footer-disclaimer { font-size: 0.8rem; color: rgba(250, 247, 242, 0.5); }
+    .footer-disclaimer a { color: rgba(250, 247, 242, 0.7); }
+
+    @keyframes fadeDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes floatUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 1024px) { .hero-container { padding: 7rem 2rem 3rem; } .steps-grid { grid-template-columns: repeat(2, 1fr); } .step::after { display: none; } .benefits-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+    @media (max-width: 640px) { .topbar { padding: 1rem 1.5rem; } .back-text { display: none; } }
+    @media (max-width: 400px) { .topbar-cta { display: none; } .hero-container { padding: 7rem 1.5rem 2rem; } .hero-title { font-size: 2.2rem; } .hero-ctas { flex-direction: column; } .hero-stats { flex-direction: column; } .steps-grid { grid-template-columns: 1fr; } .footer-inner { flex-direction: column; text-align: center; } .footer-brand { flex-direction: column; gap: 1rem; } }
+  </style>
+</head>
+<body>
+  <div class="topbar" id="topbar">
+    <a href="/" class="logo-link">
+      <img src="/logo/logo_dark_bg.svg" alt="Bonus Immobiliare" class="logo-light">
+      <img src="/logo/logo_light_bg.svg" alt="Bonus Immobiliare" class="logo-dark">
+      <span class="back-text">Torna al sito</span>
+    </a>
+    <a href="/blog/" class="topbar-cta">Leggi le Guide</a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-sky"></div>
+    <!-- Roma skyline: Cupola San Pietro, Colosseo stilizzato, obelisco, cupole -->
+    <div class="skyline">
+      <svg viewBox="0 0 1440 300" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="skylineFade" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#742A2A" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#742A2A" stop-opacity="1"/>
+          </linearGradient>
+        </defs>
+        <!-- Cupola San Pietro (sinistra) + Colosseo (centro) + obelisco + cupole varie -->
+        <path d="M0,300 L0,200
+          L80,200 L80,150 L100,140 L110,100 L120,80 L140,60 L160,80 L170,100 L180,140 L200,150 L200,200
+          L280,200 L280,170 L300,170 L300,200
+          L380,200 L380,150 L400,150 L400,200
+          L500,200 L500,120 L510,115 L520,120 L530,115 L540,120 L560,120 L570,115 L580,120 L590,115 L600,120 L600,200
+          L700,200 L700,180 L720,180 L720,200
+          L800,200 L800,140 L810,130 L820,110 L830,130 L840,140 L840,200
+          L920,200 L920,60 L925,55 L930,60 L930,200
+          L1020,200 L1020,160 L1040,160 L1040,200
+          L1120,200 L1120,130 L1130,120 L1140,100 L1150,120 L1160,130 L1160,200
+          L1250,200 L1250,170 L1280,170 L1280,200
+          L1360,200 L1360,150 L1390,150 L1390,200
+          L1440,200 L1440,300 Z"
+          fill="url(#skylineFade)"/>
+      </svg>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-badge">Strumento Gratuito</div>
+      <h1 class="hero-title">Calcola il<br><em>Canone Concordato</em> a Roma</h1>
+      <p class="hero-subtitle">Scopri quanto puoi chiedere di affitto per il tuo immobile a Roma. Calcolo basato sulle fasce territoriali ufficiali.</p>
+      <div class="hero-ctas">
+        <a href="https://dokicasa.it/contratti/locazione-canone-concordato-roma?utm_source=bonusimmobiliare&utm_medium=website&utm_campaign=canone-concordato&utm_content=landing-roma" class="hero-cta hero-cta-primary" target="_blank" rel="noopener">
+          Calcola Gratis <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="/blog/canone-concordato-roma/" class="hero-cta hero-cta-secondary">Leggi la guida completa</a>
+      </div>
+      <span class="hero-duration">5 minuti · In collaborazione con Dokicasa</span>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-card"><div class="stat-number">10%</div><div class="stat-label">Cedolare Secca</div><div class="stat-desc">Invece del 21% standard</div></div>
+      <div class="stat-card"><div class="stat-number">-75%</div><div class="stat-label">Riduzione IMU</div><div class="stat-desc">Fino al 75% in meno</div></div>
+      <div class="stat-card"><div class="stat-number">30%</div><div class="stat-label">Sconto IRPEF</div><div class="stat-desc">Base imponibile ridotta</div></div>
+    </div>
+  </section>
+
+  <section class="section-steps">
+    <p class="section-label">Come funziona</p>
+    <h2 class="section-title">Quattro passaggi per calcolare il tuo canone</h2>
+    <div class="steps-grid">
+      <div class="step" data-step="01"><h3>Inserisci i dati</h3><p>Indirizzo, superficie, caratteristiche del tuo immobile a Roma.</p></div>
+      <div class="step" data-step="02"><h3>Calcolo automatico</h3><p>Il sistema identifica la fascia territoriale e applica i parametri.</p></div>
+      <div class="step" data-step="03"><h3>Ricevi il risultato</h3><p>Ottieni il range di canone consentito nella tua zona.</p></div>
+      <div class="step" data-step="04"><h3>Decidi tu</h3><p>Se vuoi, procedi con la redazione del contratto.</p></div>
+    </div>
+  </section>
+
+  <section class="section-benefits">
+    <div class="benefits-grid">
+      <div class="benefits-content">
+        <h2>A chi conviene il canone concordato a Roma</h2>
+        <div class="benefit-item"><svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/></svg><p class="benefit-text">Proprietari che vogliono ottimizzare la fiscalita degli affitti</p></div>
+        <div class="benefit-item"><svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/></svg><p class="benefit-text">Chi affitta a studenti (Sapienza, Roma Tre, LUISS, Tor Vergata)</p></div>
+        <div class="benefit-item"><svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/></svg><p class="benefit-text">Contratti transitori per lavoratori e professionisti</p></div>
+        <div class="benefit-item"><svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/></svg><p class="benefit-text">Locazioni stabili con contratto 3+2 anni</p></div>
+      </div>
+      <div class="benefits-cta-box">
+        <h3>Scopri il canone per il tuo immobile</h3>
+        <p>Servizio gratuito e senza impegno. In pochi minuti hai il risultato.</p>
+        <a href="https://dokicasa.it/contratti/locazione-canone-concordato-roma?utm_source=bonusimmobiliare&utm_medium=website&utm_campaign=canone-concordato&utm_content=landing-roma-cta" class="cta-btn" target="_blank" rel="noopener">
+          Calcola il Canone <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-faq">
+    <div class="faq-container">
+      <div class="faq-header"><p class="section-label">FAQ</p><h2 class="section-title">Domande frequenti sul canone concordato a Roma</h2></div>
+      <div class="faq-item"><div class="faq-question"><h3>Cos'e il canone concordato a Roma?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Il canone concordato e un contratto di locazione dove l'affitto viene determinato in base agli accordi territoriali. Roma, come capitale e comune ad alta tensione abitativa, offre significativi vantaggi fiscali.</p></div></div>
+      <div class="faq-item"><div class="faq-question"><h3>Quanto risparmio con la cedolare secca al 10%?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Con la cedolare secca al 10% su un affitto di 1.000 euro/mese, risparmi circa 1.320 euro all'anno. A questo si aggiunge la riduzione IMU fino al 75%.</p></div></div>
+      <div class="faq-item"><div class="faq-question"><h3>Quali zone di Roma hanno i valori piu alti?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Le zone centrali (Centro Storico, Prati, Parioli, Trastevere) hanno valori massimi piu elevati. Le zone periferiche hanno valori inferiori ma comunque regolamentati dagli accordi.</p></div></div>
+      <div class="faq-item"><div class="faq-question"><h3>Serve l'attestazione di un'associazione?</h3><span class="faq-icon"></span></div><div class="faq-answer"><p>Si, per accedere ai benefici fiscali serve l'attestazione di conformita da un'organizzazione firmataria dell'accordo territoriale di Roma.</p></div></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/logo/logo_dark_bg.svg" alt="Bonus Immobiliare" class="footer-logo">
+        <a href="/" class="footer-link">Torna al sito</a>
+        <a href="/blog/canone-concordato-roma/" class="footer-link">Guida completa Roma</a>
+      </div>
+      <p class="footer-disclaimer">Calcolatore fornito da <a href="https://dokicasa.it" target="_blank" rel="noopener">Dokicasa</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const topbar = document.getElementById('topbar');
+    window.addEventListener('scroll', () => { topbar.classList.toggle('scrolled', window.scrollY > 100); });
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement, wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -13,10 +13,17 @@ Bonus Immobiliare offre guide gratuite su:
 ## Argomenti principali
 
 ### Canone Concordato
-Guide dettagliate per calcolare il canone concordato nelle principali città italiane:
+Guide dettagliate per calcolare il canone concordato nelle principali citta italiane:
 - Milano, Roma, Napoli, Torino, Firenze, Bologna
 - Vantaggi: cedolare secca al 10%, riduzione IMU, riduzione base imponibile IRPEF
 - Procedura: zone omogenee, accordi territoriali, attestazione sindacale
+- Landing pages con calcolatore gratuito per ogni citta:
+  - /canone-concordato/torino/
+  - /canone-concordato/milano/
+  - /canone-concordato/firenze/
+  - /canone-concordato/bologna/
+  - /canone-concordato/napoli/
+  - /canone-concordato/roma/
 
 ### Compravendita
 - Proposta di acquisto: quando diventa vincolante, clausole essenziali
