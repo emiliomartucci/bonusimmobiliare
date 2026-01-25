@@ -1,33 +1,19 @@
 /**
  * Head Common - Injects favicon, meta tags, and analytics
- * v1.1.0 - 2026-01-24
+ * v1.2.0 - 2026-01-25
  *
  * Include this script in <head> to automatically add:
  * - Favicons (light/dark mode)
  * - Apple touch icon
  * - Web manifest
  * - Theme color
- * - Google Analytics (gtag.js)
+ * - Google Analytics (deferred to avoid blocking main thread)
  */
 
 (function() {
     const head = document.head;
 
-    // Google Analytics (gtag.js)
-    const gtagScript = document.createElement('script');
-    gtagScript.async = true;
-    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XC2BT6R86M';
-    head.appendChild(gtagScript);
-
-    const gtagConfig = document.createElement('script');
-    gtagConfig.textContent = `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XC2BT6R86M');
-    `;
-    head.appendChild(gtagConfig);
-
+    // Favicon tags (sync - small, no blocking)
     const tags = [
         // SVG favicons with dark mode support
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon/favicon-light.svg', media: '(prefers-color-scheme: dark)' },
@@ -52,4 +38,28 @@
     theme.setAttribute('name', 'theme-color');
     theme.setAttribute('content', '#5C6B4A');
     head.appendChild(theme);
+
+    // Google Analytics - deferred to avoid blocking main thread
+    function loadGA() {
+        const gtagScript = document.createElement('script');
+        gtagScript.async = true;
+        gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XC2BT6R86M';
+        head.appendChild(gtagScript);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', 'G-XC2BT6R86M');
+    }
+
+    // Load GA when browser is idle (no long tasks)
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGA, { timeout: 2000 });
+    } else {
+        // Fallback: load after window load
+        window.addEventListener('load', function() {
+            setTimeout(loadGA, 100);
+        });
+    }
 })();
