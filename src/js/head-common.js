@@ -1,6 +1,6 @@
 /**
  * Head Common - Injects favicon, meta tags, and analytics
- * v1.2.0 - 2026-01-25
+ * v1.3.0 - 2026-01-30
  *
  * Include this script in <head> to automatically add:
  * - Favicons (light/dark mode)
@@ -8,6 +8,7 @@
  * - Web manifest
  * - Theme color
  * - Google Analytics (deferred to avoid blocking main thread)
+ * - Microsoft Clarity (deferred)
  */
 
 (function() {
@@ -53,13 +54,27 @@
         gtag('config', 'G-XC2BT6R86M');
     }
 
-    // Load GA when browser is idle (no long tasks)
+    // Microsoft Clarity - deferred to avoid blocking main thread
+    function loadClarity() {
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "v9ju903t9e");
+    }
+
+    // Load analytics when browser is idle (no long tasks)
+    function loadAnalytics() {
+        loadGA();
+        loadClarity();
+    }
+
     if ('requestIdleCallback' in window) {
-        requestIdleCallback(loadGA, { timeout: 2000 });
+        requestIdleCallback(loadAnalytics, { timeout: 2000 });
     } else {
         // Fallback: load after window load
         window.addEventListener('load', function() {
-            setTimeout(loadGA, 100);
+            setTimeout(loadAnalytics, 100);
         });
     }
 })();
