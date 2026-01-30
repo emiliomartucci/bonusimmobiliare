@@ -4,14 +4,14 @@
     <script src="/js/head-common.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mappa Zone Canone Concordato Milano 2025 | Bonus Immobiliare</title>
-    <meta name="description" content="Trova la tua zona a Milano e scopri quanto puoi affittare a canone concordato. Mappa interattiva con 5 zone omogenee e valori €/mq aggiornati 2025.">
+    <title>Mappa Zone Canone Concordato Milano e Hinterland 2025 | Bonus Immobiliare</title>
+    <meta name="description" content="Trova la tua zona a Milano e nell'hinterland, scopri quanto puoi affittare a canone concordato. Mappa interattiva con 5 zone città + 7 zone metropolitane.">
     <link rel="canonical" href="https://bonusimmobiliare.it/mappe/milano/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Mappa Zone Canone Concordato Milano 2025">
-    <meta property="og:description" content="Trova la tua zona a Milano e scopri quanto puoi affittare a canone concordato.">
+    <meta property="og:title" content="Mappa Zone Canone Concordato Milano e Hinterland 2025">
+    <meta property="og:description" content="Trova la tua zona a Milano e nell'hinterland, scopri quanto puoi affittare a canone concordato.">
     <meta property="og:url" content="https://bonusimmobiliare.it/mappe/milano/">
     <meta property="og:image" content="https://bonusimmobiliare.it/og-image.jpg">
     <meta property="og:site_name" content="Bonus Immobiliare">
@@ -37,6 +37,45 @@
             --zone-3: #E8C44A;  /* Periferia Consolidata - Giallo */
             --zone-4: #6BAF7A;  /* Periferia - Verde */
             --zone-5: #7BA08A;  /* Periferia Esterna - Verde salvia */
+            --zone-hinterland: #9CA3AF;  /* Hinterland - Grigio */
+        }
+
+        .legend-section-title {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--olive);
+            margin-top: 0.75rem;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .legend-section-title:first-child {
+            margin-top: 0;
+        }
+
+        /* Hinterland sidebar variant */
+        .sidebar-hinterland-info {
+            background: #F3F4F6;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .sidebar-hinterland-info p {
+            font-size: 0.85rem;
+            color: #4B5563;
+            margin: 0 0 0.5rem;
+            line-height: 1.5;
+        }
+        .sidebar-hinterland-info p:last-child {
+            margin-bottom: 0;
+        }
+        .sidebar-comuni-list {
+            font-size: 0.8rem;
+            color: #6B7280;
+            margin-top: 0.5rem;
+        }
+        .sidebar-comuni-list strong {
+            color: #374151;
         }
     </style>
 
@@ -46,14 +85,15 @@
             slug: 'milano',
             geojsonPath: '/data/milano_concordato_zones.geojson',
             zoneDataPath: '/data/milano-zone-concordato.json',
+            hinterlandGeojsonPath: '/data/milano_zone_omogenee_hinterland.geojson',
+            hinterlandDataPath: '/data/milano-zone-hinterland.json',
             center: [45.4642, 9.1900],
-            bounds: [[45.39, 9.04], [45.54, 9.28]],
-            zoom: 12,
+            bounds: [[45.30, 8.70], [45.65, 9.55]],  // Extended to include hinterland
+            zoom: 10,
             dokicasaUrl: 'https://app.dokicasa.it/contratti/foglio-caratteristiche-immobile-milano/crea/default?utm_source=bonusimmobiliare&utm_medium=mappa&utm_campaign=milano',
             totalZones: 5,
             accordoYear: 2023,
             accordoDate: '27 luglio 2023',
-            // Milano usa campo 'zona' invece di 'CODZONA'
             zoneField: 'zona'
         };
     </script>
@@ -84,18 +124,21 @@
                     <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <input type="text" id="address-search" placeholder="Cerca indirizzo a Milano...">
+                    <input type="text" id="address-search" placeholder="Cerca indirizzo...">
                 </div>
                 <div class="search-results" id="search-results"></div>
             </div>
 
             <div class="legend">
                 <div class="legend-title">Zone Concordato</div>
+                <div class="legend-section-title">Milano Città</div>
                 <div class="legend-item"><div class="legend-color" style="background: var(--zone-1);"></div> Zona 1 - Centro</div>
                 <div class="legend-item"><div class="legend-color" style="background: var(--zone-2);"></div> Zona 2 - Semicentro</div>
-                <div class="legend-item"><div class="legend-color" style="background: var(--zone-3);"></div> Zona 3 - Periferia Consolidata</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--zone-3);"></div> Zona 3 - Periferia</div>
                 <div class="legend-item"><div class="legend-color" style="background: var(--zone-4);"></div> Zona 4 - Periferia</div>
-                <div class="legend-item"><div class="legend-color" style="background: var(--zone-5);"></div> Zona 5 - Periferia Esterna</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--zone-5);"></div> Zona 5 - Periferia Est.</div>
+                <div class="legend-section-title">Città Metropolitana</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--zone-hinterland);"></div> 7 Zone Hinterland</div>
             </div>
         </div>
 
@@ -108,6 +151,7 @@
                 <p>Clicca su una zona della mappa o cerca un indirizzo per vedere i dettagli del canone concordato.</p>
             </div>
 
+            <!-- Milano City Sidebar -->
             <div class="sidebar-content" id="sidebar-content">
                 <div class="sidebar-header">
                     <div class="sidebar-zona-row">
@@ -174,13 +218,49 @@
                     </a>
                 </div>
             </div>
+
+            <!-- Hinterland Sidebar -->
+            <div class="sidebar-content" id="sidebar-content-hinterland">
+                <div class="sidebar-header">
+                    <div class="sidebar-zona-row">
+                        <span class="sidebar-zona-code" id="sidebar-hinterland-code">Hinterland</span>
+                        <span class="sidebar-zona-type" id="sidebar-hinterland-type" style="background: var(--zone-hinterland);">Città Metropolitana</span>
+                    </div>
+                    <div class="sidebar-zona-name" id="sidebar-hinterland-name">Nord Milano</div>
+                </div>
+
+                <div class="sidebar-body">
+                    <div class="sidebar-hinterland-info">
+                        <p><strong>Ogni comune ha il proprio accordo territoriale</strong> con valori specifici per zona.</p>
+                        <p id="sidebar-hinterland-desc">6 comuni a nord di Milano con accordo canone concordato attivo.</p>
+                        <div class="sidebar-comuni-list">
+                            <strong>Comuni:</strong> <span id="sidebar-hinterland-comuni">Sesto San Giovanni, Cinisello Balsamo, Bresso...</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-range-section">
+                        <div class="sidebar-range-label">Range Indicativo</div>
+                        <div class="sidebar-range-value" id="sidebar-hinterland-range">4,00 - 10,00</div>
+                        <div class="sidebar-range-unit">euro/mq/mese (varia per comune)</div>
+                    </div>
+                </div>
+
+                <div class="sidebar-footer">
+                    <a href="#" class="sidebar-cta" id="sidebar-hinterland-cta" target="_blank" rel="noopener">
+                        Calcola Canone Preciso &rarr;
+                    </a>
+                    <p style="font-size: 0.75rem; color: #6B7280; margin-top: 0.5rem; text-align: center;">
+                        Verrai reindirizzato al sito del comune di riferimento
+                    </p>
+                </div>
+            </div>
         </aside>
     </div>
 
     <footer class="footer-mini">
         <div class="footer-mini-text">
-            Dati: <a href="https://gisportal.comune.milano.it" target="_blank" rel="noopener">Comune di Milano - GIS Portal</a> |
-            Valori: <a href="https://www.comune.milano.it/servizi/canone-concordato" target="_blank" rel="noopener">Accordo Territoriale Milano 2023</a>
+            Milano: <a href="https://gisportal.comune.milano.it" target="_blank" rel="noopener">GIS Portal Comune Milano</a> |
+            Hinterland: <a href="https://www.cittametropolitana.mi.it/portale/territorio/zone_omogenee/" target="_blank" rel="noopener">Città Metropolitana</a>
         </div>
         <div class="footer-mini-source">
             &copy; 2025 Bonus Immobiliare
@@ -192,6 +272,7 @@
         document.getElementById('sidebar-cta').href = CITY_CONFIG.dokicasaUrl;
 
         let zoneData = {};
+        let hinterlandData = {};
 
         function getColor(zona) {
             const colors = {
@@ -225,7 +306,7 @@
         const map = L.map('map', {
             center: CITY_CONFIG.center,
             zoom: CITY_CONFIG.zoom,
-            minZoom: 10,
+            minZoom: 9,
             maxZoom: 18,
             maxBounds: cityBounds,
             maxBoundsViscosity: 1.0
@@ -247,13 +328,29 @@
             };
         }
 
+        function hinterlandStyle(feature) {
+            return {
+                fillColor: getComputedStyle(document.documentElement).getPropertyValue('--zone-hinterland').trim(),
+                weight: 1,
+                opacity: 1,
+                color: 'rgba(255,255,255,0.6)',
+                fillOpacity: 0.4
+            };
+        }
+
         let lastHighlighted = null;
         let geojsonLayer;
+        let hinterlandLayer;
         let addressMarker = null;
 
         function highlightFeature(e) {
             if (lastHighlighted && lastHighlighted !== e.target) {
-                geojsonLayer.resetStyle(lastHighlighted);
+                if (geojsonLayer && geojsonLayer.hasLayer(lastHighlighted)) {
+                    geojsonLayer.resetStyle(lastHighlighted);
+                }
+                if (hinterlandLayer && hinterlandLayer.hasLayer(lastHighlighted)) {
+                    hinterlandLayer.resetStyle(lastHighlighted);
+                }
             }
             const layer = e.target;
             layer.setStyle({
@@ -266,24 +363,36 @@
         }
 
         function resetHighlight(e) {
-            geojsonLayer.resetStyle(e.target);
+            if (geojsonLayer && geojsonLayer.hasLayer(e.target)) {
+                geojsonLayer.resetStyle(e.target);
+            }
+            if (hinterlandLayer && hinterlandLayer.hasLayer(e.target)) {
+                hinterlandLayer.resetStyle(e.target);
+            }
             if (lastHighlighted === e.target) {
                 lastHighlighted = null;
             }
         }
 
+        function hideSidebars() {
+            document.getElementById('sidebar-placeholder').style.display = 'flex';
+            document.getElementById('sidebar-content').classList.remove('visible');
+            document.getElementById('sidebar-content-hinterland').classList.remove('visible');
+        }
+
         function showSidebar(zona) {
             const placeholder = document.getElementById('sidebar-placeholder');
             const content = document.getElementById('sidebar-content');
+            const contentHinterland = document.getElementById('sidebar-content-hinterland');
             const data = zoneData[zona];
 
             if (!data) {
-                placeholder.style.display = 'flex';
-                content.classList.remove('visible');
+                hideSidebars();
                 return;
             }
 
             placeholder.style.display = 'none';
+            contentHinterland.classList.remove('visible');
             content.classList.add('visible');
 
             document.getElementById('sidebar-code').textContent = 'Zona ' + zona;
@@ -324,6 +433,33 @@
             }
         }
 
+        function showHinterlandSidebar(zonaName) {
+            const placeholder = document.getElementById('sidebar-placeholder');
+            const content = document.getElementById('sidebar-content');
+            const contentHinterland = document.getElementById('sidebar-content-hinterland');
+            const data = hinterlandData[zonaName];
+
+            if (!data) {
+                hideSidebars();
+                return;
+            }
+
+            placeholder.style.display = 'none';
+            content.classList.remove('visible');
+            contentHinterland.classList.add('visible');
+
+            document.getElementById('sidebar-hinterland-name').textContent = data.nome;
+            document.getElementById('sidebar-hinterland-desc').textContent = data.descrizione;
+            document.getElementById('sidebar-hinterland-comuni').textContent = data.comuni.slice(0, 5).join(', ') + (data.comuni.length > 5 ? '...' : '');
+
+            if (data.rangeIndicativo) {
+                document.getElementById('sidebar-hinterland-range').textContent =
+                    `${formatPrice(data.rangeIndicativo.min)} - ${formatPrice(data.rangeIndicativo.max)}`;
+            }
+
+            document.getElementById('sidebar-hinterland-cta').href = data.linkAccordo || '#';
+        }
+
         function onEachFeature(feature, layer) {
             const zona = feature.properties.zona;
             if (zona) {
@@ -343,26 +479,53 @@
             });
         }
 
-        fetch(CITY_CONFIG.zoneDataPath)
-            .then(response => response.json())
-            .then(data => {
-                zoneData = data;
-                return fetch(CITY_CONFIG.geojsonPath);
-            })
-            .then(response => response.json())
-            .then(data => {
-                geojsonLayer = L.geoJSON(data, {
-                    style: style,
-                    onEachFeature: onEachFeature
-                }).addTo(map);
+        function onEachHinterlandFeature(feature, layer) {
+            const zona = feature.properties.zona;
+            if (zona) {
+                layer.bindTooltip(zona, {
+                    permanent: false,
+                    direction: 'center',
+                    className: 'zone-tooltip'
+                });
+            }
 
-                const bounds = geojsonLayer.getBounds();
-                map.fitBounds(bounds);
-                map.setMaxBounds(bounds.pad(0.1));
-            })
-            .catch(err => {
-                console.error('Errore caricamento dati:', err);
+            layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+                click: function(e) {
+                    showHinterlandSidebar(zona);
+                }
             });
+        }
+
+        // Load all data
+        Promise.all([
+            fetch(CITY_CONFIG.zoneDataPath).then(r => r.json()),
+            fetch(CITY_CONFIG.hinterlandDataPath).then(r => r.json()),
+            fetch(CITY_CONFIG.geojsonPath).then(r => r.json()),
+            fetch(CITY_CONFIG.hinterlandGeojsonPath).then(r => r.json())
+        ]).then(([cityZoneData, hintZoneData, cityGeoJson, hintGeoJson]) => {
+            zoneData = cityZoneData;
+            hinterlandData = hintZoneData;
+
+            // Add hinterland layer first (below city)
+            hinterlandLayer = L.geoJSON(hintGeoJson, {
+                style: hinterlandStyle,
+                onEachFeature: onEachHinterlandFeature
+            }).addTo(map);
+
+            // Add city layer on top
+            geojsonLayer = L.geoJSON(cityGeoJson, {
+                style: style,
+                onEachFeature: onEachFeature
+            }).addTo(map);
+
+            // Fit to combined bounds
+            const combinedBounds = hinterlandLayer.getBounds().extend(geojsonLayer.getBounds());
+            map.fitBounds(combinedBounds.pad(0.05));
+        }).catch(err => {
+            console.error('Errore caricamento dati:', err);
+        });
 
         // Address Search
         const addressInput = document.getElementById('address-search');
@@ -452,14 +615,30 @@
             addressMarker = L.marker([lat, lon], { icon: markerIcon }).addTo(map);
             map.setView([lat, lon], 14);
 
+            const point = L.latLng(lat, lon);
+
+            // Check city zones first
+            let found = false;
             if (geojsonLayer) {
                 geojsonLayer.eachLayer(function(layer) {
-                    if (layer.getBounds && layer.getBounds().contains([lat, lon])) {
-                        const point = L.latLng(lat, lon);
+                    if (!found && layer.getBounds && layer.getBounds().contains(point)) {
                         if (isPointInPolygon(point, layer)) {
                             highlightFeature({ target: layer });
-                            const props = layer.feature.properties;
-                            showSidebar(props.zona);
+                            showSidebar(layer.feature.properties.zona);
+                            found = true;
+                        }
+                    }
+                });
+            }
+
+            // If not in city, check hinterland
+            if (!found && hinterlandLayer) {
+                hinterlandLayer.eachLayer(function(layer) {
+                    if (!found && layer.getBounds && layer.getBounds().contains(point)) {
+                        if (isPointInPolygon(point, layer)) {
+                            highlightFeature({ target: layer });
+                            showHinterlandSidebar(layer.feature.properties.zona);
+                            found = true;
                         }
                     }
                 });
@@ -475,7 +654,9 @@
             } else if (layer.feature.geometry.type === 'MultiPolygon') {
                 const latLngs = layer.getLatLngs();
                 for (let i = 0; i < latLngs.length; i++) {
-                    if (isPointInPath(point, latLngs[i][0])) {
+                    if (Array.isArray(latLngs[i][0]) && isPointInPath(point, latLngs[i][0])) {
+                        return true;
+                    } else if (isPointInPath(point, latLngs[i])) {
                         return true;
                     }
                 }
@@ -484,6 +665,7 @@
         }
 
         function isPointInPath(point, polygon) {
+            if (!polygon || polygon.length === 0) return false;
             let inside = false;
             const x = point.lat, y = point.lng;
             for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {

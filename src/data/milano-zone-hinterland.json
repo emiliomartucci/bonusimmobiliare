@@ -1,0 +1,79 @@
+{
+  "Nord Milano": {
+    "nome": "Nord Milano",
+    "comuni": ["Sesto San Giovanni", "Cinisello Balsamo", "Bresso", "Cormano", "Cusano Milanino", "Paderno Dugnano"],
+    "descrizione": "6 comuni a nord di Milano con accordo canone concordato attivo",
+    "rangeIndicativo": {
+      "min": 4.00,
+      "max": 10.00,
+      "note": "Range indicativo - ogni comune ha valori specifici"
+    },
+    "linkAccordo": "https://sestosg.net/servizi/accordo-locale-affitto-a-canone-concordato-2/"
+  },
+  "Nord Ovest": {
+    "nome": "Nord Ovest",
+    "comuni": ["Arese", "Bollate", "Baranzate", "Garbagnate Milanese", "Novate Milanese", "Pero", "Rho", "Senago", "Settimo Milanese"],
+    "descrizione": "Comuni a nord-ovest di Milano con accordo canone concordato",
+    "rangeIndicativo": {
+      "min": 4.00,
+      "max": 9.00,
+      "note": "Range indicativo - ogni comune ha valori specifici"
+    },
+    "linkAccordo": "https://www.comune.rho.mi.it/ru/servizi/catasto-e-urbanistica/accordi-territoriali-agevolazioni-contrattuali"
+  },
+  "Alto Milanese": {
+    "nome": "Alto Milanese",
+    "comuni": ["Legnano", "Parabiago", "Rescaldina", "Nerviano", "Canegrate", "San Giorgio su Legnano", "San Vittore Olona"],
+    "descrizione": "22 comuni dell'alto milanese con accordo canone concordato",
+    "rangeIndicativo": {
+      "min": 3.50,
+      "max": 8.00,
+      "note": "Range indicativo - ogni comune ha valori specifici"
+    },
+    "linkAccordo": "https://comune.legnano.mi.it/notizie/3354892/accordi-locali-sottoscrizione-contratti-locazione"
+  },
+  "Magentino Abbiatense": {
+    "nome": "Magentino Abbiatense",
+    "comuni": ["Abbiategrasso", "Magenta", "Corbetta", "Vittuone", "Bareggio", "Sedriano"],
+    "descrizione": "28 comuni del magentino-abbiatense con accordo canone concordato",
+    "rangeIndicativo": {
+      "min": 3.00,
+      "max": 7.50,
+      "note": "Range indicativo - ogni comune ha valori specifici"
+    },
+    "linkAccordo": "https://www.comune.abbiategrasso.mi.it/"
+  },
+  "Sud Ovest": {
+    "nome": "Sud Ovest",
+    "comuni": ["Rozzano", "Opera", "Buccinasco", "Corsico", "Cesano Boscone", "Trezzano sul Naviglio", "San Donato Milanese"],
+    "descrizione": "16 comuni a sud-ovest di Milano con accordo canone concordato",
+    "rangeIndicativo": {
+      "min": 4.00,
+      "max": 9.50,
+      "note": "Range indicativo - ogni comune ha valori specifici"
+    },
+    "linkAccordo": "https://www.comune.rozzano.mi.it/"
+  },
+  "Sud Est": {
+    "nome": "Sud Est",
+    "comuni": ["San Giuliano Milanese", "Melegnano", "Peschiera Borromeo", "Pantigliate"],
+    "descrizione": "15 comuni a sud-est di Milano con accordo canone concordato",
+    "rangeIndicativo": {
+      "min": 3.50,
+      "max": 8.50,
+      "note": "Range indicativo - ogni comune ha valori specifici"
+    },
+    "linkAccordo": "https://www.sangiulianonline.it/"
+  },
+  "Adda Martesana": {
+    "nome": "Adda Martesana",
+    "comuni": ["Cernusco sul Naviglio", "Cologno Monzese", "Pioltello", "Segrate", "Vimodrone", "Gorgonzola", "Melzo", "Cassano d'Adda"],
+    "descrizione": "29 comuni della zona Adda Martesana con accordo canone concordato",
+    "rangeIndicativo": {
+      "min": 4.00,
+      "max": 9.00,
+      "note": "Range indicativo - ogni comune ha valori specifici"
+    },
+    "linkAccordo": "https://www.comune.cernuscosulnaviglio.mi.it/"
+  }
+}
