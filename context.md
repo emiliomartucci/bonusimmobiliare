@@ -57,9 +57,12 @@ bonusimmobiliare/
 │   ├── llms.txt            # AI-readable site description
 │   ├── blog/               # Blog section
 │   │   ├── index.html      # Blog listing (dynamic)
-│   │   ├── _template.html  # Article template
+│   │   ├── _templates/     # Templates articoli
+│   │   │   ├── _template.html  # Template articolo generico
+│   │   │   └── mappa-canone-concordato-citta.html
 │   │   ├── articles.json   # Articles manifest
 │   │   ├── canone-concordato-{citta}/ # Serie affitto (6)
+│   │   ├── mappa-canone-concordato-roma/ # Articolo mappa Roma
 │   │   ├── caparra-confirmatoria-penitenziale/
 │   │   ├── clausola-sospensiva-mutuo/
 │   │   ├── compromesso-notaio-agenzia/
@@ -73,7 +76,8 @@ bonusimmobiliare/
 │   │   ├── napoli/         # Landing Napoli (Vesuvio SVG)
 │   │   └── roma/           # Landing Roma (cupole SVG)
 │   ├── mappe/              # Mappe interattive zone OMI
-│   │   └── roma/           # Mappa Roma (template per altre citta)
+│   │   ├── _template.html  # Template mappa per nuove citta
+│   │   └── roma/           # Mappa Roma
 │   ├── data/               # Dati per mappe e calcolatori
 │   │   ├── roma-zone-omi.json      # Valori canone per zona Roma
 │   │   └── roma_omi_zones.geojson  # Poligoni zone OMI Roma
@@ -118,14 +122,21 @@ bonusimmobiliare/
 - [x] Favicon con supporto dark mode (head-common.js injection)
 - [x] Landing pages canone concordato (6 citta con SVG custom e CTA Dokicasa)
 - [x] Mappa interattiva zone OMI Roma (Leaflet, 233 zone, ricerca indirizzo)
+- [x] Articolo SEO mappa canone concordato Roma (/blog/mappa-canone-concordato-roma/)
+- [x] Templates riutilizzabili per mappe e articoli altre citta
 
 ## Todo (v2)
 ✅ Completato
 
 ## Todo (v3)
+- [ ] Mappe zone OMI altre citta (Milano, Torino, Napoli, Firenze, Bologna)
+- [ ] Articoli SEO mappa per ogni citta
 - [ ] Calcolatori interattivi
 
 ## Cambiamenti Recenti
+- 2026-01-30: Articolo SEO mappa canone concordato Roma (keyword: mappa zone omi roma, microzone)
+- 2026-01-30: Template articolo mappa per altre citta (src/blog/_templates/)
+- 2026-01-30: Template mappa interattiva per altre citta (src/mappe/_template.html)
 - 2026-01-30: Mappa interattiva zone OMI Roma con Leaflet (233 zone, ricerca indirizzo, info panel con fasce canone)
 - 2026-01-30: Dropdown "Mappe" nella navbar per accesso rapido alle mappe citta
 - 2026-01-30: Dati zone OMI estratti da PDF Accordo Territoriale Roma 2023
@@ -154,4 +165,4 @@ bonusimmobiliare/
 
 ---
 **Last Update:** 2026-01-30
-**Version:** 2.1.0
+**Version:** 2.2.0

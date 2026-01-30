@@ -1,0 +1,4677 @@
+{
+  "B1": {
+    "n": 1,
+    "nome": "TESTACCIO (PIAZZA S.MARIA LIBERATRICE)",
+    "fascia": "B",
+    "min": 10.45,
+    "max": 17.7,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 13.35
+      },
+      "B": {
+        "min": 13.36,
+        "max": 15.5
+      },
+      "C": {
+        "min": 15.51,
+        "max": 17.7
+      }
+    }
+  },
+  "B2": {
+    "n": 2,
+    "nome": "SAN SABA (PIAZZA G.L. BERNINI)",
+    "fascia": "B",
+    "min": 10.45,
+    "max": 22.7,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 13.35
+      },
+      "B": {
+        "min": 13.36,
+        "max": 19.1
+      },
+      "C": {
+        "min": 19.11,
+        "max": 22.7
+      }
+    }
+  },
+  "B3": {
+    "n": 3,
+    "nome": "CELIO (VIA CLAUDIA)",
+    "fascia": "B",
+    "min": 10.45,
+    "max": 22.7,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 13.35
+      },
+      "B": {
+        "min": 13.36,
+        "max": 19.1
+      },
+      "C": {
+        "min": 19.11,
+        "max": 22.7
+      }
+    }
+  },
+  "B4": {
+    "n": 4,
+    "nome": "MONTI (VIA DEI SERPENTI)",
+    "fascia": "B",
+    "min": 12.55,
+    "max": 26.5,
+    "fasce": {
+      "A": {
+        "min": 12.55,
+        "max": 15.55
+      },
+      "B": {
+        "min": 15.56,
+        "max": 22.2
+      },
+      "C": {
+        "min": 22.21,
+        "max": 26.5
+      }
+    }
+  },
+  "B12": {
+    "n": 5,
+    "nome": "AVENTINO (RIPA-VIA DI S.SABINA)",
+    "fascia": "B",
+    "min": 12.55,
+    "max": 26.5,
+    "fasce": {
+      "A": {
+        "min": 12.55,
+        "max": 15.55
+      },
+      "B": {
+        "min": 15.56,
+        "max": 22.2
+      },
+      "C": {
+        "min": 22.21,
+        "max": 26.5
+      }
+    }
+  },
+  "B13": {
+    "n": 6,
+    "nome": "SANT`ANGELO - CAMPITELLI (VIA DEL PORTICO D`OTTAVIA)",
+    "fascia": "B",
+    "min": 12.55,
+    "max": 26.5,
+    "fasce": {
+      "A": {
+        "min": 12.55,
+        "max": 15.55
+      },
+      "B": {
+        "min": 15.56,
+        "max": 22.2
+      },
+      "C": {
+        "min": 22.21,
+        "max": 26.5
+      }
+    }
+  },
+  "B14": {
+    "n": 7,
+    "nome": "TRASTEVERE (VIA DELLA LUNGARA)",
+    "fascia": "B",
+    "min": 12.55,
+    "max": 26.5,
+    "fasce": {
+      "A": {
+        "min": 12.55,
+        "max": 15.55
+      },
+      "B": {
+        "min": 15.56,
+        "max": 22.2
+      },
+      "C": {
+        "min": 22.21,
+        "max": 26.5
+      }
+    }
+  },
+  "B15": {
+    "n": 8,
+    "nome": "BORGO (VIA DELLA CONCILIAZIONE)",
+    "fascia": "B",
+    "min": 12.55,
+    "max": 26.5,
+    "fasce": {
+      "A": {
+        "min": 12.55,
+        "max": 15.55
+      },
+      "B": {
+        "min": 15.56,
+        "max": 22.2
+      },
+      "C": {
+        "min": 22.21,
+        "max": 26.5
+      }
+    }
+  },
+  "B17": {
+    "n": 9,
+    "nome": "SALLUSTIANO-CASTRO PRETORIO (PIAZZA INDIPENDENZA)",
+    "fascia": "B",
+    "min": 12.55,
+    "max": 26.5,
+    "fasce": {
+      "A": {
+        "min": 12.55,
+        "max": 15.55
+      },
+      "B": {
+        "min": 15.56,
+        "max": 22.2
+      },
+      "C": {
+        "min": 22.21,
+        "max": 26.5
+      }
+    }
+  },
+  "B18": {
+    "n": 10,
+    "nome": "ESQUILINO (PIAZZA VITTORIO)",
+    "fascia": "B",
+    "min": 6.95,
+    "max": 15.8,
+    "fasce": {
+      "A": {
+        "min": 6.95,
+        "max": 9.35
+      },
+      "B": {
+        "min": 9.36,
+        "max": 13.3
+      },
+      "C": {
+        "min": 13.31,
+        "max": 15.8
+      }
+    }
+  },
+  "B25": {
+    "n": 11,
+    "nome": "LUDOVISI (VIA VENETO)",
+    "fascia": "B",
+    "min": 12.55,
+    "max": 26.5,
+    "fasce": {
+      "A": {
+        "min": 12.55,
+        "max": 15.55
+      },
+      "B": {
+        "min": 15.56,
+        "max": 22.2
+      },
+      "C": {
+        "min": 22.21,
+        "max": 26.5
+      }
+    }
+  },
+  "B29": {
+    "n": 12,
+    "nome": "VIMINALE (VIA TORINO)",
+    "fascia": "B",
+    "min": 10.45,
+    "max": 22.7,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 13.35
+      },
+      "B": {
+        "min": 13.36,
+        "max": 19.1
+      },
+      "C": {
+        "min": 19.11,
+        "max": 22.7
+      }
+    }
+  },
+  "B31": {
+    "n": 13,
+    "nome": "CENTRO STORICO: TRIDENTE (CAMPO MARZIO.COLONNA.PIGNA.TREVI)",
+    "fascia": "B",
+    "min": 12.55,
+    "max": 31.6,
+    "fasce": {
+      "A": {
+        "min": 12.55,
+        "max": 18.45
+      },
+      "B": {
+        "min": 18.46,
+        "max": 26.4
+      },
+      "C": {
+        "min": 26.41,
+        "max": 31.6
+      }
+    }
+  },
+  "B32": {
+    "n": 14,
+    "nome": "CENTRO STORICO: CORSO VITTORIO (PONTE. PARIONE. REGOLA. S.EUSTACHIO)",
+    "fascia": "B",
+    "min": 12.55,
+    "max": 29.0,
+    "fasce": {
+      "A": {
+        "min": 12.55,
+        "max": 17.05
+      },
+      "B": {
+        "min": 17.06,
+        "max": 24.3
+      },
+      "C": {
+        "min": 24.31,
+        "max": 29.0
+      }
+    }
+  },
+  "C1": {
+    "n": 15,
+    "nome": "PARIOLI (PIAZZA EUCLIDE)",
+    "fascia": "C",
+    "min": 10.45,
+    "max": 23.9,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 13.95
+      },
+      "B": {
+        "min": 13.96,
+        "max": 19.1
+      },
+      "C": {
+        "min": 19.11,
+        "max": 23.9
+      }
+    }
+  },
+  "C2": {
+    "n": 16,
+    "nome": "SALARIO (VIA NIZZA)",
+    "fascia": "C",
+    "min": 10.45,
+    "max": 23.9,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 13.9
+      },
+      "B": {
+        "min": 13.91,
+        "max": 19.0
+      },
+      "C": {
+        "min": 19.01,
+        "max": 23.9
+      }
+    }
+  },
+  "C3": {
+    "n": 17,
+    "nome": "PINCIANO (VIA GIOVANNI PAISIELLO)",
+    "fascia": "C",
+    "min": 10.45,
+    "max": 23.9,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 13.9
+      },
+      "B": {
+        "min": 13.91,
+        "max": 19.0
+      },
+      "C": {
+        "min": 19.01,
+        "max": 23.9
+      }
+    }
+  },
+  "C4": {
+    "n": 18,
+    "nome": "NOMENTANO TORLONIA (PIAZZA GALENO)",
+    "fascia": "C",
+    "min": 10.45,
+    "max": 23.9,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 13.95
+      },
+      "B": {
+        "min": 13.96,
+        "max": 19.1
+      },
+      "C": {
+        "min": 19.11,
+        "max": 23.9
+      }
+    }
+  },
+  "C16": {
+    "n": 19,
+    "nome": "CAVALLEGGERI (VIA DELLE FORNACI)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 14.6,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.55
+      },
+      "B": {
+        "min": 8.56,
+        "max": 12.2
+      },
+      "C": {
+        "min": 12.21,
+        "max": 14.6
+      }
+    }
+  },
+  "C40": {
+    "n": 20,
+    "nome": "PRATI (VIA COLA DI RIENZO)",
+    "fascia": "C",
+    "min": 10.45,
+    "max": 22.1,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 12.95
+      },
+      "B": {
+        "min": 12.96,
+        "max": 18.6
+      },
+      "C": {
+        "min": 18.61,
+        "max": 22.1
+      }
+    }
+  },
+  "C41": {
+    "n": 21,
+    "nome": "DELLA VITTORIA (PIAZZA MAZZINI)",
+    "fascia": "C",
+    "min": 10.45,
+    "max": 22.1,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 12.95
+      },
+      "B": {
+        "min": 12.96,
+        "max": 18.6
+      },
+      "C": {
+        "min": 18.61,
+        "max": 22.1
+      }
+    }
+  },
+  "C46": {
+    "n": 22,
+    "nome": "SALARIO TRIESTE (CORSO TRIESTE)",
+    "fascia": "C",
+    "min": 10.45,
+    "max": 24.0,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 14.05
+      },
+      "B": {
+        "min": 14.06,
+        "max": 20.1
+      },
+      "C": {
+        "min": 20.11,
+        "max": 24.0
+      }
+    }
+  },
+  "C49": {
+    "n": 23,
+    "nome": "FLAMINIO (VIA G. RENI)",
+    "fascia": "C",
+    "min": 10.45,
+    "max": 22.1,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 12.95
+      },
+      "B": {
+        "min": 12.96,
+        "max": 18.6
+      },
+      "C": {
+        "min": 18.61,
+        "max": 22.1
+      }
+    }
+  },
+  "C50": {
+    "n": 24,
+    "nome": "FLAMINIO PORTA DEL POPOLO (PIAZZA DELLA MARINA)",
+    "fascia": "C",
+    "min": 10.45,
+    "max": 23.9,
+    "fasce": {
+      "A": {
+        "min": 10.45,
+        "max": 13.9
+      },
+      "B": {
+        "min": 13.91,
+        "max": 19.0
+      },
+      "C": {
+        "min": 19.01,
+        "max": 23.9
+      }
+    }
+  },
+  "C12": {
+    "n": 25,
+    "nome": "MONTEVERDE VECCHIO (VIA POERIO)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 16.1,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 9.9
+      },
+      "B": {
+        "min": 9.91,
+        "max": 14.15
+      },
+      "C": {
+        "min": 14.16,
+        "max": 16.1
+      }
+    }
+  },
+  "C17": {
+    "n": 26,
+    "nome": "BALDUINA GIOVENALE (VIA DELLE MEDAGLIE D`ORO)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 12.9,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.3
+      },
+      "B": {
+        "min": 8.31,
+        "max": 11.95
+      },
+      "C": {
+        "min": 11.96,
+        "max": 12.9
+      }
+    }
+  },
+  "C19": {
+    "n": 27,
+    "nome": "PONTE MILVIO-FARNESINA (VIA DELLA FARNESINA)",
+    "fascia": "C",
+    "min": 8.75,
+    "max": 18.0,
+    "fasce": {
+      "A": {
+        "min": 8.75,
+        "max": 11.5
+      },
+      "B": {
+        "min": 11.51,
+        "max": 16.45
+      },
+      "C": {
+        "min": 16.46,
+        "max": 18.0
+      }
+    }
+  },
+  "C42": {
+    "n": 28,
+    "nome": "VIGNA CLARA (VIA DI VIGNA STELLUTI)",
+    "fascia": "C",
+    "min": 8.75,
+    "max": 15.6,
+    "fasce": {
+      "A": {
+        "min": 8.75,
+        "max": 9.9
+      },
+      "B": {
+        "min": 9.91,
+        "max": 14.15
+      },
+      "C": {
+        "min": 14.16,
+        "max": 15.6
+      }
+    }
+  },
+  "C44": {
+    "n": 29,
+    "nome": "CAMILLUCCIA (VIA DELLA CAMILLUCCIA)",
+    "fascia": "C",
+    "min": 8.75,
+    "max": 18.2,
+    "fasce": {
+      "A": {
+        "min": 8.75,
+        "max": 11.2
+      },
+      "B": {
+        "min": 11.21,
+        "max": 15.95
+      },
+      "C": {
+        "min": 15.96,
+        "max": 18.2
+      }
+    }
+  },
+  "C47": {
+    "n": 30,
+    "nome": "BALDUINA BELSITO (PIAZZA MADONNA DEL CENACOLO)",
+    "fascia": "C",
+    "min": 6.25,
+    "max": 14.4,
+    "fasce": {
+      "A": {
+        "min": 6.25,
+        "max": 8.4
+      },
+      "B": {
+        "min": 8.41,
+        "max": 12.05
+      },
+      "C": {
+        "min": 12.06,
+        "max": 14.4
+      }
+    }
+  },
+  "C52": {
+    "n": 31,
+    "nome": "COLLINA FLEMING (VIA BEVAGNA)",
+    "fascia": "C",
+    "min": 8.75,
+    "max": 15.6,
+    "fasce": {
+      "A": {
+        "min": 8.75,
+        "max": 9.9
+      },
+      "B": {
+        "min": 9.91,
+        "max": 14.1
+      },
+      "C": {
+        "min": 14.11,
+        "max": 15.6
+      }
+    }
+  },
+  "D29": {
+    "n": 32,
+    "nome": "EUR (VIALE EUROPA)",
+    "fascia": "D",
+    "min": 6.95,
+    "max": 16.3,
+    "fasce": {
+      "A": {
+        "min": 6.95,
+        "max": 10.6
+      },
+      "B": {
+        "min": 10.61,
+        "max": 15.25
+      },
+      "C": {
+        "min": 15.26,
+        "max": 16.3
+      }
+    }
+  },
+  "E30": {
+    "n": 33,
+    "nome": "CASAL PALOCCO (VIALE GORGIA DI LEONTINI)",
+    "fascia": "E",
+    "min": 6.05,
+    "max": 12.4,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 11.45
+      },
+      "C": {
+        "min": 11.46,
+        "max": 12.4
+      }
+    }
+  },
+  "E84": {
+    "n": 34,
+    "nome": "AXA (VIA ARISTOFANE)",
+    "fascia": "E",
+    "min": 7.15,
+    "max": 11.3,
+    "fasce": {
+      "A": {
+        "min": 7.15,
+        "max": 8.1
+      },
+      "B": {
+        "min": 8.11,
+        "max": 10.15
+      },
+      "C": {
+        "min": 10.16,
+        "max": 11.3
+      }
+    }
+  },
+  "E97": {
+    "n": 35,
+    "nome": "OLGIATA (LARGO DELL`OLGIATA)",
+    "fascia": "E",
+    "min": 7.05,
+    "max": 13.6,
+    "fasce": {
+      "A": {
+        "min": 7.05,
+        "max": 9.0
+      },
+      "B": {
+        "min": 9.01,
+        "max": 12.65
+      },
+      "C": {
+        "min": 12.66,
+        "max": 13.6
+      }
+    }
+  },
+  "C5": {
+    "n": 36,
+    "nome": "SAN LORENZO (VIA DEI SABELLI)",
+    "fascia": "C",
+    "min": 4.35,
+    "max": 13.7,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 8.2
+      },
+      "B": {
+        "min": 8.21,
+        "max": 11.75
+      },
+      "C": {
+        "min": 11.76,
+        "max": 13.7
+      }
+    }
+  },
+  "C7": {
+    "n": 37,
+    "nome": "APPIO VILLA FIORELLI (VIA TARANTO)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 14.2,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 11.45
+      },
+      "C": {
+        "min": 11.46,
+        "max": 14.2
+      }
+    }
+  },
+  "C8": {
+    "n": 38,
+    "nome": "APPIO NOCERA UMBRA (PIAZZA S.MARIA AUSILIATRICE)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 14.2,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 11.4
+      },
+      "C": {
+        "min": 11.41,
+        "max": 14.2
+      }
+    }
+  },
+  "C9": {
+    "n": 39,
+    "nome": "APPIO METRONIO (PIAZZA TUSCOLO)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 15.6,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.7
+      },
+      "B": {
+        "min": 8.71,
+        "max": 12.45
+      },
+      "C": {
+        "min": 12.46,
+        "max": 15.6
+      }
+    }
+  },
+  "C10": {
+    "n": 40,
+    "nome": "GARBATELLA (LARGO DELLE SETTE CHIESE)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 13.6,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.3
+      },
+      "B": {
+        "min": 8.31,
+        "max": 11.9
+      },
+      "C": {
+        "min": 11.91,
+        "max": 13.6
+      }
+    }
+  },
+  "C11": {
+    "n": 41,
+    "nome": "MARCONI (PIAZZA ENRICO FERMI)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 13.4,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.3
+      },
+      "B": {
+        "min": 8.31,
+        "max": 11.95
+      },
+      "C": {
+        "min": 11.96,
+        "max": 13.4
+      }
+    }
+  },
+  "C13": {
+    "n": 42,
+    "nome": "MONTEVERDE NUOVO (VIA DI DONNA OLIMPIA)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 12.9,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.3
+      },
+      "B": {
+        "min": 8.31,
+        "max": 11.95
+      },
+      "C": {
+        "min": 11.96,
+        "max": 12.9
+      }
+    }
+  },
+  "C14": {
+    "n": 43,
+    "nome": "AURELIO MONTE DI CRETA (PIAZZA IRNERIO)",
+    "fascia": "C",
+    "min": 4.65,
+    "max": 12.9,
+    "fasce": {
+      "A": {
+        "min": 4.65,
+        "max": 8.2
+      },
+      "B": {
+        "min": 8.21,
+        "max": 11.7
+      },
+      "C": {
+        "min": 11.71,
+        "max": 12.9
+      }
+    }
+  },
+  "C15": {
+    "n": 44,
+    "nome": "AURELIO GREGORIO VII (VIA GREGORIO VII)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 15.6,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.5
+      },
+      "B": {
+        "min": 8.51,
+        "max": 12.15
+      },
+      "C": {
+        "min": 12.16,
+        "max": 15.6
+      }
+    }
+  },
+  "C18": {
+    "n": 45,
+    "nome": "CIPRO (VIA ANGELO EMO)",
+    "fascia": "C",
+    "min": 6.25,
+    "max": 13.6,
+    "fasce": {
+      "A": {
+        "min": 6.25,
+        "max": 8.5
+      },
+      "B": {
+        "min": 8.51,
+        "max": 12.15
+      },
+      "C": {
+        "min": 12.16,
+        "max": 13.6
+      }
+    }
+  },
+  "C21": {
+    "n": 46,
+    "nome": "SALARIO AFRICANO (VIALE LIBIA)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 15.6,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 9.9
+      },
+      "B": {
+        "min": 9.91,
+        "max": 14.15
+      },
+      "C": {
+        "min": 14.16,
+        "max": 15.6
+      }
+    }
+  },
+  "C22": {
+    "n": 47,
+    "nome": "BATTERIA NOMENTANA-LANCIANI (VIA COSTANTINO MAES)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 14.6,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 9.6
+      },
+      "B": {
+        "min": 9.61,
+        "max": 13.75
+      },
+      "C": {
+        "min": 13.76,
+        "max": 14.6
+      }
+    }
+  },
+  "C24": {
+    "n": 48,
+    "nome": "BOLOGNA (VIA LIVORNO)",
+    "fascia": "C",
+    "min": 6.45,
+    "max": 15.1,
+    "fasce": {
+      "A": {
+        "min": 6.45,
+        "max": 9.8
+      },
+      "B": {
+        "min": 9.81,
+        "max": 13.95
+      },
+      "C": {
+        "min": 13.96,
+        "max": 15.1
+      }
+    }
+  },
+  "C26": {
+    "n": 49,
+    "nome": "VILLAGGIO OLIMPICO (VIALE DE COUBERTIN)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 14.1,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 9.1
+      },
+      "B": {
+        "min": 9.11,
+        "max": 13.0
+      },
+      "C": {
+        "min": 13.01,
+        "max": 14.1
+      }
+    }
+  },
+  "C27": {
+    "n": 50,
+    "nome": "PORTA PORTESE (VIA ETTORE ROLLI)",
+    "fascia": "C",
+    "min": 8.75,
+    "max": 16.1,
+    "fasce": {
+      "A": {
+        "min": 8.75,
+        "max": 10.2
+      },
+      "B": {
+        "min": 10.21,
+        "max": 14.6
+      },
+      "C": {
+        "min": 14.61,
+        "max": 16.1
+      }
+    }
+  },
+  "C29": {
+    "n": 51,
+    "nome": "CASAL BERTONE-PORTONACCIO (VIA DI CASAL BERTONE)",
+    "fascia": "C",
+    "min": 4.15,
+    "max": 12.5,
+    "fasce": {
+      "A": {
+        "min": 4.15,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.1
+      },
+      "C": {
+        "min": 9.11,
+        "max": 12.5
+      }
+    }
+  },
+  "C30": {
+    "n": 52,
+    "nome": "PIGNETO (PIAZZA DEL PIGNETO)",
+    "fascia": "C",
+    "min": 4.35,
+    "max": 13.2,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 7.4
+      },
+      "B": {
+        "min": 7.41,
+        "max": 10.65
+      },
+      "C": {
+        "min": 10.66,
+        "max": 13.2
+      }
+    }
+  },
+  "C31": {
+    "n": 53,
+    "nome": "MARCO POLO (VIALE MARCO POLO)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 15.1,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.3
+      },
+      "B": {
+        "min": 8.31,
+        "max": 11.95
+      },
+      "C": {
+        "min": 11.96,
+        "max": 15.1
+      }
+    }
+  },
+  "C32": {
+    "n": 54,
+    "nome": "OSTIENSE (VIA DEL PORTO FLUVIALE)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 12.6,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 7.8
+      },
+      "B": {
+        "min": 7.81,
+        "max": 11.1
+      },
+      "C": {
+        "min": 11.11,
+        "max": 12.6
+      }
+    }
+  },
+  "C35": {
+    "n": 55,
+    "nome": "AURELIO MADONNA DEL RIPOSO (VIA BENTIVOGLIO)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 12.9,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.3
+      },
+      "B": {
+        "min": 8.31,
+        "max": 11.95
+      },
+      "C": {
+        "min": 11.96,
+        "max": 12.9
+      }
+    }
+  },
+  "C38": {
+    "n": 56,
+    "nome": "CASILINO MARRANELLA (VIA LABICO)",
+    "fascia": "C",
+    "min": 4.05,
+    "max": 12.0,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.25
+      },
+      "C": {
+        "min": 9.26,
+        "max": 12.0
+      }
+    }
+  },
+  "C43": {
+    "n": 57,
+    "nome": "TRIONFALE IGEA (VIA MARIO FANI)",
+    "fascia": "C",
+    "min": 8.75,
+    "max": 16.6,
+    "fasce": {
+      "A": {
+        "min": 8.75,
+        "max": 10.5
+      },
+      "B": {
+        "min": 10.51,
+        "max": 15.0
+      },
+      "C": {
+        "min": 15.01,
+        "max": 16.6
+      }
+    }
+  },
+  "C45": {
+    "n": 58,
+    "nome": "NOCETTA (VIA DELLA NOCETTA)",
+    "fascia": "C",
+    "min": 4.35,
+    "max": 12.7,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.6
+      },
+      "B": {
+        "min": 6.61,
+        "max": 9.45
+      },
+      "C": {
+        "min": 9.46,
+        "max": 12.7
+      }
+    }
+  },
+  "C48": {
+    "n": 59,
+    "nome": "TOR MARANCIA NAVIGATORI (VIA C.T.ODESCALCHI)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 13.6,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.2
+      },
+      "B": {
+        "min": 8.21,
+        "max": 11.8
+      },
+      "C": {
+        "min": 11.81,
+        "max": 13.6
+      }
+    }
+  },
+  "C51": {
+    "n": 60,
+    "nome": "APPIO LATINO (VIA LATINA)",
+    "fascia": "C",
+    "min": 6.05,
+    "max": 13.4,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.3
+      },
+      "B": {
+        "min": 8.31,
+        "max": 11.95
+      },
+      "C": {
+        "min": 11.96,
+        "max": 13.4
+      }
+    }
+  },
+  "D1": {
+    "n": 61,
+    "nome": "PRENESTINO LABICANO (VIALE PARTENOPE. VIA TEANO)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 11.0,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.0
+      }
+    }
+  },
+  "D2": {
+    "n": 62,
+    "nome": "TOR PIGNATTARA (VIA DI TOR PIGNATTARA)",
+    "fascia": "D",
+    "min": 4.35,
+    "max": 12.0,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 5.8
+      },
+      "B": {
+        "min": 5.81,
+        "max": 8.3
+      },
+      "C": {
+        "min": 8.31,
+        "max": 12.0
+      }
+    }
+  },
+  "D5": {
+    "n": 63,
+    "nome": "SAN PAOLO (VIA TULLIO LEVI CIVITA)",
+    "fascia": "D",
+    "min": 5.25,
+    "max": 13.0,
+    "fasce": {
+      "A": {
+        "min": 5.25,
+        "max": 7.6
+      },
+      "B": {
+        "min": 7.61,
+        "max": 10.8
+      },
+      "C": {
+        "min": 10.81,
+        "max": 13.0
+      }
+    }
+  },
+  "D7": {
+    "n": 64,
+    "nome": "PORTUENSE (VIA PROSPERO COLONNA)",
+    "fascia": "D",
+    "min": 6.05,
+    "max": 12.9,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.4
+      },
+      "B": {
+        "min": 8.41,
+        "max": 11.1
+      },
+      "C": {
+        "min": 11.11,
+        "max": 12.9
+      }
+    }
+  },
+  "D8": {
+    "n": 65,
+    "nome": "MAGLIANA (VIA DELL`IMPRUNETA)",
+    "fascia": "D",
+    "min": 5.25,
+    "max": 11.8,
+    "fasce": {
+      "A": {
+        "min": 5.25,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.8
+      }
+    }
+  },
+  "D9": {
+    "n": 66,
+    "nome": "COLLI PORTUENSI (PIAZZALE EUGENIO MORELLI)",
+    "fascia": "D",
+    "min": 6.05,
+    "max": 12.7,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.4
+      },
+      "B": {
+        "min": 8.41,
+        "max": 12.1
+      },
+      "C": {
+        "min": 12.11,
+        "max": 12.7
+      }
+    }
+  },
+  "D11": {
+    "n": 67,
+    "nome": "MONTESACRO (VIALE ADRIATICO)",
+    "fascia": "D",
+    "min": 5.25,
+    "max": 13.1,
+    "fasce": {
+      "A": {
+        "min": 5.25,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 11.6
+      },
+      "C": {
+        "min": 11.61,
+        "max": 13.1
+      }
+    }
+  },
+  "D12": {
+    "n": 68,
+    "nome": "VALMELAINA-TUFELLO (VIA DELLE ISOLE CURZOLANE)",
+    "fascia": "D",
+    "min": 4.65,
+    "max": 12.9,
+    "fasce": {
+      "A": {
+        "min": 4.65,
+        "max": 7.4
+      },
+      "B": {
+        "min": 7.41,
+        "max": 10.6
+      },
+      "C": {
+        "min": 10.61,
+        "max": 12.9
+      }
+    }
+  },
+  "D14": {
+    "n": 69,
+    "nome": "CENTOCELLE (PIAZZA DEI MIRTI)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 11.5,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.5
+      }
+    }
+  },
+  "D15": {
+    "n": 70,
+    "nome": "ARDEATINO OTTAVO COLLE (VIA DEL SERAFICO)",
+    "fascia": "D",
+    "min": 6.95,
+    "max": 16.0,
+    "fasce": {
+      "A": {
+        "min": 6.95,
+        "max": 9.8
+      },
+      "B": {
+        "min": 9.81,
+        "max": 13.9
+      },
+      "C": {
+        "min": 13.91,
+        "max": 16.0
+      }
+    }
+  },
+  "D16": {
+    "n": 71,
+    "nome": "PIETRALATA TIBURTINO (VIA FILIPPO MEDA)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 12.5,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 12.5
+      }
+    }
+  },
+  "D17": {
+    "n": 72,
+    "nome": "COLLATINO (VIA DELLA SERENISSIMA)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 11.3,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.3
+      }
+    }
+  },
+  "D18": {
+    "n": 73,
+    "nome": "ALESSANDRINO (VIALE ALESSANDRINO)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 11.0,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.0
+      }
+    }
+  },
+  "D19": {
+    "n": 74,
+    "nome": "CINECITTA` DON BOSCO (PIAZZA S.GIOVANNI BOSCO)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 11.8,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.8
+      }
+    }
+  },
+  "D20": {
+    "n": 75,
+    "nome": "CINECITTA` LAMARO (VIA RAIMONDO SCINTU)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 10.6,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.6
+      }
+    }
+  },
+  "D21": {
+    "n": 76,
+    "nome": "APPIO CLAUDIO (VIALE GIULIO AGRICOLA)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 12.3,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.7
+      },
+      "B": {
+        "min": 6.71,
+        "max": 9.5
+      },
+      "C": {
+        "min": 9.51,
+        "max": 12.3
+      }
+    }
+  },
+  "D22": {
+    "n": 77,
+    "nome": "STATUARIO-CAPANNELLE (VIA DEL CALICE)",
+    "fascia": "D",
+    "min": 3.75,
+    "max": 12.3,
+    "fasce": {
+      "A": {
+        "min": 3.75,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 12.3
+      }
+    }
+  },
+  "D23": {
+    "n": 78,
+    "nome": "QUARTO MIGLIO (VIA APPIA PIGNATELLI)",
+    "fascia": "D",
+    "min": 6.95,
+    "max": 16.0,
+    "fasce": {
+      "A": {
+        "min": 6.95,
+        "max": 9.3
+      },
+      "B": {
+        "min": 9.31,
+        "max": 13.9
+      },
+      "C": {
+        "min": 13.91,
+        "max": 16.0
+      }
+    }
+  },
+  "D24": {
+    "n": 79,
+    "nome": "PRIMAVALLE-TORREVECCHIA (VIA DI TORREVECCHIA)",
+    "fascia": "D",
+    "min": 3.45,
+    "max": 12.0,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 6.6
+      },
+      "B": {
+        "min": 6.61,
+        "max": 9.8
+      },
+      "C": {
+        "min": 9.81,
+        "max": 12.0
+      }
+    }
+  },
+  "D26": {
+    "n": 80,
+    "nome": "SAN BASILIO (VIA POLLENZA)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 10.6,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.1
+      },
+      "C": {
+        "min": 9.11,
+        "max": 10.6
+      }
+    }
+  },
+  "D27": {
+    "n": 81,
+    "nome": "TALENTI (VIA UGO OJETTI)",
+    "fascia": "D",
+    "min": 5.85,
+    "max": 13.8,
+    "fasce": {
+      "A": {
+        "min": 5.85,
+        "max": 8.3
+      },
+      "B": {
+        "min": 8.31,
+        "max": 11.9
+      },
+      "C": {
+        "min": 11.91,
+        "max": 13.8
+      }
+    }
+  },
+  "D28": {
+    "n": 82,
+    "nome": "GIULIANO DALMATA (VIA MATTEO BARTOLI)",
+    "fascia": "D",
+    "min": 6.05,
+    "max": 13.8,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.3
+      },
+      "B": {
+        "min": 8.31,
+        "max": 11.9
+      },
+      "C": {
+        "min": 11.91,
+        "max": 13.8
+      }
+    }
+  },
+  "D30": {
+    "n": 83,
+    "nome": "TOMBA DI NERONE (VIA DI GROTTAROSSA)",
+    "fascia": "D",
+    "min": 5.25,
+    "max": 12.9,
+    "fasce": {
+      "A": {
+        "min": 5.25,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 11.4
+      },
+      "C": {
+        "min": 11.41,
+        "max": 12.9
+      }
+    }
+  },
+  "D31": {
+    "n": 84,
+    "nome": "CASSIA DUE PONTI (VIA ORIOLO ROMANO)",
+    "fascia": "D",
+    "min": 8.75,
+    "max": 14.6,
+    "fasce": {
+      "A": {
+        "min": 8.75,
+        "max": 9.2
+      },
+      "B": {
+        "min": 9.21,
+        "max": 13.1
+      },
+      "C": {
+        "min": 13.11,
+        "max": 14.6
+      }
+    }
+  },
+  "D32": {
+    "n": 85,
+    "nome": "FONTE MERAVIGLIOSA-ARDEATINO MILLEVOI (VIA STEFANO GRADI)",
+    "fascia": "D",
+    "min": 6.05,
+    "max": 16.6,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 9.8
+      },
+      "B": {
+        "min": 9.81,
+        "max": 14.0
+      },
+      "C": {
+        "min": 14.01,
+        "max": 16.6
+      }
+    }
+  },
+  "D34": {
+    "n": 86,
+    "nome": "MONTAGNOLA (VIA PICO DELLA MIRANDOLA)",
+    "fascia": "D",
+    "min": 6.35,
+    "max": 15.1,
+    "fasce": {
+      "A": {
+        "min": 6.35,
+        "max": 9.2
+      },
+      "B": {
+        "min": 9.21,
+        "max": 13.2
+      },
+      "C": {
+        "min": 13.21,
+        "max": 15.1
+      }
+    }
+  },
+  "D36": {
+    "n": 87,
+    "nome": "GROTTA PERFETTA-ROMA 70 (VIALE ERMINIO SPALLA)",
+    "fascia": "D",
+    "min": 6.95,
+    "max": 16.1,
+    "fasce": {
+      "A": {
+        "min": 6.95,
+        "max": 9.7
+      },
+      "B": {
+        "min": 9.71,
+        "max": 13.8
+      },
+      "C": {
+        "min": 13.81,
+        "max": 16.1
+      }
+    }
+  },
+  "D37": {
+    "n": 88,
+    "nome": "APPIA ANTICA (VIA DI TOR CARBONE)",
+    "fascia": "D",
+    "min": 6.65,
+    "max": 15.6,
+    "fasce": {
+      "A": {
+        "min": 6.65,
+        "max": 9.8
+      },
+      "B": {
+        "min": 9.81,
+        "max": 14.1
+      },
+      "C": {
+        "min": 14.11,
+        "max": 15.6
+      }
+    }
+  },
+  "D38": {
+    "n": 89,
+    "nome": "TINTORETTO (VIA BALLARIN)",
+    "fascia": "D",
+    "min": 6.95,
+    "max": 16.1,
+    "fasce": {
+      "A": {
+        "min": 6.95,
+        "max": 9.8
+      },
+      "B": {
+        "min": 9.81,
+        "max": 13.9
+      },
+      "C": {
+        "min": 13.91,
+        "max": 16.1
+      }
+    }
+  },
+  "D45": {
+    "n": 90,
+    "nome": "PINETA SACCHETTI (VIA MATTIA BATTISTINI)",
+    "fascia": "D",
+    "min": 3.45,
+    "max": 12.3,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 6.8
+      },
+      "B": {
+        "min": 6.81,
+        "max": 10.2
+      },
+      "C": {
+        "min": 10.21,
+        "max": 12.3
+      }
+    }
+  },
+  "D46": {
+    "n": 91,
+    "nome": "CONCA D`ORO (VIA VAL DI LANZO)",
+    "fascia": "D",
+    "min": 5.25,
+    "max": 13.1,
+    "fasce": {
+      "A": {
+        "min": 5.25,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 11.4
+      },
+      "C": {
+        "min": 11.41,
+        "max": 13.1
+      }
+    }
+  },
+  "D47": {
+    "n": 92,
+    "nome": "SACCO PASTORE (VIA VAL TROMPIA)",
+    "fascia": "D",
+    "min": 5.25,
+    "max": 13.1,
+    "fasce": {
+      "A": {
+        "min": 5.25,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 11.4
+      },
+      "C": {
+        "min": 11.41,
+        "max": 13.1
+      }
+    }
+  },
+  "D48": {
+    "n": 93,
+    "nome": "PIETRALATA (VIA DI PIETRALATA)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 12.0,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 12.0
+      }
+    }
+  },
+  "D49": {
+    "n": 94,
+    "nome": "CASAL BRUCIATO (VIA C. FACCHINETTI)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 11.5,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.5
+      }
+    }
+  },
+  "D52": {
+    "n": 95,
+    "nome": "CASILINO VILLA DE SANTIS (VIA ROMOLO BALZANI)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 10.6,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.6
+      }
+    }
+  },
+  "D53": {
+    "n": 96,
+    "nome": "QUADRARO (VIA DEI QUINTILI)",
+    "fascia": "D",
+    "min": 4.35,
+    "max": 11.8,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.2
+      },
+      "B": {
+        "min": 6.21,
+        "max": 8.9
+      },
+      "C": {
+        "min": 8.91,
+        "max": 11.8
+      }
+    }
+  },
+  "D54": {
+    "n": 97,
+    "nome": "ARCO DI TRAVERTINO - TOR FISCALE (VIA DEMETRIADE)",
+    "fascia": "D",
+    "min": 6.05,
+    "max": 13.2,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.2
+      },
+      "B": {
+        "min": 8.21,
+        "max": 11.7
+      },
+      "C": {
+        "min": 11.71,
+        "max": 13.2
+      }
+    }
+  },
+  "D57": {
+    "n": 98,
+    "nome": "NOMENTANO KANT (VIALE KANT)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 11.1,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.7
+      },
+      "B": {
+        "min": 6.71,
+        "max": 9.6
+      },
+      "C": {
+        "min": 9.61,
+        "max": 11.1
+      }
+    }
+  },
+  "D58": {
+    "n": 99,
+    "nome": "PODERE ROSA (VIA DIEGO FABBRI)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.1
+      }
+    }
+  },
+  "D59": {
+    "n": 100,
+    "nome": "CASAL DEI PAZZI (VIA DI CASAL DEI PAZZI)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 11.8,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.7
+      },
+      "B": {
+        "min": 6.71,
+        "max": 9.6
+      },
+      "C": {
+        "min": 9.61,
+        "max": 11.8
+      }
+    }
+  },
+  "D61": {
+    "n": 101,
+    "nome": "COLLI ANIENE-VERDEROCCA (VIA GROTTA DI GREGNA)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.1
+      }
+    }
+  },
+  "D63": {
+    "n": 102,
+    "nome": "TOR TRE TESTE (VIA DAVIDE CAMPARI)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.1
+      }
+    }
+  },
+  "D64": {
+    "n": 103,
+    "nome": "TORRE SPACCATA (VIA DEI ROMANISTI)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 10.6,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.6
+      }
+    }
+  },
+  "D66": {
+    "n": 104,
+    "nome": "TORRACCIA DI SAN BASILIO (VIA DONATO MENICHELLA)",
+    "fascia": "D",
+    "min": 4.25,
+    "max": 11.1,
+    "fasce": {
+      "A": {
+        "min": 4.25,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.1
+      }
+    }
+  },
+  "D68": {
+    "n": 105,
+    "nome": "CORTINA D`AMPEZZO (VIA CORTINA D`AMPEZZO)",
+    "fascia": "D",
+    "min": 8.75,
+    "max": 16.8,
+    "fasce": {
+      "A": {
+        "min": 8.75,
+        "max": 11.1
+      },
+      "B": {
+        "min": 11.11,
+        "max": 15.5
+      },
+      "C": {
+        "min": 15.51,
+        "max": 16.8
+      }
+    }
+  },
+  "D69": {
+    "n": 106,
+    "nome": "MONTE MARIO ALTO (VIA AUGUSTO CONTI)",
+    "fascia": "D",
+    "min": 8.75,
+    "max": 16.5,
+    "fasce": {
+      "A": {
+        "min": 8.75,
+        "max": 11.1
+      },
+      "B": {
+        "min": 11.11,
+        "max": 15.1
+      },
+      "C": {
+        "min": 15.11,
+        "max": 16.5
+      }
+    }
+  },
+  "D70": {
+    "n": 107,
+    "nome": "PORTUENSE AFFOGALASINO (VIA AFFOGALASINO)",
+    "fascia": "D",
+    "min": 4.35,
+    "max": 13.8,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 7.1
+      },
+      "B": {
+        "min": 7.11,
+        "max": 10.1
+      },
+      "C": {
+        "min": 10.11,
+        "max": 13.8
+      }
+    }
+  },
+  "D71": {
+    "n": 108,
+    "nome": "NUOVO SALARIO-PRATI FISCALI (VIA MONTE CERVIALTO)",
+    "fascia": "D",
+    "min": 4.95,
+    "max": 13.5,
+    "fasce": {
+      "A": {
+        "min": 4.95,
+        "max": 8.3
+      },
+      "B": {
+        "min": 8.31,
+        "max": 11.8
+      },
+      "C": {
+        "min": 11.81,
+        "max": 13.5
+      }
+    }
+  },
+  "D72": {
+    "n": 109,
+    "nome": "CORVIALE (VIA MARINO MAZZACURATI)",
+    "fascia": "D",
+    "min": 4.35,
+    "max": 9.2,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 8.1
+      },
+      "C": {
+        "min": 8.11,
+        "max": 9.2
+      }
+    }
+  },
+  "D73": {
+    "n": 110,
+    "nome": "CASETTA MATTEI (VIA DEGLI ADIMARI)",
+    "fascia": "D",
+    "min": 4.35,
+    "max": 10.6,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.1
+      },
+      "C": {
+        "min": 9.11,
+        "max": 10.6
+      }
+    }
+  },
+  "D74": {
+    "n": 111,
+    "nome": "TRULLO (VIA MONTE DELLE CAPRE)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 10.8,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.2
+      },
+      "B": {
+        "min": 6.21,
+        "max": 8.9
+      },
+      "C": {
+        "min": 8.91,
+        "max": 10.8
+      }
+    }
+  },
+  "D75": {
+    "n": 112,
+    "nome": "BOSCO DEGLI ARVALI (VIA DI GENEROSA)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 9.4,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.2
+      },
+      "B": {
+        "min": 6.21,
+        "max": 8.9
+      },
+      "C": {
+        "min": 8.91,
+        "max": 9.4
+      }
+    }
+  },
+  "D76": {
+    "n": 113,
+    "nome": "PISANA-BRAVETTA (VIA DEI GONZAGA)",
+    "fascia": "D",
+    "min": 4.05,
+    "max": 10.8,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.2
+      },
+      "B": {
+        "min": 6.21,
+        "max": 8.9
+      },
+      "C": {
+        "min": 8.91,
+        "max": 10.8
+      }
+    }
+  },
+  "D77": {
+    "n": 114,
+    "nome": "AURELIO VAL CANNUTA (VIA DI VAL CANNUTA)",
+    "fascia": "D",
+    "min": 6.05,
+    "max": 13.2,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.3
+      },
+      "B": {
+        "min": 8.31,
+        "max": 11.9
+      },
+      "C": {
+        "min": 11.91,
+        "max": 13.2
+      }
+    }
+  },
+  "D78": {
+    "n": 115,
+    "nome": "FERRATELLA (VIALE CESARE PAVESE)",
+    "fascia": "D",
+    "min": 6.95,
+    "max": 15.1,
+    "fasce": {
+      "A": {
+        "min": 6.95,
+        "max": 9.5
+      },
+      "B": {
+        "min": 9.51,
+        "max": 13.6
+      },
+      "C": {
+        "min": 13.61,
+        "max": 15.1
+      }
+    }
+  },
+  "D79": {
+    "n": 116,
+    "nome": "TORRINO SUD (VIA DEL FIUME GIALLO)",
+    "fascia": "D",
+    "min": 6.05,
+    "max": 11.8,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 11.4
+      },
+      "C": {
+        "min": 11.41,
+        "max": 11.8
+      }
+    }
+  },
+  "D80": {
+    "n": 117,
+    "nome": "TORRINO NORD-CITTA` D`EUROPA (VIA DELLE COSTELLAZIONI)",
+    "fascia": "D",
+    "min": 6.05,
+    "max": 15.3,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 11.4
+      },
+      "C": {
+        "min": 11.41,
+        "max": 15.3
+      }
+    }
+  },
+  "D81": {
+    "n": 118,
+    "nome": "DECIMA (VIALE CAMILLO SABATINI)",
+    "fascia": "D",
+    "min": 6.05,
+    "max": 11.4,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 10.1
+      },
+      "C": {
+        "min": 10.11,
+        "max": 11.4
+      }
+    }
+  },
+  "D82": {
+    "n": 119,
+    "nome": "MOSTACCIANO (VIALE BEATA VERGINE DEL CARMELO)",
+    "fascia": "D",
+    "min": 4.35,
+    "max": 11.5,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.5
+      }
+    }
+  },
+  "E3": {
+    "n": 120,
+    "nome": "TORRE MAURA (VIA WALTER TOBAGI)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 10.4,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.4
+      }
+    }
+  },
+  "E7": {
+    "n": 121,
+    "nome": "TORRESINA-MONTE DEL MARMO (VIA DEL PODERE DI SAN GIUSTO)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 11.0,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.8
+      },
+      "B": {
+        "min": 5.81,
+        "max": 8.3
+      },
+      "C": {
+        "min": 8.31,
+        "max": 11.0
+      }
+    }
+  },
+  "E8": {
+    "n": 122,
+    "nome": "MONTESPACCATO (VIA CORNELIA)",
+    "fascia": "E",
+    "min": 6.05,
+    "max": 12.1,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 7.7
+      },
+      "B": {
+        "min": 7.71,
+        "max": 10.8
+      },
+      "C": {
+        "min": 10.81,
+        "max": 12.1
+      }
+    }
+  },
+  "E9": {
+    "n": 123,
+    "nome": "TOR CERVARA-PONTE MAMMOLO (VIA VANNINA)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.8,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.8
+      }
+    }
+  },
+  "E10": {
+    "n": 124,
+    "nome": "MORENA-CASAL MORENA (VIA CASAL MORENA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 9.6,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 9.6
+      }
+    }
+  },
+  "E11": {
+    "n": 125,
+    "nome": "GIARDINETTI (VIA MARCANTONIO RAIMONDI)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 9.9,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 9.9
+      }
+    }
+  },
+  "E12": {
+    "n": 126,
+    "nome": "CASALOTTI (PIAZZA ORMEA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 12.3,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 12.3
+      }
+    }
+  },
+  "E13": {
+    "n": 127,
+    "nome": "FONTE OSTIENSE (VIALE IGNAZIO SILONE)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 11.5,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.7
+      },
+      "B": {
+        "min": 5.71,
+        "max": 8.2
+      },
+      "C": {
+        "min": 8.21,
+        "max": 11.5
+      }
+    }
+  },
+  "E14": {
+    "n": 128,
+    "nome": "TOR SAPIENZA-ZONA INDUSTRIALE VIA DELL`OMO (VIALE GIORGIO DE CHIRICO)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 11.0,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.0
+      }
+    }
+  },
+  "E15": {
+    "n": 129,
+    "nome": "TORRE ANGELA (VIA DEL TORRACCIO DI TORRENOVA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 9.6,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.7
+      },
+      "B": {
+        "min": 5.71,
+        "max": 8.2
+      },
+      "C": {
+        "min": 8.21,
+        "max": 9.6
+      }
+    }
+  },
+  "E16": {
+    "n": 130,
+    "nome": "CASTEL GIUBILEO-BEL POGGIO (VIA CASTORANO)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.8,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.8
+      }
+    }
+  },
+  "E17": {
+    "n": 131,
+    "nome": "OTTAVIA PALMAROLA (VIA DELLA PALMAROLA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 10.8,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 10.8
+      }
+    }
+  },
+  "E18": {
+    "n": 132,
+    "nome": "GROTTAROSSA-SAXA RUBRA (VIA CARLO EMERY)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 13.9,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 7.3
+      },
+      "B": {
+        "min": 7.31,
+        "max": 11.05
+      },
+      "C": {
+        "min": 11.06,
+        "max": 13.9
+      }
+    }
+  },
+  "E19": {
+    "n": 133,
+    "nome": "BORGHESIANA-FINOCCHIO (VIA DI BORGHESIANA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 8.9,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.7
+      },
+      "B": {
+        "min": 5.71,
+        "max": 8.2
+      },
+      "C": {
+        "min": 8.21,
+        "max": 8.9
+      }
+    }
+  },
+  "E21": {
+    "n": 134,
+    "nome": "SPINACETO-TOR DE` CENCI (VIALE DEGLI EROI DI CEFALONIA)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.1
+      }
+    }
+  },
+  "E22": {
+    "n": 135,
+    "nome": "ACQUA VERGINE(PRATO FIORITO-COLLE PRENESTINO.MONFORTANI)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 9.6,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.7
+      },
+      "B": {
+        "min": 5.71,
+        "max": 8.2
+      },
+      "C": {
+        "min": 8.21,
+        "max": 9.6
+      }
+    }
+  },
+  "E23": {
+    "n": 136,
+    "nome": "SETTECAMINI CASE ROSSE (VIA DELLE CASE ROSSE)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 9.1,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 9.1
+      }
+    }
+  },
+  "E24": {
+    "n": 137,
+    "nome": "LA GIUSTINIANA (VIA ITALO PICCAGLI)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 11.0,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.0
+      }
+    }
+  },
+  "E25": {
+    "n": 138,
+    "nome": "PRIMA PORTA (VIA DELLA VILLA DI LIVIA)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 9.6,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 9.6
+      }
+    }
+  },
+  "E26": {
+    "n": 139,
+    "nome": "LA STORTA (VIA DELLA TORRE DI SPIZZICHINO)'",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.4,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.4
+      }
+    }
+  },
+  "E27": {
+    "n": 140,
+    "nome": "LABARO (VIA GEMONA DEL FRIULI)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.1
+      }
+    }
+  },
+  "E28": {
+    "n": 141,
+    "nome": "TORRE GAIA-VILLAGGIO BREDA (VIA DI GROTTE CELONI)",
+    "fascia": "E",
+    "min": 3.75,
+    "max": 9.1,
+    "fasce": {
+      "A": {
+        "min": 3.75,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 9.1
+      }
+    }
+  },
+  "E31": {
+    "n": 142,
+    "nome": "ACILIA NORD (VIA DEI MONTI DI SAN PAOLO)",
+    "fascia": "E",
+    "min": 4.05,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.1
+      }
+    }
+  },
+  "E33": {
+    "n": 143,
+    "nome": "ACILIA SUD (VIA DI PRATO CORNELIO)",
+    "fascia": "E",
+    "min": 4.05,
+    "max": 11.0,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.0
+      }
+    }
+  },
+  "E38": {
+    "n": 144,
+    "nome": "ARDEATINA SELVOTTA-SPREGAMORE (VIA DEL FOSSO DELLA SOLFARATA)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.3
+      },
+      "B": {
+        "min": 6.31,
+        "max": 8.9
+      },
+      "C": {
+        "min": 8.91,
+        "max": 10.1
+      }
+    }
+  },
+  "E39": {
+    "n": 145,
+    "nome": "CASTEL DI DECIMA-CASTEL ROMANO (VIA NAZZARENO STRAMPELLI)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.3
+      },
+      "B": {
+        "min": 6.31,
+        "max": 8.9
+      },
+      "C": {
+        "min": 8.91,
+        "max": 10.1
+      }
+    }
+  },
+  "E40": {
+    "n": 146,
+    "nome": "COLLE SALARIO (VIA MONTE GIBERTO)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 12.9,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 12.9
+      }
+    }
+  },
+  "E41": {
+    "n": 147,
+    "nome": "FIDENE-VILLA SPADA (VIA RADICOFANI)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.8,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.8
+      }
+    }
+  },
+  "E42": {
+    "n": 148,
+    "nome": "SERPENTARA (VIALE LINA CAVALIERI)",
+    "fascia": "E",
+    "min": 4.95,
+    "max": 10.6,
+    "fasce": {
+      "A": {
+        "min": 4.95,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 9.6
+      },
+      "C": {
+        "min": 9.61,
+        "max": 10.6
+      }
+    }
+  },
+  "E47": {
+    "n": 149,
+    "nome": "VIGNE NUOVE-PORTA DI ROMA (VIA DELLE VIGNE NUOVE)",
+    "fascia": "E",
+    "min": 4.65,
+    "max": 13.2,
+    "fasce": {
+      "A": {
+        "min": 4.65,
+        "max": 6.7
+      },
+      "B": {
+        "min": 6.71,
+        "max": 9.5
+      },
+      "C": {
+        "min": 9.51,
+        "max": 13.2
+      }
+    }
+  },
+  "E49": {
+    "n": 150,
+    "nome": "OSTERIA DEL CURATO-LUCREZIA ROMANA (VIA DELLE CAPANNELLE)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 12.3,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.7
+      },
+      "B": {
+        "min": 5.71,
+        "max": 8.2
+      },
+      "C": {
+        "min": 8.21,
+        "max": 12.3
+      }
+    }
+  },
+  "E50": {
+    "n": 151,
+    "nome": "SETTEBAGNI (VIA S. ANTONIO DA PADOVA)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.1
+      }
+    }
+  },
+  "E51": {
+    "n": 152,
+    "nome": "CASAL BOCCONE - BUFALOTTA (VIA PAOLO MONELLI)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 13.2,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 13.2
+      }
+    }
+  },
+  "E53": {
+    "n": 153,
+    "nome": "PONTE DI NONA (VIA LUIGI GASTINELLI)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 9.9,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.7
+      },
+      "B": {
+        "min": 5.71,
+        "max": 8.2
+      },
+      "C": {
+        "min": 8.21,
+        "max": 9.9
+      }
+    }
+  },
+  "E61": {
+    "n": 154,
+    "nome": "TORRICOLA (VIA DI TORRICOLA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 15.6,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 15.6
+      }
+    }
+  },
+  "E62": {
+    "n": 155,
+    "nome": "TRIGORIA (VIA DI TRIGORIA)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 11.0,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.0
+      }
+    }
+  },
+  "E64": {
+    "n": 156,
+    "nome": "SANTA PALOMBA-PIAN SAVELLI (VIA DELLA STAZIONE DI PAVONA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 8.1,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.3
+      },
+      "B": {
+        "min": 5.31,
+        "max": 7.6
+      },
+      "C": {
+        "min": 7.61,
+        "max": 8.1
+      }
+    }
+  },
+  "E65": {
+    "n": 157,
+    "nome": "FIORANELLO (VIA DI FIORANELLO)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 11.0,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.0
+      }
+    }
+  },
+  "E66": {
+    "n": 158,
+    "nome": "VALLERANO (VIA DI VALLERANELLO)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 12.7,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.6
+      },
+      "B": {
+        "min": 6.61,
+        "max": 9.4
+      },
+      "C": {
+        "min": 9.41,
+        "max": 12.7
+      }
+    }
+  },
+  "E71": {
+    "n": 159,
+    "nome": "PIANA DEL SOLE - FIERA DI ROMA (VIA CRISTOFORO SABBADINO)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 10.1
+      }
+    }
+  },
+  "E72": {
+    "n": 160,
+    "nome": "CASTEL DI GUIDO-MALAGROTTA (VIA DI CASTEL DI GUIDO)",
+    "fascia": "E",
+    "min": 5.05,
+    "max": 9.1,
+    "fasce": {
+      "A": {
+        "min": 5.05,
+        "max": 6.7
+      },
+      "B": {
+        "min": 6.71,
+        "max": 8.1
+      },
+      "C": {
+        "min": 8.11,
+        "max": 9.1
+      }
+    }
+  },
+  "E73": {
+    "n": 161,
+    "nome": "MASSIMINA-CASAL LUMBROSO (VIA MASSIMILLA)",
+    "fascia": "E",
+    "min": 5.05,
+    "max": 9.6,
+    "fasce": {
+      "A": {
+        "min": 5.05,
+        "max": 6.8
+      },
+      "B": {
+        "min": 6.81,
+        "max": 8.3
+      },
+      "C": {
+        "min": 8.31,
+        "max": 9.6
+      }
+    }
+  },
+  "E75": {
+    "n": 162,
+    "nome": "CECCHIGNOLA-TOR PAGNOTTA (VIA DELLA CECCHIGNOLA)",
+    "fascia": "E",
+    "min": 6.05,
+    "max": 12.4,
+    "fasce": {
+      "A": {
+        "min": 6.05,
+        "max": 7.6
+      },
+      "B": {
+        "min": 7.61,
+        "max": 11.0
+      },
+      "C": {
+        "min": 11.01,
+        "max": 12.4
+      }
+    }
+  },
+  "E77": {
+    "n": 163,
+    "nome": "CESANO (VIA DI BACCANELLO)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 9.6,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 5.8
+      },
+      "B": {
+        "min": 5.81,
+        "max": 8.6
+      },
+      "C": {
+        "min": 8.61,
+        "max": 9.6
+      }
+    }
+  },
+  "E78": {
+    "n": 164,
+    "nome": "ISOLA FARNESE (VIA CERQUETTA)",
+    "fascia": "E",
+    "min": 4.25,
+    "max": 9.3,
+    "fasce": {
+      "A": {
+        "min": 4.25,
+        "max": 5.8
+      },
+      "B": {
+        "min": 5.81,
+        "max": 8.3
+      },
+      "C": {
+        "min": 8.31,
+        "max": 9.3
+      }
+    }
+  },
+  "E79": {
+    "n": 165,
+    "nome": "OSTERIA NUOVA-CASACCIA (VIA ANGUILLARESE)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 7.9,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 4.8
+      },
+      "B": {
+        "min": 4.81,
+        "max": 6.9
+      },
+      "C": {
+        "min": 6.91,
+        "max": 7.9
+      }
+    }
+  },
+  "E81": {
+    "n": 166,
+    "nome": "VITINIA (VIA SARSINA)",
+    "fascia": "E",
+    "min": 5.05,
+    "max": 10.4,
+    "fasce": {
+      "A": {
+        "min": 5.05,
+        "max": 6.5
+      },
+      "B": {
+        "min": 6.51,
+        "max": 9.3
+      },
+      "C": {
+        "min": 9.31,
+        "max": 10.4
+      }
+    }
+  },
+  "E83": {
+    "n": 167,
+    "nome": "ACILIA NUOVA-MADONNETTA (VIA BEPI ROMAGNONI)",
+    "fascia": "E",
+    "min": 5.95,
+    "max": 11.0,
+    "fasce": {
+      "A": {
+        "min": 5.95,
+        "max": 6.9
+      },
+      "B": {
+        "min": 6.91,
+        "max": 9.9
+      },
+      "C": {
+        "min": 9.91,
+        "max": 11.0
+      }
+    }
+  },
+  "E87": {
+    "n": 168,
+    "nome": "DRAGONCELLO (VIALE A.RUSPOLI)",
+    "fascia": "E",
+    "min": 5.05,
+    "max": 9.6,
+    "fasce": {
+      "A": {
+        "min": 5.05,
+        "max": 6.0
+      },
+      "B": {
+        "min": 6.01,
+        "max": 8.6
+      },
+      "C": {
+        "min": 8.61,
+        "max": 9.6
+      }
+    }
+  },
+  "E88": {
+    "n": 169,
+    "nome": "DRAGONA (VIA DI DRAGONE)",
+    "fascia": "E",
+    "min": 5.95,
+    "max": 11.3,
+    "fasce": {
+      "A": {
+        "min": 5.95,
+        "max": 7.1
+      },
+      "B": {
+        "min": 7.11,
+        "max": 10.1
+      },
+      "C": {
+        "min": 10.11,
+        "max": 11.3
+      }
+    }
+  },
+  "E89": {
+    "n": 170,
+    "nome": "TIBERINA-MALBORGHETTO (VIA MALBORGHETTO-TIBERINA KM 7)",
+    "fascia": "E",
+    "min": 4.05,
+    "max": 7.7,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 4.9
+      },
+      "B": {
+        "min": 4.91,
+        "max": 6.9
+      },
+      "C": {
+        "min": 6.91,
+        "max": 7.7
+      }
+    }
+  },
+  "E92": {
+    "n": 171,
+    "nome": "STAGNI DI OSTIA-LONGARINA (VIA FEDERICO BAZZINI)",
+    "fascia": "E",
+    "min": 5.45,
+    "max": 10.6,
+    "fasce": {
+      "A": {
+        "min": 5.45,
+        "max": 7.0
+      },
+      "B": {
+        "min": 7.01,
+        "max": 10.0
+      },
+      "C": {
+        "min": 10.01,
+        "max": 10.6
+      }
+    }
+  },
+  "E94": {
+    "n": 172,
+    "nome": "INFERNETTO (VIA ERMANNO WOLF FERRARI)",
+    "fascia": "E",
+    "min": 5.45,
+    "max": 11.3,
+    "fasce": {
+      "A": {
+        "min": 5.45,
+        "max": 7.3
+      },
+      "B": {
+        "min": 7.31,
+        "max": 10.4
+      },
+      "C": {
+        "min": 10.41,
+        "max": 11.3
+      }
+    }
+  },
+  "E96": {
+    "n": 173,
+    "nome": "SANTA CORNELIA (VIA DEL FOSSO DI MONTE OLIVIERO)",
+    "fascia": "E",
+    "min": 4.65,
+    "max": 9.1,
+    "fasce": {
+      "A": {
+        "min": 4.65,
+        "max": 5.7
+      },
+      "B": {
+        "min": 5.71,
+        "max": 8.2
+      },
+      "C": {
+        "min": 8.21,
+        "max": 9.1
+      }
+    }
+  },
+  "E98": {
+    "n": 174,
+    "nome": "MURATELLA (VIALE GAETANO ARTURO CROCCO)",
+    "fascia": "E",
+    "min": 5.95,
+    "max": 10.4,
+    "fasce": {
+      "A": {
+        "min": 5.95,
+        "max": 6.9
+      },
+      "B": {
+        "min": 6.91,
+        "max": 9.3
+      },
+      "C": {
+        "min": 9.31,
+        "max": 10.4
+      }
+    }
+  },
+  "E101": {
+    "n": 175,
+    "nome": "CASAL MONASTERO (VIA BELMONTE IN SABINA)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.4,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.4
+      }
+    }
+  },
+  "E105": {
+    "n": 176,
+    "nome": "BOCCEA QUARTACCIO (VIA ANDERSEN)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 11.8,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.8
+      },
+      "B": {
+        "min": 5.81,
+        "max": 8.3
+      },
+      "C": {
+        "min": 8.31,
+        "max": 11.8
+      }
+    }
+  },
+  "E113": {
+    "n": 177,
+    "nome": "CASALOTTI SELVA CANDIDA (VIA DI SELVA NERA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 10.8,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 10.8
+      }
+    }
+  },
+  "E114": {
+    "n": 178,
+    "nome": "OTTAVIA LUCCHINA (VIA DELLA LUCCHINA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 10.4,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 10.4
+      }
+    }
+  },
+  "E115": {
+    "n": 179,
+    "nome": "SETTECAMINI (VIA RUBELLIA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 9.9,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 9.9
+      }
+    }
+  },
+  "E123": {
+    "n": 180,
+    "nome": "LA CINQUINA-BUFALOTTA (VIA FEO BELCARI)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.1
+      }
+    }
+  },
+  "E125": {
+    "n": 181,
+    "nome": "CASALOTTI PANTAN MONASTERO (VIA DI CASAL SELCE)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 9.1,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 7.7
+      },
+      "C": {
+        "min": 7.71,
+        "max": 9.1
+      }
+    }
+  },
+  "E127": {
+    "n": 182,
+    "nome": "CASILINO DUE TORRI-VILLAVERDE (VIA DEGAS)",
+    "fascia": "E",
+    "min": 3.75,
+    "max": 9.1,
+    "fasce": {
+      "A": {
+        "min": 3.75,
+        "max": 5.7
+      },
+      "B": {
+        "min": 5.71,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 9.1
+      }
+    }
+  },
+  "E128": {
+    "n": 183,
+    "nome": "VERMICINO (VIA DEL CASALE ANTONIONI)",
+    "fascia": "E",
+    "min": 3.75,
+    "max": 9.9,
+    "fasce": {
+      "A": {
+        "min": 3.75,
+        "max": 5.8
+      },
+      "B": {
+        "min": 5.81,
+        "max": 8.3
+      },
+      "C": {
+        "min": 8.31,
+        "max": 9.9
+      }
+    }
+  },
+  "E132": {
+    "n": 184,
+    "nome": "LA RUSTICA (VIA ACHILLE VERTUNNI)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.6,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.6
+      }
+    }
+  },
+  "E138": {
+    "n": 185,
+    "nome": "TOR BELLA MONACA PEEP (VIA DELL`ARCHEOLOGIA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 9.4,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.7
+      },
+      "B": {
+        "min": 5.71,
+        "max": 8.2
+      },
+      "C": {
+        "min": 8.21,
+        "max": 9.4
+      }
+    }
+  },
+  "E139": {
+    "n": 186,
+    "nome": "TOR BELLA MONACA-VALLE FIORITA-DUE LEONI (VIA ACQUARONI)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 9.1,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.7
+      },
+      "B": {
+        "min": 5.71,
+        "max": 8.2
+      },
+      "C": {
+        "min": 8.21,
+        "max": 9.1
+      }
+    }
+  },
+  "E140": {
+    "n": 187,
+    "nome": "TORRENOVA (VIA DELLA TENUTA DI TORRENOVA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 9.6,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 9.6
+      }
+    }
+  },
+  "E141": {
+    "n": 188,
+    "nome": "CINECITTA` EST (VIALE ANTONIO CIAMARRA)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 11.3,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 11.3
+      }
+    }
+  },
+  "E143": {
+    "n": 189,
+    "nome": "TOR VERGATA UNIVERSITA` - PASSO LOMBARDO (VIA DI PASSO LOMBARDO)",
+    "fascia": "E",
+    "min": 3.75,
+    "max": 12.0,
+    "fasce": {
+      "A": {
+        "min": 3.75,
+        "max": 5.8
+      },
+      "B": {
+        "min": 5.81,
+        "max": 8.3
+      },
+      "C": {
+        "min": 8.31,
+        "max": 12.0
+      }
+    }
+  },
+  "E144": {
+    "n": 190,
+    "nome": "ROMANINA (VIA SCIMONELLI)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 11.3,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 11.3
+      }
+    }
+  },
+  "E145": {
+    "n": 191,
+    "nome": "ANAGNINA VALLE MARCIANA - FOSSO SANT`ANDREA (VIA DEL FOSSO DI SANT`ANDREA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 10.6,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.6
+      },
+      "C": {
+        "min": 8.61,
+        "max": 10.6
+      }
+    }
+  },
+  "E146": {
+    "n": 192,
+    "nome": "MORENA GASPERINA (VIA CROPANI)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 11.0,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 11.0
+      }
+    }
+  },
+  "E147": {
+    "n": 193,
+    "nome": "GREGNA SANT`ANDREA (VIA PIETRO CROSTAROSA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 11.3,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 11.3
+      }
+    }
+  },
+  "E156": {
+    "n": 194,
+    "nome": "PISANA - PONTE GALERIA (VIA ETTORE SCANDALE.VIA USINI)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 8.6,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.3
+      },
+      "B": {
+        "min": 5.31,
+        "max": 7.5
+      },
+      "C": {
+        "min": 7.51,
+        "max": 8.6
+      }
+    }
+  },
+  "E157": {
+    "n": 195,
+    "nome": "CASTEL DI LEVA (VIA DI TOR CHIESACCIA)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 11.0,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.3
+      },
+      "C": {
+        "min": 9.31,
+        "max": 11.0
+      }
+    }
+  },
+  "E158": {
+    "n": 196,
+    "nome": "DIVINO AMORE - FALCOGNANA (VIA DEI CASALI DI PORTA MEDAGLIA)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 9.9,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.0
+      },
+      "C": {
+        "min": 9.01,
+        "max": 9.9
+      }
+    }
+  },
+  "E159": {
+    "n": 197,
+    "nome": "LA STORTA CASALE SAN NICOLA (VIA G.B.PARAVIA)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.1
+      },
+      "C": {
+        "min": 9.11,
+        "max": 10.1
+      }
+    }
+  },
+  "E160": {
+    "n": 198,
+    "nome": "TRAGLIATELLA (VIA PIOSSASCO)",
+    "fascia": "E",
+    "min": 3.15,
+    "max": 7.6,
+    "fasce": {
+      "A": {
+        "min": 3.15,
+        "max": 4.3
+      },
+      "B": {
+        "min": 4.31,
+        "max": 6.1
+      },
+      "C": {
+        "min": 6.11,
+        "max": 7.6
+      }
+    }
+  },
+  "E162": {
+    "n": 199,
+    "nome": "VALLE MURICANA - MONTE PIETRA PERTUSA (VIA DI VALLE MURICANA)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.1
+      },
+      "C": {
+        "min": 9.11,
+        "max": 10.1
+      }
+    }
+  },
+  "E165": {
+    "n": 200,
+    "nome": "LUNGHEZZA - CASTELVERDE - FOSSO SAN GIULIANO (VIA DEL FOSSO DELL`OSA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 9.6,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.7
+      },
+      "B": {
+        "min": 5.71,
+        "max": 8.2
+      },
+      "C": {
+        "min": 8.21,
+        "max": 9.6
+      }
+    }
+  },
+  "E166": {
+    "n": 201,
+    "nome": "CORCOLLE - SAN VITTORINO (VIA SANT`ELPIDIO AL MARE)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 8.6,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.3
+      },
+      "B": {
+        "min": 5.31,
+        "max": 7.6
+      },
+      "C": {
+        "min": 7.61,
+        "max": 8.6
+      }
+    }
+  },
+  "E168": {
+    "n": 202,
+    "nome": "PRENESTINO COLLE DEL SOLE - LAGO REGILLO (VIA OLLOLAI)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 8.6,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 7.9
+      },
+      "C": {
+        "min": 7.91,
+        "max": 8.6
+      }
+    }
+  },
+  "E170": {
+    "n": 203,
+    "nome": "COLLE MATTIA - FONTANA CANDIDA (VIA DEL CASALE CIMINELLI)",
+    "fascia": "E",
+    "min": 4.25,
+    "max": 8.9,
+    "fasce": {
+      "A": {
+        "min": 4.25,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 8.9
+      }
+    }
+  },
+  "E171": {
+    "n": 204,
+    "nome": "CASALOTTI VALLE SANTA (VIA VENDRAMINI)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 8.7,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 8.7
+      }
+    }
+  },
+  "E179": {
+    "n": 205,
+    "nome": "ROMANINA TOR VERGATA (VIA BERNARDINO ALIMENA)",
+    "fascia": "E",
+    "min": 3.45,
+    "max": 10.8,
+    "fasce": {
+      "A": {
+        "min": 3.45,
+        "max": 5.6
+      },
+      "B": {
+        "min": 5.61,
+        "max": 8.0
+      },
+      "C": {
+        "min": 8.01,
+        "max": 10.8
+      }
+    }
+  },
+  "E181": {
+    "n": 206,
+    "nome": "PARCO DI VEIO PRATO DELLA CORTE (VIA FORMELLESE)",
+    "fascia": "E",
+    "min": 5.05,
+    "max": 10.1,
+    "fasce": {
+      "A": {
+        "min": 5.05,
+        "max": 6.3
+      },
+      "B": {
+        "min": 6.31,
+        "max": 9.0
+      },
+      "C": {
+        "min": 9.01,
+        "max": 10.1
+      }
+    }
+  },
+  "E184": {
+    "n": 207,
+    "nome": "MEZZOCAMMINO (VIA DI MEZZOCAMMINO)",
+    "fascia": "E",
+    "min": 6.75,
+    "max": 13.4,
+    "fasce": {
+      "A": {
+        "min": 6.75,
+        "max": 8.4
+      },
+      "B": {
+        "min": 8.41,
+        "max": 12.0
+      },
+      "C": {
+        "min": 12.01,
+        "max": 13.4
+      }
+    }
+  },
+  "E185": {
+    "n": 208,
+    "nome": "FONTE LAURENTINA (VIA EDOARDO AMALDI)",
+    "fascia": "E",
+    "min": 4.35,
+    "max": 12.0,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 12.0
+      }
+    }
+  },
+  "R7": {
+    "n": 216,
+    "nome": "RISERVA DELLA MARCIGLIANA (VIA DI SANTA COLOMBA)",
+    "fascia": "R",
+    "min": 4.35,
+    "max": 10.8,
+    "fasce": {
+      "A": {
+        "min": 4.35,
+        "max": 6.4
+      },
+      "B": {
+        "min": 6.41,
+        "max": 9.2
+      },
+      "C": {
+        "min": 9.21,
+        "max": 10.8
+      }
+    }
+  },
+  "R9": {
+    "n": 217,
+    "nome": "AGRO ROMANO OVEST (VIA DI SANTA MARIA DI GALERIA)",
+    "fascia": "R",
+    "min": 4.05,
+    "max": 6.8,
+    "fasce": {
+      "A": {
+        "min": 4.05,
+        "max": 4.7
+      },
+      "B": {
+        "min": 4.71,
+        "max": 6.0
+      },
+      "C": {
+        "min": 6.01,
+        "max": 6.8
+      }
+    }
+  },
+  "R40": {
+    "n": 218,
+    "nome": "SANTA MARIA DI GALERIA (VIA DI SANTA MARIA DI GALERIA)",
+    "fascia": "R",
+    "min": 4.25,
+    "max": 7.2,
+    "fasce": {
+      "A": {
+        "min": 4.25,
+        "max": 5.7
+      },
+      "B": {
+        "min": 5.71,
+        "max": 6.3
+      },
+      "C": {
+        "min": 6.31,
+        "max": 7.2
+      }
+    }
+  },
+  "R1": {
+    "nome": "ZONA RURALE R1",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R2": {
+    "nome": "ZONA RURALE R2",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R6": {
+    "nome": "ZONA RURALE R6",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R8": {
+    "nome": "ZONA RURALE R8",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R10": {
+    "nome": "CITTA' UNIVERSITARIA LA SAPIENZA",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R11": {
+    "nome": "POLICLINICO UMBERTO I",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R12": {
+    "nome": "ZONA RURALE R12",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R13": {
+    "nome": "ZONA RURALE R13",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R15": {
+    "nome": "ZONA RURALE R15",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R16": {
+    "nome": "CITTA' UNIVERSITARIA TOR VERGATA",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R19": {
+    "nome": "ZONA RURALE R19",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R23": {
+    "nome": "ZONA RURALE R23",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R25": {
+    "nome": "ZONA RURALE R25",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R27": {
+    "nome": "ZONA RURALE R27",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R28": {
+    "nome": "ZONA RURALE R28",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R29": {
+    "nome": "ZONA RURALE R29",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R30": {
+    "nome": "ZONA RURALE R30",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R37": {
+    "nome": "ZONA RURALE R37",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R39": {
+    "nome": "ZONA RURALE R39",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "R41": {
+    "nome": "ZONA RURALE R41",
+    "fascia": "R",
+    "min": null,
+    "max": null,
+    "fasce": null,
+    "note": "Applicare valori zona confinante"
+  },
+  "E32": {
+    "nome": "OSTIA ANTICA",
+    "fascia": "E",
+    "min": 4.3,
+    "max": 11.95,
+    "fasce": {
+      "A": {
+        "min": 4.3,
+        "max": 9.5
+      },
+      "B": {
+        "min": 6.31,
+        "max": 11.0
+      },
+      "C": {
+        "min": 9.01,
+        "max": 11.95
+      }
+    },
+    "note": "Include Borgo e zona non-Borgo con valori diversi"
+  },
+  "E186": {
+    "nome": "OSTIA - ZONA 186",
+    "fascia": "E",
+    "min": 5.8,
+    "max": 12.45,
+    "fasce": {
+      "A": {
+        "min": 5.8,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 10.0
+      },
+      "C": {
+        "min": 10.01,
+        "max": 12.45
+      }
+    },
+    "note": "Suddivisione zona Ostia"
+  },
+  "E187": {
+    "nome": "OSTIA - ZONA 187",
+    "fascia": "E",
+    "min": 5.8,
+    "max": 12.45,
+    "fasce": {
+      "A": {
+        "min": 5.8,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 10.0
+      },
+      "C": {
+        "min": 10.01,
+        "max": 12.45
+      }
+    },
+    "note": "Suddivisione zona Ostia"
+  },
+  "E188": {
+    "nome": "OSTIA - ZONA 188",
+    "fascia": "E",
+    "min": 5.8,
+    "max": 12.45,
+    "fasce": {
+      "A": {
+        "min": 5.8,
+        "max": 8.0
+      },
+      "B": {
+        "min": 8.01,
+        "max": 10.0
+      },
+      "C": {
+        "min": 10.01,
+        "max": 12.45
+      }
+    },
+    "note": "Suddivisione zona Ostia"
+  }
+}
