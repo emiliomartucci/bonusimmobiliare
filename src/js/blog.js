@@ -82,10 +82,11 @@ class BlogLoader {
         const container = document.querySelector(this.articlesContainer);
         if (!container) return;
 
-        // Exclude featured article from list
-        const nonFeatured = this.articles.filter(a => !a.featured);
+        // Show all articles except the one displayed as main featured
+        const mainFeatured = this.articles.find(a => a.featured);
+        const listArticles = this.articles.filter(a => a !== mainFeatured);
 
-        container.innerHTML = nonFeatured.map(article => `
+        container.innerHTML = listArticles.map(article => `
             <a href="/blog/${article.slug}/" class="article-row"
                data-category="${article.category}"
                data-title="${article.title.toLowerCase()}"
