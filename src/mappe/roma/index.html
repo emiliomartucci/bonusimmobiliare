@@ -746,11 +746,28 @@
                 flex-direction: column;
             }
 
+            .map-wrapper {
+                min-height: 50vh;
+            }
+
             .sidebar {
                 width: 100%;
-                max-height: 50vh;
+                max-height: none;
                 border-left: none;
-                border-top: 1px solid var(--stone);
+                border-top: 2px solid var(--terracotta);
+                overflow-y: auto;
+            }
+
+            .sidebar-placeholder {
+                padding: var(--space-lg);
+            }
+
+            .sidebar-body {
+                padding: var(--space-sm) var(--space-md);
+            }
+
+            .sidebar-footer {
+                padding: var(--space-sm) var(--space-md);
             }
         }
 
@@ -759,8 +776,12 @@
                 padding: var(--space-sm) var(--space-md);
             }
 
+            .header-logo img {
+                height: 26px;
+            }
+
             .header-title h1 {
-                font-size: 0.95rem;
+                font-size: 0.85rem;
             }
 
             .header-back span {
@@ -768,38 +789,79 @@
             }
 
             .search-container {
+                top: var(--space-md);
                 left: var(--space-md);
-                right: var(--space-md);
+                right: auto;
             }
 
             .search-box input {
-                width: 100%;
-                max-width: none;
+                width: calc(100vw - 80px);
+                max-width: 300px;
+                padding: var(--space-sm) var(--space-md) var(--space-sm) 40px;
+                font-size: 0.85rem;
             }
 
+            .search-icon {
+                width: 16px;
+                height: 16px;
+                left: var(--space-sm);
+            }
+
+            /* Nascondi legenda su mobile */
             .legend {
-                bottom: auto;
-                top: 70px;
-                left: auto;
-                right: var(--space-md);
+                display: none;
+            }
+
+            .sidebar-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--space-xs);
+            }
+
+            .sidebar-section {
                 padding: var(--space-xs) var(--space-sm);
             }
 
-            .legend-title {
-                font-size: 0.7rem;
+            .sidebar-section-title {
+                font-size: 0.6rem;
+                margin-bottom: var(--space-xs);
             }
 
-            .legend-item {
-                font-size: 0.65rem;
+            .sidebar-range-section {
+                padding: var(--space-xs) var(--space-sm);
+                margin-bottom: var(--space-sm);
+            }
+
+            .sidebar-range-value {
+                font-size: 1.1rem;
+            }
+
+            .sidebar-cta {
+                padding: var(--space-sm);
+                font-size: 0.85rem;
+            }
+
+            .footer-mini {
+                flex-direction: column;
+                text-align: center;
+                padding: var(--space-md);
+            }
+
+            .footer-mini-text {
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-title h1 {
+                font-size: 0.75rem;
             }
 
             .sidebar-grid {
                 grid-template-columns: 1fr;
             }
 
-            .footer-mini {
-                flex-direction: column;
-                text-align: center;
+            .search-box input {
+                width: calc(100vw - 32px);
             }
         }
     </style>
