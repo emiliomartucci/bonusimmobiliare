@@ -1,0 +1,410 @@
+{
+  "B2": {
+    "nome": "Centro Storico - Duomo",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 5.00,
+    "max": 10.40,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.40, "note": "8+ elementi" },
+      "B": { "min": 5.80, "max": 8.50, "note": "4-7 elementi" },
+      "C": { "min": 5.00, "max": 7.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "B5": {
+    "nome": "Centro Storico - Santa Croce",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 5.00,
+    "max": 10.40,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.40, "note": "8+ elementi" },
+      "B": { "min": 5.80, "max": 8.50, "note": "4-7 elementi" },
+      "C": { "min": 5.00, "max": 7.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "B6": {
+    "nome": "Centro Storico - San Lorenzo",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 5.00,
+    "max": 10.40,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.40, "note": "8+ elementi" },
+      "B": { "min": 5.80, "max": 8.50, "note": "4-7 elementi" },
+      "C": { "min": 5.00, "max": 7.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "B7": {
+    "nome": "Centro Storico - Santo Spirito",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 5.00,
+    "max": 10.40,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.40, "note": "8+ elementi" },
+      "B": { "min": 5.80, "max": 8.50, "note": "4-7 elementi" },
+      "C": { "min": 5.00, "max": 7.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "B9": {
+    "nome": "Centro Storico - Oltrarno",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 5.00,
+    "max": 10.40,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.40, "note": "8+ elementi" },
+      "B": { "min": 5.80, "max": 8.50, "note": "4-7 elementi" },
+      "C": { "min": 5.00, "max": 7.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "C2": {
+    "nome": "Semicentro - Campo di Marte",
+    "fascia": "C",
+    "area": "Intermedia A",
+    "min": 4.00,
+    "max": 10.00,
+    "fasce": {
+      "A": { "min": 6.50, "max": 10.00, "note": "8+ elementi" },
+      "B": { "min": 5.20, "max": 8.00, "note": "4-7 elementi" },
+      "C": { "min": 4.00, "max": 6.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "C3": {
+    "nome": "Semicentro - Cure",
+    "fascia": "C",
+    "area": "Intermedia A",
+    "min": 4.00,
+    "max": 10.00,
+    "fasce": {
+      "A": { "min": 6.50, "max": 10.00, "note": "8+ elementi" },
+      "B": { "min": 5.20, "max": 8.00, "note": "4-7 elementi" },
+      "C": { "min": 4.00, "max": 6.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "C4": {
+    "nome": "Semicentro - Libertà",
+    "fascia": "C",
+    "area": "Intermedia A",
+    "min": 4.00,
+    "max": 10.00,
+    "fasce": {
+      "A": { "min": 6.50, "max": 10.00, "note": "8+ elementi" },
+      "B": { "min": 5.20, "max": 8.00, "note": "4-7 elementi" },
+      "C": { "min": 4.00, "max": 6.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "C5": {
+    "nome": "Semicentro - Porta Romana",
+    "fascia": "C",
+    "area": "Intermedia A",
+    "min": 4.00,
+    "max": 10.00,
+    "fasce": {
+      "A": { "min": 6.50, "max": 10.00, "note": "8+ elementi" },
+      "B": { "min": 5.20, "max": 8.00, "note": "4-7 elementi" },
+      "C": { "min": 4.00, "max": 6.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "C6": {
+    "nome": "Semicentro - Bellariva",
+    "fascia": "C",
+    "area": "Intermedia A",
+    "min": 4.00,
+    "max": 10.00,
+    "fasce": {
+      "A": { "min": 6.50, "max": 10.00, "note": "8+ elementi" },
+      "B": { "min": 5.20, "max": 8.00, "note": "4-7 elementi" },
+      "C": { "min": 4.00, "max": 6.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "C7": {
+    "nome": "Semicentro - Gavinana",
+    "fascia": "C",
+    "area": "Intermedia B",
+    "min": 3.50,
+    "max": 9.09,
+    "fasce": {
+      "A": { "min": 6.00, "max": 9.09, "note": "8+ elementi" },
+      "B": { "min": 4.80, "max": 7.50, "note": "4-7 elementi" },
+      "C": { "min": 3.50, "max": 6.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "C9": {
+    "nome": "Semicentro - Rifredi",
+    "fascia": "C",
+    "area": "Intermedia B",
+    "min": 3.50,
+    "max": 9.09,
+    "fasce": {
+      "A": { "min": 6.00, "max": 9.09, "note": "8+ elementi" },
+      "B": { "min": 4.80, "max": 7.50, "note": "4-7 elementi" },
+      "C": { "min": 3.50, "max": 6.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "C15": {
+    "nome": "Semicentro - Novoli",
+    "fascia": "C",
+    "area": "Intermedia B",
+    "min": 3.50,
+    "max": 9.09,
+    "fasce": {
+      "A": { "min": 6.00, "max": 9.09, "note": "8+ elementi" },
+      "B": { "min": 4.80, "max": 7.50, "note": "4-7 elementi" },
+      "C": { "min": 3.50, "max": 6.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "C16": {
+    "nome": "Semicentro - Statuto",
+    "fascia": "C",
+    "area": "Intermedia B",
+    "min": 3.50,
+    "max": 9.09,
+    "fasce": {
+      "A": { "min": 6.00, "max": 9.09, "note": "8+ elementi" },
+      "B": { "min": 4.80, "max": 7.50, "note": "4-7 elementi" },
+      "C": { "min": 3.50, "max": 6.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "C17": {
+    "nome": "Semicentro - Poggetto",
+    "fascia": "C",
+    "area": "Intermedia B",
+    "min": 3.50,
+    "max": 9.09,
+    "fasce": {
+      "A": { "min": 6.00, "max": 9.09, "note": "8+ elementi" },
+      "B": { "min": 4.80, "max": 7.50, "note": "4-7 elementi" },
+      "C": { "min": 3.50, "max": 6.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "C18": {
+    "nome": "Semicentro - Careggi",
+    "fascia": "C",
+    "area": "Intermedia B",
+    "min": 3.50,
+    "max": 9.09,
+    "fasce": {
+      "A": { "min": 6.00, "max": 9.09, "note": "8+ elementi" },
+      "B": { "min": 4.80, "max": 7.50, "note": "4-7 elementi" },
+      "C": { "min": 3.50, "max": 6.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "C19": {
+    "nome": "Semicentro - San Jacopino",
+    "fascia": "C",
+    "area": "Intermedia B",
+    "min": 3.50,
+    "max": 9.09,
+    "fasce": {
+      "A": { "min": 6.00, "max": 9.09, "note": "8+ elementi" },
+      "B": { "min": 4.80, "max": 7.50, "note": "4-7 elementi" },
+      "C": { "min": 3.50, "max": 6.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D3": {
+    "nome": "Periferia - Isolotto",
+    "fascia": "D",
+    "area": "Periferica A",
+    "min": 3.00,
+    "max": 9.00,
+    "fasce": {
+      "A": { "min": 5.50, "max": 9.00, "note": "8+ elementi" },
+      "B": { "min": 4.20, "max": 7.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 5.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "D6": {
+    "nome": "Periferia - Legnaia",
+    "fascia": "D",
+    "area": "Periferica A",
+    "min": 3.00,
+    "max": 9.00,
+    "fasce": {
+      "A": { "min": 5.50, "max": 9.00, "note": "8+ elementi" },
+      "B": { "min": 4.20, "max": 7.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 5.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "D7": {
+    "nome": "Periferia - Soffiano",
+    "fascia": "D",
+    "area": "Periferica A",
+    "min": 3.00,
+    "max": 9.00,
+    "fasce": {
+      "A": { "min": 5.50, "max": 9.00, "note": "8+ elementi" },
+      "B": { "min": 4.20, "max": 7.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 5.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "D11": {
+    "nome": "Periferia - Ponte a Greve",
+    "fascia": "D",
+    "area": "Periferica B",
+    "min": 2.50,
+    "max": 8.53,
+    "fasce": {
+      "A": { "min": 5.00, "max": 8.53, "note": "8+ elementi" },
+      "B": { "min": 3.80, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 5.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D12": {
+    "nome": "Periferia - Brozzi",
+    "fascia": "D",
+    "area": "Periferica B",
+    "min": 2.50,
+    "max": 8.53,
+    "fasce": {
+      "A": { "min": 5.00, "max": 8.53, "note": "8+ elementi" },
+      "B": { "min": 3.80, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 5.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D13": {
+    "nome": "Periferia - Peretola",
+    "fascia": "D",
+    "area": "Periferica B",
+    "min": 2.50,
+    "max": 8.53,
+    "fasce": {
+      "A": { "min": 5.00, "max": 8.53, "note": "8+ elementi" },
+      "B": { "min": 3.80, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 5.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D16": {
+    "nome": "Periferia - Le Piagge",
+    "fascia": "D",
+    "area": "Periferica B",
+    "min": 2.50,
+    "max": 8.53,
+    "fasce": {
+      "A": { "min": 5.00, "max": 8.53, "note": "8+ elementi" },
+      "B": { "min": 3.80, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 5.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D17": {
+    "nome": "Periferia - Quaracchi",
+    "fascia": "D",
+    "area": "Periferica B",
+    "min": 2.50,
+    "max": 8.53,
+    "fasce": {
+      "A": { "min": 5.00, "max": 8.53, "note": "8+ elementi" },
+      "B": { "min": 3.80, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 5.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D18": {
+    "nome": "Periferia - Castello",
+    "fascia": "D",
+    "area": "Periferica B",
+    "min": 2.50,
+    "max": 8.53,
+    "fasce": {
+      "A": { "min": 5.00, "max": 8.53, "note": "8+ elementi" },
+      "B": { "min": 3.80, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 5.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D19": {
+    "nome": "Periferia - Serpiolle",
+    "fascia": "D",
+    "area": "Periferica B",
+    "min": 2.50,
+    "max": 8.53,
+    "fasce": {
+      "A": { "min": 5.00, "max": 8.53, "note": "8+ elementi" },
+      "B": { "min": 3.80, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 5.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D20": {
+    "nome": "Periferia - Settignano",
+    "fascia": "D",
+    "area": "Periferica A",
+    "min": 3.00,
+    "max": 9.00,
+    "fasce": {
+      "A": { "min": 5.50, "max": 9.00, "note": "8+ elementi" },
+      "B": { "min": 4.20, "max": 7.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 5.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "D21": {
+    "nome": "Periferia - Rovezzano",
+    "fascia": "D",
+    "area": "Periferica B",
+    "min": 2.50,
+    "max": 8.53,
+    "fasce": {
+      "A": { "min": 5.00, "max": 8.53, "note": "8+ elementi" },
+      "B": { "min": 3.80, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 5.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D22": {
+    "nome": "Periferia - Bagno a Ripoli confine",
+    "fascia": "D",
+    "area": "Periferica B",
+    "min": 2.50,
+    "max": 8.53,
+    "fasce": {
+      "A": { "min": 5.00, "max": 8.53, "note": "8+ elementi" },
+      "B": { "min": 3.80, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 5.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D23": {
+    "nome": "Periferia - Galluzzo",
+    "fascia": "D",
+    "area": "Periferica A",
+    "min": 3.00,
+    "max": 9.00,
+    "fasce": {
+      "A": { "min": 5.50, "max": 9.00, "note": "8+ elementi" },
+      "B": { "min": 4.20, "max": 7.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 5.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "D24": {
+    "nome": "Periferia - Scandicci confine",
+    "fascia": "D",
+    "area": "Periferica B",
+    "min": 2.50,
+    "max": 8.53,
+    "fasce": {
+      "A": { "min": 5.00, "max": 8.53, "note": "8+ elementi" },
+      "B": { "min": 3.80, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 5.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "E1": {
+    "nome": "Colline - Fiesole confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.00,
+    "max": 7.00,
+    "fasce": {
+      "A": { "min": 4.50, "max": 7.00, "note": "8+ elementi" },
+      "B": { "min": 3.20, "max": 5.50, "note": "4-7 elementi" },
+      "C": { "min": 2.00, "max": 4.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "R1": {
+    "nome": "Rurale - Campagna Nord",
+    "fascia": "R",
+    "area": "Rurale",
+    "min": 1.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.50, "max": 5.50, "note": "8+ elementi" },
+      "B": { "min": 2.50, "max": 4.50, "note": "4-7 elementi" },
+      "C": { "min": 1.50, "max": 3.50, "note": "fino a 3 elementi" }
+    }
+  }
+}

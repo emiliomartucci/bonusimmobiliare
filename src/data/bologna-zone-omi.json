@@ -1,0 +1,410 @@
+{
+  "B1": {
+    "nome": "Centro Storico - Piazza Maggiore",
+    "fascia": "B",
+    "area": "Pregio",
+    "min": 6.17,
+    "max": 14.58,
+    "fasce": {
+      "A": { "min": 9.50, "max": 14.58, "note": "8+ parametri" },
+      "B": { "min": 7.80, "max": 12.00, "note": "4-7 parametri" },
+      "C": { "min": 6.17, "max": 9.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "B7": {
+    "nome": "Centro - Zona Universitaria",
+    "fascia": "B",
+    "area": "Pregio",
+    "min": 6.17,
+    "max": 14.58,
+    "fasce": {
+      "A": { "min": 9.50, "max": 14.58, "note": "8+ parametri" },
+      "B": { "min": 7.80, "max": 12.00, "note": "4-7 parametri" },
+      "C": { "min": 6.17, "max": 9.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "C3": {
+    "nome": "Semicentro - Bolognina",
+    "fascia": "C",
+    "area": "Zona A",
+    "min": 4.17,
+    "max": 10.83,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.83, "note": "8+ parametri" },
+      "B": { "min": 5.50, "max": 8.50, "note": "4-7 parametri" },
+      "C": { "min": 4.17, "max": 7.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "C4": {
+    "nome": "Semicentro - Saffi",
+    "fascia": "C",
+    "area": "Zona A",
+    "min": 4.17,
+    "max": 10.83,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.83, "note": "8+ parametri" },
+      "B": { "min": 5.50, "max": 8.50, "note": "4-7 parametri" },
+      "C": { "min": 4.17, "max": 7.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "C5": {
+    "nome": "Semicentro - Murri",
+    "fascia": "C",
+    "area": "Zona A",
+    "min": 4.17,
+    "max": 10.83,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.83, "note": "8+ parametri" },
+      "B": { "min": 5.50, "max": 8.50, "note": "4-7 parametri" },
+      "C": { "min": 4.17, "max": 7.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "C6": {
+    "nome": "Semicentro - San Donato",
+    "fascia": "C",
+    "area": "Zona A",
+    "min": 4.17,
+    "max": 10.83,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.83, "note": "8+ parametri" },
+      "B": { "min": 5.50, "max": 8.50, "note": "4-7 parametri" },
+      "C": { "min": 4.17, "max": 7.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "C7": {
+    "nome": "Semicentro - Mazzini",
+    "fascia": "C",
+    "area": "Zona A",
+    "min": 4.17,
+    "max": 10.83,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.83, "note": "8+ parametri" },
+      "B": { "min": 5.50, "max": 8.50, "note": "4-7 parametri" },
+      "C": { "min": 4.17, "max": 7.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "C8": {
+    "nome": "Semicentro - Saragozza",
+    "fascia": "C",
+    "area": "Zona A",
+    "min": 4.17,
+    "max": 10.83,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.83, "note": "8+ parametri" },
+      "B": { "min": 5.50, "max": 8.50, "note": "4-7 parametri" },
+      "C": { "min": 4.17, "max": 7.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "C9": {
+    "nome": "Semicentro - Costa",
+    "fascia": "C",
+    "area": "Zona A",
+    "min": 4.17,
+    "max": 10.83,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.83, "note": "8+ parametri" },
+      "B": { "min": 5.50, "max": 8.50, "note": "4-7 parametri" },
+      "C": { "min": 4.17, "max": 7.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "C10": {
+    "nome": "Semicentro - San Vitale",
+    "fascia": "C",
+    "area": "Zona A",
+    "min": 4.17,
+    "max": 10.83,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.83, "note": "8+ parametri" },
+      "B": { "min": 5.50, "max": 8.50, "note": "4-7 parametri" },
+      "C": { "min": 4.17, "max": 7.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "C11": {
+    "nome": "Semicentro - Fiera",
+    "fascia": "C",
+    "area": "Zona A",
+    "min": 4.17,
+    "max": 10.83,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.83, "note": "8+ parametri" },
+      "B": { "min": 5.50, "max": 8.50, "note": "4-7 parametri" },
+      "C": { "min": 4.17, "max": 7.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "D2": {
+    "nome": "Periferia - Navile",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D3": {
+    "nome": "Periferia - Corticella",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D4": {
+    "nome": "Periferia - Pilastro",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D5": {
+    "nome": "Periferia - San Lazzaro confine",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D6": {
+    "nome": "Periferia - Borgo Panigale",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D7": {
+    "nome": "Periferia - Reno",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D8": {
+    "nome": "Periferia - Santa Viola",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D9": {
+    "nome": "Periferia - Barca",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D16": {
+    "nome": "Periferia - Savena",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D17": {
+    "nome": "Periferia - Mazzini Sud",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D19": {
+    "nome": "Periferia - Fossolo",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D20": {
+    "nome": "Periferia - Croce del Biacco",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D21": {
+    "nome": "Periferia - San Donnino",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D22": {
+    "nome": "Periferia - Castelmaggiore confine",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D23": {
+    "nome": "Periferia - Arcoveggio",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D24": {
+    "nome": "Periferia - Beverara",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "D25": {
+    "nome": "Periferia - Dozza",
+    "fascia": "D",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "E1": {
+    "nome": "Colline - San Luca",
+    "fascia": "E",
+    "area": "Zona B",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 4.50, "max": 6.50, "note": "8+ parametri" },
+      "B": { "min": 3.50, "max": 5.50, "note": "4-7 parametri" },
+      "C": { "min": 2.50, "max": 4.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "E5": {
+    "nome": "Colline - Colli Bolognesi",
+    "fascia": "E",
+    "area": "Zona B",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 4.50, "max": 6.50, "note": "8+ parametri" },
+      "B": { "min": 3.50, "max": 5.50, "note": "4-7 parametri" },
+      "C": { "min": 2.50, "max": 4.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "R1": {
+    "nome": "Rurale - Pianura Nord",
+    "fascia": "R",
+    "area": "Zona B",
+    "min": 1.83,
+    "max": 5.83,
+    "fasce": {
+      "A": { "min": 4.00, "max": 5.83, "note": "8+ parametri" },
+      "B": { "min": 3.00, "max": 4.80, "note": "4-7 parametri" },
+      "C": { "min": 1.83, "max": 4.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "R2": {
+    "nome": "Rurale - Pianura Est",
+    "fascia": "R",
+    "area": "Zona B",
+    "min": 1.83,
+    "max": 5.83,
+    "fasce": {
+      "A": { "min": 4.00, "max": 5.83, "note": "8+ parametri" },
+      "B": { "min": 3.00, "max": 4.80, "note": "4-7 parametri" },
+      "C": { "min": 1.83, "max": 4.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "R3": {
+    "nome": "Rurale - Pianura Ovest",
+    "fascia": "R",
+    "area": "Zona B",
+    "min": 1.83,
+    "max": 5.83,
+    "fasce": {
+      "A": { "min": 4.00, "max": 5.83, "note": "8+ parametri" },
+      "B": { "min": 3.00, "max": 4.80, "note": "4-7 parametri" },
+      "C": { "min": 1.83, "max": 4.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "R4": {
+    "nome": "Rurale - Pianura Sud",
+    "fascia": "R",
+    "area": "Zona B",
+    "min": 1.83,
+    "max": 5.83,
+    "fasce": {
+      "A": { "min": 4.00, "max": 5.83, "note": "8+ parametri" },
+      "B": { "min": 3.00, "max": 4.80, "note": "4-7 parametri" },
+      "C": { "min": 1.83, "max": 4.00, "note": "fino a 3 parametri" }
+    }
+  }
+}

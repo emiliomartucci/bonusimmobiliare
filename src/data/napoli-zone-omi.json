@@ -1,0 +1,806 @@
+{
+  "B8": {
+    "nome": "Centro Storico - San Ferdinando",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 8.00,
+    "max": 12.50,
+    "fasce": {
+      "A": { "min": 10.00, "max": 12.50, "note": "8+ elementi" },
+      "B": { "min": 8.80, "max": 11.00, "note": "4-7 elementi" },
+      "C": { "min": 8.00, "max": 9.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "B9": {
+    "nome": "Centro Storico - Chiaia",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 8.00,
+    "max": 12.50,
+    "fasce": {
+      "A": { "min": 10.00, "max": 12.50, "note": "8+ elementi" },
+      "B": { "min": 8.80, "max": 11.00, "note": "4-7 elementi" },
+      "C": { "min": 8.00, "max": 9.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "B13": {
+    "nome": "Centro Storico - Posillipo",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 8.00,
+    "max": 12.50,
+    "fasce": {
+      "A": { "min": 10.00, "max": 12.50, "note": "8+ elementi" },
+      "B": { "min": 8.80, "max": 11.00, "note": "4-7 elementi" },
+      "C": { "min": 8.00, "max": 9.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "B18": {
+    "nome": "Centro - Vomero Alto",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 7.50,
+    "max": 11.50,
+    "fasce": {
+      "A": { "min": 9.50, "max": 11.50, "note": "8+ elementi" },
+      "B": { "min": 8.20, "max": 10.20, "note": "4-7 elementi" },
+      "C": { "min": 7.50, "max": 9.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "B19": {
+    "nome": "Centro - Arenella",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 7.50,
+    "max": 11.50,
+    "fasce": {
+      "A": { "min": 9.50, "max": 11.50, "note": "8+ elementi" },
+      "B": { "min": 8.20, "max": 10.20, "note": "4-7 elementi" },
+      "C": { "min": 7.50, "max": 9.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "B20": {
+    "nome": "Centro - Montecalvario",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 7.00,
+    "max": 10.50,
+    "fasce": {
+      "A": { "min": 8.80, "max": 10.50, "note": "8+ elementi" },
+      "B": { "min": 7.70, "max": 9.50, "note": "4-7 elementi" },
+      "C": { "min": 7.00, "max": 8.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "B21": {
+    "nome": "Centro - Avvocata",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 7.00,
+    "max": 10.50,
+    "fasce": {
+      "A": { "min": 8.80, "max": 10.50, "note": "8+ elementi" },
+      "B": { "min": 7.70, "max": 9.50, "note": "4-7 elementi" },
+      "C": { "min": 7.00, "max": 8.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "B22": {
+    "nome": "Centro - Stella",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 6.50,
+    "max": 10.00,
+    "fasce": {
+      "A": { "min": 8.30, "max": 10.00, "note": "8+ elementi" },
+      "B": { "min": 7.20, "max": 9.00, "note": "4-7 elementi" },
+      "C": { "min": 6.50, "max": 8.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "B23": {
+    "nome": "Centro - San Carlo all'Arena",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 6.50,
+    "max": 10.00,
+    "fasce": {
+      "A": { "min": 8.30, "max": 10.00, "note": "8+ elementi" },
+      "B": { "min": 7.20, "max": 9.00, "note": "4-7 elementi" },
+      "C": { "min": 6.50, "max": 8.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "B24": {
+    "nome": "Centro - San Lorenzo",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 6.00,
+    "max": 9.50,
+    "fasce": {
+      "A": { "min": 7.80, "max": 9.50, "note": "8+ elementi" },
+      "B": { "min": 6.80, "max": 8.50, "note": "4-7 elementi" },
+      "C": { "min": 6.00, "max": 7.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "B25": {
+    "nome": "Centro - Vicaria",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 6.00,
+    "max": 9.50,
+    "fasce": {
+      "A": { "min": 7.80, "max": 9.50, "note": "8+ elementi" },
+      "B": { "min": 6.80, "max": 8.50, "note": "4-7 elementi" },
+      "C": { "min": 6.00, "max": 7.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "B26": {
+    "nome": "Centro - Pendino",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 6.00,
+    "max": 9.50,
+    "fasce": {
+      "A": { "min": 7.80, "max": 9.50, "note": "8+ elementi" },
+      "B": { "min": 6.80, "max": 8.50, "note": "4-7 elementi" },
+      "C": { "min": 6.00, "max": 7.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "B27": {
+    "nome": "Centro - Porto",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 5.50,
+    "max": 9.00,
+    "fasce": {
+      "A": { "min": 7.30, "max": 9.00, "note": "8+ elementi" },
+      "B": { "min": 6.30, "max": 8.00, "note": "4-7 elementi" },
+      "C": { "min": 5.50, "max": 7.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "C21": {
+    "nome": "Semicentro - Fuorigrotta",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 5.00,
+    "max": 8.50,
+    "fasce": {
+      "A": { "min": 6.80, "max": 8.50, "note": "8+ elementi" },
+      "B": { "min": 5.80, "max": 7.50, "note": "4-7 elementi" },
+      "C": { "min": 5.00, "max": 6.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "C22": {
+    "nome": "Semicentro - Bagnoli",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 5.00,
+    "max": 8.50,
+    "fasce": {
+      "A": { "min": 6.80, "max": 8.50, "note": "8+ elementi" },
+      "B": { "min": 5.80, "max": 7.50, "note": "4-7 elementi" },
+      "C": { "min": 5.00, "max": 6.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "C23": {
+    "nome": "Semicentro - Soccavo",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 4.50,
+    "max": 7.80,
+    "fasce": {
+      "A": { "min": 6.20, "max": 7.80, "note": "8+ elementi" },
+      "B": { "min": 5.30, "max": 7.00, "note": "4-7 elementi" },
+      "C": { "min": 4.50, "max": 6.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "C24": {
+    "nome": "Semicentro - Pianura Centro",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 4.50,
+    "max": 7.80,
+    "fasce": {
+      "A": { "min": 6.20, "max": 7.80, "note": "8+ elementi" },
+      "B": { "min": 5.30, "max": 7.00, "note": "4-7 elementi" },
+      "C": { "min": 4.50, "max": 6.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "C25": {
+    "nome": "Semicentro - Chiaiano Centro",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 4.50,
+    "max": 7.80,
+    "fasce": {
+      "A": { "min": 6.20, "max": 7.80, "note": "8+ elementi" },
+      "B": { "min": 5.30, "max": 7.00, "note": "4-7 elementi" },
+      "C": { "min": 4.50, "max": 6.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "C26": {
+    "nome": "Semicentro - Piscinola",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 4.00,
+    "max": 7.20,
+    "fasce": {
+      "A": { "min": 5.70, "max": 7.20, "note": "8+ elementi" },
+      "B": { "min": 4.80, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 4.00, "max": 5.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "C27": {
+    "nome": "Semicentro - Marianella",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 4.00,
+    "max": 7.20,
+    "fasce": {
+      "A": { "min": 5.70, "max": 7.20, "note": "8+ elementi" },
+      "B": { "min": 4.80, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 4.00, "max": 5.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "C28": {
+    "nome": "Semicentro - Secondigliano",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 3.80,
+    "max": 6.80,
+    "fasce": {
+      "A": { "min": 5.30, "max": 6.80, "note": "8+ elementi" },
+      "B": { "min": 4.50, "max": 6.00, "note": "4-7 elementi" },
+      "C": { "min": 3.80, "max": 5.20, "note": "fino a 3 elementi" }
+    }
+  },
+  "C29": {
+    "nome": "Semicentro - Miano",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 3.80,
+    "max": 6.80,
+    "fasce": {
+      "A": { "min": 5.30, "max": 6.80, "note": "8+ elementi" },
+      "B": { "min": 4.50, "max": 6.00, "note": "4-7 elementi" },
+      "C": { "min": 3.80, "max": 5.20, "note": "fino a 3 elementi" }
+    }
+  },
+  "C30": {
+    "nome": "Semicentro - San Pietro a Patierno",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 3.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 5.00, "max": 6.50, "note": "8+ elementi" },
+      "B": { "min": 4.20, "max": 5.80, "note": "4-7 elementi" },
+      "C": { "min": 3.50, "max": 5.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "C31": {
+    "nome": "Semicentro - Poggioreale",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 4.00,
+    "max": 7.00,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.00, "note": "8+ elementi" },
+      "B": { "min": 4.70, "max": 6.30, "note": "4-7 elementi" },
+      "C": { "min": 4.00, "max": 5.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "C32": {
+    "nome": "Semicentro - Zona Industriale",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 3.50,
+    "max": 6.00,
+    "fasce": {
+      "A": { "min": 4.80, "max": 6.00, "note": "8+ elementi" },
+      "B": { "min": 4.00, "max": 5.50, "note": "4-7 elementi" },
+      "C": { "min": 3.50, "max": 4.80, "note": "fino a 3 elementi" }
+    }
+  },
+  "C33": {
+    "nome": "Semicentro - Barra Centro",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 3.50,
+    "max": 6.00,
+    "fasce": {
+      "A": { "min": 4.80, "max": 6.00, "note": "8+ elementi" },
+      "B": { "min": 4.00, "max": 5.50, "note": "4-7 elementi" },
+      "C": { "min": 3.50, "max": 4.80, "note": "fino a 3 elementi" }
+    }
+  },
+  "D21": {
+    "nome": "Periferia - San Giovanni a Teduccio",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 3.00,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 4.30, "max": 5.50, "note": "8+ elementi" },
+      "B": { "min": 3.60, "max": 5.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 4.30, "note": "fino a 3 elementi" }
+    }
+  },
+  "D22": {
+    "nome": "Periferia - Ponticelli",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 3.00,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 4.30, "max": 5.50, "note": "8+ elementi" },
+      "B": { "min": 3.60, "max": 5.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 4.30, "note": "fino a 3 elementi" }
+    }
+  },
+  "D23": {
+    "nome": "Periferia - Ponticelli Est",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.80,
+    "max": 5.20,
+    "fasce": {
+      "A": { "min": 4.00, "max": 5.20, "note": "8+ elementi" },
+      "B": { "min": 3.40, "max": 4.70, "note": "4-7 elementi" },
+      "C": { "min": 2.80, "max": 4.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D24": {
+    "nome": "Periferia - San Giorgio a Cremano confine",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.80,
+    "max": 5.20,
+    "fasce": {
+      "A": { "min": 4.00, "max": 5.20, "note": "8+ elementi" },
+      "B": { "min": 3.40, "max": 4.70, "note": "4-7 elementi" },
+      "C": { "min": 2.80, "max": 4.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D25": {
+    "nome": "Periferia - Scampia",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 4.80,
+    "fasce": {
+      "A": { "min": 3.70, "max": 4.80, "note": "8+ elementi" },
+      "B": { "min": 3.10, "max": 4.30, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 3.70, "note": "fino a 3 elementi" }
+    }
+  },
+  "D26": {
+    "nome": "Periferia - Capodimonte",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 3.20,
+    "max": 5.80,
+    "fasce": {
+      "A": { "min": 4.50, "max": 5.80, "note": "8+ elementi" },
+      "B": { "min": 3.80, "max": 5.20, "note": "4-7 elementi" },
+      "C": { "min": 3.20, "max": 4.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "D27": {
+    "nome": "Periferia - Rione Alto",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 3.00,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 4.30, "max": 5.50, "note": "8+ elementi" },
+      "B": { "min": 3.60, "max": 5.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 4.30, "note": "fino a 3 elementi" }
+    }
+  },
+  "D28": {
+    "nome": "Periferia - Colli Aminei",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 3.50,
+    "max": 6.00,
+    "fasce": {
+      "A": { "min": 4.80, "max": 6.00, "note": "8+ elementi" },
+      "B": { "min": 4.00, "max": 5.50, "note": "4-7 elementi" },
+      "C": { "min": 3.50, "max": 4.80, "note": "fino a 3 elementi" }
+    }
+  },
+  "D29": {
+    "nome": "Periferia - Camaldoli",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 3.00,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 4.30, "max": 5.50, "note": "8+ elementi" },
+      "B": { "min": 3.60, "max": 5.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 4.30, "note": "fino a 3 elementi" }
+    }
+  },
+  "D30": {
+    "nome": "Periferia - Chiaiano Periferia",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.80,
+    "max": 5.00,
+    "fasce": {
+      "A": { "min": 4.00, "max": 5.00, "note": "8+ elementi" },
+      "B": { "min": 3.30, "max": 4.50, "note": "4-7 elementi" },
+      "C": { "min": 2.80, "max": 4.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D31": {
+    "nome": "Periferia - Pianura Est",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.80,
+    "max": 5.00,
+    "fasce": {
+      "A": { "min": 4.00, "max": 5.00, "note": "8+ elementi" },
+      "B": { "min": 3.30, "max": 4.50, "note": "4-7 elementi" },
+      "C": { "min": 2.80, "max": 4.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D32": {
+    "nome": "Periferia - Pianura Ovest",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 4.50,
+    "fasce": {
+      "A": { "min": 3.50, "max": 4.50, "note": "8+ elementi" },
+      "B": { "min": 3.00, "max": 4.00, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 3.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "D33": {
+    "nome": "Periferia - Agnano",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 3.00,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 4.30, "max": 5.50, "note": "8+ elementi" },
+      "B": { "min": 3.60, "max": 5.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 4.30, "note": "fino a 3 elementi" }
+    }
+  },
+  "D34": {
+    "nome": "Periferia - Barra Est",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 4.50,
+    "fasce": {
+      "A": { "min": 3.50, "max": 4.50, "note": "8+ elementi" },
+      "B": { "min": 3.00, "max": 4.00, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 3.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "D35": {
+    "nome": "Periferia - Portici confine",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.80,
+    "max": 5.00,
+    "fasce": {
+      "A": { "min": 4.00, "max": 5.00, "note": "8+ elementi" },
+      "B": { "min": 3.30, "max": 4.50, "note": "4-7 elementi" },
+      "C": { "min": 2.80, "max": 4.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "D36": {
+    "nome": "Periferia - Centro Direzionale",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 4.00,
+    "max": 7.00,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.00, "note": "8+ elementi" },
+      "B": { "min": 4.70, "max": 6.30, "note": "4-7 elementi" },
+      "C": { "min": 4.00, "max": 5.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "E3": {
+    "nome": "Suburbana - Mergellina",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 5.50,
+    "max": 9.00,
+    "fasce": {
+      "A": { "min": 7.30, "max": 9.00, "note": "8+ elementi" },
+      "B": { "min": 6.30, "max": 8.00, "note": "4-7 elementi" },
+      "C": { "min": 5.50, "max": 7.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "E27": {
+    "nome": "Suburbana - Nisida",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 3.00,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 4.30, "max": 5.50, "note": "8+ elementi" },
+      "B": { "min": 3.60, "max": 5.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 4.30, "note": "fino a 3 elementi" }
+    }
+  },
+  "E28": {
+    "nome": "Suburbana - Posillipo Basso",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 4.50,
+    "max": 8.00,
+    "fasce": {
+      "A": { "min": 6.30, "max": 8.00, "note": "8+ elementi" },
+      "B": { "min": 5.30, "max": 7.00, "note": "4-7 elementi" },
+      "C": { "min": 4.50, "max": 6.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "E29": {
+    "nome": "Suburbana - Marechiaro",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 4.00,
+    "max": 7.50,
+    "fasce": {
+      "A": { "min": 5.80, "max": 7.50, "note": "8+ elementi" },
+      "B": { "min": 4.90, "max": 6.50, "note": "4-7 elementi" },
+      "C": { "min": 4.00, "max": 5.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "E30": {
+    "nome": "Suburbana - Gaiola",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 4.00,
+    "max": 7.00,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.00, "note": "8+ elementi" },
+      "B": { "min": 4.70, "max": 6.30, "note": "4-7 elementi" },
+      "C": { "min": 4.00, "max": 5.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "E31": {
+    "nome": "Suburbana - Coroglio",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 3.00,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 4.30, "max": 5.50, "note": "8+ elementi" },
+      "B": { "min": 3.60, "max": 5.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 4.30, "note": "fino a 3 elementi" }
+    }
+  },
+  "E32": {
+    "nome": "Suburbana - Cavalleggeri",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 3.00,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 4.30, "max": 5.50, "note": "8+ elementi" },
+      "B": { "min": 3.60, "max": 5.00, "note": "4-7 elementi" },
+      "C": { "min": 3.00, "max": 4.30, "note": "fino a 3 elementi" }
+    }
+  },
+  "E33": {
+    "nome": "Suburbana - Soccavo Est",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.80,
+    "max": 5.00,
+    "fasce": {
+      "A": { "min": 4.00, "max": 5.00, "note": "8+ elementi" },
+      "B": { "min": 3.30, "max": 4.50, "note": "4-7 elementi" },
+      "C": { "min": 2.80, "max": 4.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "E34": {
+    "nome": "Suburbana - Soccavo Ovest",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.50,
+    "max": 4.50,
+    "fasce": {
+      "A": { "min": 3.50, "max": 4.50, "note": "8+ elementi" },
+      "B": { "min": 3.00, "max": 4.00, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 3.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "E35": {
+    "nome": "Suburbana - Quarto confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.50,
+    "max": 4.50,
+    "fasce": {
+      "A": { "min": 3.50, "max": 4.50, "note": "8+ elementi" },
+      "B": { "min": 3.00, "max": 4.00, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 3.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "E36": {
+    "nome": "Suburbana - Marano confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.30,
+    "max": 4.20,
+    "fasce": {
+      "A": { "min": 3.30, "max": 4.20, "note": "8+ elementi" },
+      "B": { "min": 2.80, "max": 3.80, "note": "4-7 elementi" },
+      "C": { "min": 2.30, "max": 3.30, "note": "fino a 3 elementi" }
+    }
+  },
+  "E37": {
+    "nome": "Suburbana - Mugnano confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.30,
+    "max": 4.20,
+    "fasce": {
+      "A": { "min": 3.30, "max": 4.20, "note": "8+ elementi" },
+      "B": { "min": 2.80, "max": 3.80, "note": "4-7 elementi" },
+      "C": { "min": 2.30, "max": 3.30, "note": "fino a 3 elementi" }
+    }
+  },
+  "E38": {
+    "nome": "Suburbana - Melito confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.20,
+    "max": 4.00,
+    "fasce": {
+      "A": { "min": 3.10, "max": 4.00, "note": "8+ elementi" },
+      "B": { "min": 2.60, "max": 3.60, "note": "4-7 elementi" },
+      "C": { "min": 2.20, "max": 3.10, "note": "fino a 3 elementi" }
+    }
+  },
+  "E39": {
+    "nome": "Suburbana - Arzano confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.20,
+    "max": 4.00,
+    "fasce": {
+      "A": { "min": 3.10, "max": 4.00, "note": "8+ elementi" },
+      "B": { "min": 2.60, "max": 3.60, "note": "4-7 elementi" },
+      "C": { "min": 2.20, "max": 3.10, "note": "fino a 3 elementi" }
+    }
+  },
+  "E40": {
+    "nome": "Suburbana - Casavatore confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.20,
+    "max": 4.00,
+    "fasce": {
+      "A": { "min": 3.10, "max": 4.00, "note": "8+ elementi" },
+      "B": { "min": 2.60, "max": 3.60, "note": "4-7 elementi" },
+      "C": { "min": 2.20, "max": 3.10, "note": "fino a 3 elementi" }
+    }
+  },
+  "E41": {
+    "nome": "Suburbana - Casoria confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.30,
+    "max": 4.20,
+    "fasce": {
+      "A": { "min": 3.30, "max": 4.20, "note": "8+ elementi" },
+      "B": { "min": 2.80, "max": 3.80, "note": "4-7 elementi" },
+      "C": { "min": 2.30, "max": 3.30, "note": "fino a 3 elementi" }
+    }
+  },
+  "E42": {
+    "nome": "Suburbana - Afragola confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.00,
+    "max": 3.80,
+    "fasce": {
+      "A": { "min": 2.90, "max": 3.80, "note": "8+ elementi" },
+      "B": { "min": 2.40, "max": 3.40, "note": "4-7 elementi" },
+      "C": { "min": 2.00, "max": 2.90, "note": "fino a 3 elementi" }
+    }
+  },
+  "E43": {
+    "nome": "Suburbana - Volla confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.00,
+    "max": 3.80,
+    "fasce": {
+      "A": { "min": 2.90, "max": 3.80, "note": "8+ elementi" },
+      "B": { "min": 2.40, "max": 3.40, "note": "4-7 elementi" },
+      "C": { "min": 2.00, "max": 2.90, "note": "fino a 3 elementi" }
+    }
+  },
+  "E44": {
+    "nome": "Suburbana - Cercola confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.00,
+    "max": 3.80,
+    "fasce": {
+      "A": { "min": 2.90, "max": 3.80, "note": "8+ elementi" },
+      "B": { "min": 2.40, "max": 3.40, "note": "4-7 elementi" },
+      "C": { "min": 2.00, "max": 2.90, "note": "fino a 3 elementi" }
+    }
+  },
+  "E45": {
+    "nome": "Suburbana - Pollena confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.00,
+    "max": 3.80,
+    "fasce": {
+      "A": { "min": 2.90, "max": 3.80, "note": "8+ elementi" },
+      "B": { "min": 2.40, "max": 3.40, "note": "4-7 elementi" },
+      "C": { "min": 2.00, "max": 2.90, "note": "fino a 3 elementi" }
+    }
+  },
+  "E46": {
+    "nome": "Suburbana - Massa di Somma",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.00,
+    "max": 3.50,
+    "fasce": {
+      "A": { "min": 2.80, "max": 3.50, "note": "8+ elementi" },
+      "B": { "min": 2.40, "max": 3.20, "note": "4-7 elementi" },
+      "C": { "min": 2.00, "max": 2.80, "note": "fino a 3 elementi" }
+    }
+  },
+  "E47": {
+    "nome": "Suburbana - San Sebastiano confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.50,
+    "max": 4.50,
+    "fasce": {
+      "A": { "min": 3.50, "max": 4.50, "note": "8+ elementi" },
+      "B": { "min": 3.00, "max": 4.00, "note": "4-7 elementi" },
+      "C": { "min": 2.50, "max": 3.50, "note": "fino a 3 elementi" }
+    }
+  },
+  "E48": {
+    "nome": "Suburbana - Ercolano confine",
+    "fascia": "E",
+    "area": "Suburbana",
+    "min": 2.80,
+    "max": 5.00,
+    "fasce": {
+      "A": { "min": 4.00, "max": 5.00, "note": "8+ elementi" },
+      "B": { "min": 3.30, "max": 4.50, "note": "4-7 elementi" },
+      "C": { "min": 2.80, "max": 4.00, "note": "fino a 3 elementi" }
+    }
+  },
+  "R1": {
+    "nome": "Rurale - Campi Flegrei",
+    "fascia": "R",
+    "area": "Rurale",
+    "min": 1.50,
+    "max": 3.00,
+    "fasce": {
+      "A": { "min": 2.30, "max": 3.00, "note": "8+ elementi" },
+      "B": { "min": 1.90, "max": 2.70, "note": "4-7 elementi" },
+      "C": { "min": 1.50, "max": 2.30, "note": "fino a 3 elementi" }
+    }
+  },
+  "R2": {
+    "nome": "Rurale - Vesuvio confine",
+    "fascia": "R",
+    "area": "Rurale",
+    "min": 1.50,
+    "max": 3.00,
+    "fasce": {
+      "A": { "min": 2.30, "max": 3.00, "note": "8+ elementi" },
+      "B": { "min": 1.90, "max": 2.70, "note": "4-7 elementi" },
+      "C": { "min": 1.50, "max": 2.30, "note": "fino a 3 elementi" }
+    }
+  }
+}

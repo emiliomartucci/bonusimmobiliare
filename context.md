@@ -65,6 +65,10 @@ bonusimmobiliare/
 │   │   ├── canone-concordato-{citta}/ # Serie affitto (6)
 │   │   ├── mappa-canone-concordato-roma/ # Articolo mappa Roma
 │   │   ├── mappa-canone-concordato-milano/ # Articolo mappa Milano
+│   │   ├── mappa-canone-concordato-torino/ # Articolo mappa Torino
+│   │   ├── mappa-canone-concordato-bologna/ # Articolo mappa Bologna
+│   │   ├── mappa-canone-concordato-firenze/ # Articolo mappa Firenze
+│   │   ├── mappa-canone-concordato-napoli/  # Articolo mappa Napoli
 │   │   ├── caparra-confirmatoria-penitenziale/
 │   │   ├── clausola-sospensiva-mutuo/
 │   │   ├── compromesso-notaio-agenzia/
@@ -80,14 +84,26 @@ bonusimmobiliare/
 │   ├── mappe/              # Mappe interattive zone OMI
 │   │   ├── _template.html  # Template mappa per nuove citta
 │   │   ├── roma/           # Mappa Roma (233 zone OMI)
-│   │   └── milano/         # Mappa Milano (5 zone concordato)
+│   │   ├── milano/         # Mappa Milano (5 zone concordato)
+│   │   ├── torino/         # Mappa Torino (47 zone OMI)
+│   │   ├── bologna/        # Mappa Bologna (34 zone OMI)
+│   │   ├── firenze/        # Mappa Firenze (34 zone OMI)
+│   │   └── napoli/         # Mappa Napoli (67 zone OMI)
 │   ├── css/                # CSS condivisi
 │   │   └── mappa.css       # Stili condivisi mappe interattive
 │   ├── data/               # Dati per mappe e calcolatori
 │   │   ├── roma-zone-omi.json      # Valori canone per zona Roma
 │   │   ├── roma_omi_zones.geojson  # Poligoni zone OMI Roma
 │   │   ├── milano-zone-concordato.json  # Valori canone per zona Milano
-│   │   └── milano_concordato_zones.geojson  # Poligoni zone Milano
+│   │   ├── milano_concordato_zones.geojson  # Poligoni zone Milano
+│   │   ├── torino-zone-omi.json         # Valori canone per zona Torino
+│   │   ├── torino_omi_zones.geojson     # Poligoni zone OMI Torino
+│   │   ├── bologna-zone-omi.json        # Valori canone per zona Bologna
+│   │   ├── bologna_omi_zones.geojson    # Poligoni zone OMI Bologna
+│   │   ├── firenze-zone-omi.json        # Valori canone per zona Firenze
+│   │   ├── firenze_omi_zones.geojson    # Poligoni zone OMI Firenze
+│   │   ├── napoli-zone-omi.json         # Valori canone per zona Napoli
+│   │   └── napoli_omi_zones.geojson     # Poligoni zone OMI Napoli
 │   ├── servizi/            # Services slider
 │   ├── privacy/            # Privacy policy GDPR
 │   ├── cookie/             # Cookie policy
@@ -135,16 +151,34 @@ bonusimmobiliare/
 - [x] Articolo SEO mappa canone concordato Milano (/blog/mappa-canone-concordato-milano/)
 - [x] CSS condivisi per blog (blog-article.css) e mappe (mappa.css)
 - [x] Mappa Milano con 7 zone hinterland Città Metropolitana (130 comuni)
+- [x] Mappa interattiva zone OMI Torino (47 zone, 4 aree: Centro, Semicentro, Periferia, Collina)
+- [x] Articolo SEO mappa canone concordato Torino (/blog/mappa-canone-concordato-torino/)
+- [x] Mappa interattiva zone OMI Bologna (34 zone, 5 aree: Pregio, Zona A, Zona B, Colline, Rurale)
+- [x] Articolo SEO mappa canone concordato Bologna (/blog/mappa-canone-concordato-bologna/)
+- [x] Mappa interattiva zone OMI Firenze (34 zone, 5 tipologie: Centro, Semicentro, Periferia, Suburbana, Rurale)
+- [x] Articolo SEO mappa canone concordato Firenze (/blog/mappa-canone-concordato-firenze/)
+- [x] Mappa interattiva zone OMI Napoli (67 zone, 5 tipologie: Centro, Semicentro, Periferia, Suburbana, Rurale)
+- [x] Articolo SEO mappa canone concordato Napoli (/blog/mappa-canone-concordato-napoli/)
 
 ## Todo (v2)
 ✅ Completato
 
 ## Todo (v3)
-- [ ] Mappe zone OMI altre citta (Torino, Napoli, Firenze, Bologna)
-- [ ] Articoli SEO mappa per ogni citta
+- [x] Mappa Torino (47 zone OMI)
+- [x] Mappa Bologna (34 zone OMI)
+- [x] Mappa Firenze (34 zone OMI)
+- [x] Mappa Napoli (67 zone OMI)
 - [ ] Calcolatori interattivi
 
 ## Cambiamenti Recenti
+- 2026-01-30: Mappa interattiva zone OMI Napoli (67 zone, Accordo 2025, 5 tipologie)
+- 2026-01-30: Articolo SEO mappa canone concordato Napoli
+- 2026-01-30: Mappa interattiva zone OMI Firenze (34 zone, Accordo 25/06/2020, 5 tipologie)
+- 2026-01-30: Articolo SEO mappa canone concordato Firenze
+- 2026-01-30: Mappa interattiva zone OMI Bologna (34 zone, Accordo 27/03/2024, 5 aree)
+- 2026-01-30: Articolo SEO mappa canone concordato Bologna
+- 2026-01-30: Mappa interattiva zone OMI Torino (47 zone, Accordo 15/04/2024, 4 aree)
+- 2026-01-30: Articolo SEO mappa canone concordato Torino
 - 2026-01-30: Mappa Milano con layer hinterland (7 zone omogenee Città Metropolitana, 130 comuni)
 - 2026-01-30: Mappa interattiva Milano (5 zone concordato + GeoJSON da GIS Portal Comune Milano)
 - 2026-01-30: Articolo SEO mappa canone concordato Milano
@@ -180,4 +214,4 @@ bonusimmobiliare/
 
 ---
 **Last Update:** 2026-01-30
-**Version:** 2.4.0
+**Version:** 2.5.0
