@@ -1,0 +1,566 @@
+{
+  "B1": {
+    "nome": "Centro Storico - Piazza Castello",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 6.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.60, "note": "2 elementi" }
+    }
+  },
+  "B2": {
+    "nome": "Centro - Piazza San Carlo",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 6.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.60, "note": "2 elementi" }
+    }
+  },
+  "B3": {
+    "nome": "Centro - Via Roma",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 6.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.60, "note": "2 elementi" }
+    }
+  },
+  "B4": {
+    "nome": "Centro - Porta Nuova",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 6.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.60, "note": "2 elementi" }
+    }
+  },
+  "B5": {
+    "nome": "Centro - Crocetta",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 6.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.60, "note": "2 elementi" }
+    }
+  },
+  "B6": {
+    "nome": "Centro - San Salvario",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 6.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.60, "note": "2 elementi" }
+    }
+  },
+  "B7": {
+    "nome": "Centro - Vanchiglia",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 6.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.60, "note": "2 elementi" }
+    }
+  },
+  "B8": {
+    "nome": "Centro - Quadrilatero",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 6.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.60, "note": "2 elementi" }
+    }
+  },
+  "B9": {
+    "nome": "Centro - Aurora",
+    "fascia": "B",
+    "area": "Centro",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 6.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.60, "note": "2 elementi" }
+    }
+  },
+  "C1": {
+    "nome": "Semicentro - Santa Rita",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C2": {
+    "nome": "Semicentro - Lingotto",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C3": {
+    "nome": "Semicentro - Nizza Millefonti",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C4": {
+    "nome": "Semicentro - Mirafiori Nord",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C5": {
+    "nome": "Semicentro - Pozzo Strada",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C6": {
+    "nome": "Semicentro - Cenisia",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C7": {
+    "nome": "Semicentro - San Paolo",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C8": {
+    "nome": "Semicentro - Parella",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C11": {
+    "nome": "Semicentro - Campidoglio",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C12": {
+    "nome": "Semicentro - Madonna di Campagna",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C15": {
+    "nome": "Semicentro - Barriera di Milano",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C17": {
+    "nome": "Semicentro - Rebaudengo",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C18": {
+    "nome": "Semicentro - Regio Parco",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C19": {
+    "nome": "Semicentro - Borgo Vittoria",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C20": {
+    "nome": "Semicentro - Lucento",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C21": {
+    "nome": "Semicentro - Vallette",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C22": {
+    "nome": "Semicentro - Borgo San Secondo",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C23": {
+    "nome": "Semicentro - Borgo Crimea",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "C24": {
+    "nome": "Semicentro - Borgo Po",
+    "fascia": "C",
+    "area": "Semicentro",
+    "min": 2.50,
+    "max": 5.90,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.90, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.20, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.50, "note": "2 elementi" }
+    }
+  },
+  "D6": {
+    "nome": "Periferia - Mirafiori Sud",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D9": {
+    "nome": "Periferia - Falchera",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D10": {
+    "nome": "Periferia - Barca",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D11": {
+    "nome": "Periferia - Bertolla",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D15": {
+    "nome": "Periferia - Le Vallette",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D16": {
+    "nome": "Periferia - Aeronautica",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D17": {
+    "nome": "Periferia - Villaretto",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D18": {
+    "nome": "Periferia - Abbadia di Stura",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D19": {
+    "nome": "Periferia - Barriera Caselle",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D20": {
+    "nome": "Periferia - Continassa",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D21": {
+    "nome": "Periferia - Borgata Lesna",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D22": {
+    "nome": "Periferia - Basse di Stura",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D23": {
+    "nome": "Periferia - Pietra Alta",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D24": {
+    "nome": "Periferia - Madonna del Pilone",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D25": {
+    "nome": "Periferia - Sassi",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "D26": {
+    "nome": "Periferia - Cavoretto",
+    "fascia": "D",
+    "area": "Periferia",
+    "min": 2.50,
+    "max": 5.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 5.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 4.70, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.00, "note": "2 elementi" }
+    }
+  },
+  "E1": {
+    "nome": "Collina - Superga",
+    "fascia": "E",
+    "area": "Collina",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 6.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.50, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.30, "note": "2 elementi" }
+    }
+  },
+  "E2": {
+    "nome": "Collina - Pino Torinese",
+    "fascia": "E",
+    "area": "Collina",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 6.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.50, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.30, "note": "2 elementi" }
+    }
+  },
+  "E3": {
+    "nome": "Collina - Reaglie",
+    "fascia": "E",
+    "area": "Collina",
+    "min": 2.50,
+    "max": 6.50,
+    "fasce": {
+      "A": { "min": 3.70, "max": 6.50, "note": "4+ elementi" },
+      "B": { "min": 3.10, "max": 5.50, "note": "3 elementi" },
+      "C": { "min": 2.50, "max": 4.30, "note": "2 elementi" }
+    }
+  }
+}
