@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="it">
+<!--
+═══════════════════════════════════════════════════════════════════════════════
+TEMPLATE MAPPA ZONE OMI - BONUS IMMOBILIARE
+═══════════════════════════════════════════════════════════════════════════════
+
+Per creare una nuova mappa città:
+1. Copia questo file in /mappe/{città}/index.html
+2. Sostituisci tutti i placeholder {CITTÀ}, {città}, {N} nel head
+3. Modifica CITY_CONFIG con i dati della città
+4. Prepara i file dati:
+   - /data/{città}_omi_zones.geojson (poligoni zone da GeoPOI Agenzia Entrate)
+   - /data/{città}-zone-omi.json (valori canone da Accordo Territoriale)
+
+Risorse:
+- GeoJSON zone OMI: https://geopoi.agenziaentrate.gov.it/
+- Accordi Territoriali: cercare su Google "{città} accordo territoriale canone concordato"
+- Coordinate centro città: Google Maps (click destro → coordinate)
+═══════════════════════════════════════════════════════════════════════════════
+-->
 <head>
     <script src="/js/head-common.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mappa Zone OMI Roma - Canone Concordato 2025</title>
-    <meta name="description" content="Trova la tua zona OMI a Roma e scopri quanto puoi affittare a canone concordato. Mappa interattiva con 233 microzone e valori €/mq aggiornati 2025.">
-    <link rel="canonical" href="https://bonusimmobiliare.it/mappe/roma/">
 
-    <!-- Open Graph -->
+    <!-- [SOSTITUIRE] {CITTÀ}=nome maiuscolo, {città}=slug lowercase, {N}=numero zone -->
+    <title>Mappa Zone OMI {CITTÀ} - Canone Concordato 2025 | Bonus Immobiliare</title>
+    <meta name="description" content="Trova la tua zona OMI a {CITTÀ} e scopri quanto puoi affittare a canone concordato. Mappa interattiva con {N} microzone e valori €/mq aggiornati 2025.">
+    <link rel="canonical" href="https://bonusimmobiliare.it/mappe/{città}/">
+
+    <!-- Open Graph [SOSTITUIRE] -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Mappa Zone OMI Roma - Canone Concordato 2025">
-    <meta property="og:description" content="Trova la tua zona OMI a Roma e scopri quanto puoi affittare a canone concordato.">
-    <meta property="og:url" content="https://bonusimmobiliare.it/mappe/roma/">
+    <meta property="og:title" content="Mappa Zone OMI {CITTÀ} - Canone Concordato 2025">
+    <meta property="og:description" content="Trova la tua zona OMI a {CITTÀ} e scopri quanto puoi affittare a canone concordato.">
+    <meta property="og:url" content="https://bonusimmobiliare.it/mappe/{città}/">
     <meta property="og:image" content="https://bonusimmobiliare.it/og-image.jpg">
     <meta property="og:site_name" content="Bonus Immobiliare">
     <meta property="og:locale" content="it_IT">
@@ -26,21 +47,39 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
     <!-- ═══════════════════════════════════════════════════════════════
-         TEMPLATE CONFIG - Modifica queste variabili per altre città
+         CITY_CONFIG - MODIFICA QUESTI VALORI PER OGNI CITTÀ
     ═══════════════════════════════════════════════════════════════ -->
     <script>
         const CITY_CONFIG = {
-            name: 'Roma',
-            slug: 'roma',
-            geojsonPath: '/data/roma_omi_zones.geojson',
-            zoneDataPath: '/data/roma-zone-omi.json',
-            center: [41.9028, 12.4964],
-            bounds: [[41.655, 12.035], [42.145, 12.855]],
+            // [SOSTITUIRE] Nome città (es: 'Milano', 'Napoli', 'Torino')
+            name: '{CITTÀ}',
+
+            // [SOSTITUIRE] Slug città lowercase (es: 'milano', 'napoli', 'torino')
+            slug: '{città}',
+
+            // [SOSTITUIRE] Path ai file dati
+            geojsonPath: '/data/{città}_omi_zones.geojson',
+            zoneDataPath: '/data/{città}-zone-omi.json',
+
+            // [SOSTITUIRE] Coordinate centro città [lat, lon]
+            // Trova su Google Maps: click destro → "Che cosa c'è qui?" → coordinate
+            center: [0.0000, 0.0000],
+
+            // [SOSTITUIRE] Bounding box città [[sud, ovest], [nord, est]]
+            bounds: [[0.0, 0.0], [0.0, 0.0]],
+
+            // Zoom iniziale (11 va bene per la maggior parte delle città)
             zoom: 11,
-            dokicasaUrl: 'https://app.dokicasa.it/contratti/foglio-caratteristiche-immobile-roma/crea/default?utm_source=bonusimmobiliare&utm_medium=mappa&utm_campaign=roma',
-            totalZones: 233,
+
+            // [SOSTITUIRE] URL Dokicasa con slug città
+            dokicasaUrl: 'https://app.dokicasa.it/contratti/foglio-caratteristiche-immobile-{città}/crea/default?utm_source=bonusimmobiliare&utm_medium=mappa&utm_campaign={città}',
+
+            // [SOSTITUIRE] Numero totale zone OMI
+            totalZones: 0,
+
+            // [SOSTITUIRE] Anno e data accordo territoriale
             accordoYear: 2023,
-            accordoDate: '7 agosto 2023'
+            accordoDate: 'DD mese YYYY'
         };
     </script>
 
@@ -815,7 +854,7 @@
         </div>
         <a href="/" class="header-back">
             <span>Torna al sito</span>
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
         </a>
@@ -830,10 +869,10 @@
             <!-- Search -->
             <div class="search-container">
                 <div class="search-box">
-                    <svg class="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <input type="text" id="address-search" placeholder="Cerca indirizzo a Roma..." aria-label="Cerca indirizzo a Roma">
+                    <input type="text" id="address-search" placeholder="Cerca indirizzo a Roma...">
                 </div>
                 <div class="search-results" id="search-results"></div>
             </div>
@@ -853,7 +892,7 @@
         <aside class="sidebar" id="sidebar">
             <!-- Placeholder when no zone selected -->
             <div class="sidebar-placeholder" id="sidebar-placeholder">
-                <svg class="sidebar-placeholder-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <svg class="sidebar-placeholder-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                 </svg>
@@ -938,7 +977,7 @@
     <footer class="footer-mini">
         <div class="footer-mini-text">
             Dati: <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/omi/banche-dati/quotazioni-immobiliari" target="_blank" rel="noopener">Agenzia delle Entrate - OMI</a> |
-            Valori: <a href="/blog/canone-concordato-roma/" rel="noopener">Accordo Territoriale Roma</a>
+            Valori: <a href="/Roma/accordo territoriale/" target="_blank" rel="noopener">Accordo Territoriale Roma</a>
         </div>
         <div class="footer-mini-source">
             © 2025 Bonus Immobiliare
@@ -946,7 +985,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
         // ═══════════════════════════════════════════════════════════════
         // INITIALIZATION
