@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="it">
+<!--
+═══════════════════════════════════════════════════════════════════════════════
+TEMPLATE ARTICOLO MAPPA CANONE CONCORDATO - BONUS IMMOBILIARE
+═══════════════════════════════════════════════════════════════════════════════
+
+Per creare un nuovo articolo mappa città:
+1. Copia questo file in /blog/mappa-canone-concordato-{città}/index.html
+2. Cerca e sostituisci (case sensitive):
+   - {CITTÀ} → Nome città con maiuscola (es: Milano, Torino)
+   - {città} → Slug lowercase (es: milano, torino)
+   - {N} → Numero zone OMI della città
+   - {DATA_ACCORDO} → Data accordo territoriale (es: "15 marzo 2022")
+   - {ANNO_ACCORDO} → Anno accordo (es: 2022)
+3. Aggiorna la tabella "Esempi Pratici" con zone reali della città
+4. Aggiorna le FAQ se necessario
+5. Aggiungi articolo a articles.json
+
+Checklist pre-pubblicazione:
+- [ ] Tutti i placeholder sostituiti
+- [ ] Tabella esempi con zone reali
+- [ ] Link mappa /mappe/{città}/ funzionante
+- [ ] Link Dokicasa con slug corretto
+- [ ] articles.json aggiornato
+═══════════════════════════════════════════════════════════════════════════════
+-->
 <head>
     <script src="/js/head-common.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mappa Zone OMI Roma: Canone Concordato per Microzona | Bonus Immobiliare</title>
-    <meta name="description" content="Mappa interattiva delle 233 zone OMI di Roma con valori canone concordato. Cerca il tuo indirizzo e scopri quanto puoi affittare a canone concordato.">
-    <meta name="keywords" content="mappa canone concordato roma, mappa zone omi roma, microzone canone concordato roma, zone omogenee roma, calcolo canone roma">
-    <link rel="canonical" href="https://bonusimmobiliare.it/blog/mappa-canone-concordato-roma/">
+    <title>Mappa Zone OMI {CITTÀ}: Canone Concordato per Microzona | Bonus Immobiliare</title>
+    <meta name="description" content="Mappa interattiva delle {N} zone OMI di {CITTÀ} con valori canone concordato. Cerca il tuo indirizzo e scopri quanto puoi affittare a canone concordato.">
+    <meta name="keywords" content="mappa canone concordato {città}, mappa zone omi {città}, microzone canone concordato {città}, zone omogenee {città}, calcolo canone {città}">
+    <link rel="canonical" href="https://bonusimmobiliare.it/blog/mappa-canone-concordato-{città}/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Mappa Zone OMI Roma: Canone Concordato per Microzona">
-    <meta property="og:description" content="Mappa interattiva delle 233 zone OMI di Roma. Cerca il tuo indirizzo e scopri i valori del canone concordato.">
+    <meta property="og:title" content="Mappa Zone OMI {CITTÀ}: Canone Concordato per Microzona">
+    <meta property="og:description" content="Mappa interattiva delle {N} zone OMI di {CITTÀ}. Cerca il tuo indirizzo e scopri i valori del canone concordato.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://bonusimmobiliare.it/blog/mappa-canone-concordato-roma/">
+    <meta property="og:url" content="https://bonusimmobiliare.it/blog/mappa-canone-concordato-{città}/">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 
-    <!-- Schema.org Article -->
+    <!-- Schema.org Article - [AGGIORNARE DATE] -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Mappa Zone OMI Roma: Canone Concordato per Microzona",
-        "description": "Mappa interattiva delle 233 zone OMI di Roma con valori canone concordato. Cerca il tuo indirizzo e scopri quanto puoi affittare.",
+        "headline": "Mappa Zone OMI {CITTÀ}: Canone Concordato per Microzona",
+        "description": "Mappa interattiva delle {N} zone OMI di {CITTÀ} con valori canone concordato. Cerca il tuo indirizzo e scopri quanto puoi affittare.",
         "datePublished": "2026-01-30T00:00:00+01:00",
         "dateModified": "2026-01-30T00:00:00+01:00",
         "author": {
@@ -40,12 +65,12 @@
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://bonusimmobiliare.it/blog/mappa-canone-concordato-roma/"
+            "@id": "https://bonusimmobiliare.it/blog/mappa-canone-concordato-{città}/"
         }
     }
     </script>
 
-    <!-- Schema.org FAQPage -->
+    <!-- Schema.org FAQPage - [PERSONALIZZARE PER CITTÀ SE NECESSARIO] -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -53,15 +78,15 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Quante zone OMI ci sono a Roma per il canone concordato?",
+                "name": "Quante zone OMI ci sono a {CITTÀ} per il canone concordato?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Roma Capitale è suddivisa in 233 microzone OMI, ciascuna con fasce di canone concordato specifiche definite dall'Accordo Territoriale del 7 agosto 2023. Le zone vanno dalla B (centrali) alla R (rurali)."
+                    "text": "{CITTÀ} è suddivisa in {N} zone OMI, ciascuna con fasce di canone concordato specifiche definite dall'Accordo Territoriale del {DATA_ACCORDO}."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Come trovo la mia zona OMI a Roma?",
+                "name": "Come trovo la mia zona OMI a {CITTÀ}?",
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Puoi usare la nostra mappa interattiva: inserisci il tuo indirizzo nella barra di ricerca e la mappa evidenzierà automaticamente la zona OMI corrispondente con i relativi valori di canone concordato."
@@ -77,18 +102,10 @@
             },
             {
                 "@type": "Question",
-                "name": "Le zone rurali (R) hanno valori di canone concordato?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Le zone rurali (R1, R2, ecc.) non hanno valori propri: secondo l'Art. 2 dell'Accordo Territoriale di Roma, si applicano i valori della zona confinante più vicina."
-                }
-            },
-            {
-                "@type": "Question",
                 "name": "I valori sulla mappa sono aggiornati?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Sì, i valori sono estratti dall'Accordo Territoriale di Roma del 7 agosto 2023, attualmente in vigore. I dati includono tutte le 233 zone OMI con le tre fasce di oscillazione (A, B, C)."
+                    "text": "Sì, i valori sono estratti dall'Accordo Territoriale di {CITTÀ} del {DATA_ACCORDO}, attualmente in vigore. I dati includono tutte le {N} zone OMI con le fasce di oscillazione."
                 }
             }
         ]
@@ -151,69 +168,13 @@
         .nav-cta { background: var(--terracotta); color: var(--cream); padding: var(--space-sm) var(--space-lg); border-radius: var(--radius-full); font-weight: 600; font-size: 0.8rem; }
         .nav-cta:hover { background: var(--terracotta-light); color: var(--cream); }
 
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: var(--space-sm);
-        }
-
-        .menu-toggle span {
-            width: 24px;
-            height: 2px;
-            background: var(--bark);
-            border-radius: var(--radius-full);
-            transition: var(--transition-base);
-        }
-
-        .mobile-menu {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--olive-deep);
-            z-index: 999;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: var(--space-xl);
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-
-        .mobile-menu.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .mobile-menu a {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            color: var(--cream);
-            font-weight: 500;
-        }
-
-        .mobile-menu a:hover {
-            color: var(--gold);
-        }
-
-        .mobile-menu-close {
-            position: absolute;
-            top: var(--space-lg);
-            right: var(--space-lg);
-            background: none;
-            border: none;
-            color: var(--cream);
-            font-size: 2rem;
-            cursor: pointer;
-            padding: var(--space-sm);
-        }
+        .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: var(--space-sm); }
+        .menu-toggle span { width: 24px; height: 2px; background: var(--bark); border-radius: var(--radius-full); transition: var(--transition-base); }
+        .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--olive-deep); z-index: 999; flex-direction: column; justify-content: center; align-items: center; gap: var(--space-xl); opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; }
+        .mobile-menu.active { opacity: 1; visibility: visible; }
+        .mobile-menu a { font-family: var(--font-display); font-size: 1.5rem; color: var(--cream); font-weight: 500; }
+        .mobile-menu a:hover { color: var(--gold); }
+        .mobile-menu-close { position: absolute; top: var(--space-lg); right: var(--space-lg); background: none; border: none; color: var(--cream); font-size: 2rem; cursor: pointer; padding: var(--space-sm); }
 
         .article-hero { padding: 7rem var(--space-2xl) var(--space-2xl); background: linear-gradient(165deg, var(--olive-deep) 0%, var(--olive) 100%); position: relative; }
         .article-hero::before { content: ''; position: absolute; top: -30%; right: -10%; width: 50%; height: 100%; background: radial-gradient(ellipse, rgba(191, 166, 122, 0.12) 0%, transparent 60%); pointer-events: none; }
@@ -253,40 +214,11 @@
         .info-box-title svg { width: 20px; height: 20px; color: var(--gold); }
         .info-box p { margin-bottom: 0; font-size: 0.95rem; }
 
-        .map-cta-box {
-            background: linear-gradient(145deg, var(--olive-deep) 0%, var(--olive) 100%);
-            border-radius: var(--radius-lg);
-            padding: var(--space-xl);
-            margin: var(--space-2xl) 0;
-            text-align: center;
-            color: var(--cream);
-        }
-        .map-cta-box h3 {
-            font-family: var(--font-display);
-            font-size: 1.4rem;
-            font-weight: 500;
-            margin-bottom: var(--space-sm);
-            color: var(--cream);
-        }
-        .map-cta-box p {
-            color: rgba(250, 247, 242, 0.85);
-            margin-bottom: var(--space-lg);
-        }
-        .map-cta-btn {
-            display: inline-block;
-            background: var(--terracotta);
-            color: var(--cream);
-            padding: var(--space-md) var(--space-2xl);
-            border-radius: var(--radius-full);
-            font-weight: 600;
-            font-size: 1rem;
-            transition: var(--transition-base);
-        }
-        .map-cta-btn:hover {
-            background: var(--terracotta-light);
-            color: var(--cream);
-            transform: translateY(-2px);
-        }
+        .map-cta-box { background: linear-gradient(145deg, var(--olive-deep) 0%, var(--olive) 100%); border-radius: var(--radius-lg); padding: var(--space-xl); margin: var(--space-2xl) 0; text-align: center; color: var(--cream); }
+        .map-cta-box h3 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 500; margin-bottom: var(--space-sm); color: var(--cream); }
+        .map-cta-box p { color: rgba(250, 247, 242, 0.85); margin-bottom: var(--space-lg); }
+        .map-cta-btn { display: inline-block; background: var(--terracotta); color: var(--cream); padding: var(--space-md) var(--space-2xl); border-radius: var(--radius-full); font-weight: 600; font-size: 1rem; transition: var(--transition-base); }
+        .map-cta-btn:hover { background: var(--terracotta-light); color: var(--cream); transform: translateY(-2px); }
 
         .comparison-table { width: 100%; border-collapse: collapse; margin: var(--space-xl) 0; font-size: 0.95rem; }
         .comparison-table th, .comparison-table td { padding: var(--space-md); text-align: left; border-bottom: 1px solid var(--cream-dark); }
@@ -344,13 +276,8 @@
         @media (max-width: 768px) {
             .header { padding: var(--space-md) var(--space-lg); }
             .nav { display: none; }
-            .menu-toggle {
-                display: flex;
-            }
-
-            .mobile-menu {
-                display: flex;
-            }
+            .menu-toggle { display: flex; }
+            .mobile-menu { display: flex; }
             .article-hero { padding: 5.5rem var(--space-lg) var(--space-lg); }
             .article-hero h1 { font-size: 1.5rem; }
             .article-meta { flex-wrap: wrap; gap: var(--space-md); }
@@ -374,7 +301,7 @@
         <nav class="nav">
             <a href="/" class="nav-link">Home</a>
             <a href="/blog/" class="nav-link">Blog</a>
-            <a href="/mappe/roma/" class="nav-link">Mappa Roma</a>
+            <a href="/mappe/{città}/" class="nav-link">Mappa {CITTÀ}</a>
             <a href="/servizi/" class="nav-cta">Trova il Servizio</a>
         </nav>
         <button class="menu-toggle" aria-label="Menu">
@@ -389,6 +316,7 @@
         <button class="mobile-menu-close" aria-label="Chiudi menu">&times;</button>
         <a href="/">Home</a>
         <a href="/blog/">Blog</a>
+        <a href="/mappe/{città}/">Mappa {CITTÀ}</a>
         <a href="/servizi/">Servizi</a>
     </div>
 
@@ -403,7 +331,7 @@
                 <span>Affitto</span>
             </nav>
             <span class="article-category">Affitto</span>
-            <h1>Mappa Zone OMI Roma: Canone Concordato per Microzona</h1>
+            <h1>Mappa Zone OMI {CITTÀ}: Canone Concordato per Microzona</h1>
             <div class="article-meta">
                 <span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -419,6 +347,7 @@
                         <line x1="8" y1="2" x2="8" y2="6"/>
                         <line x1="3" y1="10" x2="21" y2="10"/>
                     </svg>
+                    <!-- [AGGIORNARE DATA] -->
                     30 Gennaio 2026
                 </span>
             </div>
@@ -435,27 +364,27 @@
 
             <!-- Article Content -->
             <article class="article-content" id="articleContent">
-                <h2 id="intro">Mappa Interattiva Zone OMI Roma</h2>
+                <h2 id="intro">Mappa Interattiva Zone OMI {CITTÀ}</h2>
 
-                <p><strong>Cerchi la mappa delle zone OMI di Roma per il canone concordato?</strong> Abbiamo creato una mappa interattiva che ti permette di trovare istantaneamente la tua microzona e scoprire i valori di canone applicabili al tuo immobile.</p>
+                <p><strong>Cerchi la mappa delle zone OMI di {CITTÀ} per il canone concordato?</strong> Abbiamo creato una mappa interattiva che ti permette di trovare istantaneamente la tua zona e scoprire i valori di canone applicabili al tuo immobile.</p>
 
-                <p>Roma Capitale è suddivisa in <strong>233 microzone OMI</strong>, ciascuna con fasce di canone concordato specifiche definite dall'Accordo Territoriale del 7 agosto 2023. Navigare tra oltre 200 zone usando solo le tabelle PDF può essere complicato: per questo abbiamo sviluppato uno strumento visivo che semplifica tutto.</p>
+                <p>{CITTÀ} è suddivisa in <strong>{N} zone OMI</strong>, ciascuna con fasce di canone concordato specifiche definite dall'Accordo Territoriale del {DATA_ACCORDO}. Navigare tra tante zone usando solo le tabelle PDF non è semplice: per questo abbiamo sviluppato uno strumento visivo che semplifica tutto.</p>
 
                 <div class="map-cta-box">
                     <h3>Apri la Mappa Interattiva</h3>
                     <p>Cerca il tuo indirizzo e scopri subito la tua zona OMI con i relativi valori di canone concordato.</p>
-                    <a href="/mappe/roma/" class="map-cta-btn">Vai alla Mappa →</a>
+                    <a href="/mappe/{città}/" class="map-cta-btn">Vai alla Mappa →</a>
                 </div>
 
                 <h2 id="come-usare">Come Usare la Mappa</h2>
 
-                <p>La nostra mappa delle zone OMI di Roma è progettata per essere intuitiva. Ecco come utilizzarla:</p>
+                <p>La nostra mappa delle zone OMI di {CITTÀ} funziona in modo semplice:</p>
 
                 <ol>
-                    <li><strong>Cerca il tuo indirizzo:</strong> Inserisci l'indirizzo completo nella barra di ricerca in alto a sinistra (es. "Via del Corso 100, Roma")</li>
-                    <li><strong>Visualizza la zona:</strong> La mappa evidenzierà automaticamente la microzona OMI corrispondente</li>
-                    <li><strong>Consulta i valori:</strong> Clicca sulla zona per vedere il pannello laterale con tutte le fasce di canone (A, B, C)</li>
-                    <li><strong>Confronta zone vicine:</strong> Naviga sulla mappa per esplorare le zone limitrofe e confrontare i valori</li>
+                    <li><strong>Cerca il tuo indirizzo:</strong> Inserisci l'indirizzo completo nella barra di ricerca (es. "Via Roma 100, {CITTÀ}")</li>
+                    <li><strong>Visualizza la zona:</strong> La mappa evidenzia automaticamente la zona OMI corrispondente</li>
+                    <li><strong>Consulta i valori:</strong> Clicca sulla zona per vedere il pannello con tutte le fasce di canone</li>
+                    <li><strong>Confronta zone vicine:</strong> Naviga sulla mappa per esplorare le zone limitrofe</li>
                 </ol>
 
                 <div class="info-box">
@@ -467,84 +396,46 @@
                         </svg>
                         Suggerimento
                     </div>
-                    <p>Per risultati precisi, inserisci l'indirizzo completo con numero civico (es. "Via del Corso 100, Roma").</p>
+                    <p>Per risultati precisi, inserisci l'indirizzo completo con numero civico.</p>
                 </div>
 
-                <h2 id="tipologie-zone">Tipologie di Zone OMI a Roma</h2>
+                <h2 id="fasce-canone">Le Fasce di Canone</h2>
 
-                <p>Le 233 microzone di Roma sono classificate in diverse tipologie, identificate da una lettera seguita da un numero progressivo:</p>
-
-                <div class="zone-colors">
-                    <div class="zone-color-item">
-                        <span class="zone-color-swatch" style="background: #E57373;"></span>
-                        <span><strong>Zone B</strong> - Centrali (pregio/storico)</span>
-                    </div>
-                    <div class="zone-color-item">
-                        <span class="zone-color-swatch" style="background: #FFB74D;"></span>
-                        <span><strong>Zone C</strong> - Semicentrali</span>
-                    </div>
-                    <div class="zone-color-item">
-                        <span class="zone-color-swatch" style="background: #FFF176;"></span>
-                        <span><strong>Zone D</strong> - Periferiche</span>
-                    </div>
-                    <div class="zone-color-item">
-                        <span class="zone-color-swatch" style="background: #81C784;"></span>
-                        <span><strong>Zone E</strong> - Suburbane</span>
-                    </div>
-                    <div class="zone-color-item">
-                        <span class="zone-color-swatch" style="background: #8D6E63;"></span>
-                        <span><strong>Zone R</strong> - Rurali</span>
-                    </div>
-                </div>
-
-                <p>Ogni tipologia ha range di canone differenti: le zone B (centrali) hanno i valori più alti, mentre le zone E e R (suburbane e rurali) hanno i valori più bassi.</p>
-
-                <h2 id="fasce-canone">Le Tre Fasce di Canone (A, B, C)</h2>
-
-                <p>All'interno di ogni zona OMI, il canone concordato varia in base alle caratteristiche dell'immobile. L'Accordo Territoriale di Roma prevede tre fasce:</p>
+                <p>All'interno di ogni zona OMI, il canone concordato varia in base alle caratteristiche dell'immobile:</p>
 
                 <table class="comparison-table">
                     <thead>
                         <tr>
                             <th>Fascia</th>
-                            <th>Caratteristiche Immobile</th>
+                            <th>Caratteristiche</th>
                             <th>Canone</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><strong>Fascia A</strong></td>
-                            <td>Dotazioni base, senza elementi di pregio</td>
+                            <td>Dotazioni base</td>
                             <td>Valore minimo</td>
                         </tr>
                         <tr>
                             <td><strong>Fascia B</strong></td>
-                            <td>Dotazioni medie, alcuni elementi di pregio</td>
+                            <td>Dotazioni medie</td>
                             <td>Valore intermedio</td>
                         </tr>
                         <tr>
                             <td><strong>Fascia C</strong></td>
-                            <td>Dotazioni premium, tutti gli elementi di pregio</td>
+                            <td>Dotazioni premium</td>
                             <td>Valore massimo</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p>Gli elementi che determinano la fascia includono: classe energetica, presenza di ascensore, portineria, aria condizionata, stato manutentivo, finiture, esposizione e luminosità.</p>
-
-                <h2 id="zone-rurali">Zone Rurali: Come Funzionano</h2>
-
-                <p>Le zone rurali (R1, R2, ecc.) sulla mappa sono evidenziate in marrone e <strong>non hanno valori propri</strong>. Secondo l'Art. 2 dell'Accordo Territoriale di Roma:</p>
-
-                <blockquote>
-                    <p>"Per le zone rurali si applicano i valori della zona confinante più vicina."</p>
-                </blockquote>
-
-                <p>Sulla nostra mappa, quando selezioni una zona rurale, il pannello laterale ti indica questa particolarità e ti suggerisce di verificare le zone confinanti per determinare il canone applicabile.</p>
+                <p>Gli elementi che determinano la fascia includono: classe energetica, ascensore, portineria, aria condizionata, stato manutentivo e finiture.</p>
 
                 <h2 id="esempi-pratici">Esempi Pratici di Canone</h2>
 
-                <p>Ecco alcuni esempi di canone concordato per un <strong>bilocale di 60 mq</strong> in diverse zone di Roma:</p>
+                <!-- [SOSTITUIRE] con zone reali della città -->
+                <p>Ecco alcuni esempi di canone concordato per un <strong>bilocale di 60 mq</strong> in diverse zone di {CITTÀ}:</p>
 
                 <table class="comparison-table">
                     <thead>
@@ -555,30 +446,21 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- [SOSTITUIRE] con dati reali -->
                         <tr>
-                            <td>B1</td>
-                            <td>Testaccio</td>
-                            <td>627 - 1.062 €</td>
+                            <td>A1</td>
+                            <td>Centro</td>
+                            <td>XXX - XXX €</td>
                         </tr>
                         <tr>
-                            <td>B29</td>
-                            <td>Centro Storico</td>
-                            <td>810 - 1.374 €</td>
+                            <td>B1</td>
+                            <td>Semicentro</td>
+                            <td>XXX - XXX €</td>
                         </tr>
                         <tr>
                             <td>C1</td>
-                            <td>Prati</td>
-                            <td>540 - 918 €</td>
-                        </tr>
-                        <tr>
-                            <td>D1</td>
-                            <td>Monteverde</td>
-                            <td>450 - 765 €</td>
-                        </tr>
-                        <tr>
-                            <td>E30</td>
-                            <td>Tor Bella Monaca</td>
-                            <td>270 - 459 €</td>
+                            <td>Periferia</td>
+                            <td>XXX - XXX €</td>
                         </tr>
                     </tbody>
                 </table>
@@ -587,13 +469,13 @@
 
                 <div class="map-cta-box">
                     <h3>Trova la Tua Zona</h3>
-                    <p>Cerca il tuo indirizzo sulla mappa per vedere i valori esatti della tua microzona.</p>
-                    <a href="/mappe/roma/" class="map-cta-btn">Apri la Mappa →</a>
+                    <p>Cerca il tuo indirizzo sulla mappa per vedere i valori esatti della tua zona.</p>
+                    <a href="/mappe/{città}/" class="map-cta-btn">Apri la Mappa →</a>
                 </div>
 
                 <h2 id="calcolo-canone">Come Calcolare il Canone Esatto</h2>
 
-                <p>La mappa ti fornisce i valori <strong>al metro quadro</strong> per ogni zona. Per calcolare il canone mensile del tuo immobile:</p>
+                <p>La mappa ti fornisce i valori <strong>al metro quadro</strong> per ogni zona. Per calcolare il canone mensile:</p>
 
                 <ol>
                     <li><strong>Trova la zona OMI</strong> usando la mappa</li>
@@ -602,19 +484,13 @@
                     <li><strong>Moltiplica</strong> il valore €/mq per la superficie</li>
                 </ol>
 
-                <p><strong>Non vuoi fare i calcoli manualmente?</strong> Servizi come <a href="https://app.dokicasa.it/contratti/foglio-caratteristiche-immobile-roma/crea/default?utm_source=bonusimmobiliare&utm_medium=article&utm_campaign=mappa-roma" target="_blank" rel="noopener">Dokicasa</a> calcolano automaticamente il canone esatto, generano il contratto conforme e si occupano dell'attestazione.</p>
+                <p><strong>Non vuoi fare i calcoli manualmente?</strong> Con <a href="https://app.dokicasa.it/contratti/foglio-caratteristiche-immobile-{città}/crea/default?utm_source=bonusimmobiliare&utm_medium=article&utm_campaign=mappa-{città}" target="_blank" rel="noopener">Dokicasa</a> calcoli il canone esatto rispondendo a poche domande.</p>
 
-                <h2 id="accordo-territoriale">L'Accordo Territoriale di Roma 2023</h2>
+                <h2 id="accordo-territoriale">L'Accordo Territoriale di {CITTÀ}</h2>
 
-                <p>I valori mostrati sulla mappa derivano dall'<strong>Accordo Territoriale di Roma del 7 agosto 2023</strong>, attualmente in vigore. L'accordo è stato firmato da:</p>
+                <p>I valori mostrati sulla mappa derivano dall'<strong>Accordo Territoriale di {CITTÀ} del {DATA_ACCORDO}</strong>, attualmente in vigore.</p>
 
-                <ul>
-                    <li><strong>Associazioni proprietari:</strong> APPC, ARPE, ASPPI, Confappi, Confedilizia, UPPI, ANIA, Federcasa, AssoCasa</li>
-                    <li><strong>Sindacati inquilini:</strong> SICET, SUNIA, Uniat APS Lazio, Unione Inquilini, SAI CISAL</li>
-                    <li><strong>Rappresentanze studenti:</strong> UDU e Link</li>
-                </ul>
-
-                <p>Per approfondire tutti gli aspetti del canone concordato a Roma (vantaggi fiscali, procedura, documenti), leggi la nostra <a href="/blog/canone-concordato-roma/">guida completa al canone concordato Roma</a>.</p>
+                <p>Per approfondire tutti gli aspetti del canone concordato (vantaggi fiscali, procedura, documenti), leggi la nostra <a href="/blog/canone-concordato-{città}/">guida completa al canone concordato {CITTÀ}</a>.</p>
 
                 <!-- FAQ Section -->
                 <section class="faq-section">
@@ -622,49 +498,37 @@
 
                     <div class="faq-item">
                         <button class="faq-question">
-                            Quante zone OMI ci sono a Roma per il canone concordato?
+                            Quante zone OMI ci sono a {CITTÀ}?
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
                         <div class="faq-answer">
-                            <p>Roma Capitale è suddivisa in <strong>233 microzone OMI</strong>, ciascuna con fasce di canone concordato specifiche definite dall'Accordo Territoriale del 7 agosto 2023. Le zone vanno dalla B (centrali) alla R (rurali).</p>
+                            <p>{CITTÀ} è suddivisa in <strong>{N} zone OMI</strong>, ciascuna con fasce di canone concordato specifiche definite dall'Accordo Territoriale del {DATA_ACCORDO}.</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <button class="faq-question">
-                            Come trovo la mia zona OMI a Roma?
+                            Come trovo la mia zona OMI a {CITTÀ}?
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
                         <div class="faq-answer">
-                            <p>Puoi usare la nostra <a href="/mappe/roma/">mappa interattiva</a>: inserisci il tuo indirizzo nella barra di ricerca e la mappa evidenzierà automaticamente la zona OMI corrispondente con i relativi valori di canone concordato.</p>
+                            <p>Usa la nostra <a href="/mappe/{città}/">mappa interattiva</a>: inserisci il tuo indirizzo e la mappa evidenzia automaticamente la zona OMI con i valori di canone concordato.</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <button class="faq-question">
-                            Cosa significano le fasce A, B e C del canone concordato?
+                            Cosa significano le fasce A, B e C?
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
                         <div class="faq-answer">
-                            <p>Le fasce A, B e C rappresentano i range di canone applicabili in base alle caratteristiche dell'immobile. <strong>Fascia A</strong> per immobili con meno dotazioni, <strong>Fascia C</strong> per immobili di pregio con tutte le dotazioni premium (ascensore, aria condizionata, classe energetica alta, ecc.).</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            Le zone rurali (R) hanno valori di canone concordato?
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                <polyline points="6 9 12 15 18 9"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Le zone rurali (R1, R2, ecc.) <strong>non hanno valori propri</strong>: secondo l'Art. 2 dell'Accordo Territoriale di Roma, si applicano i valori della zona confinante più vicina.</p>
+                            <p>Le fasce rappresentano i range di canone in base alle caratteristiche dell'immobile. <strong>Fascia A</strong> per immobili base, <strong>Fascia C</strong> per immobili di pregio con dotazioni premium.</p>
                         </div>
                     </div>
 
@@ -676,7 +540,7 @@
                             </svg>
                         </button>
                         <div class="faq-answer">
-                            <p><strong>Sì</strong>, i valori sono estratti dall'Accordo Territoriale di Roma del 7 agosto 2023, attualmente in vigore. I dati includono tutte le 233 zone OMI con le tre fasce di oscillazione (A, B, C).</p>
+                            <p><strong>Sì</strong>, i valori sono estratti dall'Accordo Territoriale di {CITTÀ} del {DATA_ACCORDO}, attualmente in vigore.</p>
                         </div>
                     </div>
                 </section>
@@ -686,35 +550,35 @@
             <aside class="sidebar-cta">
                 <div class="cta-card">
                     <span class="cta-card-badge">Strumento Gratuito</span>
-                    <h3 class="cta-card-title">Mappa Zone OMI Roma</h3>
+                    <h3 class="cta-card-title">Mappa Zone OMI {CITTÀ}</h3>
                     <p>Trova la tua zona, scopri i valori di canone e confronta le aree limitrofe con la nostra mappa interattiva.</p>
-                    <a href="/mappe/roma/" class="cta-card-btn">
+                    <a href="/mappe/{città}/" class="cta-card-btn">
                         Apri la Mappa
                     </a>
-                    <p class="cta-card-note">233 zone OMI aggiornate 2023</p>
+                    <p class="cta-card-note">{N} zone OMI aggiornate {ANNO_ACCORDO}</p>
                 </div>
             </aside>
         </div>
 
-        <!-- Related Articles -->
+        <!-- Related Articles - [AGGIORNARE LINK] -->
         <section class="related-section">
             <div class="related-inner">
                 <h2 class="related-title">Articoli Correlati</h2>
                 <div class="related-grid">
-                    <a href="/blog/canone-concordato-roma/" class="related-card">
+                    <a href="/blog/canone-concordato-{città}/" class="related-card">
                         <div class="related-card-category">Affitto</div>
-                        <h3 class="related-card-title">Canone Concordato Roma: Guida Completa 2025</h3>
-                        <span class="related-card-meta">12 min di lettura</span>
-                    </a>
-                    <a href="/blog/canone-concordato-milano/" class="related-card">
-                        <div class="related-card-category">Affitto</div>
-                        <h3 class="related-card-title">Canone Concordato Milano: Guida 2025</h3>
+                        <h3 class="related-card-title">Canone Concordato {CITTÀ}: Guida Completa</h3>
                         <span class="related-card-meta">12 min di lettura</span>
                     </a>
                     <a href="/blog/canone-concordato/" class="related-card">
                         <div class="related-card-category">Affitto</div>
                         <h3 class="related-card-title">Canone Concordato: Guida Completa 2026</h3>
                         <span class="related-card-meta">12 min di lettura</span>
+                    </a>
+                    <a href="/blog/mappa-canone-concordato-roma/" class="related-card">
+                        <div class="related-card-category">Affitto</div>
+                        <h3 class="related-card-title">Mappa Zone OMI Roma</h3>
+                        <span class="related-card-meta">8 min di lettura</span>
                     </a>
                 </div>
             </div>
