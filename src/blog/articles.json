@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "slug": "mappa-canone-concordato-roma",
+      "title": "Mappa Zone OMI Roma: Canone Concordato per Microzona",
+      "excerpt": "Mappa interattiva delle 233 zone OMI di Roma con valori canone concordato. Cerca il tuo indirizzo e scopri quanto puoi affittare.",
+      "category": "affitto",
+      "categoryLabel": "Affitto",
+      "readTime": "8 min",
+      "featured": true,
+      "date": "2026-01-30",
+      "keywords": "mappa canone concordato roma mappa zone omi roma microzone canone concordato roma zone omogenee",
+      "series": "canone-concordato-citta"
+    },
+    {
       "slug": "proposta-acquisto-vincolante",
       "title": "Proposta di Acquisto: Quando Diventa Vincolante?",
       "excerpt": "Quando la proposta di acquisto diventa contratto vincolante, la revoca, cosa succede dopo l'accettazione e clausole essenziali da inserire.",
