@@ -624,6 +624,15 @@ a {
     display: none;
 }
 
+/* Remove blue focus outline on map zones */
+.leaflet-interactive:focus {
+    outline: none;
+}
+
+path.leaflet-interactive:focus {
+    outline: none;
+}
+
 .zone-tooltip {
     background: var(--olive-deep) !important;
     border: none !important;
