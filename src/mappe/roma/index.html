@@ -1114,7 +1114,18 @@
         let geojsonLayer;
         let addressMarker = null;
 
+        function closeAllTooltips() {
+            if (geojsonLayer) {
+                geojsonLayer.eachLayer(function(layer) {
+                    layer.closeTooltip();
+                });
+            }
+        }
+
         function highlightFeature(e) {
+            // Close all tooltips first to prevent accumulation
+            closeAllTooltips();
+
             if (lastHighlighted && lastHighlighted !== e.target) {
                 geojsonLayer.resetStyle(lastHighlighted);
             }
@@ -1206,8 +1217,7 @@
                 layer.bindTooltip(codzona, {
                     permanent: false,
                     direction: 'center',
-                    className: 'zone-tooltip',
-                    sticky: true
+                    className: 'zone-tooltip'
                 });
             }
 
