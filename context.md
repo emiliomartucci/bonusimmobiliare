@@ -19,7 +19,7 @@ Blog immobiliare italiano focalizzato su articoli informativi riguardo affitto e
 
 ## Status
 - Fase: development
-- Ultimo lavoro: 2026-01-24
+- Ultimo lavoro: 2026-01-30
 
 ## Stack
 - **Frontend:** HTML5 + CSS3 + Vanilla JS
@@ -72,6 +72,11 @@ bonusimmobiliare/
 │   │   ├── bologna/        # Landing Bologna (torri SVG)
 │   │   ├── napoli/         # Landing Napoli (Vesuvio SVG)
 │   │   └── roma/           # Landing Roma (cupole SVG)
+│   ├── mappe/              # Mappe interattive zone OMI
+│   │   └── roma/           # Mappa Roma (template per altre citta)
+│   ├── data/               # Dati per mappe e calcolatori
+│   │   ├── roma-zone-omi.json      # Valori canone per zona Roma
+│   │   └── roma_omi_zones.geojson  # Poligoni zone OMI Roma
 │   ├── servizi/            # Services slider
 │   ├── privacy/            # Privacy policy GDPR
 │   ├── cookie/             # Cookie policy
@@ -112,6 +117,7 @@ bonusimmobiliare/
 - [x] Dokicasa click tracking (D1 database + API + frontend tracking)
 - [x] Favicon con supporto dark mode (head-common.js injection)
 - [x] Landing pages canone concordato (6 citta con SVG custom e CTA Dokicasa)
+- [x] Mappa interattiva zone OMI Roma (Leaflet, 233 zone, ricerca indirizzo)
 
 ## Todo (v2)
 ✅ Completato
@@ -120,6 +126,9 @@ bonusimmobiliare/
 - [ ] Calcolatori interattivi
 
 ## Cambiamenti Recenti
+- 2026-01-30: Mappa interattiva zone OMI Roma con Leaflet (233 zone, ricerca indirizzo, info panel con fasce canone)
+- 2026-01-30: Dropdown "Mappe" nella navbar per accesso rapido alle mappe citta
+- 2026-01-30: Dati zone OMI estratti da PDF Accordo Territoriale Roma 2023
 - 2026-01-24: 6 landing pages canone concordato con SVG custom per ogni citta e CTA Dokicasa
 - 2026-01-24: Favicon con dark mode support e head-common.js injection centralizzata
 - 2026-01-24: Dokicasa click tracking (D1 schema, API endpoint, frontend tracking)
@@ -144,5 +153,5 @@ bonusimmobiliare/
 - Focus su contenuti informativi per affitto e compravendita
 
 ---
-**Last Update:** 2026-01-24
-**Version:** 2.0.0
+**Last Update:** 2026-01-30
+**Version:** 2.1.0

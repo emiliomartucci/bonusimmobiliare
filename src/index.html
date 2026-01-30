@@ -290,6 +290,56 @@
             background: var(--terracotta-light);
         }
 
+        /* Dropdown Menu */
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            cursor: pointer;
+        }
+
+        .dropdown-arrow {
+            font-size: 0.65em;
+            margin-left: 4px;
+            opacity: 0.8;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-8px);
+            background: var(--cream);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lifted);
+            min-width: 160px;
+            padding: var(--space-sm) 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+            margin-top: var(--space-sm);
+        }
+
+        .nav-dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: var(--space-sm) var(--space-lg);
+            color: var(--bark);
+            font-size: 0.9rem;
+            transition: background 0.15s;
+        }
+
+        .dropdown-menu a:hover {
+            background: var(--sage-mist);
+            color: var(--olive-deep);
+        }
+
         /* Mobile menu toggle */
         .menu-toggle {
             display: none;
@@ -348,6 +398,20 @@
             color: var(--gold);
         }
 
+        .mobile-menu-section {
+            display: block;
+            padding: 15px 30px 5px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .mobile-menu .mobile-submenu {
+            padding-left: 45px;
+            font-size: 1.25rem;
+        }
+
         .mobile-menu-close {
             position: absolute;
             top: var(--space-lg);
@@ -363,6 +427,10 @@
         @media (max-width: 768px) {
             .mobile-menu {
                 display: flex;
+            }
+
+            .nav-dropdown {
+                display: none;
             }
         }
 
@@ -1365,6 +1433,12 @@
         </a>
         <nav class="nav">
             <a href="/blog/" class="nav-link">Blog</a>
+            <div class="nav-dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Mappe Canone Concordato <span class="dropdown-arrow">▾</span></a>
+                <div class="dropdown-menu">
+                    <a href="/mappe/roma/">Roma</a>
+                </div>
+            </div>
             <a href="/servizi/" class="nav-link">Servizi</a>
             <a href="/servizi/" class="nav-cta">Trova il Servizio</a>
         </nav>
@@ -1380,6 +1454,8 @@
         <button class="mobile-menu-close" aria-label="Chiudi menu">&times;</button>
         <a href="/">Home</a>
         <a href="/blog/">Blog</a>
+        <span class="mobile-menu-section">Mappe Canone Concordato</span>
+        <a href="/mappe/roma/" class="mobile-submenu">Roma</a>
         <a href="/servizi/">Servizi</a>
     </div>
 
