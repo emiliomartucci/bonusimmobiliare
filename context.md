@@ -134,17 +134,18 @@ bonusimmobiliare/
 - [x] Mappa interattiva zone canone concordato Milano (5 zone + GeoJSON da GIS Portal Comune)
 - [x] Articolo SEO mappa canone concordato Milano (/blog/mappa-canone-concordato-milano/)
 - [x] CSS condivisi per blog (blog-article.css) e mappe (mappa.css)
+- [x] Mappa Milano con 7 zone hinterland Città Metropolitana (130 comuni)
 
 ## Todo (v2)
 ✅ Completato
 
 ## Todo (v3)
-- [ ] Milano: aggiungere 6 zone Città Metropolitana (comuni extra oltre Milano città)
 - [ ] Mappe zone OMI altre citta (Torino, Napoli, Firenze, Bologna)
 - [ ] Articoli SEO mappa per ogni citta
 - [ ] Calcolatori interattivi
 
 ## Cambiamenti Recenti
+- 2026-01-30: Mappa Milano con layer hinterland (7 zone omogenee Città Metropolitana, 130 comuni)
 - 2026-01-30: Mappa interattiva Milano (5 zone concordato + GeoJSON da GIS Portal Comune Milano)
 - 2026-01-30: Articolo SEO mappa canone concordato Milano
 - 2026-01-30: CSS condivisi: blog-article.css e mappa.css (refactoring per riusabilità)
@@ -179,4 +180,4 @@ bonusimmobiliare/
 
 ---
 **Last Update:** 2026-01-30
-**Version:** 2.3.0
+**Version:** 2.4.0
