@@ -1,0 +1,112 @@
+{
+  "1": {
+    "n": 1,
+    "nome": "Centro Storico",
+    "fascia": "A",
+    "min": 8.33,
+    "max": 25.83,
+    "fasce": {
+      "A": {
+        "min": 8.33,
+        "max": 14.17
+      },
+      "B": {
+        "min": 14.25,
+        "max": 20.0
+      },
+      "C": {
+        "min": 20.08,
+        "max": 25.83
+      }
+    },
+    "stanza": null
+  },
+  "2": {
+    "n": 2,
+    "nome": "Semicentro",
+    "fascia": "B",
+    "min": 5.83,
+    "max": 15.0,
+    "fasce": {
+      "A": {
+        "min": 5.83,
+        "max": 8.33
+      },
+      "B": {
+        "min": 8.42,
+        "max": 12.5
+      },
+      "C": {
+        "min": 12.58,
+        "max": 15.0
+      }
+    },
+    "stanza": 600
+  },
+  "3": {
+    "n": 3,
+    "nome": "Periferia Consolidata",
+    "fascia": "C",
+    "min": 5.0,
+    "max": 14.17,
+    "fasce": {
+      "A": {
+        "min": 5.0,
+        "max": 7.92
+      },
+      "B": {
+        "min": 8.0,
+        "max": 12.08
+      },
+      "C": {
+        "min": 12.17,
+        "max": 14.17
+      }
+    },
+    "stanza": 500
+  },
+  "4": {
+    "n": 4,
+    "nome": "Periferia",
+    "fascia": "D",
+    "min": 4.58,
+    "max": 13.33,
+    "fasce": {
+      "A": {
+        "min": 4.58,
+        "max": 7.5
+      },
+      "B": {
+        "min": 7.58,
+        "max": 11.25
+      },
+      "C": {
+        "min": 11.33,
+        "max": 13.33
+      }
+    },
+    "stanza": 450
+  },
+  "5": {
+    "n": 5,
+    "nome": "Periferia Esterna",
+    "fascia": "E",
+    "min": 4.17,
+    "max": 10.83,
+    "fasce": {
+      "A": {
+        "min": 4.17,
+        "max": 7.08
+      },
+      "B": {
+        "min": 7.17,
+        "max": 10.0
+      },
+      "C": {
+        "min": 10.08,
+        "max": 10.83
+      }
+    },
+    "stanza": 400
+  }
+}

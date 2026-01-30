@@ -4,15 +4,15 @@
     <script src="/js/head-common.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mappa Zone OMI Roma - Canone Concordato 2025</title>
-    <meta name="description" content="Trova la tua zona OMI a Roma e scopri quanto puoi affittare a canone concordato. Mappa interattiva con 233 microzone e valori €/mq aggiornati 2025.">
-    <link rel="canonical" href="https://bonusimmobiliare.it/mappe/roma/">
+    <title>Mappa Zone Canone Concordato Milano 2025 | Bonus Immobiliare</title>
+    <meta name="description" content="Trova la tua zona a Milano e scopri quanto puoi affittare a canone concordato. Mappa interattiva con 5 zone omogenee e valori €/mq aggiornati 2025.">
+    <link rel="canonical" href="https://bonusimmobiliare.it/mappe/milano/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Mappa Zone OMI Roma - Canone Concordato 2025">
-    <meta property="og:description" content="Trova la tua zona OMI a Roma e scopri quanto puoi affittare a canone concordato.">
-    <meta property="og:url" content="https://bonusimmobiliare.it/mappe/roma/">
+    <meta property="og:title" content="Mappa Zone Canone Concordato Milano 2025">
+    <meta property="og:description" content="Trova la tua zona a Milano e scopri quanto puoi affittare a canone concordato.">
+    <meta property="og:url" content="https://bonusimmobiliare.it/mappe/milano/">
     <meta property="og:image" content="https://bonusimmobiliare.it/og-image.jpg">
     <meta property="og:site_name" content="Bonus Immobiliare">
     <meta property="og:locale" content="it_IT">
@@ -25,159 +25,146 @@
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
-    <!-- ═══════════════════════════════════════════════════════════════
-         TEMPLATE CONFIG - Modifica queste variabili per altre città
-    ═══════════════════════════════════════════════════════════════ -->
-    <script>
-        const CITY_CONFIG = {
-            name: 'Roma',
-            slug: 'roma',
-            geojsonPath: '/data/roma_omi_zones.geojson',
-            zoneDataPath: '/data/roma-zone-omi.json',
-            center: [41.9028, 12.4964],
-            bounds: [[41.655, 12.035], [42.145, 12.855]],
-            zoom: 11,
-            dokicasaUrl: 'https://app.dokicasa.it/contratti/foglio-caratteristiche-immobile-roma/crea/default?utm_source=bonusimmobiliare&utm_medium=mappa&utm_campaign=roma',
-            totalZones: 233,
-            accordoYear: 2023,
-            accordoDate: '7 agosto 2023'
-        };
-    </script>
-
     <!-- Shared Map CSS -->
     <link rel="stylesheet" href="/css/mappa.css">
 
     <!-- City-specific zone colors -->
     <style>
         :root {
-            /* Zone Colors - Roma OMI zones */
-            --zone-b: #E85D3B;  /* Centrale - Terracotta vivace */
-            --zone-c: #F09B47;  /* Semicentrale - Arancio brillante */
-            --zone-d: #E8C44A;  /* Periferica - Giallo oro */
-            --zone-e: #6BAF7A;  /* Suburbana - Verde fresco */
-            --zone-r: #7BA08A;  /* Rurale - Verde salvia */
+            /* Zone Colors - Milano 5 zone */
+            --zone-1: #E85D3B;  /* Centro - Terracotta */
+            --zone-2: #F09B47;  /* Semicentro - Arancio */
+            --zone-3: #E8C44A;  /* Periferia Consolidata - Giallo */
+            --zone-4: #6BAF7A;  /* Periferia - Verde */
+            --zone-5: #7BA08A;  /* Periferia Esterna - Verde salvia */
         }
     </style>
-    <!-- OLD INLINE STYLES REMOVED - Using /css/mappa.css instead -->
+
+    <script>
+        const CITY_CONFIG = {
+            name: 'Milano',
+            slug: 'milano',
+            geojsonPath: '/data/milano_concordato_zones.geojson',
+            zoneDataPath: '/data/milano-zone-concordato.json',
+            center: [45.4642, 9.1900],
+            bounds: [[45.39, 9.04], [45.54, 9.28]],
+            zoom: 12,
+            dokicasaUrl: 'https://app.dokicasa.it/contratti/foglio-caratteristiche-immobile-milano/crea/default?utm_source=bonusimmobiliare&utm_medium=mappa&utm_campaign=milano',
+            totalZones: 5,
+            accordoYear: 2023,
+            accordoDate: '27 luglio 2023',
+            // Milano usa campo 'zona' invece di 'CODZONA'
+            zoneField: 'zona'
+        };
+    </script>
+
 </head>
 <body>
-    <!-- Header Compatto -->
     <header class="header-bar">
         <a href="/" class="header-logo">
             <img src="/logo/logo_light_bg.svg" alt="Bonus Immobiliare">
         </a>
         <div class="header-title">
-            <h1>Mappa Zone OMI <span id="city-name">Roma</span></h1>
+            <h1>Mappa Canone Concordato <span>Milano</span></h1>
         </div>
         <a href="/" class="header-back">
             <span>Torna al sito</span>
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
         </a>
     </header>
 
-    <!-- Main Content: Map + Sidebar -->
     <div class="main-content">
-        <!-- Map -->
         <div class="map-wrapper">
             <div id="map"></div>
 
-            <!-- Search -->
             <div class="search-container">
                 <div class="search-box">
-                    <svg class="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <input type="text" id="address-search" placeholder="Cerca indirizzo a Roma..." aria-label="Cerca indirizzo a Roma">
+                    <input type="text" id="address-search" placeholder="Cerca indirizzo a Milano...">
                 </div>
                 <div class="search-results" id="search-results"></div>
             </div>
 
-            <!-- Legend -->
             <div class="legend">
-                <div class="legend-title">Tipologia Zone</div>
-                <div class="legend-item"><div class="legend-color" style="background: var(--zone-b);"></div> B - Centrale</div>
-                <div class="legend-item"><div class="legend-color" style="background: var(--zone-c);"></div> C - Semicentrale</div>
-                <div class="legend-item"><div class="legend-color" style="background: var(--zone-d);"></div> D - Periferica</div>
-                <div class="legend-item"><div class="legend-color" style="background: var(--zone-e);"></div> E - Suburbana</div>
-                <div class="legend-item"><div class="legend-color" style="background: var(--zone-r);"></div> R - Rurale</div>
+                <div class="legend-title">Zone Concordato</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--zone-1);"></div> Zona 1 - Centro</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--zone-2);"></div> Zona 2 - Semicentro</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--zone-3);"></div> Zona 3 - Periferia Consolidata</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--zone-4);"></div> Zona 4 - Periferia</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--zone-5);"></div> Zona 5 - Periferia Esterna</div>
             </div>
         </div>
 
-        <!-- Sidebar -->
         <aside class="sidebar" id="sidebar">
-            <!-- Placeholder when no zone selected -->
             <div class="sidebar-placeholder" id="sidebar-placeholder">
-                <svg class="sidebar-placeholder-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <svg class="sidebar-placeholder-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                 </svg>
                 <p>Clicca su una zona della mappa o cerca un indirizzo per vedere i dettagli del canone concordato.</p>
             </div>
 
-            <!-- Content when zone selected -->
             <div class="sidebar-content" id="sidebar-content">
                 <div class="sidebar-header">
                     <div class="sidebar-zona-row">
-                        <span class="sidebar-zona-code" id="sidebar-code">B1</span>
-                        <span class="sidebar-zona-type" id="sidebar-type">Centrale</span>
+                        <span class="sidebar-zona-code" id="sidebar-code">Zona 1</span>
+                        <span class="sidebar-zona-type" id="sidebar-type">Centro</span>
                     </div>
-                    <div class="sidebar-zona-name" id="sidebar-name">Testaccio (Piazza S. Maria Liberatrice)</div>
+                    <div class="sidebar-zona-name" id="sidebar-name">Centro Storico</div>
                 </div>
 
                 <div class="sidebar-body">
-                    <!-- Range -->
                     <div class="sidebar-range-section">
                         <div class="sidebar-range-label">Range Canone Concordato</div>
-                        <div class="sidebar-range-value" id="sidebar-range">10,45 - 17,70</div>
+                        <div class="sidebar-range-value" id="sidebar-range">8,33 - 25,83</div>
                         <div class="sidebar-range-unit">euro/mq/mese</div>
                     </div>
 
-                    <!-- Two column grid: Fasce + Esempi -->
                     <div class="sidebar-grid">
-                        <!-- Fasce -->
                         <div class="sidebar-section">
                             <div class="sidebar-section-title">Fasce €/mq</div>
                             <div class="sidebar-fasce">
                                 <div class="sidebar-fascia-row">
                                     <span class="sidebar-fascia-label">A (base)</span>
-                                    <span class="sidebar-fascia-value" id="sidebar-fascia-a">10,45-13,35</span>
+                                    <span class="sidebar-fascia-value" id="sidebar-fascia-a">8,33-14,17</span>
                                 </div>
                                 <div class="sidebar-fascia-row">
                                     <span class="sidebar-fascia-label">B (media)</span>
-                                    <span class="sidebar-fascia-value" id="sidebar-fascia-b">13,36-15,50</span>
+                                    <span class="sidebar-fascia-value" id="sidebar-fascia-b">14,25-20,00</span>
                                 </div>
                                 <div class="sidebar-fascia-row">
                                     <span class="sidebar-fascia-label">C (alta)</span>
-                                    <span class="sidebar-fascia-value" id="sidebar-fascia-c">15,51-17,70</span>
+                                    <span class="sidebar-fascia-value" id="sidebar-fascia-c">20,08-25,83</span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Esempi Affitto -->
                         <div class="sidebar-section">
                             <div class="sidebar-section-title">Esempi Mensili</div>
                             <div class="sidebar-examples">
                                 <div class="sidebar-example">
-                                    <span class="sidebar-example-label">Camera<small>18mq</small></span>
-                                    <span class="sidebar-example-value" id="sidebar-ex-camera">188-319€</span>
-                                </div>
-                                <div class="sidebar-example">
                                     <span class="sidebar-example-label">Bilocale<small>50mq</small></span>
-                                    <span class="sidebar-example-value" id="sidebar-ex-bilocale">523-885€</span>
+                                    <span class="sidebar-example-value" id="sidebar-ex-bilocale">417-1.292€</span>
                                 </div>
                                 <div class="sidebar-example">
-                                    <span class="sidebar-example-label">Trilocale<small>100mq</small></span>
-                                    <span class="sidebar-example-value" id="sidebar-ex-trilocale">1.045-1.770€</span>
+                                    <span class="sidebar-example-label">Trilocale<small>80mq</small></span>
+                                    <span class="sidebar-example-value" id="sidebar-ex-trilocale">667-2.067€</span>
+                                </div>
+                                <div class="sidebar-example">
+                                    <span class="sidebar-example-label">Quadrilocale<small>120mq</small></span>
+                                    <span class="sidebar-example-value" id="sidebar-ex-quadrilocale">1.000-3.100€</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Note (for rural zones) -->
-                    <div class="sidebar-note-section" id="sidebar-note-section" style="display: none;">
-                        <div class="sidebar-note" id="sidebar-note"></div>
+                    <div class="sidebar-stanza-section" id="sidebar-stanza-section" style="display: none;">
+                        <div class="sidebar-stanza-label">Canone max stanza singola (studenti)</div>
+                        <div class="sidebar-stanza-value" id="sidebar-stanza">600 €/mese</div>
                     </div>
                 </div>
 
@@ -190,60 +177,42 @@
         </aside>
     </div>
 
-    <!-- Footer Mini -->
     <footer class="footer-mini">
         <div class="footer-mini-text">
-            Dati: <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/omi/banche-dati/quotazioni-immobiliari" target="_blank" rel="noopener">Agenzia delle Entrate - OMI</a> |
-            Valori: <a href="/blog/canone-concordato-roma/" rel="noopener">Accordo Territoriale Roma</a>
+            Dati: <a href="https://gisportal.comune.milano.it" target="_blank" rel="noopener">Comune di Milano - GIS Portal</a> |
+            Valori: <a href="https://www.comune.milano.it/servizi/canone-concordato" target="_blank" rel="noopener">Accordo Territoriale Milano 2023</a>
         </div>
         <div class="footer-mini-source">
-            © 2025 Bonus Immobiliare
+            &copy; 2025 Bonus Immobiliare
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // ═══════════════════════════════════════════════════════════════
-        // INITIALIZATION
-        // ═══════════════════════════════════════════════════════════════
-
-        // Update page content from config
-        document.getElementById('city-name').textContent = CITY_CONFIG.name;
-        document.getElementById('address-search').placeholder = `Cerca indirizzo a ${CITY_CONFIG.name}...`;
         document.getElementById('sidebar-cta').href = CITY_CONFIG.dokicasaUrl;
 
-        // Zone data storage
         let zoneData = {};
 
-        // ═══════════════════════════════════════════════════════════════
-        // COLORS AND UTILITIES
-        // ═══════════════════════════════════════════════════════════════
-
-        function getColor(codzona) {
-            if (!codzona) return '#8B8178';
-            const prefix = codzona.charAt(0).toUpperCase();
+        function getColor(zona) {
             const colors = {
-                'B': getComputedStyle(document.documentElement).getPropertyValue('--zone-b').trim(),
-                'C': getComputedStyle(document.documentElement).getPropertyValue('--zone-c').trim(),
-                'D': getComputedStyle(document.documentElement).getPropertyValue('--zone-d').trim(),
-                'E': getComputedStyle(document.documentElement).getPropertyValue('--zone-e').trim(),
-                'R': getComputedStyle(document.documentElement).getPropertyValue('--zone-r').trim()
+                '1': getComputedStyle(document.documentElement).getPropertyValue('--zone-1').trim(),
+                '2': getComputedStyle(document.documentElement).getPropertyValue('--zone-2').trim(),
+                '3': getComputedStyle(document.documentElement).getPropertyValue('--zone-3').trim(),
+                '4': getComputedStyle(document.documentElement).getPropertyValue('--zone-4').trim(),
+                '5': getComputedStyle(document.documentElement).getPropertyValue('--zone-5').trim()
             };
-            return colors[prefix] || '#8B8178';
+            return colors[zona] || '#8B8178';
         }
 
-        function getTipoZona(codzona) {
-            if (!codzona) return 'Non classificata';
-            const prefix = codzona.charAt(0).toUpperCase();
+        function getTipoZona(zona) {
             const types = {
-                'B': 'Centrale',
-                'C': 'Semicentrale',
-                'D': 'Periferica',
-                'E': 'Suburbana',
-                'R': 'Rurale'
+                '1': 'Centro',
+                '2': 'Semicentro',
+                '3': 'Periferia Consolidata',
+                '4': 'Periferia',
+                '5': 'Periferia Esterna'
             };
-            return types[prefix] || 'Altra';
+            return types[zona] || 'Altra';
         }
 
         function formatPrice(value) {
@@ -251,52 +220,26 @@
             return value.toFixed(2).replace('.', ',');
         }
 
-        // Convert UPPERCASE to Title Case
-        function toTitleCase(str) {
-            if (!str) return '';
-            return str.toLowerCase().replace(/(?:^|\s|[-(])\w/g, function(match) {
-                return match.toUpperCase();
-            });
-        }
-
-        // ═══════════════════════════════════════════════════════════════
-        // MAP SETUP
-        // ═══════════════════════════════════════════════════════════════
-
-        const romaBounds = L.latLngBounds(CITY_CONFIG.bounds[0], CITY_CONFIG.bounds[1]);
+        const cityBounds = L.latLngBounds(CITY_CONFIG.bounds[0], CITY_CONFIG.bounds[1]);
 
         const map = L.map('map', {
             center: CITY_CONFIG.center,
             zoom: CITY_CONFIG.zoom,
             minZoom: 10,
             maxZoom: 18,
-            maxBounds: romaBounds,
+            maxBounds: cityBounds,
             maxBoundsViscosity: 1.0
         });
 
-        // Close tooltips during drag to prevent accumulation
-        map.on('dragstart', function() {
-            map.eachLayer(function(layer) {
-                if (layer.getTooltip && layer.getTooltip()) {
-                    layer.closeTooltip();
-                }
-            });
-        });
-
-        // CartoDB Positron - clean, editorial look
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
             subdomains: 'abcd',
             maxZoom: 19
         }).addTo(map);
 
-        // ═══════════════════════════════════════════════════════════════
-        // GEOJSON LAYER
-        // ═══════════════════════════════════════════════════════════════
-
         function style(feature) {
             return {
-                fillColor: getColor(feature.properties.CODZONA),
+                fillColor: getColor(feature.properties.zona),
                 weight: 1,
                 opacity: 1,
                 color: 'rgba(255,255,255,0.8)',
@@ -308,18 +251,7 @@
         let geojsonLayer;
         let addressMarker = null;
 
-        function closeAllTooltips() {
-            if (geojsonLayer) {
-                geojsonLayer.eachLayer(function(layer) {
-                    layer.closeTooltip();
-                });
-            }
-        }
-
         function highlightFeature(e) {
-            // Close all tooltips first to prevent accumulation
-            closeAllTooltips();
-
             if (lastHighlighted && lastHighlighted !== e.target) {
                 geojsonLayer.resetStyle(lastHighlighted);
             }
@@ -340,10 +272,10 @@
             }
         }
 
-        function showSidebar(codzona) {
+        function showSidebar(zona) {
             const placeholder = document.getElementById('sidebar-placeholder');
             const content = document.getElementById('sidebar-content');
-            const data = zoneData[codzona];
+            const data = zoneData[zona];
 
             if (!data) {
                 placeholder.style.display = 'flex';
@@ -351,39 +283,29 @@
                 return;
             }
 
-            // Hide placeholder, show content
             placeholder.style.display = 'none';
             content.classList.add('visible');
 
-            // Update sidebar content
-            document.getElementById('sidebar-code').textContent = codzona;
-            document.getElementById('sidebar-type').textContent = getTipoZona(codzona);
-            document.getElementById('sidebar-type').style.background = getColor(codzona);
-            document.getElementById('sidebar-name').textContent = toTitleCase(data.nome || '');
+            document.getElementById('sidebar-code').textContent = 'Zona ' + zona;
+            document.getElementById('sidebar-type').textContent = getTipoZona(zona);
+            document.getElementById('sidebar-type').style.background = getColor(zona);
+            document.getElementById('sidebar-name').textContent = data.nome || '';
 
-            // Range
             if (data.min !== null && data.max !== null) {
                 document.getElementById('sidebar-range').textContent = `${formatPrice(data.min)} - ${formatPrice(data.max)}`;
 
-                // Calcola esempi affitto
-                const cameraMin = Math.round(data.min * 18);
-                const cameraMax = Math.round(data.max * 18);
                 const bilocaleMin = Math.round(data.min * 50);
                 const bilocaleMax = Math.round(data.max * 50);
-                const trilocaleMin = Math.round(data.min * 100);
-                const trilocaleMax = Math.round(data.max * 100);
+                const trilocaleMin = Math.round(data.min * 80);
+                const trilocaleMax = Math.round(data.max * 80);
+                const quadrilocaleMin = Math.round(data.min * 120);
+                const quadrilocaleMax = Math.round(data.max * 120);
 
-                document.getElementById('sidebar-ex-camera').textContent = `${cameraMin.toLocaleString('it')} - ${cameraMax.toLocaleString('it')} €`;
                 document.getElementById('sidebar-ex-bilocale').textContent = `${bilocaleMin.toLocaleString('it')} - ${bilocaleMax.toLocaleString('it')} €`;
                 document.getElementById('sidebar-ex-trilocale').textContent = `${trilocaleMin.toLocaleString('it')} - ${trilocaleMax.toLocaleString('it')} €`;
-            } else {
-                document.getElementById('sidebar-range').textContent = 'N/D';
-                document.getElementById('sidebar-ex-camera').textContent = 'N/D';
-                document.getElementById('sidebar-ex-bilocale').textContent = 'N/D';
-                document.getElementById('sidebar-ex-trilocale').textContent = 'N/D';
+                document.getElementById('sidebar-ex-quadrilocale').textContent = `${quadrilocaleMin.toLocaleString('it')} - ${quadrilocaleMax.toLocaleString('it')} €`;
             }
 
-            // Fasce (compact format)
             if (data.fasce) {
                 document.getElementById('sidebar-fascia-a').textContent = data.fasce.A ?
                     `${formatPrice(data.fasce.A.min)}-${formatPrice(data.fasce.A.max)}` : 'N/D';
@@ -393,22 +315,19 @@
                     `${formatPrice(data.fasce.C.min)}-${formatPrice(data.fasce.C.max)}` : 'N/D';
             }
 
-            // Note (for rural zones)
-            const noteSection = document.getElementById('sidebar-note-section');
-            const noteEl = document.getElementById('sidebar-note');
-            if (data.note) {
-                noteEl.textContent = data.note;
-                noteSection.style.display = 'block';
+            const stanzaSection = document.getElementById('sidebar-stanza-section');
+            if (data.stanza) {
+                document.getElementById('sidebar-stanza').textContent = data.stanza + ' €/mese';
+                stanzaSection.style.display = 'block';
             } else {
-                noteSection.style.display = 'none';
+                stanzaSection.style.display = 'none';
             }
         }
 
         function onEachFeature(feature, layer) {
-            // Bind minimal tooltip
-            const codzona = feature.properties.CODZONA;
-            if (codzona) {
-                layer.bindTooltip(codzona, {
+            const zona = feature.properties.zona;
+            if (zona) {
+                layer.bindTooltip('Zona ' + zona, {
                     permanent: false,
                     direction: 'center',
                     className: 'zone-tooltip'
@@ -419,12 +338,11 @@
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
                 click: function(e) {
-                    showSidebar(codzona);
+                    showSidebar(zona);
                 }
             });
         }
 
-        // Load zone data first, then GeoJSON
         fetch(CITY_CONFIG.zoneDataPath)
             .then(response => response.json())
             .then(data => {
@@ -446,15 +364,12 @@
                 console.error('Errore caricamento dati:', err);
             });
 
-        // ═══════════════════════════════════════════════════════════════
-        // ADDRESS SEARCH (Nominatim Geocoding with Rate Limiting)
-        // ═══════════════════════════════════════════════════════════════
-
+        // Address Search
         const addressInput = document.getElementById('address-search');
         const searchResults = document.getElementById('search-results');
         let searchTimeout = null;
         let lastSearchTime = 0;
-        const RATE_LIMIT_MS = 10000; // 10 seconds
+        const RATE_LIMIT_MS = 10000;
 
         addressInput.addEventListener('input', function(e) {
             const query = e.target.value.trim();
@@ -465,16 +380,13 @@
                 return;
             }
 
-            // Check rate limit
             const now = Date.now();
             const timeSinceLastSearch = now - lastSearchTime;
 
             if (timeSinceLastSearch < RATE_LIMIT_MS && lastSearchTime > 0) {
                 const waitSeconds = Math.ceil((RATE_LIMIT_MS - timeSinceLastSearch) / 1000);
-                searchResults.innerHTML = `<div class="search-loading search-rate-limit">Attendi ${waitSeconds} secondi prima della prossima ricerca</div>`;
+                searchResults.innerHTML = `<div class="search-loading search-rate-limit">Attendi ${waitSeconds} secondi</div>`;
                 searchResults.classList.add('visible');
-
-                // Auto-retry after the wait time
                 searchTimeout = setTimeout(() => searchAddress(query), RATE_LIMIT_MS - timeSinceLastSearch + 100);
                 return;
             }
@@ -500,7 +412,7 @@
                 lastSearchTime = Date.now();
 
                 const viewbox = `${CITY_CONFIG.bounds[0][1]},${CITY_CONFIG.bounds[1][0]},${CITY_CONFIG.bounds[1][1]},${CITY_CONFIG.bounds[0][0]}`;
-                const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query + ', ' + CITY_CONFIG.name + ', Italia')}&limit=5&addressdetails=1&viewbox=${viewbox}&bounded=1`;
+                const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query + ', Milano, Italia')}&limit=5&addressdetails=1&viewbox=${viewbox}&bounded=1`;
 
                 const response = await fetch(url, {
                     headers: { 'Accept-Language': 'it' }
@@ -524,7 +436,7 @@
                     });
                 });
             } catch (err) {
-                searchResults.innerHTML = '<div class="search-loading">Errore nella ricerca. Riprova tra qualche secondo.</div>';
+                searchResults.innerHTML = '<div class="search-loading">Errore nella ricerca. Riprova.</div>';
             }
         }
 
@@ -537,12 +449,9 @@
                 iconAnchor: [9, 9]
             });
 
-            addressMarker = L.marker([lat, lon], { icon: markerIcon })
-                .addTo(map);
+            addressMarker = L.marker([lat, lon], { icon: markerIcon }).addTo(map);
+            map.setView([lat, lon], 14);
 
-            map.setView([lat, lon], 16);
-
-            // Find containing zone
             if (geojsonLayer) {
                 geojsonLayer.eachLayer(function(layer) {
                     if (layer.getBounds && layer.getBounds().contains([lat, lon])) {
@@ -550,7 +459,7 @@
                         if (isPointInPolygon(point, layer)) {
                             highlightFeature({ target: layer });
                             const props = layer.feature.properties;
-                            showSidebar(props.CODZONA);
+                            showSidebar(props.zona);
                         }
                     }
                 });
@@ -563,6 +472,13 @@
         function isPointInPolygon(point, layer) {
             if (layer.feature.geometry.type === 'Polygon') {
                 return isPointInPath(point, layer.getLatLngs()[0]);
+            } else if (layer.feature.geometry.type === 'MultiPolygon') {
+                const latLngs = layer.getLatLngs();
+                for (let i = 0; i < latLngs.length; i++) {
+                    if (isPointInPath(point, latLngs[i][0])) {
+                        return true;
+                    }
+                }
             }
             return false;
         }
@@ -580,7 +496,6 @@
             return inside;
         }
 
-        // Close search results on outside click
         document.addEventListener('click', function(e) {
             if (!e.target.closest('.search-container')) {
                 searchResults.classList.remove('visible');

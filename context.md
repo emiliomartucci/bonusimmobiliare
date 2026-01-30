@@ -61,8 +61,10 @@ bonusimmobiliare/
 │   │   │   ├── _template.html  # Template articolo generico
 │   │   │   └── mappa-canone-concordato-citta.html
 │   │   ├── articles.json   # Articles manifest
+│   │   ├── blog-article.css # CSS condiviso articoli blog
 │   │   ├── canone-concordato-{citta}/ # Serie affitto (6)
 │   │   ├── mappa-canone-concordato-roma/ # Articolo mappa Roma
+│   │   ├── mappa-canone-concordato-milano/ # Articolo mappa Milano
 │   │   ├── caparra-confirmatoria-penitenziale/
 │   │   ├── clausola-sospensiva-mutuo/
 │   │   ├── compromesso-notaio-agenzia/
@@ -77,10 +79,15 @@ bonusimmobiliare/
 │   │   └── roma/           # Landing Roma (cupole SVG)
 │   ├── mappe/              # Mappe interattive zone OMI
 │   │   ├── _template.html  # Template mappa per nuove citta
-│   │   └── roma/           # Mappa Roma
+│   │   ├── roma/           # Mappa Roma (233 zone OMI)
+│   │   └── milano/         # Mappa Milano (5 zone concordato)
+│   ├── css/                # CSS condivisi
+│   │   └── mappa.css       # Stili condivisi mappe interattive
 │   ├── data/               # Dati per mappe e calcolatori
 │   │   ├── roma-zone-omi.json      # Valori canone per zona Roma
-│   │   └── roma_omi_zones.geojson  # Poligoni zone OMI Roma
+│   │   ├── roma_omi_zones.geojson  # Poligoni zone OMI Roma
+│   │   ├── milano-zone-concordato.json  # Valori canone per zona Milano
+│   │   └── milano_concordato_zones.geojson  # Poligoni zone Milano
 │   ├── servizi/            # Services slider
 │   ├── privacy/            # Privacy policy GDPR
 │   ├── cookie/             # Cookie policy
@@ -124,16 +131,23 @@ bonusimmobiliare/
 - [x] Mappa interattiva zone OMI Roma (Leaflet, 233 zone, ricerca indirizzo)
 - [x] Articolo SEO mappa canone concordato Roma (/blog/mappa-canone-concordato-roma/)
 - [x] Templates riutilizzabili per mappe e articoli altre citta
+- [x] Mappa interattiva zone canone concordato Milano (5 zone + GeoJSON da GIS Portal Comune)
+- [x] Articolo SEO mappa canone concordato Milano (/blog/mappa-canone-concordato-milano/)
+- [x] CSS condivisi per blog (blog-article.css) e mappe (mappa.css)
 
 ## Todo (v2)
 ✅ Completato
 
 ## Todo (v3)
-- [ ] Mappe zone OMI altre citta (Milano, Torino, Napoli, Firenze, Bologna)
+- [ ] Milano: aggiungere 6 zone Città Metropolitana (comuni extra oltre Milano città)
+- [ ] Mappe zone OMI altre citta (Torino, Napoli, Firenze, Bologna)
 - [ ] Articoli SEO mappa per ogni citta
 - [ ] Calcolatori interattivi
 
 ## Cambiamenti Recenti
+- 2026-01-30: Mappa interattiva Milano (5 zone concordato + GeoJSON da GIS Portal Comune Milano)
+- 2026-01-30: Articolo SEO mappa canone concordato Milano
+- 2026-01-30: CSS condivisi: blog-article.css e mappa.css (refactoring per riusabilità)
 - 2026-01-30: Articolo SEO mappa canone concordato Roma (keyword: mappa zone omi roma, microzone)
 - 2026-01-30: Template articolo mappa per altre citta (src/blog/_templates/)
 - 2026-01-30: Template mappa interattiva per altre citta (src/mappe/_template.html)
@@ -165,4 +179,4 @@ bonusimmobiliare/
 
 ---
 **Last Update:** 2026-01-30
-**Version:** 2.2.0
+**Version:** 2.3.0
