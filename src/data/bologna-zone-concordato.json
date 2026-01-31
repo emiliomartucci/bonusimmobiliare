@@ -1,0 +1,41 @@
+{
+  "PREGIO": {
+    "nome": "Zona di Pregio",
+    "descrizione": "Centro storico, zone di particolare valore immobiliare",
+    "fascia": "PREGIO",
+    "area": "Pregio",
+    "min": 6.17,
+    "max": 14.58,
+    "fasce": {
+      "A": { "min": 9.50, "max": 14.58, "note": "8+ parametri" },
+      "B": { "min": 7.80, "max": 12.00, "note": "4-7 parametri" },
+      "C": { "min": 6.17, "max": 9.50, "note": "fino a 3 parametri" }
+    }
+  },
+  "A": {
+    "nome": "Zona A",
+    "descrizione": "Semicentro, zone residenziali di buon livello",
+    "fascia": "A",
+    "area": "Zona A",
+    "min": 4.17,
+    "max": 10.83,
+    "fasce": {
+      "A": { "min": 7.00, "max": 10.83, "note": "8+ parametri" },
+      "B": { "min": 5.50, "max": 8.50, "note": "4-7 parametri" },
+      "C": { "min": 4.17, "max": 7.00, "note": "fino a 3 parametri" }
+    }
+  },
+  "B": {
+    "nome": "Zona B",
+    "descrizione": "Periferia, zone residenziali periferiche e suburbane",
+    "fascia": "B",
+    "area": "Zona B",
+    "min": 2.92,
+    "max": 7.92,
+    "fasce": {
+      "A": { "min": 5.50, "max": 7.92, "note": "8+ parametri" },
+      "B": { "min": 4.20, "max": 6.50, "note": "4-7 parametri" },
+      "C": { "min": 2.92, "max": 5.50, "note": "fino a 3 parametri" }
+    }
+  }
+}

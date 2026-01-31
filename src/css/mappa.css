@@ -659,6 +659,59 @@ path.leaflet-interactive:focus {
 }
 
 /* ==========================================================================
+   Map Disclaimer Banner (for OMI zone maps)
+   ========================================================================== */
+
+.map-disclaimer {
+    background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+    padding: var(--space-sm) var(--space-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    border-bottom: 1px solid #F59E0B;
+    font-size: 0.8rem;
+    color: #92400E;
+}
+
+.map-disclaimer-icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    color: #D97706;
+}
+
+.map-disclaimer-text {
+    flex: 1;
+    line-height: 1.4;
+}
+
+.map-disclaimer-text strong {
+    font-weight: 600;
+}
+
+.map-disclaimer a {
+    color: #B45309;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.map-disclaimer a:hover {
+    color: #92400E;
+}
+
+@media (max-width: 768px) {
+    .map-disclaimer {
+        padding: var(--space-xs) var(--space-sm);
+        font-size: 0.7rem;
+    }
+
+    .map-disclaimer-icon {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* ==========================================================================
    Footer Mini
    ========================================================================== */
 

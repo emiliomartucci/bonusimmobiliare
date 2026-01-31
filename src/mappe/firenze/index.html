@@ -223,7 +223,17 @@ Accordo Territoriale: 25 giugno 2020
             .legend-item { font-size: 0.65rem; }
             .sidebar-grid { grid-template-columns: 1fr; }
             .footer-mini { flex-direction: column; text-align: center; }
+            .map-disclaimer { padding: var(--space-xs) var(--space-sm); font-size: 0.7rem; }
+            .map-disclaimer-icon { width: 14px; height: 14px; }
         }
+
+        /* Map Disclaimer */
+        .map-disclaimer { background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); padding: var(--space-sm) var(--space-lg); display: flex; align-items: center; gap: var(--space-sm); border-bottom: 1px solid #F59E0B; font-size: 0.8rem; color: #92400E; }
+        .map-disclaimer-icon { flex-shrink: 0; width: 18px; height: 18px; color: #D97706; }
+        .map-disclaimer-text { flex: 1; line-height: 1.4; }
+        .map-disclaimer-text strong { font-weight: 600; }
+        .map-disclaimer a { color: #B45309; text-decoration: underline; text-underline-offset: 2px; }
+        .map-disclaimer a:hover { color: #92400E; }
     </style>
 </head>
 <body>
@@ -241,6 +251,16 @@ Accordo Territoriale: 25 giugno 2020
             </svg>
         </a>
     </header>
+
+    <!-- Disclaimer Zone OMI -->
+    <div class="map-disclaimer">
+        <svg class="map-disclaimer-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+        <div class="map-disclaimer-text">
+            <strong>Mappa indicativa:</strong> Le zone mostrate sono le zone OMI (Agenzia Entrate), usate per riferimento geografico. L'accordo territoriale di Firenze usa microzone numeriche (1-30) diverse. Per il canone esatto, <a href="/blog/canone-concordato-firenze/">consulta l'accordo territoriale</a>.
+        </div>
+    </div>
 
     <div class="main-content">
         <div class="map-wrapper">

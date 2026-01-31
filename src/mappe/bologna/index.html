@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mappa Zone OMI Bologna - Canone Concordato 2025 | Bonus Immobiliare</title>
-    <meta name="description" content="Trova la tua zona OMI a Bologna e scopri quanto puoi affittare a canone concordato. Mappa interattiva con 34 microzone e valori €/mq aggiornati 2025.">
+    <title>Mappa Zone Concordato Bologna - Canone Concordato 2025 | Bonus Immobiliare</title>
+    <meta name="description" content="Trova la tua zona a canone concordato a Bologna. Mappa interattiva ufficiale con zone Pregio, A e B. Valori €/mq aggiornati 2025.">
     <link rel="canonical" href="https://bonusimmobiliare.it/mappe/bologna/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Mappa Zone OMI Bologna - Canone Concordato 2025">
-    <meta property="og:description" content="Trova la tua zona OMI a Bologna e scopri quanto puoi affittare a canone concordato.">
+    <meta property="og:title" content="Mappa Zone Concordato Bologna - Canone Concordato 2025">
+    <meta property="og:description" content="Trova la tua zona a canone concordato a Bologna. Mappa interattiva ufficiale.">
     <meta property="og:url" content="https://bonusimmobiliare.it/mappe/bologna/">
     <meta property="og:image" content="https://bonusimmobiliare.it/og-image.jpg">
     <meta property="og:site_name" content="Bonus Immobiliare">
@@ -30,13 +30,13 @@
         const CITY_CONFIG = {
             name: 'Bologna',
             slug: 'bologna',
-            geojsonPath: '/data/bologna_omi_zones.geojson',
-            zoneDataPath: '/data/bologna-zone-omi.json',
+            geojsonPath: '/data/bologna_zone_concordato.geojson',
+            zoneDataPath: '/data/bologna-zone-concordato.json',
             center: [44.4949, 11.3426],
             bounds: [[44.42, 11.25], [44.56, 11.44]],
             zoom: 12,
             dokicasaUrl: 'https://app.dokicasa.it/contratti/foglio-caratteristiche-immobile-bologna/crea/default?utm_source=bonusimmobiliare&utm_medium=mappa&utm_campaign=bologna',
-            totalZones: 34,
+            totalZones: 3,
             accordoYear: 2024,
             accordoDate: '27 marzo 2024'
         };
@@ -69,12 +69,10 @@
             --gold-light: #D4C4A0;
             --gold-pale: #F5F0E5;
 
-            /* Zone Colors - Vivid warm palette */
-            --zone-b: #E85D3B;  /* Centrale - Terracotta vivace */
-            --zone-c: #F09B47;  /* Semicentrale - Arancio brillante */
-            --zone-d: #E8C44A;  /* Periferica - Giallo oro */
-            --zone-e: #6BAF7A;  /* Suburbana - Verde fresco */
-            --zone-r: #7BA08A;  /* Rurale - Verde salvia */
+            /* Zone Colors - Bologna Concordato */
+            --zone-pregio: #E85D3B;  /* Pregio - Terracotta vivace */
+            --zone-a: #F09B47;       /* Zona A - Arancio brillante */
+            --zone-b: #6BAF7A;       /* Zona B - Verde fresco */
 
             /* Typography */
             --font-display: 'Fraunces', Georgia, serif;
@@ -751,7 +749,7 @@
             <img src="/logo/logo_light_bg.svg" alt="Bonus Immobiliare">
         </a>
         <div class="header-title">
-            <h1>Mappa Zone OMI <span id="city-name">Bologna</span></h1>
+            <h1>Mappa Zone Concordato <span id="city-name">Bologna</span></h1>
         </div>
         <a href="/" class="header-back">
             <span>Torna al sito</span>
@@ -780,12 +778,10 @@
 
             <!-- Legend -->
             <div class="legend">
-                <div class="legend-title">Tipologia Zone</div>
-                <div class="legend-item"><div class="legend-color" style="background: var(--zone-b);"></div> B - Pregio</div>
-                <div class="legend-item"><div class="legend-color" style="background: var(--zone-c);"></div> C - Zona A</div>
-                <div class="legend-item"><div class="legend-color" style="background: var(--zone-d);"></div> D - Zona B</div>
-                <div class="legend-item"><div class="legend-color" style="background: var(--zone-e);"></div> E - Colline</div>
-                <div class="legend-item"><div class="legend-color" style="background: var(--zone-r);"></div> R - Rurale</div>
+                <div class="legend-title">Zone Concordato</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--zone-pregio);"></div> Pregio</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--zone-a);"></div> Zona A</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--zone-b);"></div> Zona B</div>
             </div>
         </div>
 
@@ -877,7 +873,7 @@
     <!-- Footer Mini -->
     <footer class="footer-mini">
         <div class="footer-mini-text">
-            Dati: <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/omi/banche-dati/quotazioni-immobiliari" target="_blank" rel="noopener">Agenzia delle Entrate - OMI</a> |
+            Dati zone: <a href="https://cartografia.cittametropolitana.bo.it/catalogo/" target="_blank" rel="noopener">Città Metropolitana di Bologna - Open Data</a> |
             Valori: <a href="https://www.cittametropolitana.bo.it/sanitasociale/politiche_abitative/politiche_abitative_canone_concordato" target="_blank" rel="noopener">Accordo Territoriale Bologna 2024</a>
         </div>
         <div class="footer-mini-source">
@@ -896,30 +892,24 @@
         // Zone data storage
         let zoneData = {};
 
-        function getColor(codzona) {
-            if (!codzona) return '#8B8178';
-            const prefix = codzona.charAt(0).toUpperCase();
+        function getColor(zona) {
+            if (!zona) return '#8B8178';
             const colors = {
-                'B': getComputedStyle(document.documentElement).getPropertyValue('--zone-b').trim(),
-                'C': getComputedStyle(document.documentElement).getPropertyValue('--zone-c').trim(),
-                'D': getComputedStyle(document.documentElement).getPropertyValue('--zone-d').trim(),
-                'E': getComputedStyle(document.documentElement).getPropertyValue('--zone-e').trim(),
-                'R': getComputedStyle(document.documentElement).getPropertyValue('--zone-r').trim()
+                'PREGIO': getComputedStyle(document.documentElement).getPropertyValue('--zone-pregio').trim(),
+                'A': getComputedStyle(document.documentElement).getPropertyValue('--zone-a').trim(),
+                'B': getComputedStyle(document.documentElement).getPropertyValue('--zone-b').trim()
             };
-            return colors[prefix] || '#8B8178';
+            return colors[zona] || '#8B8178';
         }
 
-        function getTipoZona(codzona) {
-            if (!codzona) return 'Non classificata';
-            const prefix = codzona.charAt(0).toUpperCase();
+        function getTipoZona(zona) {
+            if (!zona) return 'Non classificata';
             const types = {
-                'B': 'Pregio',
-                'C': 'Zona A',
-                'D': 'Zona B',
-                'E': 'Colline',
-                'R': 'Rurale'
+                'PREGIO': 'Pregio',
+                'A': 'Zona A',
+                'B': 'Zona B'
             };
-            return types[prefix] || 'Altra';
+            return types[zona] || 'Altra';
         }
 
         function formatPrice(value) {
@@ -953,7 +943,7 @@
 
         function style(feature) {
             return {
-                fillColor: getColor(feature.properties.CODZONA),
+                fillColor: getColor(feature.properties.ZONA),
                 weight: 1,
                 opacity: 1,
                 color: 'rgba(255,255,255,0.8)',
@@ -1045,7 +1035,7 @@
         }
 
         function onEachFeature(feature, layer) {
-            const codzona = feature.properties.CODZONA;
+            const codzona = feature.properties.ZONA;
             if (codzona) {
                 layer.bindTooltip(codzona, {
                     permanent: false,
@@ -1155,7 +1145,7 @@
                         if (isPointInPolygon(point, layer)) {
                             highlightFeature({ target: layer });
                             const props = layer.feature.properties;
-                            showSidebar(props.CODZONA);
+                            showSidebar(props.ZONA);
                         }
                     }
                 });
