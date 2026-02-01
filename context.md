@@ -6,6 +6,36 @@
 - Env Vars: no (per ora)
 - Billing: yes
 
+## Documenti
+| Data | Tipo | File | Descrizione |
+|------|------|------|-------------|
+| 2026-02-01 | plan | docs/plans/2026-02-01-repo-audit-plan.md | Piano fix 21 findings P1+P2 da repo-audit |
+| 2026-02-01 | solution | docs/solutions/security-issues/cors-wildcard-api.md | Fix CORS wildcard su API tracking |
+| 2026-02-01 | solution | docs/solutions/performance-issues/geojson-file-size.md | Ottimizzazione GeoJSON (11MB a 1.1MB) |
+| 2026-02-01 | solution | docs/solutions/code-quality/css-duplication.md | Consolidamento CSS duplicato in 38 file |
+
+## Handoffs
+- 2026-01-20: memory/handoff-2026-01-20.md
+  Creato sito completo: homepage warm editorial, blog dinamico, slider servizi Dokicasa. Deploy Cloudflare Pages.
+- 2026-01-20: memory/handoff-2026-01-20-002.md
+  Logo SVG dark/light switching, nuvolette animate hero, navbar semplificata.
+- 2026-01-21: memory/handoff-2026-01-21.md
+  Serie articoli canone concordato 6 citta (Milano, Roma, Napoli, Torino, Firenze, Bologna) con CTA Dokicasa.
+- 2026-01-24: memory/handoff-2026-01-24.md
+  Privacy/cookie GDPR, SEO foundation (sitemap, robots), 5 articoli compravendita.
+- 2026-01-24: memory/handoff-2026-01-24-b.md
+  Favicon dark mode support, head-common.js injection centralizzata.
+- 2026-01-24: memory/handoff-2026-01-24-c.md
+  6 landing pages canone concordato con SVG custom citta e CTA Dokicasa.
+- 2026-01-30: memory/handoff-2026-01-30.md
+  Mappa interattiva zone OMI Roma (233 zone Leaflet), ricerca indirizzo, template riutilizzabile.
+- 2026-01-30: memory/handoff-2026-01-30-session2.md
+  Articolo SEO mappa Roma, template articoli/mappe per altre citta, fix navbar.
+- 2026-01-30: memory/handoff-2026-01-30-session3.md
+  Mappa Napoli (67 zone OMI), completate tutte 6 mappe interattive.
+- 2026-02-01: memory/handoff-2026-02-01.md
+  Repo-audit completo (34 findings), piano P1+P2, solutions documentate.
+
 ## Billing
 - Total: 109.65 EUR
 - Your Time: 56.50 EUR (1h 53m)

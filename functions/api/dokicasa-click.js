@@ -1,8 +1,9 @@
 /**
  * Dokicasa Click Tracking API
- * v1.2.0 - 2026-02-01
+ * v1.3.0 - 2026-02-01
  *
  * Receives click data from dokicasa-tracking.js and stores in D1
+ * Also sends to Google Sheets via Apps Script webhook
  * Includes IP and geo data from Cloudflare headers
  * Endpoint: POST /api/dokicasa-click
  */
@@ -150,6 +151,38 @@ export async function onRequestPost(context) {
             page_load_time_ms: validateNumber(data.page_load_time_ms, LIMITS.page_load_time_ms)
         });
 
+        // Send to Google Sheets (fire and forget, don't block response)
+        if (env.GOOGLE_SHEETS_WEBHOOK) {
+            sendToGoogleSheets(env.GOOGLE_SHEETS_WEBHOOK, {
+                session_id,
+                landing_page,
+                cta_location: validateString(data.cta_location, LIMITS.cta_location),
+                referrer: validateString(data.referrer, LIMITS.referrer),
+                utm_source: validateString(data.utm_source, LIMITS.utm_source),
+                utm_medium: validateString(data.utm_medium, LIMITS.utm_medium),
+                utm_campaign: validateString(data.utm_campaign, LIMITS.utm_campaign),
+                utm_term: validateString(data.utm_term, LIMITS.utm_term),
+                utm_content: validateString(data.utm_content, LIMITS.utm_content),
+                device_type: deviceType,
+                screen_width,
+                screen_height: validateNumber(data.screen_height, LIMITS.screen_height),
+                viewport_width: validateNumber(data.viewport_width, LIMITS.viewport_width),
+                viewport_height: validateNumber(data.viewport_height, LIMITS.viewport_height),
+                time_on_page_ms: validateNumber(data.time_on_page_ms, LIMITS.time_on_page_ms),
+                scroll_depth_percent: validateNumber(data.scroll_depth_percent, LIMITS.scroll_depth_percent),
+                pages_before: data.pages_before ? JSON.stringify(data.pages_before) : null,
+                clicks_on_page: validateNumber(data.clicks_on_page, LIMITS.clicks_on_page) || 0,
+                ip_country: country,
+                ip_city: city,
+                ip_region: region,
+                ip_timezone: timezone,
+                language: validateString(data.language, LIMITS.language),
+                platform: validateString(data.platform, LIMITS.platform),
+                connection_type: validateString(data.connection_type, LIMITS.connection_type),
+                page_load_time_ms: validateNumber(data.page_load_time_ms, LIMITS.page_load_time_ms)
+            }).catch(err => console.error('Google Sheets webhook error:', err.message));
+        }
+
         return new Response(
             JSON.stringify({ tracked: true, message: 'Click tracked successfully' }),
             { status: 200, headers: corsHeaders }
@@ -243,4 +276,22 @@ async function insertClick(db, data) {
         data.connection_type,
         data.page_load_time_ms
     ).run();
+}
+
+/**
+ * Send click data to Google Sheets via Apps Script webhook
+ * Fire and forget - errors don't affect main tracking
+ */
+async function sendToGoogleSheets(webhookUrl, data) {
+    const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    });
+
+    if (!response.ok) {
+        throw new Error(`Google Sheets webhook returned ${response.status}`);
+    }
+
+    return response.json();
 }

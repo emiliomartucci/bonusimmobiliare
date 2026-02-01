@@ -15,3 +15,7 @@ database_id = "07147262-e13d-4e55-9495-9f9b5bb76f58"
 
 # After creating D1, run schema:
 # wrangler d1 execute bonusimmobiliare-leads --file=src/scripts/schema.sql
+
+# Google Sheets Webhook (set in Cloudflare Dashboard > Settings > Environment Variables)
+# GOOGLE_SHEETS_WEBHOOK = "https://script.google.com/macros/s/xxx/exec"
+# See docs/google-sheets-webhook.js for setup instructions
