@@ -151,9 +151,9 @@ export async function onRequestPost(context) {
             page_load_time_ms: validateNumber(data.page_load_time_ms, LIMITS.page_load_time_ms)
         });
 
-        // Send to Google Sheets (fire and forget, don't block response)
+        // Send to Google Sheets (use waitUntil to keep worker alive)
         if (env.GOOGLE_SHEETS_WEBHOOK) {
-            sendToGoogleSheets(env.GOOGLE_SHEETS_WEBHOOK, {
+            const sheetsPromise = sendToGoogleSheets(env.GOOGLE_SHEETS_WEBHOOK, {
                 session_id,
                 landing_page,
                 cta_location: validateString(data.cta_location, LIMITS.cta_location),
@@ -181,6 +181,9 @@ export async function onRequestPost(context) {
                 connection_type: validateString(data.connection_type, LIMITS.connection_type),
                 page_load_time_ms: validateNumber(data.page_load_time_ms, LIMITS.page_load_time_ms)
             }).catch(err => console.error('Google Sheets webhook error:', err.message));
+
+            // Keep worker alive until Google Sheets request completes
+            context.waitUntil(sheetsPromise);
         }
 
         return new Response(
