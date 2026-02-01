@@ -51,6 +51,16 @@ const HEADERS = [
  */
 function doPost(e) {
   try {
+    // Check if called correctly via HTTP POST
+    if (!e || !e.postData || !e.postData.contents) {
+      return ContentService
+        .createTextOutput(JSON.stringify({
+          success: false,
+          error: 'Invalid request - use HTTP POST with JSON body'
+        }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
     const data = JSON.parse(e.postData.contents);
 
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME);
@@ -131,6 +141,50 @@ function doGet(e) {
       version: '1.0.0'
     }))
     .setMimeType(ContentService.MimeType.JSON);
+}
+
+/**
+ * Test function - run from editor to verify setup works
+ * Creates a test row in the sheet
+ */
+function testWebhook() {
+  const testData = {
+    session_id: 'test_' + new Date().getTime(),
+    landing_page: '/test-page/',
+    cta_location: 'test',
+    referrer: 'https://google.com',
+    utm_source: 'test',
+    utm_medium: 'test',
+    utm_campaign: 'test_campaign',
+    utm_term: '',
+    utm_content: '',
+    device_type: 'desktop',
+    screen_width: 1920,
+    screen_height: 1080,
+    viewport_width: 1920,
+    viewport_height: 900,
+    time_on_page_ms: 5000,
+    scroll_depth_percent: 50,
+    pages_before: '[]',
+    clicks_on_page: 1,
+    ip_country: 'IT',
+    ip_city: 'Milan',
+    ip_region: 'Lombardy',
+    ip_timezone: 'Europe/Rome',
+    language: 'it-IT',
+    platform: 'MacIntel',
+    connection_type: '4g',
+    page_load_time_ms: 1200
+  };
+
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME);
+  if (!sheet) {
+    Logger.log('ERROR: Sheet "Clicks" not found. Run setupSheet() first.');
+    return;
+  }
+
+  appendClickData(sheet, testData);
+  Logger.log('SUCCESS: Test row added to sheet. Check the "Clicks" tab.');
 }
 
 /**
