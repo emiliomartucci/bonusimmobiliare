@@ -192,6 +192,7 @@ bonusimmobiliare/
 - `docs/solutions/code-quality/css-duplication.md`
 
 ## Cambiamenti Recenti
+- 2026-02-01: Rimosso bologna_concordato_zones.geojson non usato (14MB → 0)
 - 2026-02-01: Implementato piano repo-audit (10 task P1+P2 completati)
 - 2026-02-01: API security hardening (CORS whitelist, input validation, IP anonymization)
 - 2026-02-01: GeoJSON Bologna ottimizzato (11MB→1.1MB con mapshaper)
