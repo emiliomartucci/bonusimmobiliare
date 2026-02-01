@@ -283,15 +283,23 @@ async function insertClick(db, data) {
  * Fire and forget - errors don't affect main tracking
  */
 async function sendToGoogleSheets(webhookUrl, data) {
+    // Google Apps Script returns 302 redirect, need to follow it
     const response = await fetch(webhookUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
+        redirect: 'follow'
     });
 
-    if (!response.ok) {
+    // Accept 200-399 as success (includes redirects)
+    if (response.status >= 400) {
         throw new Error(`Google Sheets webhook returned ${response.status}`);
     }
 
-    return response.json();
+    // Try to parse JSON, but don't fail if it's not JSON (redirect responses may be HTML)
+    try {
+        return await response.json();
+    } catch {
+        return { success: true, status: response.status };
+    }
 }
