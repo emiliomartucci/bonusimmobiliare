@@ -171,7 +171,7 @@ bonusimmobiliare/
 - [x] Cookie policy e consent banner (/cookie/, js/cookie-consent.js)
 - [x] SEO files (sitemap.xml, robots.txt, llms.txt)
 - [x] Serie articoli compravendita (5 articoli: caparra, clausola sospensiva, compromesso, proposta acquisto, mutuo negato)
-- [x] Dokicasa click tracking (D1 database + API + frontend tracking)
+- [x] Dokicasa click tracking (D1 database + API + frontend tracking + Google Sheets webhook)
 - [x] Favicon con supporto dark mode (head-common.js injection)
 - [x] Landing pages canone concordato (6 citta con SVG custom e CTA Dokicasa)
 - [x] Mappa interattiva zone OMI Roma (Leaflet, 233 zone, ricerca indirizzo)
@@ -222,6 +222,7 @@ bonusimmobiliare/
 - `docs/solutions/code-quality/css-duplication.md`
 
 ## Cambiamenti Recenti
+- 2026-02-01: Google Sheets webhook per click tracking Dokicasa (docs/google-sheets-webhook.js)
 - 2026-02-01: Rimosso bologna_concordato_zones.geojson non usato (14MB → 0)
 - 2026-02-01: Implementato piano repo-audit (10 task P1+P2 completati)
 - 2026-02-01: API security hardening (CORS whitelist, input validation, IP anonymization)
