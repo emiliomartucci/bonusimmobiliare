@@ -1,5 +1,5 @@
 -- Bonus Immobiliare D1 Schema
--- v1.0.0 - 2026-01-24
+-- v1.1.0 - 2026-02-01
 -- Database: bonusimmobiliare-leads
 
 -- Dokicasa Click Tracking
@@ -7,7 +7,7 @@
 CREATE TABLE IF NOT EXISTS dokicasa_clicks (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     session_id TEXT UNIQUE NOT NULL,
-    timestamp TEXT DEFAULT CURRENT_TIMESTAMP,
+    timestamp TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     -- Page & CTA info
     landing_page TEXT NOT NULL,

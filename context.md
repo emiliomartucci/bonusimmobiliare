@@ -18,8 +18,8 @@
 Blog immobiliare italiano focalizzato su articoli informativi riguardo affitto e compravendita. Target: utenti che cercano informazioni pratiche sul mercato immobiliare italiano.
 
 ## Status
-- Fase: development
-- Ultimo lavoro: 2026-01-30
+- Fase: development (audit completato, piano pronto)
+- Ultimo lavoro: 2026-02-01
 
 ## Stack
 - **Frontend:** HTML5 + CSS3 + Vanilla JS
@@ -98,8 +98,8 @@ bonusimmobiliare/
 │   │   ├── milano_concordato_zones.geojson  # Poligoni zone Milano
 │   │   ├── torino-zone-omi.json         # Valori canone per zona Torino
 │   │   ├── torino_omi_zones.geojson     # Poligoni zone OMI Torino
-│   │   ├── bologna-zone-omi.json        # Valori canone per zona Bologna
-│   │   ├── bologna_omi_zones.geojson    # Poligoni zone OMI Bologna
+│   │   ├── bologna-zone-concordato.json     # Valori canone zone concordato Bologna
+│   │   ├── bologna_zone_concordato.geojson  # Poligoni zone concordato Bologna (Open Data)
 │   │   ├── firenze-zone-omi.json        # Valori canone per zona Firenze
 │   │   ├── firenze_omi_zones.geojson    # Poligoni zone OMI Firenze
 │   │   ├── napoli-zone-omi.json         # Valori canone per zona Napoli
@@ -153,7 +153,7 @@ bonusimmobiliare/
 - [x] Mappa Milano con 7 zone hinterland Città Metropolitana (130 comuni)
 - [x] Mappa interattiva zone OMI Torino (47 zone, 4 aree: Centro, Semicentro, Periferia, Collina)
 - [x] Articolo SEO mappa canone concordato Torino (/blog/mappa-canone-concordato-torino/)
-- [x] Mappa interattiva zone OMI Bologna (34 zone, 5 aree: Pregio, Zona A, Zona B, Colline, Rurale)
+- [x] Mappa interattiva zone concordato Bologna (3 zone ufficiali da Open Data Città Metropolitana)
 - [x] Articolo SEO mappa canone concordato Bologna (/blog/mappa-canone-concordato-bologna/)
 - [x] Mappa interattiva zone OMI Firenze (34 zone, 5 tipologie: Centro, Semicentro, Periferia, Suburbana, Rurale)
 - [x] Articolo SEO mappa canone concordato Firenze (/blog/mappa-canone-concordato-firenze/)
@@ -170,7 +170,36 @@ bonusimmobiliare/
 - [x] Mappa Napoli (67 zone OMI)
 - [ ] Calcolatori interattivi
 
+## Repo Audit (2026-02-01)
+
+**Report:** [docs/AUDIT-REPORT-2026-02-01.md](docs/AUDIT-REPORT-2026-02-01.md)
+**Piano:** [docs/plans/2026-02-01-repo-audit-plan.md](docs/plans/2026-02-01-repo-audit-plan.md)
+
+### Findings Summary
+- **P1 Critical:** 9 (security, performance, code quality)
+- **P2 High:** 12 (GDPR, error handling, duplications)
+- **P3 Medium:** 13 (fuori scope attuale)
+
+### Priority Fixes (P1+P2) - IMPLEMENTED
+- [x] Security: CORS whitelist, input validation, error handling
+- [x] Performance: GeoJSON simplify (11MB→1.1MB), font preconnect
+- [x] Code: design-system.css, blog error UI, DEBUG flag
+- [x] Data: NOT NULL timestamp, IP anonymization
+
+### Solutions Documentate
+- `docs/solutions/security-issues/cors-wildcard-api.md`
+- `docs/solutions/performance-issues/geojson-file-size.md`
+- `docs/solutions/code-quality/css-duplication.md`
+
 ## Cambiamenti Recenti
+- 2026-02-01: Implementato piano repo-audit (10 task P1+P2 completati)
+- 2026-02-01: API security hardening (CORS whitelist, input validation, IP anonymization)
+- 2026-02-01: GeoJSON Bologna ottimizzato (11MB→1.1MB con mapshaper)
+- 2026-02-01: design-system.css creato, font preconnect aggiunto
+- 2026-02-01: Blog error handling, DEBUG flag in tracking.js
+- 2026-02-01: Repo audit completo con 34 findings (9 P1, 12 P2, 13 P3)
+- 2026-01-31: Fix mappa Bologna con zone concordato ufficiali (Open Data Città Metropolitana)
+- 2026-01-31: Aggiunta disclaimer su mappe Torino, Firenze, Napoli (zone OMI != zone concordato)
 - 2026-01-30: Mappa interattiva zone OMI Napoli (67 zone, Accordo 2025, 5 tipologie)
 - 2026-01-30: Articolo SEO mappa canone concordato Napoli
 - 2026-01-30: Mappa interattiva zone OMI Firenze (34 zone, Accordo 25/06/2020, 5 tipologie)
@@ -213,5 +242,5 @@ bonusimmobiliare/
 - Focus su contenuti informativi per affitto e compravendita
 
 ---
-**Last Update:** 2026-01-30
-**Version:** 2.5.0
+**Last Update:** 2026-02-01
+**Version:** 2.6.0

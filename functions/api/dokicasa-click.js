@@ -1,78 +1,153 @@
 /**
  * Dokicasa Click Tracking API
- * v1.1.0 - 2026-01-24
+ * v1.2.0 - 2026-02-01
  *
  * Receives click data from dokicasa-tracking.js and stores in D1
  * Includes IP and geo data from Cloudflare headers
  * Endpoint: POST /api/dokicasa-click
  */
 
-export async function onRequestPost(context) {
-    const { request, env } = context;
+// Allowed origins for CORS (P1.5 fix)
+const ALLOWED_ORIGINS = [
+    'https://bonusimmobiliare.it',
+    'https://www.bonusimmobiliare.it',
+    'https://bonusimmobiliare.pages.dev'
+];
 
-    // CORS headers
-    const corsHeaders = {
-        'Access-Control-Allow-Origin': '*',
+// Input validation limits (P1.7 fix)
+const LIMITS = {
+    session_id: 100,
+    landing_page: 500,
+    cta_location: 100,
+    referrer: 500,
+    utm_source: 100,
+    utm_medium: 100,
+    utm_campaign: 200,
+    utm_term: 200,
+    utm_content: 200,
+    user_agent: 500,
+    language: 20,
+    platform: 50,
+    connection_type: 50,
+    screen_width: { min: 0, max: 10000 },
+    screen_height: { min: 0, max: 10000 },
+    viewport_width: { min: 0, max: 10000 },
+    viewport_height: { min: 0, max: 10000 },
+    time_on_page_ms: { min: 0, max: 86400000 },
+    scroll_depth_percent: { min: 0, max: 100 },
+    clicks_on_page: { min: 0, max: 10000 },
+    page_load_time_ms: { min: 0, max: 300000 }
+};
+
+function getCorsHeaders(request) {
+    const origin = request.headers.get('Origin');
+    const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+    return {
+        'Access-Control-Allow-Origin': allowedOrigin,
         'Access-Control-Allow-Methods': 'POST, OPTIONS',
         'Access-Control-Allow-Headers': 'Content-Type',
         'Content-Type': 'application/json'
     };
+}
+
+function validateString(value, maxLength) {
+    if (value === null || value === undefined) return null;
+    const str = String(value).trim();
+    return str.length > maxLength ? str.substring(0, maxLength) : str;
+}
+
+function validateNumber(value, limits) {
+    if (value === null || value === undefined) return null;
+    const num = Number(value);
+    if (isNaN(num)) return null;
+    if (num < limits.min || num > limits.max) return null;
+    return num;
+}
+
+function anonymizeIP(ip) {
+    if (!ip) return null;
+    // IPv4: remove last octet (e.g., 192.168.1.100 -> 192.168.1.0)
+    if (ip.includes('.')) {
+        const parts = ip.split('.');
+        if (parts.length === 4) {
+            parts[3] = '0';
+            return parts.join('.');
+        }
+    }
+    // IPv6: remove last 80 bits (keep first 48 bits)
+    if (ip.includes(':')) {
+        const parts = ip.split(':');
+        if (parts.length >= 3) {
+            return parts.slice(0, 3).join(':') + '::';
+        }
+    }
+    return null;
+}
+
+export async function onRequestPost(context) {
+    const { request, env } = context;
+    const corsHeaders = getCorsHeaders(request);
 
     try {
         const data = await request.json();
 
-        // Validate required fields
-        if (!data.session_id || !data.landing_page) {
+        // Validate required fields with length limits
+        const session_id = validateString(data.session_id, LIMITS.session_id);
+        const landing_page = validateString(data.landing_page, LIMITS.landing_page);
+
+        if (!session_id || !landing_page) {
             return new Response(
-                JSON.stringify({ error: 'Missing required fields: session_id, landing_page' }),
+                JSON.stringify({ error: 'Invalid request' }),
                 { status: 400, headers: corsHeaders }
             );
         }
 
-        // Get IP and geo data from Cloudflare headers
-        const ip = request.headers.get('CF-Connecting-IP') || request.headers.get('X-Real-IP') || null;
+        // Get IP and geo data from Cloudflare headers (anonymize IP for GDPR)
+        const rawIP = request.headers.get('CF-Connecting-IP') || request.headers.get('X-Real-IP') || null;
+        const ip = anonymizeIP(rawIP);
         const country = request.headers.get('CF-IPCountry') || null;
         const city = request.cf?.city || null;
         const region = request.cf?.region || null;
         const timezone = request.cf?.timezone || null;
         const asn = request.cf?.asn ? String(request.cf.asn) : null;
 
-        // Detect device type from screen width
-        const deviceType = getDeviceType(data.screen_width);
+        // Validate all input fields
+        const screen_width = validateNumber(data.screen_width, LIMITS.screen_width);
+        const deviceType = getDeviceType(screen_width);
 
-        // Insert into D1
+        // Insert into D1 with validated data
         const result = await insertClick(env.DB, {
-            session_id: data.session_id,
-            landing_page: data.landing_page,
-            cta_location: data.cta_location || null,
-            referrer: data.referrer || null,
-            utm_source: data.utm_source || null,
-            utm_medium: data.utm_medium || null,
-            utm_campaign: data.utm_campaign || null,
-            utm_term: data.utm_term || null,
-            utm_content: data.utm_content || null,
+            session_id: session_id,
+            landing_page: landing_page,
+            cta_location: validateString(data.cta_location, LIMITS.cta_location),
+            referrer: validateString(data.referrer, LIMITS.referrer),
+            utm_source: validateString(data.utm_source, LIMITS.utm_source),
+            utm_medium: validateString(data.utm_medium, LIMITS.utm_medium),
+            utm_campaign: validateString(data.utm_campaign, LIMITS.utm_campaign),
+            utm_term: validateString(data.utm_term, LIMITS.utm_term),
+            utm_content: validateString(data.utm_content, LIMITS.utm_content),
             device_type: deviceType,
-            user_agent: data.user_agent || null,
-            screen_width: data.screen_width || null,
-            screen_height: data.screen_height || null,
-            viewport_width: data.viewport_width || null,
-            viewport_height: data.viewport_height || null,
-            time_on_page_ms: data.time_on_page_ms || null,
-            scroll_depth_percent: data.scroll_depth_percent || null,
-            pages_before: data.pages_before ? JSON.stringify(data.pages_before) : null,
-            clicks_on_page: data.clicks_on_page || 0,
+            user_agent: validateString(data.user_agent, LIMITS.user_agent),
+            screen_width: screen_width,
+            screen_height: validateNumber(data.screen_height, LIMITS.screen_height),
+            viewport_width: validateNumber(data.viewport_width, LIMITS.viewport_width),
+            viewport_height: validateNumber(data.viewport_height, LIMITS.viewport_height),
+            time_on_page_ms: validateNumber(data.time_on_page_ms, LIMITS.time_on_page_ms),
+            scroll_depth_percent: validateNumber(data.scroll_depth_percent, LIMITS.scroll_depth_percent),
+            pages_before: data.pages_before ? JSON.stringify(data.pages_before).substring(0, 1000) : null,
+            clicks_on_page: validateNumber(data.clicks_on_page, LIMITS.clicks_on_page) || 0,
             ip: ip,
             ip_country: country,
             ip_city: city,
             ip_region: region,
             ip_timezone: timezone,
             ip_asn: asn,
-            language: data.language || null,
-            platform: data.platform || null,
+            language: validateString(data.language, LIMITS.language),
+            platform: validateString(data.platform, LIMITS.platform),
             cookies_enabled: data.cookies_enabled ? 1 : 0,
             do_not_track: data.do_not_track ? 1 : 0,
-            connection_type: data.connection_type || null,
-            page_load_time_ms: data.page_load_time_ms || null
+            connection_type: validateString(data.connection_type, LIMITS.connection_type),
+            page_load_time_ms: validateNumber(data.page_load_time_ms, LIMITS.page_load_time_ms)
         });
 
         return new Response(
@@ -89,20 +164,25 @@ export async function onRequestPost(context) {
             );
         }
 
-        console.error('Error tracking click:', error);
+        // Log error server-side only (P2.1 + P2.7 fix)
+        console.error('Click tracking error:', error.message);
         return new Response(
-            JSON.stringify({ error: 'Internal server error', details: error.message }),
+            JSON.stringify({ error: 'Internal server error' }),
             { status: 500, headers: corsHeaders }
         );
     }
 }
 
 // Handle OPTIONS preflight
-export async function onRequestOptions() {
+export async function onRequestOptions(context) {
+    const { request } = context;
+    const origin = request.headers.get('Origin');
+    const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+
     return new Response(null, {
         status: 204,
         headers: {
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': allowedOrigin,
             'Access-Control-Allow-Methods': 'POST, OPTIONS',
             'Access-Control-Allow-Headers': 'Content-Type'
         }

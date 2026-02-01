@@ -1,9 +1,10 @@
 /**
  * Blog Articles Dynamic Loader
- * v1.0.0 - 2026-01-20
+ * v1.1.0 - 2026-02-01
  *
  * Carica articoli da articles.json e renderizza dinamicamente la pagina blog.
  * Supporta filtri per categoria e ricerca testuale.
+ * Includes error handling with user-friendly fallback UI.
  */
 
 class BlogLoader {
@@ -31,7 +32,29 @@ class BlogLoader {
             this.updateArticleCount();
         } catch (error) {
             console.error('Errore caricamento articoli:', error);
+            this.showLoadError();
         }
+    }
+
+    showLoadError() {
+        const container = document.querySelector(this.articlesContainer);
+        if (container) {
+            container.innerHTML = `
+                <div class="load-error" style="text-align: center; padding: 2rem; grid-column: 1 / -1;">
+                    <p style="color: var(--gray-600, #6c757d); margin-bottom: 1rem;">
+                        Impossibile caricare gli articoli.
+                    </p>
+                    <button onclick="location.reload()"
+                            style="background: var(--olive, #5C6B4A); color: white; padding: 0.5rem 1rem;
+                                   border: none; border-radius: 8px; cursor: pointer; font-family: inherit;">
+                        Riprova
+                    </button>
+                </div>
+            `;
+        }
+        // Hide featured section on error
+        const featured = document.querySelector(this.featuredContainer);
+        if (featured) featured.style.display = 'none';
     }
 
     async loadArticles() {
@@ -39,7 +62,15 @@ class BlogLoader {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const data = await response.json();
+
+        let data;
+        try {
+            data = await response.json();
+        } catch (parseError) {
+            console.error('Errore parsing JSON:', parseError);
+            throw new Error('Formato dati non valido');
+        }
+
         this.articles = data.articles || [];
         this.categories = data.categories || [];
 

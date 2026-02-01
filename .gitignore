@@ -26,3 +26,6 @@ npm-debug.log*
 
 # Cloudflare
 .wrangler/
+
+# Raw data (source files, not deployed)
+raw_data/

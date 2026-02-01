@@ -1,0 +1,276 @@
+/**
+ * Bonus Immobiliare Design System
+ * v1.0.0 - 2026-02-01
+ *
+ * Centralized CSS variables, reset, and base styles.
+ * Include in all HTML files: <link rel="stylesheet" href="/css/design-system.css">
+ *
+ * This file extracts common styles from inline CSS to:
+ * - Enable browser caching
+ * - Single source of truth for design tokens
+ * - Reduce HTML file sizes
+ */
+
+/* ============================================
+   CSS VARIABLES
+   ============================================ */
+
+:root {
+    /* Primary Colors */
+    --olive: #5C6B4A;
+    --olive-deep: #4A573C;
+    --olive-light: #7A8B68;
+    --cream: #FAF7F2;
+    --cream-dark: #F5F0E8;
+    --terracotta: #F06543;
+    --terracotta-dark: #D94E2E;
+
+    /* Secondary Colors */
+    --gold: #BFA67A;
+    --sage: #D4DEC9;
+    --stone: #DAD7CD;
+    --bark: #4A3F35;
+
+    /* Neutrals */
+    --gray-100: #F8F9FA;
+    --gray-200: #E9ECEF;
+    --gray-300: #DEE2E6;
+    --gray-400: #CED4DA;
+    --gray-500: #ADB5BD;
+    --gray-600: #6C757D;
+    --gray-700: #495057;
+    --gray-800: #343A40;
+    --gray-900: #212529;
+
+    /* Spacing Scale */
+    --space-xs: 0.25rem;   /* 4px */
+    --space-sm: 0.5rem;    /* 8px */
+    --space-md: 1rem;      /* 16px */
+    --space-lg: 1.5rem;    /* 24px */
+    --space-xl: 2rem;      /* 32px */
+    --space-2xl: 3rem;     /* 48px */
+    --space-3xl: 4rem;     /* 64px */
+
+    /* Typography */
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Source Serif 4', Georgia, serif;
+    --font-mono: 'SF Mono', Monaco, 'Courier New', monospace;
+
+    /* Font Sizes */
+    --text-xs: 0.75rem;    /* 12px */
+    --text-sm: 0.875rem;   /* 14px */
+    --text-base: 1rem;     /* 16px */
+    --text-lg: 1.125rem;   /* 18px */
+    --text-xl: 1.25rem;    /* 20px */
+    --text-2xl: 1.5rem;    /* 24px */
+    --text-3xl: 1.875rem;  /* 30px */
+    --text-4xl: 2.25rem;   /* 36px */
+    --text-5xl: 3rem;      /* 48px */
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 300ms ease;
+    --transition-slow: 500ms ease;
+
+    /* Layout */
+    --max-width: 1200px;
+    --max-width-narrow: 800px;
+    --header-height: 80px;
+}
+
+/* ============================================
+   CSS RESET
+   ============================================ */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: 1.6;
+    color: var(--gray-800);
+    background: var(--cream);
+    min-height: 100vh;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--olive-deep);
+}
+
+h1 { font-size: var(--text-5xl); }
+h2 { font-size: var(--text-4xl); }
+h3 { font-size: var(--text-3xl); }
+h4 { font-size: var(--text-2xl); }
+h5 { font-size: var(--text-xl); }
+h6 { font-size: var(--text-lg); }
+
+p {
+    margin-bottom: var(--space-md);
+}
+
+a {
+    color: var(--olive);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--terracotta);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+}
+
+.container-narrow {
+    max-width: var(--max-width-narrow);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-sm) var(--space-lg);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.btn-primary {
+    background: var(--terracotta);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--terracotta-dark);
+    color: white;
+}
+
+.btn-secondary {
+    background: var(--olive);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: var(--olive-deep);
+    color: white;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--olive);
+    color: var(--olive);
+}
+
+.btn-outline:hover {
+    background: var(--olive);
+    color: white;
+}
+
+/* ============================================
+   TOAST NOTIFICATIONS
+   ============================================ */
+
+.toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--olive-deep);
+    color: white;
+    padding: var(--space-md) var(--space-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    z-index: 10000;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.toast.success {
+    background: var(--olive);
+}
+
+.toast.error {
+    background: var(--terracotta);
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS (reference)
+   ============================================
+   Mobile:  < 768px
+   Tablet:  768px - 1023px
+   Desktop: >= 1024px
+   ============================================ */
