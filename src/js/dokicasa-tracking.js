@@ -1,6 +1,6 @@
 /**
  * Dokicasa Click Tracking
- * v1.1.0 - 2026-01-24
+ * v1.2.0 - 2026-02-01
  *
  * Tracks clicks on Dokicasa CTA links with full data collection:
  * - Session ID, UTM params
@@ -10,6 +10,9 @@
  * - Connection type, page load time
  * - Click count on page
  */
+
+// Set to true for local development debugging
+const DEBUG = false;
 
 class DokicasaTracking {
     constructor() {
@@ -43,7 +46,7 @@ class DokicasaTracking {
         // Attach click handlers to Dokicasa links
         this.attachClickHandlers();
 
-        console.log('[DokicasaTracking] Initialized', {
+        if (DEBUG) console.log('[DokicasaTracking] Initialized', {
             session_id: this.getSessionId(),
             landing_page: this.landingPage
         });
@@ -163,7 +166,7 @@ class DokicasaTracking {
             });
         });
 
-        console.log('[DokicasaTracking] Attached handlers to', dokicasaLinks.length, 'links');
+        if (DEBUG) console.log('[DokicasaTracking] Attached handlers to', dokicasaLinks.length, 'links');
     }
 
     inferCtaLocation(link) {
@@ -229,7 +232,7 @@ class DokicasaTracking {
             page_load_time_ms: this.pageLoadTime
         };
 
-        console.log('[DokicasaTracking] Tracking click', trackingData);
+        if (DEBUG) console.log('[DokicasaTracking] Tracking click', trackingData);
 
         // Use sendBeacon for reliable delivery
         const sent = navigator.sendBeacon(this.apiUrl, JSON.stringify(trackingData));
@@ -244,7 +247,7 @@ class DokicasaTracking {
                     keepalive: true
                 });
             } catch (err) {
-                console.error('[DokicasaTracking] Failed to track click', err);
+                if (DEBUG) console.error('[DokicasaTracking] Failed to track click', err);
             }
         }
 
