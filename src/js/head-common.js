@@ -1,8 +1,9 @@
 /**
  * Head Common - Injects favicon, meta tags, and analytics
- * v1.3.0 - 2026-01-30
+ * v1.4.0 - 2026-02-01
  *
  * Include this script in <head> to automatically add:
+ * - Font preconnect hints (for faster Google Fonts loading)
  * - Favicons (light/dark mode)
  * - Apple touch icon
  * - Web manifest
@@ -13,6 +14,18 @@
 
 (function() {
     const head = document.head;
+
+    // Preconnect to Google Fonts (reduces connection time by ~150ms)
+    const preconnects = [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+    ];
+
+    preconnects.forEach(attrs => {
+        const link = document.createElement('link');
+        Object.keys(attrs).forEach(key => link.setAttribute(key, attrs[key]));
+        head.insertBefore(link, head.firstChild); // Insert at beginning for priority
+    });
 
     // Favicon tags (sync - small, no blocking)
     const tags = [
