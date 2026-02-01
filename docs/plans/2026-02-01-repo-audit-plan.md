@@ -882,23 +882,23 @@ Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>"
 
 ## Verification Checklist
 
-Before marking plan complete:
+Implementation status (2026-02-01):
 
-- [ ] CORS restricted to allowed origins only
-- [ ] Input validation rejects invalid data
-- [ ] Error responses don't leak internal details
-- [ ] Timestamp column has NOT NULL constraint
-- [ ] IP addresses are anonymized
-- [ ] GeoJSON files are < 2MB each
-- [ ] Font preconnect hints added
-- [ ] Duplicate files removed from deploy
-- [ ] design-system.css created
-- [ ] Blog loader shows error UI on failure
-- [ ] console.log wrapped in DEBUG flag
-- [ ] alert() replaced with toast
-- [ ] articles.json synced with directories
-- [ ] Magic numbers extracted to constants
-- [ ] Maps show error UI on load failure
+- [x] CORS restricted to allowed origins only
+- [x] Input validation rejects invalid data
+- [x] Error responses don't leak internal details
+- [x] Timestamp column has NOT NULL constraint
+- [x] IP addresses are anonymized
+- [x] GeoJSON files are < 2MB each
+- [x] Font preconnect hints added
+- [x] Duplicate files removed from deploy
+- [x] design-system.css created
+- [x] Blog loader shows error UI on failure
+- [x] console.log wrapped in DEBUG flag
+- [ ] alert() replaced with toast (deferred - requires HTML updates)
+- [ ] articles.json synced with directories (deferred - verification script created)
+- [ ] Magic numbers extracted to constants (partial - breakpoints in API)
+- [ ] Maps show error UI on load failure (deferred - requires per-map updates)
 
 ---
 
